@@ -1,0 +1,30 @@
+{
+  "birth_year": 1995,
+  "marital_status": "single",
+  "children": 0,
+  "household_size": 1,
+  "is_household_head": true,
+  "homeless": true,
+  "residence": {
+    "sido": "경기도",
+    "sigungu": "예시시",
+    "registered_since": "2022-01"
+  },
+  "account": {
+    "type": "주택청약종합저축",
+    "rank_base_date": "2022-01-15",
+    "total_deposit_krw": 3000000,
+    "deposit_count_estimate": 36,
+    "verified": false
+  },
+  "income": {
+    "gross_annual_krw": 48000000,
+    "basis_verified": false
+  },
+  "assets": {
+    "financial_krw": 25000000,
+    "real_estate_krw": 0,
+    "car_value_krw": null,
+    "verified": false
+  }
+}

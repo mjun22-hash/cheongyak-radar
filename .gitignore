@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+.cache/
+profile.local.json
+*.local
+.env
+.env.*
+!.env.example
+npm-debug.log*

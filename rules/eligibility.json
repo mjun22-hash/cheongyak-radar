@@ -1,0 +1,42 @@
+{
+  "version": "2026-06-15",
+  "disclaimer": "참고용, 최종 자격은 청약홈 공고문과 순위확인서로 확인",
+  "rules": [
+    {
+      "id": "adult",
+      "label": "성년자",
+      "min_age": 19,
+      "source": "주택공급에 관한 규칙 제4조",
+      "source_url": "https://www.law.go.kr/법령/주택공급에관한규칙"
+    },
+    {
+      "id": "national_first_rank",
+      "label": "국민주택 수도권 1순위",
+      "account_months": 12,
+      "deposit_count": 12,
+      "source": "주택공급에 관한 규칙 제27조제1항",
+      "source_url": "https://law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1033570087"
+    },
+    {
+      "id": "private_first_rank",
+      "label": "민영주택 수도권 1순위",
+      "account_months": 12,
+      "source": "주택공급에 관한 규칙 제28조제1항",
+      "source_url": "https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1033569493"
+    },
+    {
+      "id": "first_home_single_area",
+      "label": "생애최초 단독세대주 면적 제한",
+      "max_area_sqm": 60,
+      "source": "주택공급에 관한 규칙 제43조제1항",
+      "source_url": "https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1030378531"
+    },
+    {
+      "id": "homeless_period",
+      "label": "무주택기간 기산",
+      "start_age": 30,
+      "source": "주택공급에 관한 규칙 별표 1",
+      "source_url": "https://www.law.go.kr/LSW/flDownload.do?flNm=%5B%EB%B3%84%ED%91%9C+1%5D+%EA%B0%80%EC%A0%90%EC%A0%9C+%EC%A0%81%EC%9A%A9%EA%B8%B0%EC%A4%80%28%EC%A0%9C2%EC%A1%B0%EC%A0%9C8%ED%98%B8+%EA%B4%80%EB%A0%A8%29%0A&flSeq=69863649"
+    }
+  ]
+}

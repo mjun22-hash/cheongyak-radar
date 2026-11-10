@@ -1,0 +1,13 @@
+{
+  "name": "청약 레이더",
+  "short_name": "청약레이더",
+  "description": "서울·경기 청약 공고와 내 조건을 함께 점검합니다.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f4ef",
+  "theme_color": "#153a2f",
+  "lang": "ko",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
