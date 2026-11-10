@@ -7,6 +7,7 @@ import type { Announcement, AnnouncementData, AnnouncementEvaluation, Profile, V
 const data = rawData as AnnouncementData
 const STORAGE_KEY = 'cheongyak-radar-profile-v1'
 const DISCLAIMER = '참고용, 최종 자격은 청약홈 공고문과 순위확인서로 확인'
+const TRADE_API_APPLY_URL = 'https://www.data.go.kr/data/15126468/openapi.do'
 
 const EMPTY_PROFILE: Profile = {
   birth_year: 1995,
@@ -174,6 +175,8 @@ function AnnouncementCard({ announcement, evaluation }: { announcement: Announce
   const meta = verdictMeta[evaluation.verdict]
   const lead = leadTime(announcement)
   const best = evaluation.best
+  const visibleEvaluations = evaluation.all.filter((item) => item.verdict !== 'ineligible')
+  const hiddenEvaluationCount = evaluation.all.length - visibleEvaluations.length
   const status = statusOf(announcement)
   const oneReason = best?.reasons[0] ?? '공급유형 정보가 없습니다.'
   return <article className={`announcement-card ${meta.className} ${status === 'closed' ? 'is-closed' : ''}`}>
@@ -191,7 +194,8 @@ function AnnouncementCard({ announcement, evaluation }: { announcement: Announce
     <details className="card-details" open={evaluation.verdict !== 'ineligible' && status !== 'closed'}>
       <summary>주택형·판정 근거 자세히</summary>
       <div className="type-list">{announcement.housing_types.map((type, index) => <div key={`${type.name}-${index}`}><strong>{type.name}</strong><span>{type.area_sqm ? `${type.area_sqm}㎡` : '면적 확인'} · {type.households ?? '–'}세대 · {type.price_krw ? formatKrw(type.price_krw) : '가격 확인'}</span></div>)}</div>
-      <div className="evaluation-list">{evaluation.all.map((item, index) => <div key={`${item.option.id}-${item.housingType.name}-${index}`} className={`evaluation-item ${item.verdict}`}><strong>{verdictMeta[item.verdict].icon} {item.option.label} · {item.housingType.name}</strong><ul>{item.reasons.slice(0, 4).map((reason, reasonIndex) => <li key={`${reason}-${reasonIndex}`}>{reason}</li>)}</ul><small>근거: {item.sourceRef}</small></div>)}</div>
+      <div className="evaluation-list">{visibleEvaluations.map((item, index) => <div key={`${item.option.id}-${item.housingType.name}-${index}`} className={`evaluation-item ${item.verdict}`}><strong>{verdictMeta[item.verdict].icon} {item.option.label} · {item.housingType.name}</strong><ul>{item.reasons.slice(0, 4).map((reason, reasonIndex) => <li key={`${reason}-${reasonIndex}`}>{reason}</li>)}</ul><small>근거: {item.sourceRef}</small></div>)}</div>
+      {hiddenEvaluationCount > 0 && <p className="hidden-option-note">입력 조건상 불가능한 공급유형 {hiddenEvaluationCount}개는 숨겼습니다.</p>}
       <div className="restriction-row"><span>전매제한 {announcement.restrictions.resale ?? '공고문 확인'}</span><span>거주의무 {announcement.restrictions.residence ?? '공고문 확인'}</span></div>
     </details>
     <div className="card-links"><a href={announcement.links.official} target="_blank" rel="noreferrer">청약홈 원문 ↗</a><a href={announcement.links.homedubu} target="_blank" rel="noreferrer">홈두부 보기 ↗</a></div>
@@ -201,12 +205,13 @@ function AnnouncementCard({ announcement, evaluation }: { announcement: Announce
 export default function App() {
   const [profile, setProfile] = useState<Profile | null>(() => loadProfile())
   const [editing, setEditing] = useState(false)
-  const [verdictFilter, setVerdictFilter] = useState<'all' | Verdict>('all')
+  const [verdictFilter, setVerdictFilter] = useState<'all' | 'eligible' | 'review'>('all')
   const [regionFilter, setRegionFilter] = useState<'all' | '서울' | '경기'>('all')
   const [statusFilter, setStatusFilter] = useState<'all' | 'active' | 'upcoming' | 'closed'>('all')
 
   const evaluated = useMemo(() => data.announcements.map((announcement) => ({ announcement, evaluation: evaluateAnnouncement(profile, announcement) })), [profile])
   const filtered = useMemo(() => evaluated.filter(({ announcement, evaluation }) => {
+    if (profile && evaluation.verdict === 'ineligible') return false
     if (verdictFilter !== 'all' && evaluation.verdict !== verdictFilter) return false
     if (regionFilter !== 'all' && regionLabel(announcement.region.sido) !== regionFilter) return false
     if (statusFilter !== 'all' && statusOf(announcement) !== statusFilter) return false
@@ -216,7 +221,7 @@ export default function App() {
     const bClosed = statusOf(b.announcement) === 'closed' ? 1 : 0
     if (aClosed !== bClosed) return aClosed - bClosed
     return (a.announcement.application_start ?? '9999').localeCompare(b.announcement.application_start ?? '9999')
-  }), [evaluated, verdictFilter, regionFilter, statusFilter])
+  }), [evaluated, profile, verdictFilter, regionFilter, statusFilter])
 
   const counts = evaluated.reduce((acc, item) => ({ ...acc, [item.evaluation.verdict]: acc[item.evaluation.verdict] + 1 }), { eligible: 0, review: 0, ineligible: 0 })
   const urgent = evaluated.filter(({ announcement }) => {
@@ -226,6 +231,7 @@ export default function App() {
     const days = dateDiff(todayKst(), announcement.application_start)
     return days >= 0 && days <= 7
   })
+  const tradeApiAccessMissing = data.announcements.length > 0 && data.announcements.every((announcement) => announcement.price_gain.basis.includes('HTTP 403'))
 
   const saveProfile = (next: Profile) => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(next))
@@ -251,11 +257,12 @@ export default function App() {
     <main>
       {data.metadata.is_sample && <section className="notice sample-notice"><strong>지금은 안전한 샘플 데이터입니다.</strong><span>API 키를 설정하고 자동 갱신을 실행하면 실제 서울·경기 공고로 교체됩니다. 샘플에는 실제 단지명·가격을 넣지 않았습니다.</span></section>}
       {data.metadata.last_fetch_error && <section className="notice error-notice"><strong>최근 자동 갱신에 실패했습니다.</strong><span>이전 정상 데이터를 유지합니다. {data.metadata.last_fetch_error}</span></section>}
+      {tradeApiAccessMissing && <section className="notice error-notice"><strong>실거래가 API 권한이 아직 없습니다.</strong><span><a href={TRADE_API_APPLY_URL} target="_blank" rel="noreferrer">공공데이터포털에서 활용신청</a>하면 다음 자동 갱신부터 추정 시세차익을 계산합니다.</span></section>}
 
       <section className="daily-brief" aria-labelledby="brief-title">
         <div className="section-kicker">TODAY'S SIGNAL</div><h2 id="brief-title">오늘의 레이더</h2>
         <p>{urgent.length ? `${urgent.length}개 공고가 7일 안에 접수를 시작하거나 진행 중입니다. ${urgent.map((item) => item.announcement.name).slice(0, 2).join(', ')}부터 확인하세요.` : '7일 안에 시작하는 새 접수는 없습니다. 예정 공고를 차분히 검토해 보세요.'}</p>
-        <div className="brief-stats"><button onClick={() => setVerdictFilter('eligible')}><span>✓</span><strong>{counts.eligible}</strong><small>신청 가능</small></button><button onClick={() => setVerdictFilter('review')}><span>!</span><strong>{counts.review}</strong><small>확인 필요</small></button><button onClick={() => setVerdictFilter('ineligible')}><span>×</span><strong>{counts.ineligible}</strong><small>불가</small></button></div>
+        <div className="brief-stats"><button onClick={() => setVerdictFilter('eligible')}><span>✓</span><strong>{counts.eligible}</strong><small>신청 가능</small></button><button onClick={() => setVerdictFilter('review')}><span>!</span><strong>{counts.review}</strong><small>확인 필요</small></button></div>
       </section>
 
       <section className="profile-strip">
@@ -268,7 +275,7 @@ export default function App() {
 
       <section className="list-section" aria-labelledby="list-title">
         <div className="section-heading"><div><p className="section-kicker">OPPORTUNITIES</p><h2 id="list-title">청약 공고</h2></div><span>{filtered.length}건</span></div>
-        <div className="filter-group" aria-label="판정 필터">{([['all', '전체'], ['eligible', '✓ 가능'], ['review', '! 확인'], ['ineligible', '× 불가']] as const).map(([value, label]) => <button key={value} className={verdictFilter === value ? 'active' : ''} onClick={() => setVerdictFilter(value)}>{label}</button>)}</div>
+        <div className="filter-group" aria-label="판정 필터">{([['all', '추천만'], ['eligible', '✓ 가능'], ['review', '! 확인']] as const).map(([value, label]) => <button key={value} className={verdictFilter === value ? 'active' : ''} onClick={() => setVerdictFilter(value)}>{label}</button>)}</div>
         <div className="filter-row"><div className="filter-group compact">{(['all', '서울', '경기'] as const).map((value) => <button key={value} className={regionFilter === value ? 'active' : ''} onClick={() => setRegionFilter(value)}>{value === 'all' ? '전 지역' : value}</button>)}</div><select aria-label="진행 상태" value={statusFilter} onChange={(e) => setStatusFilter(e.target.value as typeof statusFilter)}><option value="all">전체 상태</option><option value="active">진행중</option><option value="upcoming">예정</option><option value="closed">마감</option></select></div>
         <div className="card-list">{filtered.map((item) => <AnnouncementCard key={item.announcement.id} {...item} />)}{!filtered.length && <div className="empty-state">선택한 조건에 맞는 공고가 없습니다.</div>}</div>
       </section>
