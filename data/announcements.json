@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2026-11-10T21:01:43+09:00",
+    "generated_at": "2026-11-11T10:43:01+09:00",
     "source": "한국부동산원 청약홈 분양정보 조회 서비스",
     "is_sample": false,
     "last_fetch_error": null,
-    "count": 118
+    "count": 119
   },
   "announcements": [
     {
@@ -70,9 +70,27 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -50191378,
-        "basis": "시흥시 최근 6개월 유사면적 169건의 ㎡당 중간값 × 55㎡ - 분양가",
+        "estimated_krw": -55720280,
+        "basis": "시흥시 최근 6개월 유사면적 174건의 ㎡당 중간값 × 55㎡ - 분양가",
         "comparables": [
+          {
+            "name": "월곶동유호NPLUSVILLE",
+            "area_sqm": 59.1825,
+            "price_krw": 210000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "은계센트럴타운",
+            "area_sqm": 51.94,
+            "price_krw": 403000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "현진1",
+            "area_sqm": 57.93,
+            "price_krw": 206000000,
+            "month": "2026-11"
+          },
           {
             "name": "태헌3차아파트",
             "area_sqm": 57.18,
@@ -83,24 +101,6 @@
             "name": "은계센트럴타운",
             "area_sqm": 51.96,
             "price_krw": 320000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "월곶동유호NPLUSVILLE",
-            "area_sqm": 59.1825,
-            "price_krw": 210000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "무진",
-            "area_sqm": 54.63,
-            "price_krw": 207000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "은계센트럴타운",
-            "area_sqm": 51.96,
-            "price_krw": 407500000,
             "month": "2026-11"
           }
         ]
@@ -200,9 +200,21 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -263028199,
-        "basis": "광주시 최근 6개월 유사면적 871건의 ㎡당 중간값 × 84.9904㎡ - 분양가",
+        "estimated_krw": -265897964,
+        "basis": "광주시 최근 6개월 유사면적 875건의 ㎡당 중간값 × 84.9904㎡ - 분양가",
         "comparables": [
+          {
+            "name": "오포우림퓨전빌",
+            "area_sqm": 84.217,
+            "price_krw": 210000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "초월롯데낙천대2",
+            "area_sqm": 84.93,
+            "price_krw": 470000000,
+            "month": "2026-11"
+          },
           {
             "name": "이편한세상태전2차(201~205동)",
             "area_sqm": 84.9657,
@@ -219,18 +231,6 @@
             "name": "초월롯데낙천대2",
             "area_sqm": 84.93,
             "price_krw": 508000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "우림(Lumiart)",
-            "area_sqm": 84.12,
-            "price_krw": 337000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "대주파크빌제1차B블럭",
-            "area_sqm": 84.99,
-            "price_krw": 255000000,
             "month": "2026-11"
           }
         ]
@@ -342,37 +342,37 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -341733481,
-        "basis": "의정부시 최근 6개월 유사면적 878건의 ㎡당 중간값 × 59.9777㎡ - 분양가",
+        "estimated_krw": -341748283,
+        "basis": "의정부시 최근 6개월 유사면적 883건의 ㎡당 중간값 × 59.9777㎡ - 분양가",
         "comparables": [
           {
-            "name": "풍림",
-            "area_sqm": 59.88,
-            "price_krw": 305000000,
+            "name": "청구",
+            "area_sqm": 59.9,
+            "price_krw": 165000000,
             "month": "2026-11"
           },
           {
-            "name": "호원동한승미메이드",
-            "area_sqm": 59.952,
-            "price_krw": 465000000,
+            "name": "성원",
+            "area_sqm": 59.44,
+            "price_krw": 145000000,
             "month": "2026-11"
           },
           {
-            "name": "건영",
-            "area_sqm": 59.8,
-            "price_krw": 200000000,
+            "name": "벽산블루밍",
+            "area_sqm": 59.994,
+            "price_krw": 260000000,
             "month": "2026-11"
           },
           {
-            "name": "신곡서해",
-            "area_sqm": 59.94,
-            "price_krw": 205000000,
+            "name": "탑석센트럴자이",
+            "area_sqm": 59.9788,
+            "price_krw": 580000000,
             "month": "2026-11"
           },
           {
-            "name": "장암1차푸르지오",
-            "area_sqm": 59.16,
-            "price_krw": 335000000,
+            "name": "힐스테이트회룡역파크뷰",
+            "area_sqm": 59.9934,
+            "price_krw": 629000000,
             "month": "2026-11"
           }
         ]
@@ -611,9 +611,15 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -62378844,
-        "basis": "남양주시 최근 6개월 유사면적 160건의 ㎡당 중간값 × 55㎡ - 분양가",
+        "estimated_krw": -64332838,
+        "basis": "남양주시 최근 6개월 유사면적 161건의 ㎡당 중간값 × 55㎡ - 분양가",
         "comparables": [
+          {
+            "name": "인정프린스",
+            "area_sqm": 58.93,
+            "price_krw": 160000000,
+            "month": "2026-11"
+          },
           {
             "name": "진주(10차)",
             "area_sqm": 55.8,
@@ -636,12 +642,6 @@
             "name": "건영",
             "area_sqm": 58.38,
             "price_krw": 205000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "다산자연앤e편한세상3차",
-            "area_sqm": 51.9567,
-            "price_krw": 835000000,
             "month": "2026-11"
           }
         ]
@@ -1586,37 +1586,37 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -51532103,
-        "basis": "시흥시 최근 6개월 유사면적 1061건의 ㎡당 중간값 × 84.9607㎡ - 분양가",
+        "estimated_krw": -51303870,
+        "basis": "시흥시 최근 6개월 유사면적 1073건의 ㎡당 중간값 × 84.9607㎡ - 분양가",
         "comparables": [
           {
-            "name": "시흥능곡역장현리슈빌퍼스트클래스",
-            "area_sqm": 84.9415,
-            "price_krw": 520000000,
+            "name": "시흥능곡역모아미래도에듀포레",
+            "area_sqm": 84.9613,
+            "price_krw": 565000000,
             "month": "2026-11"
           },
           {
-            "name": "우남",
-            "area_sqm": 84.7246,
-            "price_krw": 435000000,
+            "name": "제일풍경채더숲",
+            "area_sqm": 84.9561,
+            "price_krw": 615000000,
             "month": "2026-11"
           },
           {
-            "name": "파라곤센트럴오션시티",
-            "area_sqm": 84.9665,
-            "price_krw": 389000000,
+            "name": "부성파인하버뷰",
+            "area_sqm": 79.02,
+            "price_krw": 308000000,
             "month": "2026-11"
           },
           {
-            "name": "장현호반써밋",
-            "area_sqm": 84.9958,
-            "price_krw": 628000000,
+            "name": "시흥은계우미린레이크",
+            "area_sqm": 84.9914,
+            "price_krw": 610000000,
             "month": "2026-11"
           },
           {
-            "name": "시흥배곧한신더휴",
-            "area_sqm": 84.9734,
-            "price_krw": 630000000,
+            "name": "은계어반리더스",
+            "area_sqm": 84.74,
+            "price_krw": 585000000,
             "month": "2026-11"
           }
         ]
@@ -1734,37 +1734,37 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -315921007,
-        "basis": "평택시 최근 6개월 유사면적 1433건의 ㎡당 중간값 × 84.9927㎡ - 분양가",
+        "estimated_krw": -315938221,
+        "basis": "평택시 최근 6개월 유사면적 1438건의 ㎡당 중간값 × 84.9927㎡ - 분양가",
         "comparables": [
           {
-            "name": "호반써밋고덕국제신도시에듀파크",
-            "area_sqm": 84.3675,
-            "price_krw": 657500000,
+            "name": "우림필유",
+            "area_sqm": 84.98,
+            "price_krw": 210000000,
             "month": "2026-11"
           },
           {
-            "name": "화현마을우림필유",
-            "area_sqm": 84.942,
-            "price_krw": 190000000,
+            "name": "우미이노스빌2차",
+            "area_sqm": 79.8571,
+            "price_krw": 250000000,
             "month": "2026-11"
           },
           {
             "name": "힐스테이트지제역",
             "area_sqm": 84.9542,
-            "price_krw": 660000000,
+            "price_krw": 610000000,
             "month": "2026-11"
           },
           {
-            "name": "고덕국제신도시제일풍경채3차센텀",
-            "area_sqm": 84.908,
-            "price_krw": 765000000,
+            "name": "평택지제역동문디이스트5단지",
+            "area_sqm": 84.9366,
+            "price_krw": 435000000,
             "month": "2026-11"
           },
           {
-            "name": "e편한세상지제역",
-            "area_sqm": 84.052,
-            "price_krw": 522000000,
+            "name": "휴먼시아추담마을",
+            "area_sqm": 84.91,
+            "price_krw": 268000000,
             "month": "2026-11"
           }
         ]
@@ -1831,9 +1831,27 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -38441378,
-        "basis": "시흥시 최근 6개월 유사면적 169건의 ㎡당 중간값 × 55㎡ - 분양가",
+        "estimated_krw": -43970280,
+        "basis": "시흥시 최근 6개월 유사면적 174건의 ㎡당 중간값 × 55㎡ - 분양가",
         "comparables": [
+          {
+            "name": "월곶동유호NPLUSVILLE",
+            "area_sqm": 59.1825,
+            "price_krw": 210000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "은계센트럴타운",
+            "area_sqm": 51.94,
+            "price_krw": 403000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "현진1",
+            "area_sqm": 57.93,
+            "price_krw": 206000000,
+            "month": "2026-11"
+          },
           {
             "name": "태헌3차아파트",
             "area_sqm": 57.18,
@@ -1844,24 +1862,6 @@
             "name": "은계센트럴타운",
             "area_sqm": 51.96,
             "price_krw": 320000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "월곶동유호NPLUSVILLE",
-            "area_sqm": 59.1825,
-            "price_krw": 210000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "무진",
-            "area_sqm": 54.63,
-            "price_krw": 207000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "은계센트럴타운",
-            "area_sqm": 51.96,
-            "price_krw": 407500000,
             "month": "2026-11"
           }
         ]
@@ -1968,37 +1968,37 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -22949860,
-        "basis": "시흥시 최근 6개월 유사면적 1062건의 ㎡당 중간값 × 84.89㎡ - 분양가",
+        "estimated_krw": -22833906,
+        "basis": "시흥시 최근 6개월 유사면적 1074건의 ㎡당 중간값 × 84.89㎡ - 분양가",
         "comparables": [
           {
-            "name": "시흥능곡역장현리슈빌퍼스트클래스",
-            "area_sqm": 84.9415,
-            "price_krw": 520000000,
+            "name": "시흥능곡역모아미래도에듀포레",
+            "area_sqm": 84.9613,
+            "price_krw": 565000000,
             "month": "2026-11"
           },
           {
-            "name": "우남",
-            "area_sqm": 84.7246,
-            "price_krw": 435000000,
+            "name": "제일풍경채더숲",
+            "area_sqm": 84.9561,
+            "price_krw": 615000000,
             "month": "2026-11"
           },
           {
-            "name": "파라곤센트럴오션시티",
-            "area_sqm": 84.9665,
-            "price_krw": 389000000,
+            "name": "부성파인하버뷰",
+            "area_sqm": 79.02,
+            "price_krw": 308000000,
             "month": "2026-11"
           },
           {
-            "name": "장현호반써밋",
-            "area_sqm": 84.9958,
-            "price_krw": 628000000,
+            "name": "시흥은계우미린레이크",
+            "area_sqm": 84.9914,
+            "price_krw": 610000000,
             "month": "2026-11"
           },
           {
-            "name": "시흥배곧한신더휴",
-            "area_sqm": 84.9734,
-            "price_krw": 630000000,
+            "name": "은계어반리더스",
+            "area_sqm": 84.74,
+            "price_krw": 585000000,
             "month": "2026-11"
           }
         ]
@@ -2098,9 +2098,27 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -254469841,
-        "basis": "파주시 최근 6개월 유사면적 515건의 ㎡당 중간값 × 60.9995㎡ - 분양가",
+        "estimated_krw": -253947171,
+        "basis": "파주시 최근 6개월 유사면적 520건의 ㎡당 중간값 × 60.9995㎡ - 분양가",
         "comparables": [
+          {
+            "name": "한빛마을5단지캐슬앤칸타빌",
+            "area_sqm": 59.6237,
+            "price_krw": 440000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "운정신도시한라비발디파크젠해오름마을13단지",
+            "area_sqm": 59.8,
+            "price_krw": 370000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "한울마을1단지운정신도시IPARK",
+            "area_sqm": 59.99,
+            "price_krw": 597000000,
+            "month": "2026-11"
+          },
           {
             "name": "경신그린아파트",
             "area_sqm": 59.85,
@@ -2108,27 +2126,9 @@
             "month": "2026-11"
           },
           {
-            "name": "건일장미5차",
-            "area_sqm": 59.96,
-            "price_krw": 190000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "운정신도시한라비발디파크젠해오름마을13단지",
-            "area_sqm": 59.8,
-            "price_krw": 365000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "해오름마을10단지파크푸르지오",
-            "area_sqm": 59.63,
-            "price_krw": 425000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "대방노블랜드(587-0)",
-            "area_sqm": 59.73,
-            "price_krw": 155000000,
+            "name": "새꽃마을1단지뜨란채(972-0)",
+            "area_sqm": 59.99,
+            "price_krw": 228000000,
             "month": "2026-11"
           }
         ]
@@ -2246,9 +2246,27 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -242469841,
-        "basis": "파주시 최근 6개월 유사면적 515건의 ㎡당 중간값 × 60.9995㎡ - 분양가",
+        "estimated_krw": -241947171,
+        "basis": "파주시 최근 6개월 유사면적 520건의 ㎡당 중간값 × 60.9995㎡ - 분양가",
         "comparables": [
+          {
+            "name": "한빛마을5단지캐슬앤칸타빌",
+            "area_sqm": 59.6237,
+            "price_krw": 440000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "운정신도시한라비발디파크젠해오름마을13단지",
+            "area_sqm": 59.8,
+            "price_krw": 370000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "한울마을1단지운정신도시IPARK",
+            "area_sqm": 59.99,
+            "price_krw": 597000000,
+            "month": "2026-11"
+          },
           {
             "name": "경신그린아파트",
             "area_sqm": 59.85,
@@ -2256,27 +2274,9 @@
             "month": "2026-11"
           },
           {
-            "name": "건일장미5차",
-            "area_sqm": 59.96,
-            "price_krw": 190000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "운정신도시한라비발디파크젠해오름마을13단지",
-            "area_sqm": 59.8,
-            "price_krw": 365000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "해오름마을10단지파크푸르지오",
-            "area_sqm": 59.63,
-            "price_krw": 425000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "대방노블랜드(587-0)",
-            "area_sqm": 59.73,
-            "price_krw": 155000000,
+            "name": "새꽃마을1단지뜨란채(972-0)",
+            "area_sqm": 59.99,
+            "price_krw": 228000000,
             "month": "2026-11"
           }
         ]
@@ -2892,8 +2892,8 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": 976988048,
-        "basis": "강동구 최근 6개월 유사면적 278건의 ㎡당 중간값 × 59㎡ - 분양가",
+        "estimated_krw": 978384297,
+        "basis": "강동구 최근 6개월 유사면적 280건의 ㎡당 중간값 × 59㎡ - 분양가",
         "comparables": [
           {
             "name": "삼익파크맨션",
@@ -2914,15 +2914,15 @@
             "month": "2026-11"
           },
           {
-            "name": "올림픽파크포레온",
-            "area_sqm": 59.99,
-            "price_krw": 2560000000,
+            "name": "성내동삼성아파트",
+            "area_sqm": 59.88,
+            "price_krw": 1410000000,
             "month": "2026-10"
           },
           {
-            "name": "신동아파밀리에",
-            "area_sqm": 58.87,
-            "price_krw": 1340000000,
+            "name": "올림픽파크포레온",
+            "area_sqm": 59.99,
+            "price_krw": 2560000000,
             "month": "2026-10"
           }
         ]
@@ -3399,9 +3399,27 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": 16638622,
-        "basis": "시흥시 최근 6개월 유사면적 169건의 ㎡당 중간값 × 55㎡ - 분양가",
+        "estimated_krw": 11109720,
+        "basis": "시흥시 최근 6개월 유사면적 174건의 ㎡당 중간값 × 55㎡ - 분양가",
         "comparables": [
+          {
+            "name": "월곶동유호NPLUSVILLE",
+            "area_sqm": 59.1825,
+            "price_krw": 210000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "은계센트럴타운",
+            "area_sqm": 51.94,
+            "price_krw": 403000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "현진1",
+            "area_sqm": 57.93,
+            "price_krw": 206000000,
+            "month": "2026-11"
+          },
           {
             "name": "태헌3차아파트",
             "area_sqm": 57.18,
@@ -3412,24 +3430,6 @@
             "name": "은계센트럴타운",
             "area_sqm": 51.96,
             "price_krw": 320000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "월곶동유호NPLUSVILLE",
-            "area_sqm": 59.1825,
-            "price_krw": 210000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "무진",
-            "area_sqm": 54.63,
-            "price_krw": 207000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "은계센트럴타운",
-            "area_sqm": 51.96,
-            "price_krw": 407500000,
             "month": "2026-11"
           }
         ]
@@ -3559,9 +3559,21 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -34649349,
-        "basis": "광명시 최근 6개월 유사면적 299건의 ㎡당 중간값 × 59.7421㎡ - 분양가",
+        "estimated_krw": -32515911,
+        "basis": "광명시 최근 6개월 유사면적 303건의 ㎡당 중간값 × 59.7421㎡ - 분양가",
         "comparables": [
+          {
+            "name": "주공8(고층)",
+            "area_sqm": 59.39,
+            "price_krw": 740000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "광명역센트럴자이",
+            "area_sqm": 59.775,
+            "price_krw": 1335000000,
+            "month": "2026-11"
+          },
           {
             "name": "광복현대",
             "area_sqm": 59.94,
@@ -3578,18 +3590,6 @@
             "name": "광명아크포레자이위브",
             "area_sqm": 59.9915,
             "price_krw": 1100000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "광명역파크자이",
-            "area_sqm": 59.802,
-            "price_krw": 1250000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "광명푸르지오센트베르",
-            "area_sqm": 59.3579,
-            "price_krw": 1145000000,
             "month": "2026-11"
           }
         ]
@@ -3825,37 +3825,37 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -179256387,
-        "basis": "평택시 최근 6개월 유사면적 1442건의 ㎡당 중간값 × 84㎡ - 분양가",
+        "estimated_krw": -179280669,
+        "basis": "평택시 최근 6개월 유사면적 1447건의 ㎡당 중간값 × 84㎡ - 분양가",
         "comparables": [
           {
-            "name": "호반써밋고덕국제신도시에듀파크",
-            "area_sqm": 84.3675,
-            "price_krw": 657500000,
+            "name": "우림필유",
+            "area_sqm": 84.98,
+            "price_krw": 210000000,
             "month": "2026-11"
           },
           {
-            "name": "화현마을우림필유",
-            "area_sqm": 84.942,
-            "price_krw": 190000000,
+            "name": "우미이노스빌2차",
+            "area_sqm": 79.8571,
+            "price_krw": 250000000,
             "month": "2026-11"
           },
           {
             "name": "힐스테이트지제역",
             "area_sqm": 84.9542,
-            "price_krw": 660000000,
+            "price_krw": 610000000,
             "month": "2026-11"
           },
           {
-            "name": "고덕국제신도시제일풍경채3차센텀",
-            "area_sqm": 84.908,
-            "price_krw": 765000000,
+            "name": "평택지제역동문디이스트5단지",
+            "area_sqm": 84.9366,
+            "price_krw": 435000000,
             "month": "2026-11"
           },
           {
-            "name": "e편한세상지제역",
-            "area_sqm": 84.052,
-            "price_krw": 522000000,
+            "name": "휴먼시아추담마을",
+            "area_sqm": 84.91,
+            "price_krw": 268000000,
             "month": "2026-11"
           }
         ]
@@ -3962,37 +3962,37 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -189564444,
-        "basis": "평택시 최근 6개월 유사면적 1433건의 ㎡당 중간값 × 84.95㎡ - 분양가",
+        "estimated_krw": -189581650,
+        "basis": "평택시 최근 6개월 유사면적 1438건의 ㎡당 중간값 × 84.95㎡ - 분양가",
         "comparables": [
           {
-            "name": "호반써밋고덕국제신도시에듀파크",
-            "area_sqm": 84.3675,
-            "price_krw": 657500000,
+            "name": "우림필유",
+            "area_sqm": 84.98,
+            "price_krw": 210000000,
             "month": "2026-11"
           },
           {
-            "name": "화현마을우림필유",
-            "area_sqm": 84.942,
-            "price_krw": 190000000,
+            "name": "우미이노스빌2차",
+            "area_sqm": 79.8571,
+            "price_krw": 250000000,
             "month": "2026-11"
           },
           {
             "name": "힐스테이트지제역",
             "area_sqm": 84.9542,
-            "price_krw": 660000000,
+            "price_krw": 610000000,
             "month": "2026-11"
           },
           {
-            "name": "고덕국제신도시제일풍경채3차센텀",
-            "area_sqm": 84.908,
-            "price_krw": 765000000,
+            "name": "평택지제역동문디이스트5단지",
+            "area_sqm": 84.9366,
+            "price_krw": 435000000,
             "month": "2026-11"
           },
           {
-            "name": "e편한세상지제역",
-            "area_sqm": 84.052,
-            "price_krw": 522000000,
+            "name": "휴먼시아추담마을",
+            "area_sqm": 84.91,
+            "price_krw": 268000000,
             "month": "2026-11"
           }
         ]
@@ -4550,9 +4550,15 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -83618998,
-        "basis": "시흥시 최근 6개월 유사면적 148건의 ㎡당 중간값 × 52.784㎡ - 분양가",
+        "estimated_krw": -68312668,
+        "basis": "시흥시 최근 6개월 유사면적 151건의 ㎡당 중간값 × 52.784㎡ - 분양가",
         "comparables": [
+          {
+            "name": "은계센트럴타운",
+            "area_sqm": 51.94,
+            "price_krw": 403000000,
+            "month": "2026-11"
+          },
           {
             "name": "은계센트럴타운",
             "area_sqm": 51.96,
@@ -4576,12 +4582,6 @@
             "area_sqm": 55.98,
             "price_krw": 440000000,
             "month": "2026-11"
-          },
-          {
-            "name": "시화두산",
-            "area_sqm": 50.03,
-            "price_krw": 170000000,
-            "month": "2026-10"
           }
         ]
       },
@@ -4771,9 +4771,15 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -27758844,
-        "basis": "남양주시 최근 6개월 유사면적 160건의 ㎡당 중간값 × 55㎡ - 분양가",
+        "estimated_krw": -29712838,
+        "basis": "남양주시 최근 6개월 유사면적 161건의 ㎡당 중간값 × 55㎡ - 분양가",
         "comparables": [
+          {
+            "name": "인정프린스",
+            "area_sqm": 58.93,
+            "price_krw": 160000000,
+            "month": "2026-11"
+          },
           {
             "name": "진주(10차)",
             "area_sqm": 55.8,
@@ -4796,12 +4802,6 @@
             "name": "건영",
             "area_sqm": 58.38,
             "price_krw": 205000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "다산자연앤e편한세상3차",
-            "area_sqm": 51.9567,
-            "price_krw": 835000000,
             "month": "2026-11"
           }
         ]
@@ -4913,9 +4913,15 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": 96849729,
-        "basis": "성북구 최근 6개월 유사면적 432건의 ㎡당 중간값 × 59.9293㎡ - 분양가",
+        "estimated_krw": 92158909,
+        "basis": "성북구 최근 6개월 유사면적 439건의 ㎡당 중간값 × 59.9293㎡ - 분양가",
         "comparables": [
+          {
+            "name": "종암에스케이",
+            "area_sqm": 59.86,
+            "price_krw": 1015000000,
+            "month": "2026-11"
+          },
           {
             "name": "코오롱",
             "area_sqm": 59.94,
@@ -4935,16 +4941,10 @@
             "month": "2026-11"
           },
           {
-            "name": "래미안아트리치",
-            "area_sqm": 59.98,
-            "price_krw": 1260000000,
+            "name": "정릉풍림아이원",
+            "area_sqm": 60,
+            "price_krw": 740000000,
             "month": "2026-11"
-          },
-          {
-            "name": "길음뉴타운7단지(두산위브)",
-            "area_sqm": 59.98,
-            "price_krw": 881000000,
-            "month": "2026-10"
           }
         ]
       },
@@ -5063,8 +5063,14 @@
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -55277297,
-        "basis": "양주시 최근 6개월 유사면적 173건의 ㎡당 중간값 × 74.97㎡ - 분양가",
+        "basis": "양주시 최근 6개월 유사면적 175건의 ㎡당 중간값 × 74.97㎡ - 분양가",
         "comparables": [
+          {
+            "name": "양주옥정신도시디에트르프레스티지",
+            "area_sqm": 75.0605,
+            "price_krw": 430000000,
+            "month": "2026-11"
+          },
           {
             "name": "양주옥정린파밀리에",
             "area_sqm": 74.44,
@@ -5088,12 +5094,6 @@
             "area_sqm": 75.9964,
             "price_krw": 350000000,
             "month": "2026-11"
-          },
-          {
-            "name": "e편한세상옥정에듀써밋",
-            "area_sqm": 74.9764,
-            "price_krw": 423000000,
-            "month": "2026-10"
           }
         ]
       },
@@ -5193,37 +5193,37 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -108810676,
-        "basis": "의정부시 최근 6개월 유사면적 878건의 ㎡당 중간값 × 59.96㎡ - 분양가",
+        "estimated_krw": -108825474,
+        "basis": "의정부시 최근 6개월 유사면적 883건의 ㎡당 중간값 × 59.96㎡ - 분양가",
         "comparables": [
           {
-            "name": "풍림",
-            "area_sqm": 59.88,
-            "price_krw": 305000000,
+            "name": "청구",
+            "area_sqm": 59.9,
+            "price_krw": 165000000,
             "month": "2026-11"
           },
           {
-            "name": "호원동한승미메이드",
-            "area_sqm": 59.952,
-            "price_krw": 465000000,
+            "name": "성원",
+            "area_sqm": 59.44,
+            "price_krw": 145000000,
             "month": "2026-11"
           },
           {
-            "name": "건영",
-            "area_sqm": 59.8,
-            "price_krw": 200000000,
+            "name": "벽산블루밍",
+            "area_sqm": 59.994,
+            "price_krw": 260000000,
             "month": "2026-11"
           },
           {
-            "name": "신곡서해",
-            "area_sqm": 59.94,
-            "price_krw": 205000000,
+            "name": "탑석센트럴자이",
+            "area_sqm": 59.9788,
+            "price_krw": 580000000,
             "month": "2026-11"
           },
           {
-            "name": "장암1차푸르지오",
-            "area_sqm": 59.16,
-            "price_krw": 335000000,
+            "name": "힐스테이트회룡역파크뷰",
+            "area_sqm": 59.9934,
+            "price_krw": 629000000,
             "month": "2026-11"
           }
         ]
@@ -5329,13 +5329,19 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -50429709,
-        "basis": "서대문구 최근 6개월 유사면적 302건의 ㎡당 중간값 × 59.9883㎡ - 분양가",
+        "estimated_krw": -51348359,
+        "basis": "서대문구 최근 6개월 유사면적 303건의 ㎡당 중간값 × 59.9883㎡ - 분양가",
         "comparables": [
           {
             "name": "천연뜨란채",
             "area_sqm": 59.47,
             "price_krw": 1075000000,
+            "month": "2026-10"
+          },
+          {
+            "name": "풍림2",
+            "area_sqm": 58.5,
+            "price_krw": 740000000,
             "month": "2026-10"
           },
           {
@@ -5354,12 +5360,6 @@
             "name": "풍림2",
             "area_sqm": 58.5,
             "price_krw": 730000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "두산",
-            "area_sqm": 59.73,
-            "price_krw": 635000000,
             "month": "2026-10"
           }
         ]
@@ -6058,9 +6058,27 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -61841378,
-        "basis": "시흥시 최근 6개월 유사면적 169건의 ㎡당 중간값 × 55㎡ - 분양가",
+        "estimated_krw": -67370280,
+        "basis": "시흥시 최근 6개월 유사면적 174건의 ㎡당 중간값 × 55㎡ - 분양가",
         "comparables": [
+          {
+            "name": "월곶동유호NPLUSVILLE",
+            "area_sqm": 59.1825,
+            "price_krw": 210000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "은계센트럴타운",
+            "area_sqm": 51.94,
+            "price_krw": 403000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "현진1",
+            "area_sqm": 57.93,
+            "price_krw": 206000000,
+            "month": "2026-11"
+          },
           {
             "name": "태헌3차아파트",
             "area_sqm": 57.18,
@@ -6071,24 +6089,6 @@
             "name": "은계센트럴타운",
             "area_sqm": 51.96,
             "price_krw": 320000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "월곶동유호NPLUSVILLE",
-            "area_sqm": 59.1825,
-            "price_krw": 210000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "무진",
-            "area_sqm": 54.63,
-            "price_krw": 207000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "은계센트럴타운",
-            "area_sqm": 51.96,
-            "price_krw": 407500000,
             "month": "2026-11"
           }
         ]
@@ -6255,8 +6255,14 @@
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -145967509,
-        "basis": "영등포구 최근 6개월 유사면적 67건의 ㎡당 중간값 × 74.992㎡ - 분양가",
+        "basis": "영등포구 최근 6개월 유사면적 68건의 ㎡당 중간값 × 74.992㎡ - 분양가",
         "comparables": [
+          {
+            "name": "삼부",
+            "area_sqm": 77.69,
+            "price_krw": 3300000000,
+            "month": "2026-10"
+          },
           {
             "name": "예지팰리스77차",
             "area_sqm": 77.76,
@@ -6279,12 +6285,6 @@
             "name": "현대2차",
             "area_sqm": 79.72,
             "price_krw": 1320000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "영등포푸르지오",
-            "area_sqm": 79.777,
-            "price_krw": 1600000000,
             "month": "2026-10"
           }
         ]
@@ -6685,8 +6685,8 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -384294363,
-        "basis": "중구 최근 6개월 유사면적 64건의 ㎡당 중간값 × 59.9882㎡ - 분양가",
+        "estimated_krw": -384794932,
+        "basis": "중구 최근 6개월 유사면적 65건의 ㎡당 중간값 × 59.9882㎡ - 분양가",
         "comparables": [
           {
             "name": "남산타운",
@@ -6875,13 +6875,19 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -277351941,
-        "basis": "김포시 최근 6개월 유사면적 940건의 ㎡당 중간값 × 84.8168㎡ - 분양가",
+        "estimated_krw": -277211959,
+        "basis": "김포시 최근 6개월 유사면적 946건의 ㎡당 중간값 × 84.8168㎡ - 분양가",
         "comparables": [
           {
             "name": "고촌센트럴자이",
             "area_sqm": 84.9109,
             "price_krw": 752000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "한강신도시초당마을중흥에스-클래스리버티",
+            "area_sqm": 84.9973,
+            "price_krw": 510000000,
             "month": "2026-11"
           },
           {
@@ -6900,12 +6906,6 @@
             "name": "풍무자이1단지",
             "area_sqm": 84.7251,
             "price_krw": 430000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "풍무센트럴푸르지오",
-            "area_sqm": 84.9553,
-            "price_krw": 720000000,
             "month": "2026-11"
           }
         ]
@@ -7285,8 +7285,20 @@
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -242799703,
-        "basis": "이천시 최근 6개월 유사면적 403건의 ㎡당 중간값 × 84.9404㎡ - 분양가",
+        "basis": "이천시 최근 6개월 유사면적 407건의 ㎡당 중간값 × 84.9404㎡ - 분양가",
         "comparables": [
+          {
+            "name": "이천증포새도시한양수자인3블럭",
+            "area_sqm": 84.7908,
+            "price_krw": 336500000,
+            "month": "2026-11"
+          },
+          {
+            "name": "이천자이더파크",
+            "area_sqm": 84.9299,
+            "price_krw": 480000000,
+            "month": "2026-11"
+          },
           {
             "name": "갈산동현진에버빌",
             "area_sqm": 84.97,
@@ -7304,20 +7316,84 @@
             "area_sqm": 84.97,
             "price_krw": 240000000,
             "month": "2026-11"
-          },
-          {
-            "name": "이천마장호반베르디움2차",
-            "area_sqm": 82.9343,
-            "price_krw": 340000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "힐스테이트이천역1단지",
-            "area_sqm": 84.8078,
-            "price_krw": 430000000,
-            "month": "2026-11"
           }
         ]
+      },
+      "restrictions": {
+        "resale": null,
+        "residence": null
+      }
+    },
+    {
+      "id": "2026910284",
+      "notice_number": "2026910284",
+      "name": "중동역 다채로움 더원",
+      "is_sample": false,
+      "region": {
+        "sido": "경기도",
+        "sigungu": "부천시",
+        "address": "경기도 부천시 소사구 송내동 365-1번지 일원"
+      },
+      "lawd_code": null,
+      "total_households": 23,
+      "housing_category": "remaining",
+      "announcement_date": "2026-11-10",
+      "application_start": "2026-11-16",
+      "application_end": "2026-11-16",
+      "winner_date": "2026-11-19",
+      "contract_start": "2026-11-24",
+      "contract_end": "2026-11-24",
+      "links": {
+        "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910284&pblancNo=2026910284",
+        "homedubu": "https://homedubu.com/category/subscription/"
+      },
+      "housing_types": [
+        {
+          "name": "54",
+          "area_sqm": 54.8244,
+          "households": 7,
+          "price_krw": 549000000
+        },
+        {
+          "name": "59B",
+          "area_sqm": 59.9935,
+          "households": 2,
+          "price_krw": 592000000
+        },
+        {
+          "name": "60",
+          "area_sqm": 60.7403,
+          "households": 5,
+          "price_krw": 612000000
+        },
+        {
+          "name": "84A",
+          "area_sqm": 84.9888,
+          "households": 2,
+          "price_krw": 753000000
+        },
+        {
+          "name": "84B",
+          "area_sqm": 84.9933,
+          "households": 7,
+          "price_krw": 793000000
+        }
+      ],
+      "supply_options": [
+        {
+          "id": "remaining",
+          "label": "무순위·잔여세대",
+          "kind": "remaining",
+          "requires_homeless": null,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 무순위 공고문"
+        }
+      ],
+      "price_gain": {
+        "status": "unavailable",
+        "estimated_krw": null,
+        "basis": "최근 6개월 유사면적 실거래가 3건 미만 또는 분양가 누락",
+        "comparables": []
       },
       "restrictions": {
         "resale": null,
@@ -7545,9 +7621,21 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": 15350651,
-        "basis": "광명시 최근 6개월 유사면적 299건의 ㎡당 중간값 × 59.7421㎡ - 분양가",
+        "estimated_krw": 17484089,
+        "basis": "광명시 최근 6개월 유사면적 303건의 ㎡당 중간값 × 59.7421㎡ - 분양가",
         "comparables": [
+          {
+            "name": "주공8(고층)",
+            "area_sqm": 59.39,
+            "price_krw": 740000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "광명역센트럴자이",
+            "area_sqm": 59.775,
+            "price_krw": 1335000000,
+            "month": "2026-11"
+          },
           {
             "name": "광복현대",
             "area_sqm": 59.94,
@@ -7564,18 +7652,6 @@
             "name": "광명아크포레자이위브",
             "area_sqm": 59.9915,
             "price_krw": 1100000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "광명역파크자이",
-            "area_sqm": 59.802,
-            "price_krw": 1250000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "광명푸르지오센트베르",
-            "area_sqm": 59.3579,
-            "price_krw": 1145000000,
             "month": "2026-11"
           }
         ]
@@ -7964,9 +8040,27 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -138850301,
-        "basis": "파주시 최근 6개월 유사면적 1016건의 ㎡당 중간값 × 84.9891㎡ - 분양가",
+        "estimated_krw": -138266731,
+        "basis": "파주시 최근 6개월 유사면적 1022건의 ㎡당 중간값 × 84.9891㎡ - 분양가",
         "comparables": [
+          {
+            "name": "금촌주공7단지(1019-0)",
+            "area_sqm": 84.03,
+            "price_krw": 320000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "파주운정신도시디에트르에듀타운",
+            "area_sqm": 84.9998,
+            "price_krw": 565000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "한빛마을2단지휴먼빌",
+            "area_sqm": 84.9666,
+            "price_krw": 409000000,
+            "month": "2026-11"
+          },
           {
             "name": "해오름마을14단지푸르지오파르세나",
             "area_sqm": 84.9646,
@@ -7974,27 +8068,9 @@
             "month": "2026-11"
           },
           {
-            "name": "파주문산역2차동문디이스트",
-            "area_sqm": 84.9838,
-            "price_krw": 403000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "책향기마을10단지동문굿모닝힐(1698)",
-            "area_sqm": 84.881,
-            "price_krw": 300000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "초롱꽃마을8단지중흥S클래스",
-            "area_sqm": 84.5609,
-            "price_krw": 650000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "해오름마을10단지파크푸르지오",
-            "area_sqm": 84.42,
-            "price_krw": 540000000,
+            "name": "한울마을1단지운정신도시IPARK",
+            "area_sqm": 84.96,
+            "price_krw": 758000000,
             "month": "2026-11"
           }
         ]
@@ -8117,9 +8193,27 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -130861699,
-        "basis": "파주시 최근 6개월 유사면적 1016건의 ㎡당 중간값 × 84.9867㎡ - 분양가",
+        "estimated_krw": -130278146,
+        "basis": "파주시 최근 6개월 유사면적 1022건의 ㎡당 중간값 × 84.9867㎡ - 분양가",
         "comparables": [
+          {
+            "name": "금촌주공7단지(1019-0)",
+            "area_sqm": 84.03,
+            "price_krw": 320000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "파주운정신도시디에트르에듀타운",
+            "area_sqm": 84.9998,
+            "price_krw": 565000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "한빛마을2단지휴먼빌",
+            "area_sqm": 84.9666,
+            "price_krw": 409000000,
+            "month": "2026-11"
+          },
           {
             "name": "해오름마을14단지푸르지오파르세나",
             "area_sqm": 84.9646,
@@ -8127,27 +8221,9 @@
             "month": "2026-11"
           },
           {
-            "name": "파주문산역2차동문디이스트",
-            "area_sqm": 84.9838,
-            "price_krw": 403000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "책향기마을10단지동문굿모닝힐(1698)",
-            "area_sqm": 84.881,
-            "price_krw": 300000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "초롱꽃마을8단지중흥S클래스",
-            "area_sqm": 84.5609,
-            "price_krw": 650000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "해오름마을10단지파크푸르지오",
-            "area_sqm": 84.42,
-            "price_krw": 540000000,
+            "name": "한울마을1단지운정신도시IPARK",
+            "area_sqm": 84.96,
+            "price_krw": 758000000,
             "month": "2026-11"
           }
         ]
@@ -8359,9 +8435,15 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -83977332,
-        "basis": "시흥시 최근 6개월 유사면적 67건의 ㎡당 중간값 × 111.6914㎡ - 분양가",
+        "estimated_krw": -88616366,
+        "basis": "시흥시 최근 6개월 유사면적 68건의 ㎡당 중간값 × 111.6914㎡ - 분양가",
         "comparables": [
+          {
+            "name": "시흥능곡역장현리슈빌퍼스트클래스",
+            "area_sqm": 112.0216,
+            "price_krw": 578000000,
+            "month": "2026-11"
+          },
           {
             "name": "신한미지엔",
             "area_sqm": 115,
@@ -8384,12 +8466,6 @@
             "name": "서해2",
             "area_sqm": 103.07,
             "price_krw": 385000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "해가든더클래식",
-            "area_sqm": 120.1,
-            "price_krw": 380000000,
             "month": "2026-10"
           }
         ]
@@ -8512,37 +8588,37 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -171541109,
-        "basis": "시흥시 최근 6개월 유사면적 774건의 ㎡당 중간값 × 59.057㎡ - 분양가",
+        "estimated_krw": -172459428,
+        "basis": "시흥시 최근 6개월 유사면적 783건의 ㎡당 중간값 × 59.057㎡ - 분양가",
         "comparables": [
           {
-            "name": "연꽃마을금호",
-            "area_sqm": 59.79,
-            "price_krw": 240000000,
+            "name": "월곶동유호NPLUSVILLE",
+            "area_sqm": 59.1825,
+            "price_krw": 210000000,
             "month": "2026-11"
           },
           {
-            "name": "숲속마을",
-            "area_sqm": 59.965,
-            "price_krw": 285000000,
+            "name": "호수품애",
+            "area_sqm": 59.89,
+            "price_krw": 420000000,
             "month": "2026-11"
           },
           {
-            "name": "리벤티움",
-            "area_sqm": 59.96,
-            "price_krw": 410000000,
+            "name": "건영2",
+            "area_sqm": 59.99,
+            "price_krw": 224000000,
             "month": "2026-11"
           },
           {
-            "name": "태헌3차아파트",
-            "area_sqm": 57.18,
-            "price_krw": 158000000,
+            "name": "파라곤센트럴오션시티",
+            "area_sqm": 59.7075,
+            "price_krw": 338000000,
             "month": "2026-11"
           },
           {
-            "name": "서해",
-            "area_sqm": 59.85,
-            "price_krw": 328000000,
+            "name": "현진1",
+            "area_sqm": 57.93,
+            "price_krw": 206000000,
             "month": "2026-11"
           }
         ]
@@ -8983,37 +9059,37 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -217093559,
-        "basis": "남양주시 최근 6개월 유사면적 2198건의 ㎡당 중간값 × 84.9596㎡ - 분양가",
+        "estimated_krw": -217999882,
+        "basis": "남양주시 최근 6개월 유사면적 2211건의 ㎡당 중간값 × 84.9596㎡ - 분양가",
         "comparables": [
           {
-            "name": "한강우성",
-            "area_sqm": 84.913,
-            "price_krw": 570000000,
+            "name": "호평현대아이파크아파트",
+            "area_sqm": 84.9865,
+            "price_krw": 480000000,
             "month": "2026-11"
           },
           {
-            "name": "덕소쌍용",
-            "area_sqm": 84.139,
-            "price_krw": 550000000,
+            "name": "동성",
+            "area_sqm": 84.97,
+            "price_krw": 308000000,
             "month": "2026-11"
           },
           {
-            "name": "예당마을신안인스빌",
-            "area_sqm": 84.987,
-            "price_krw": 483000000,
+            "name": "호평마을우림필유",
+            "area_sqm": 84.9855,
+            "price_krw": 368000000,
             "month": "2026-11"
           },
           {
-            "name": "호평마을중흥에스-클래스",
-            "area_sqm": 84.7681,
-            "price_krw": 470000000,
+            "name": "삼신푸른솔",
+            "area_sqm": 84.92,
+            "price_krw": 225000000,
             "month": "2026-11"
           },
           {
-            "name": "오남아이파크",
-            "area_sqm": 84.862,
-            "price_krw": 404000000,
+            "name": "신별내퇴계원어울림",
+            "area_sqm": 84.957,
+            "price_krw": 557000000,
             "month": "2026-11"
           }
         ]
@@ -9078,9 +9154,15 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": 181298072,
-        "basis": "관악구 최근 6개월 유사면적 264건의 ㎡당 중간값 × 56.45㎡ - 분양가",
+        "estimated_krw": 184765473,
+        "basis": "관악구 최근 6개월 유사면적 267건의 ㎡당 중간값 × 56.45㎡ - 분양가",
         "comparables": [
+          {
+            "name": "관악드림(삼성)",
+            "area_sqm": 60,
+            "price_krw": 1225000000,
+            "month": "2026-11"
+          },
           {
             "name": "관악산휴먼시아2단지",
             "area_sqm": 59.99,
@@ -9104,12 +9186,6 @@
             "area_sqm": 58.55,
             "price_krw": 600000000,
             "month": "2026-11"
-          },
-          {
-            "name": "LIG대학마을(건영아파트3차)",
-            "area_sqm": 58.9,
-            "price_krw": 640000000,
-            "month": "2026-10"
           }
         ]
       },
@@ -9250,9 +9326,21 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": 642831888,
-        "basis": "광진구 최근 6개월 유사면적 121건의 ㎡당 중간값 × 84.9811㎡ - 분양가",
+        "estimated_krw": 633681546,
+        "basis": "광진구 최근 6개월 유사면적 123건의 ㎡당 중간값 × 84.9811㎡ - 분양가",
         "comparables": [
+          {
+            "name": "대원리버빌",
+            "area_sqm": 78.8,
+            "price_krw": 1645000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "대성빌라트(552-6)",
+            "area_sqm": 81.69,
+            "price_krw": 491000000,
+            "month": "2026-10"
+          },
           {
             "name": "구의현대2단지",
             "area_sqm": 84.91,
@@ -9269,18 +9357,6 @@
             "name": "구의강변우성아파트",
             "area_sqm": 84.76,
             "price_krw": 1900000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "극동2",
-            "area_sqm": 84.55,
-            "price_krw": 2490000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "구의현대2단지",
-            "area_sqm": 84.91,
-            "price_krw": 2040000000,
             "month": "2026-10"
           }
         ]
@@ -9606,9 +9682,15 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -83977332,
-        "basis": "시흥시 최근 6개월 유사면적 67건의 ㎡당 중간값 × 111.6914㎡ - 분양가",
+        "estimated_krw": -88616366,
+        "basis": "시흥시 최근 6개월 유사면적 68건의 ㎡당 중간값 × 111.6914㎡ - 분양가",
         "comparables": [
+          {
+            "name": "시흥능곡역장현리슈빌퍼스트클래스",
+            "area_sqm": 112.0216,
+            "price_krw": 578000000,
+            "month": "2026-11"
+          },
           {
             "name": "신한미지엔",
             "area_sqm": 115,
@@ -9631,12 +9713,6 @@
             "name": "서해2",
             "area_sqm": 103.07,
             "price_krw": 385000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "해가든더클래식",
-            "area_sqm": 120.1,
-            "price_krw": 380000000,
             "month": "2026-10"
           }
         ]
@@ -9695,9 +9771,21 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": 41228607,
-        "basis": "광명시 최근 6개월 유사면적 301건의 ㎡당 중간값 × 59.9979㎡ - 분양가",
+        "estimated_krw": 44257375,
+        "basis": "광명시 최근 6개월 유사면적 305건의 ㎡당 중간값 × 59.9979㎡ - 분양가",
         "comparables": [
+          {
+            "name": "주공8(고층)",
+            "area_sqm": 59.39,
+            "price_krw": 740000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "광명역센트럴자이",
+            "area_sqm": 59.775,
+            "price_krw": 1335000000,
+            "month": "2026-11"
+          },
           {
             "name": "광복현대",
             "area_sqm": 59.94,
@@ -9714,18 +9802,6 @@
             "name": "광명아크포레자이위브",
             "area_sqm": 59.9915,
             "price_krw": 1100000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "광명역파크자이",
-            "area_sqm": 59.802,
-            "price_krw": 1250000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "광명푸르지오센트베르",
-            "area_sqm": 59.3579,
-            "price_krw": 1145000000,
             "month": "2026-11"
           }
         ]
@@ -9784,9 +9860,21 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": 88074729,
-        "basis": "광명시 최근 6개월 유사면적 299건의 ㎡당 중간값 × 59.9353㎡ - 분양가",
+        "estimated_krw": 90215066,
+        "basis": "광명시 최근 6개월 유사면적 303건의 ㎡당 중간값 × 59.9353㎡ - 분양가",
         "comparables": [
+          {
+            "name": "주공8(고층)",
+            "area_sqm": 59.39,
+            "price_krw": 740000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "광명역센트럴자이",
+            "area_sqm": 59.775,
+            "price_krw": 1335000000,
+            "month": "2026-11"
+          },
           {
             "name": "광복현대",
             "area_sqm": 59.94,
@@ -9803,18 +9891,6 @@
             "name": "광명아크포레자이위브",
             "area_sqm": 59.9915,
             "price_krw": 1100000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "광명역파크자이",
-            "area_sqm": 59.802,
-            "price_krw": 1250000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "광명푸르지오센트베르",
-            "area_sqm": 59.3579,
-            "price_krw": 1145000000,
             "month": "2026-11"
           }
         ]
@@ -9995,9 +10071,15 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -286105413,
-        "basis": "강북구 최근 6개월 유사면적 135건의 ㎡당 중간값 × 59.84㎡ - 분양가",
+        "estimated_krw": -288612536,
+        "basis": "강북구 최근 6개월 유사면적 136건의 ㎡당 중간값 × 59.84㎡ - 분양가",
         "comparables": [
+          {
+            "name": "대우",
+            "area_sqm": 59.94,
+            "price_krw": 590000000,
+            "month": "2026-11"
+          },
           {
             "name": "수유벽산1차",
             "area_sqm": 63.78,
@@ -10020,12 +10102,6 @@
             "name": "번동금호어울림",
             "area_sqm": 59.9,
             "price_krw": 545000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "기산그린",
-            "area_sqm": 59.94,
-            "price_krw": 440000000,
             "month": "2026-10"
           }
         ]
@@ -10078,14 +10154,26 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -1009944111,
-        "basis": "오산시 최근 6개월 유사면적 63건의 ㎡당 중간값 × 124.4008㎡ - 분양가",
+        "estimated_krw": -1018311539,
+        "basis": "오산시 최근 6개월 유사면적 65건의 ㎡당 중간값 × 124.4008㎡ - 분양가",
         "comparables": [
+          {
+            "name": "운암청구(814-2)",
+            "area_sqm": 124.24,
+            "price_krw": 410000000,
+            "month": "2026-11"
+          },
           {
             "name": "오산세마e편한세상",
             "area_sqm": 121.696,
             "price_krw": 540000000,
             "month": "2026-11"
+          },
+          {
+            "name": "운암청구(814-2)",
+            "area_sqm": 124.24,
+            "price_krw": 410000000,
+            "month": "2026-10"
           },
           {
             "name": "세교데시앙포레",
@@ -10097,18 +10185,6 @@
             "name": "세교데시앙포레",
             "area_sqm": 123.18,
             "price_krw": 455000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "오산세마e편한세상",
-            "area_sqm": 121.696,
-            "price_krw": 520000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "꿈에그린 더 센트럴",
-            "area_sqm": 123.4,
-            "price_krw": 500000000,
             "month": "2026-10"
           }
         ]
@@ -10243,13 +10319,19 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -293124623,
-        "basis": "김포시 최근 6개월 유사면적 948건의 ㎡당 중간값 × 84.706㎡ - 분양가",
+        "estimated_krw": -293092199,
+        "basis": "김포시 최근 6개월 유사면적 954건의 ㎡당 중간값 × 84.706㎡ - 분양가",
         "comparables": [
           {
             "name": "고촌센트럴자이",
             "area_sqm": 84.9109,
             "price_krw": 752000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "한강신도시초당마을중흥에스-클래스리버티",
+            "area_sqm": 84.9973,
+            "price_krw": 510000000,
             "month": "2026-11"
           },
           {
@@ -10268,12 +10350,6 @@
             "name": "풍무자이1단지",
             "area_sqm": 84.7251,
             "price_krw": 430000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "풍무센트럴푸르지오",
-            "area_sqm": 84.9553,
-            "price_krw": 720000000,
             "month": "2026-11"
           }
         ]
@@ -10415,9 +10491,21 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -1066755327,
-        "basis": "동작구 최근 6개월 유사면적 294건의 ㎡당 중간값 × 84㎡ - 분양가",
+        "estimated_krw": -1067438548,
+        "basis": "동작구 최근 6개월 유사면적 297건의 ㎡당 중간값 × 84㎡ - 분양가",
         "comparables": [
+          {
+            "name": "경남아너스빌1차",
+            "area_sqm": 84.98,
+            "price_krw": 1300000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "힐스테이트 상도 센트럴파크",
+            "area_sqm": 84.7954,
+            "price_krw": 2000000000,
+            "month": "2026-10"
+          },
           {
             "name": "건영(103동-106동)",
             "area_sqm": 84.94,
@@ -10434,18 +10522,6 @@
             "name": "이너스내안애",
             "area_sqm": 84.97,
             "price_krw": 1060000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "대림아파트",
-            "area_sqm": 84.92,
-            "price_krw": 1905000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "상도두산위브",
-            "area_sqm": 84.99,
-            "price_krw": 1680000000,
             "month": "2026-10"
           }
         ]
@@ -10795,14 +10871,20 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -294456410,
-        "basis": "성북구 최근 6개월 유사면적 7건의 ㎡당 중간값 × 39.77㎡ - 분양가",
+        "estimated_krw": -284372287,
+        "basis": "성북구 최근 6개월 유사면적 8건의 ㎡당 중간값 × 39.77㎡ - 분양가",
         "comparables": [
           {
             "name": "장위지웰에스테이트",
             "area_sqm": 38.996,
             "price_krw": 410000000,
             "month": "2026-11"
+          },
+          {
+            "name": "돈암현대아파트",
+            "area_sqm": 41.58,
+            "price_krw": 544000000,
+            "month": "2026-10"
           },
           {
             "name": "돈암현대아파트",
@@ -10820,12 +10902,6 @@
             "name": "장위지웰에스테이트",
             "area_sqm": 38.996,
             "price_krw": 449000000,
-            "month": "2026-07"
-          },
-          {
-            "name": "장위지웰에스테이트",
-            "area_sqm": 39.653,
-            "price_krw": 430000000,
             "month": "2026-07"
           }
         ]
@@ -10961,13 +11037,19 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -224010471,
-        "basis": "김포시 최근 6개월 유사면적 938건의 ㎡당 중간값 × 84.9795㎡ - 분양가",
+        "estimated_krw": -223870220,
+        "basis": "김포시 최근 6개월 유사면적 944건의 ㎡당 중간값 × 84.9795㎡ - 분양가",
         "comparables": [
           {
             "name": "고촌센트럴자이",
             "area_sqm": 84.9109,
             "price_krw": 752000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "한강신도시초당마을중흥에스-클래스리버티",
+            "area_sqm": 84.9973,
+            "price_krw": 510000000,
             "month": "2026-11"
           },
           {
@@ -10986,12 +11068,6 @@
             "name": "풍무자이1단지",
             "area_sqm": 84.7251,
             "price_krw": 430000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "풍무센트럴푸르지오",
-            "area_sqm": 84.9553,
-            "price_krw": 720000000,
             "month": "2026-11"
           }
         ]
@@ -11050,8 +11126,8 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -302632754,
-        "basis": "오산시 최근 6개월 유사면적 221건의 ㎡당 중간값 × 75.4736㎡ - 분양가",
+        "estimated_krw": -302160229,
+        "basis": "오산시 최근 6개월 유사면적 222건의 ㎡당 중간값 × 75.4736㎡ - 분양가",
         "comparables": [
           {
             "name": "오산원동한양수자인아파트",
@@ -11134,7 +11210,7 @@
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -118177223,
-        "basis": "구리시 최근 6개월 유사면적 357건의 ㎡당 중간값 × 82.4015㎡ - 분양가",
+        "basis": "구리시 최근 6개월 유사면적 359건의 ㎡당 중간값 × 82.4015㎡ - 분양가",
         "comparables": [
           {
             "name": "갈매역아이파크",
@@ -11222,8 +11298,8 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -248639813,
-        "basis": "구로구 최근 6개월 유사면적 471건의 ㎡당 중간값 × 84.8949㎡ - 분양가",
+        "estimated_krw": -248737996,
+        "basis": "구로구 최근 6개월 유사면적 476건의 ㎡당 중간값 × 84.8949㎡ - 분양가",
         "comparables": [
           {
             "name": "센츄리",
@@ -11305,9 +11381,21 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -119963862,
-        "basis": "광주시 최근 6개월 유사면적 871건의 ㎡당 중간값 × 84.9436㎡ - 분양가",
+        "estimated_krw": -122832047,
+        "basis": "광주시 최근 6개월 유사면적 875건의 ㎡당 중간값 × 84.9436㎡ - 분양가",
         "comparables": [
+          {
+            "name": "오포우림퓨전빌",
+            "area_sqm": 84.217,
+            "price_krw": 210000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "초월롯데낙천대2",
+            "area_sqm": 84.93,
+            "price_krw": 470000000,
+            "month": "2026-11"
+          },
           {
             "name": "이편한세상태전2차(201~205동)",
             "area_sqm": 84.9657,
@@ -11324,18 +11412,6 @@
             "name": "초월롯데낙천대2",
             "area_sqm": 84.93,
             "price_krw": 508000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "우림(Lumiart)",
-            "area_sqm": 84.12,
-            "price_krw": 337000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "대주파크빌제1차B블럭",
-            "area_sqm": 84.99,
-            "price_krw": 255000000,
             "month": "2026-11"
           }
         ]
@@ -11388,13 +11464,25 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": 1249665537,
-        "basis": "송파구 최근 6개월 유사면적 419건의 ㎡당 중간값 × 84.98㎡ - 분양가",
+        "estimated_krw": 1250052417,
+        "basis": "송파구 최근 6개월 유사면적 428건의 ㎡당 중간값 × 84.98㎡ - 분양가",
         "comparables": [
+          {
+            "name": "송파파인타운6단지",
+            "area_sqm": 84.93,
+            "price_krw": 1990000000,
+            "month": "2026-11"
+          },
           {
             "name": "주성파크빌",
             "area_sqm": 82.08,
             "price_krw": 885000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "우성4차",
+            "area_sqm": 81.14,
+            "price_krw": 2545000000,
             "month": "2026-11"
           },
           {
@@ -11404,21 +11492,9 @@
             "month": "2026-11"
           },
           {
-            "name": "트리지움",
-            "area_sqm": 84.97,
-            "price_krw": 3050000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "파크리오",
-            "area_sqm": 84.79,
-            "price_krw": 2860000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "잠실엘스",
-            "area_sqm": 84.88,
-            "price_krw": 3100000000,
+            "name": "올림픽선수기자촌1단지",
+            "area_sqm": 83.06,
+            "price_krw": 2755000000,
             "month": "2026-10"
           }
         ]
@@ -11483,9 +11559,21 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -919840607,
-        "basis": "동작구 최근 6개월 유사면적 293건의 ㎡당 중간값 × 84.8554㎡ - 분양가",
+        "estimated_krw": -920530785,
+        "basis": "동작구 최근 6개월 유사면적 296건의 ㎡당 중간값 × 84.8554㎡ - 분양가",
         "comparables": [
+          {
+            "name": "경남아너스빌1차",
+            "area_sqm": 84.98,
+            "price_krw": 1300000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "힐스테이트 상도 센트럴파크",
+            "area_sqm": 84.7954,
+            "price_krw": 2000000000,
+            "month": "2026-10"
+          },
           {
             "name": "건영(103동-106동)",
             "area_sqm": 84.94,
@@ -11502,18 +11590,6 @@
             "name": "이너스내안애",
             "area_sqm": 84.97,
             "price_krw": 1060000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "대림아파트",
-            "area_sqm": 84.92,
-            "price_krw": 1905000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "상도두산위브",
-            "area_sqm": 84.99,
-            "price_krw": 1680000000,
             "month": "2026-10"
           }
         ]
@@ -11655,37 +11731,37 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -49107382,
-        "basis": "오산시 최근 6개월 유사면적 801건의 ㎡당 중간값 × 84.98㎡ - 분양가",
+        "estimated_krw": -49138512,
+        "basis": "오산시 최근 6개월 유사면적 806건의 ㎡당 중간값 × 84.98㎡ - 분양가",
         "comparables": [
           {
-            "name": "오산대역호반써밋",
-            "area_sqm": 84.9882,
-            "price_krw": 597500000,
+            "name": "주공2단지",
+            "area_sqm": 84.34,
+            "price_krw": 349000000,
             "month": "2026-11"
           },
           {
-            "name": "한솔솔파크",
-            "area_sqm": 84.96,
-            "price_krw": 323000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "오산세교한신더휴",
-            "area_sqm": 84.9317,
-            "price_krw": 580000000,
-            "month": "2026-11"
-          },
-          {
-            "name": "호반써밋라프리미어",
-            "area_sqm": 84.98,
-            "price_krw": 510000000,
+            "name": "오산대역 우미린",
+            "area_sqm": 84.8423,
+            "price_krw": 385000000,
             "month": "2026-11"
           },
           {
             "name": "오산롯데캐슬스카이파크",
             "area_sqm": 84.9967,
-            "price_krw": 498000000,
+            "price_krw": 530000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "가수동늘푸른오스카빌",
+            "area_sqm": 84.9849,
+            "price_krw": 300000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "오산대역호반써밋",
+            "area_sqm": 84.9882,
+            "price_krw": 597500000,
             "month": "2026-11"
           }
         ]
@@ -11756,14 +11832,20 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -294456410,
-        "basis": "성북구 최근 6개월 유사면적 7건의 ㎡당 중간값 × 39.77㎡ - 분양가",
+        "estimated_krw": -284372287,
+        "basis": "성북구 최근 6개월 유사면적 8건의 ㎡당 중간값 × 39.77㎡ - 분양가",
         "comparables": [
           {
             "name": "장위지웰에스테이트",
             "area_sqm": 38.996,
             "price_krw": 410000000,
             "month": "2026-11"
+          },
+          {
+            "name": "돈암현대아파트",
+            "area_sqm": 41.58,
+            "price_krw": 544000000,
+            "month": "2026-10"
           },
           {
             "name": "돈암현대아파트",
@@ -11781,12 +11863,6 @@
             "name": "장위지웰에스테이트",
             "area_sqm": 38.996,
             "price_krw": 449000000,
-            "month": "2026-07"
-          },
-          {
-            "name": "장위지웰에스테이트",
-            "area_sqm": 39.653,
-            "price_krw": 430000000,
             "month": "2026-07"
           }
         ]
@@ -11922,9 +11998,15 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -286105413,
-        "basis": "강북구 최근 6개월 유사면적 135건의 ㎡당 중간값 × 59.84㎡ - 분양가",
+        "estimated_krw": -288612536,
+        "basis": "강북구 최근 6개월 유사면적 136건의 ㎡당 중간값 × 59.84㎡ - 분양가",
         "comparables": [
+          {
+            "name": "대우",
+            "area_sqm": 59.94,
+            "price_krw": 590000000,
+            "month": "2026-11"
+          },
           {
             "name": "수유벽산1차",
             "area_sqm": 63.78,
@@ -11947,12 +12029,6 @@
             "name": "번동금호어울림",
             "area_sqm": 59.9,
             "price_krw": 545000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "기산그린",
-            "area_sqm": 59.94,
-            "price_krw": 440000000,
             "month": "2026-10"
           }
         ]
@@ -12256,13 +12332,25 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": 166491152,
-        "basis": "강동구 최근 6개월 유사면적 402건의 ㎡당 중간값 × 84.75㎡ - 분양가",
+        "estimated_krw": 167428622,
+        "basis": "강동구 최근 6개월 유사면적 407건의 ㎡당 중간값 × 84.75㎡ - 분양가",
         "comparables": [
+          {
+            "name": "고덕그라시움",
+            "area_sqm": 84.244,
+            "price_krw": 2250000000,
+            "month": "2026-11"
+          },
           {
             "name": "둔촌푸르지오",
             "area_sqm": 84.92,
             "price_krw": 1580000000,
+            "month": "2026-11"
+          },
+          {
+            "name": "고덕 아이파크",
+            "area_sqm": 84.98,
+            "price_krw": 2220000000,
             "month": "2026-11"
           },
           {
@@ -12275,18 +12363,6 @@
             "name": "선광",
             "area_sqm": 84.98,
             "price_krw": 1075000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "광남캐스빌3",
-            "area_sqm": 83.19,
-            "price_krw": 935000000,
-            "month": "2026-10"
-          },
-          {
-            "name": "래미안힐스테이트고덕",
-            "area_sqm": 84.88,
-            "price_krw": 2150000000,
             "month": "2026-10"
           }
         ]
