@@ -32,19 +32,41 @@ const verdictMeta: Record<Verdict, { icon: string; label: string; className: str
   ineligible: { icon: '×', label: '불가', className: 'ineligible' },
 }
 
+function normalizeProfile(parsed: Partial<Profile>): Profile {
+  return {
+    ...EMPTY_PROFILE,
+    ...parsed,
+    residence: { ...EMPTY_PROFILE.residence, ...parsed.residence },
+    account: { ...EMPTY_PROFILE.account, ...parsed.account },
+    income: { ...EMPTY_PROFILE.income, ...parsed.income },
+    assets: { ...EMPTY_PROFILE.assets, ...parsed.assets },
+  }
+}
+
+function profileFromFragment(): Profile | null {
+  const encoded = new URLSearchParams(window.location.hash.slice(1)).get('profile')
+  if (!encoded) return null
+  try {
+    const base64 = encoded.replaceAll('-', '+').replaceAll('_', '/').padEnd(Math.ceil(encoded.length / 4) * 4, '=')
+    const bytes = Uint8Array.from(atob(base64), (character) => character.charCodeAt(0))
+    return normalizeProfile(JSON.parse(new TextDecoder().decode(bytes)) as Partial<Profile>)
+  } catch {
+    return null
+  }
+}
+
 function loadProfile(): Profile | null {
   try {
+    const imported = profileFromFragment()
+    if (imported) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(imported))
+      history.replaceState(null, '', `${window.location.pathname}${window.location.search}`)
+      return imported
+    }
     const saved = localStorage.getItem(STORAGE_KEY)
     if (!saved) return null
     const parsed = JSON.parse(saved) as Partial<Profile>
-    return {
-      ...EMPTY_PROFILE,
-      ...parsed,
-      residence: { ...EMPTY_PROFILE.residence, ...parsed.residence },
-      account: { ...EMPTY_PROFILE.account, ...parsed.account },
-      income: { ...EMPTY_PROFILE.income, ...parsed.income },
-      assets: { ...EMPTY_PROFILE.assets, ...parsed.assets },
-    }
+    return normalizeProfile(parsed)
   } catch {
     return null
   }
@@ -164,7 +186,7 @@ function ProfileEditor({ profile, onSave, onClose }: { profile: Profile | null; 
         <div><p className="eyebrow">브라우저에만 저장</p><h2 id="profile-title">내 조건</h2></div>
         <button className="icon-button" type="button" onClick={onClose} aria-label="닫기">×</button>
       </header>
-      <p className="privacy-note">입력값은 이 기기의 localStorage에만 저장되며 서버·URL·분석도구로 전송하지 않습니다.</p>
+      <p className="privacy-note">입력값은 이 기기의 localStorage에만 저장되며 서버·분석도구로 전송하지 않습니다.</p>
       <form onSubmit={save} className="profile-form">
         <fieldset><legend>기본 조건</legend><div className="form-grid">
           <label>출생연도<input type="number" min="1900" max="2100" value={draft.birth_year} onChange={(e) => set('birth_year', Number(e.target.value))} /></label>
