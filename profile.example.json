@@ -5,6 +5,9 @@
   "household_size": 1,
   "is_household_head": true,
   "homeless": true,
+  "no_win_last_5_years": null,
+  "never_owned_home": null,
+  "income_tax_paid_5_years": null,
   "residence": {
     "sido": "경기도",
     "sigungu": "예시시",

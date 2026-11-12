@@ -20,6 +20,10 @@ const dateOnly = (date) => date.toISOString().slice(0, 10)
 const clean = (value) => value === undefined || value === null || value === '' ? null : String(value).trim()
 const number = (value) => value === undefined || value === null || value === '' || Number.isNaN(Number(String(value).replaceAll(',', ''))) ? null : Number(String(value).replaceAll(',', ''))
 const date = (value) => clean(value)?.replaceAll('.', '-').slice(0, 10) ?? null
+const booleanFlag = (...values) => {
+  const known = values.map(clean).filter((value) => value === 'Y' || value === 'N')
+  return known.length ? known.includes('Y') : null
+}
 
 async function readExisting() {
   try { return JSON.parse(await fs.readFile(dataPath, 'utf8')) } catch { return null }
@@ -93,12 +97,19 @@ function normalizeModel(row) {
   }
 }
 
-function supplyOptions(models, remaining, category) {
-  if (remaining) return [{ id: 'remaining', label: '무순위·잔여세대', kind: 'remaining', requires_homeless: null, requirements_complete: false, source_ref: '주택공급에 관한 규칙 및 해당 무순위 공고문' }]
+function supplyOptions(models, remaining, category, row) {
+  if (remaining) {
+    const cancelledContract = clean(row.HOUSE_SECD) === '06'
+    return [{
+      id: 'remaining', label: cancelledContract ? '계약취소주택 재공급' : '무순위·잔여세대', kind: 'remaining',
+      min_age: 19, requires_homeless: true, requirements_complete: !cancelledContract,
+      source_ref: cancelledContract ? '주택공급에 관한 규칙 및 원 공급유형 자격' : '주택공급에 관한 규칙 제26조제5항',
+    }]
+  }
   const options = [{
     id: 'general-first', label: '일반공급 1순위', kind: 'general_first', min_account_months: 12,
     min_deposit_count: category === 'national' ? 12 : undefined, requires_homeless: category === 'national' ? true : null,
-    requirements_complete: false, source_ref: `주택공급에 관한 규칙 ${category === 'national' ? '제27조' : '제28조'} 및 해당 공고문`,
+    requirements_complete: true, source_ref: `주택공급에 관한 규칙 ${category === 'national' ? '제27조' : '제28조'} 및 별표 2`,
   }]
   const totals = models.reduce((sum, model) => Object.fromEntries(Object.keys(sum).map((keyName) => [keyName, sum[keyName] + model.special_counts[keyName]])), { first_home: 0, newlywed: 0, multi_child: 0, newborn: 0, elderly_parent: 0 })
   const definitions = [
@@ -132,9 +143,21 @@ function normalize(row, modelsRaw, remaining, previous) {
     winner_date: date(row.PRZWNER_PRESNATN_DE),
     contract_start: date(row.CNTRCT_CNCLS_BGNDE),
     contract_end: date(row.CNTRCT_CNCLS_ENDDE),
-    links: { official: clean(row.PBLANC_URL) ?? 'https://www.applyhome.co.kr/', homedubu: 'https://homedubu.com/category/subscription/' },
+    move_in_month: clean(row.MVN_PREARNGE_YM),
+    links: {
+      official: clean(row.PBLANC_URL) ?? clean(row.HMPG_ADRES) ?? 'https://www.applyhome.co.kr/',
+      homepage: clean(row.HMPG_ADRES),
+      homedubu: 'https://homedubu.com/',
+    },
+    policy: {
+      regulated: remaining ? null : booleanFlag(row.SPECLT_RDN_EARTH_AT, row.MDAT_TRGET_AREA_SECD),
+      price_cap: remaining ? null : booleanFlag(row.PARCPRC_ULS_AT),
+      public_land: remaining ? null : booleanFlag(row.PUBLIC_HOUSE_EARTH_AT),
+      large_land: remaining ? null : booleanFlag(row.LRSCL_BLDLND_AT),
+    },
     housing_types: models.map(({ special_counts, ...model }) => model),
-    supply_options: supplyOptions(models, remaining, category),
+    supply_options: supplyOptions(models, remaining, category, row),
+    notice_analysis: prior?.notice_analysis,
     price_gain: prior?.price_gain ?? { status: 'unavailable', estimated_krw: null, basis: '실거래 비교자료가 아직 충분하지 않습니다.', comparables: [] },
     restrictions: prior?.restrictions ?? { resale: null, residence: null },
   }

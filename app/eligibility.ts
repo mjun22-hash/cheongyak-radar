@@ -26,6 +26,31 @@ export function ageAt(birthYear: number, date: string): number {
   return Number(date.slice(0, 4)) - birthYear
 }
 
+function isRegulatedRegion(announcement: Announcement): boolean {
+  if (announcement.policy?.regulated !== null && announcement.policy?.regulated !== undefined) return announcement.policy.regulated
+  if (announcement.region.sido.startsWith('서울')) return true
+  const address = `${announcement.region.sigungu} ${announcement.region.address}`
+  return [
+    /구리시/, /과천시/, /광명시/, /성남시/, /의왕시/, /하남시/,
+    /수원시\s*(?:영통구|장안구|팔달구)/,
+    /안양시\s*동안구/,
+    /용인시\s*(?:기흥구|수지구)/,
+    /화성(?:특례)?시\s*동탄구/,
+  ].some((pattern) => pattern.test(address))
+}
+
+function privateDepositRequirement(profile: Profile, housingType: HousingType): number {
+  const area = housingType.area_sqm ?? Number.POSITIVE_INFINITY
+  const band = area <= 85 ? 0 : area <= 102 ? 1 : area <= 135 ? 2 : 3
+  const residence = `${profile.residence.sido} ${profile.residence.sigungu}`
+  const table = residence.includes('서울') || residence.includes('부산')
+    ? [3_000_000, 6_000_000, 10_000_000, 15_000_000]
+    : /광역시|세종/.test(residence)
+      ? [2_500_000, 4_000_000, 7_000_000, 10_000_000]
+      : [2_000_000, 3_000_000, 4_000_000, 5_000_000]
+  return table[band]
+}
+
 function evaluateSupply(profile: Profile | null, announcement: Announcement, option: SupplyOption, housingType: HousingType): Evaluation {
   const failures: string[] = []
   const warnings: string[] = []
@@ -49,32 +74,45 @@ function evaluateSupply(profile: Profile | null, announcement: Announcement, opt
 
   if (option.kind === 'special_first_home') {
     const singleMaxArea = option.max_area_sqm ?? ruleNumber('first_home_single_area', 'max_area_sqm', 60)
+    if (announcement.housing_category === 'national' && profile.household_size === 1) failures.push('1인 단독세대주는 공공분양 생애최초 특별공급 대상이 아닙니다.')
     if (!profile.homeless) failures.push('세대원 전원의 과거 주택소유 이력까지 확인해야 합니다.')
     if (profile.household_size === 1 && housingType.area_sqm !== null && housingType.area_sqm > singleMaxArea) {
       failures.push(`단독세대주는 생애최초 특별공급에서 전용 ${singleMaxArea}㎡ 이하만 신청할 수 있습니다.`)
     }
     if (profile.household_size === 1 && housingType.area_sqm === null) warnings.push(`단독세대주 ${singleMaxArea}㎡ 이하 제한을 확인할 면적 정보가 없습니다.`)
-    warnings.push('생애최초 여부와 5개년도 소득세 납부실적을 공고문 서류 기준으로 확인해야 합니다.')
+    if (profile.never_owned_home === false) failures.push('과거 주택소유 이력이 있어 생애최초 요건을 충족하지 않습니다.')
+    else if (profile.never_owned_home === null) warnings.push('본인과 세대원의 과거 주택소유 이력을 입력해야 합니다.')
+    if (profile.income_tax_paid_5_years === false) failures.push('최근 5개년도 소득세 납부 요건을 충족하지 않습니다.')
+    else if (profile.income_tax_paid_5_years === null) warnings.push('최근 5개년도 소득세 납부 여부를 입력해야 합니다.')
+    if (announcement.housing_category === 'private') {
+      const propertyLimit = ruleNumber('first_home_private_property', 'max_real_estate_krw', 331_000_000)
+      if (profile.assets.real_estate_krw === null) warnings.push('생애최초 추첨제의 부동산가액을 입력해야 합니다.')
+      else if (profile.assets.real_estate_krw > propertyLimit) failures.push(`부동산가액 ${Math.round(propertyLimit / 100_000_000 * 10) / 10}억원 기준을 초과합니다.`)
+    }
   }
 
   const generalRuleId = announcement.housing_category === 'national' ? 'national_first_rank' : 'private_first_rank'
-  const minMonths = option.min_account_months ?? (option.kind === 'general_first' ? ruleNumber(generalRuleId, 'account_months', 12) : undefined)
+  const firstRankPath = ['general_first', 'special_first_home'].includes(option.kind)
+  const regulated = firstRankPath && isRegulatedRegion(announcement)
+  const minMonths = regulated ? 24 : option.min_account_months ?? (firstRankPath ? ruleNumber(generalRuleId, 'account_months', 12) : undefined)
   if (minMonths !== undefined) {
     const held = monthsBetween(profile.account.rank_base_date, basisDate)
     if (held === null) warnings.push('청약통장 가입 기준일을 확인할 수 없습니다.')
     else if (held < minMonths) failures.push(`청약통장 가입기간 ${minMonths}개월 요건에 미달합니다.`)
   }
-  if (option.min_deposit_count !== undefined) {
+  const minDepositCount = firstRankPath && announcement.housing_category === 'national' ? (regulated ? 24 : option.min_deposit_count ?? 12) : option.min_deposit_count
+  if (minDepositCount !== undefined) {
     if (profile.account.deposit_count_estimate === null) warnings.push('인정 납입횟수를 순위확인서로 확인해야 합니다.')
-    else if (profile.account.deposit_count_estimate < option.min_deposit_count) failures.push(`납입횟수 ${option.min_deposit_count}회 요건에 미달합니다.`)
+    else if (profile.account.deposit_count_estimate < minDepositCount) failures.push(`납입횟수 ${minDepositCount}회 요건에 미달합니다.`)
   }
-  if (option.min_deposit_krw !== undefined) {
+  const minDepositKrw = firstRankPath && announcement.housing_category === 'private' ? privateDepositRequirement(profile, housingType) : option.min_deposit_krw
+  if (minDepositKrw !== undefined) {
     if (profile.account.total_deposit_krw === null) warnings.push('지역·면적별 예치금 충족 여부를 확인해야 합니다.')
-    else if (profile.account.total_deposit_krw < option.min_deposit_krw) failures.push('청약 예치금 요건에 미달합니다.')
+    else if (profile.account.total_deposit_krw < minDepositKrw) failures.push(`청약 예치금 ${Math.round(minDepositKrw / 10_000).toLocaleString('ko-KR')}만원 요건에 미달합니다.`)
   }
-  if (!profile.account.verified && ['general_first', 'special_first_home'].includes(option.kind)) {
-    warnings.push('통장 납입횟수·인정금액이 미확인 값입니다.')
-  }
+  if (regulated && !profile.is_household_head) failures.push('규제지역 1순위는 세대주여야 합니다.')
+  if (regulated && profile.no_win_last_5_years === false) failures.push('규제지역 1순위의 과거 5년 당첨 제한을 충족하지 않습니다.')
+  else if (regulated && profile.no_win_last_5_years === null) warnings.push('본인·세대원의 최근 5년 당첨이력 여부를 입력해야 합니다.')
 
   if (option.residence_sido) {
     if (profile.residence.sido !== option.residence_sido) failures.push(`${option.residence_sido} 거주자 요건을 충족하지 않습니다.`)
@@ -88,20 +126,19 @@ function evaluateSupply(profile: Profile | null, announcement: Announcement, opt
   if (option.max_income_krw !== undefined) {
     if (profile.income.gross_annual_krw === null || !profile.income.basis_verified) warnings.push('공고문 소득 산정방식으로 다시 확인해야 합니다.')
     else if (profile.income.gross_annual_krw > option.max_income_krw) failures.push('공고문 소득기준을 초과합니다.')
-  } else if (option.kind.startsWith('special_')) {
-    warnings.push('공급유형별 소득기준이 구조화되지 않아 공고문 확인이 필요합니다.')
+  } else if (option.kind.startsWith('special_') && option.kind !== 'special_first_home' && failures.length === 0) {
+    warnings.push(`${option.label}의 가구원수별 소득 상한값이 아직 추출되지 않았습니다.`)
   }
 
   if (option.max_assets_krw !== undefined) {
     const knownAssets = (profile.assets.financial_krw ?? 0) + (profile.assets.real_estate_krw ?? 0) + (profile.assets.car_value_krw ?? 0)
     if (!profile.assets.verified || profile.assets.car_value_krw === null) warnings.push('자동차가액을 포함한 자산기준을 다시 확인해야 합니다.')
     else if (knownAssets > option.max_assets_krw) failures.push('공고문 자산기준을 초과합니다.')
-  } else if (option.kind.startsWith('special_')) {
-    warnings.push('공급유형별 자산기준이 구조화되지 않아 공고문 확인이 필요합니다.')
+  } else if (option.kind.startsWith('special_') && option.kind !== 'special_first_home' && failures.length === 0) {
+    warnings.push(`${option.label}의 부동산·자동차 자산 상한값이 아직 추출되지 않았습니다.`)
   }
 
-  if (option.kind === 'remaining' && option.requires_homeless == null) warnings.push('무순위 공고별 거주지·무주택·재당첨 제한을 확인해야 합니다.')
-  if (!option.requirements_complete) warnings.push('API만으로 자격요건 전체를 확인할 수 없어 공고문 확인이 필요합니다.')
+  if (option.kind === 'remaining' && !option.requirements_complete) warnings.push('계약취소주택은 원래 배정된 공급유형의 자격을 동일하게 충족해야 합니다.')
 
   const reasons = [...failures, ...warnings]
   const verdict: Verdict = failures.length ? 'ineligible' : warnings.length ? 'review' : 'eligible'

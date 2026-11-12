@@ -16,6 +16,9 @@ export interface Profile {
   household_size: number
   is_household_head: boolean
   homeless: boolean
+  no_win_last_5_years: boolean | null
+  never_owned_home: boolean | null
+  income_tax_paid_5_years: boolean | null
   residence: { sido: string; sigungu: string; registered_since: string }
   account: {
     type: string
@@ -59,6 +62,36 @@ export interface SupplyOption {
   source_ref: string
 }
 
+export interface PriceComparable {
+  name: string
+  month: string
+  area_sqm: number
+  price_krw: number
+  legal_dong?: string
+  build_year?: number
+  floor?: number
+  market_krw?: number
+  trade_count?: number
+}
+
+export interface PriceTypeEstimate {
+  housing_type: string
+  area_sqm: number
+  sale_price_krw: number
+  market_low_krw: number
+  market_base_krw: number
+  market_high_krw: number
+  gain_low_krw: number
+  gain_base_krw: number
+  gain_high_krw: number
+  confidence: 'high' | 'medium' | 'low'
+  scope: 'same_dong' | 'sigungu'
+  age_limit_years: number
+  trade_count: number
+  complex_count: number
+  comparables: PriceComparable[]
+}
+
 export interface Announcement {
   id: string
   notice_number: string
@@ -73,14 +106,33 @@ export interface Announcement {
   winner_date: string | null
   contract_start: string | null
   contract_end: string | null
-  links: { official: string; homedubu: string }
+  move_in_month?: string | null
+  links: { official: string; homepage?: string | null; homedubu: string }
+  policy?: {
+    regulated: boolean | null
+    price_cap: boolean | null
+    public_land: boolean | null
+    large_land: boolean | null
+  }
+  notice_analysis?: {
+    status: 'parsed' | 'not_found' | 'error'
+    source_url: string | null
+    checked_at: string
+    facts: Record<string, string>
+  }
   housing_types: HousingType[]
   supply_options: SupplyOption[]
   price_gain: {
     status: 'estimated' | 'unavailable'
     estimated_krw: number | null
+    estimated_low_krw?: number | null
+    estimated_high_krw?: number | null
+    market_estimated_krw?: number | null
+    confidence?: 'high' | 'medium' | 'low'
+    housing_type?: string
     basis: string
-    comparables: Array<{ name: string; month: string; area_sqm: number; price_krw: number }>
+    comparables: PriceComparable[]
+    by_type?: PriceTypeEstimate[]
   }
   restrictions: { resale: string | null; residence: string | null }
 }

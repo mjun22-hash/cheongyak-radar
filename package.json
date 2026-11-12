@@ -9,14 +9,16 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "fetch:data": "node scripts/fetch_data.mjs",
+    "fetch:notices": "node scripts/fetch_notices.mjs",
     "fetch:prices": "node scripts/fetch_prices.mjs",
-    "update:data": "npm run fetch:data && npm run fetch:prices"
+    "update:data": "npm run fetch:data && npm run fetch:notices && npm run fetch:prices"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
+    "pdf-parse": "^2.4.5",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "vite": "latest"
   },
   "devDependencies": {
     "@types/react": "latest",

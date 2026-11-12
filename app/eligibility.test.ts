@@ -9,6 +9,9 @@ const profile: Profile = {
   household_size: 1,
   is_household_head: true,
   homeless: true,
+  no_win_last_5_years: true,
+  never_owned_home: true,
+  income_tax_paid_5_years: true,
   residence: { sido: '경기도', sigungu: '예시시', registered_since: '2018-01' },
   account: { type: '청년주택드림청약통장', rank_base_date: '2020-01-15', total_deposit_krw: 5_000_000, deposit_count_estimate: 55, verified: false },
   income: { gross_annual_krw: 72_000_000, basis_verified: false },
@@ -28,7 +31,7 @@ function announcement(overrides: Partial<Announcement> = {}): Announcement {
 
 describe('eligibility engine', () => {
   it('computes month differences at the announcement basis date', () => expect(monthsBetween('2019-03', '2026-11-10')).toBe(92))
-  it('returns review when estimated account figures are unverified', () => expect(evaluateAnnouncement(profile, announcement()).verdict).toBe('review'))
+  it('uses entered account figures for an automatic general-supply verdict', () => expect(evaluateAnnouncement(profile, announcement()).verdict).toBe('eligible'))
   it('rejects a single-person household from first-home supply over 60㎡', () => {
     const result = evaluateAnnouncement(profile, announcement({
       housing_types: [{ name: '84A', area_sqm: 84, households: 10, price_krw: null }],
@@ -42,6 +45,23 @@ describe('eligibility engine', () => {
       supply_options: [{ id: 'newlywed', label: '신혼부부', kind: 'special_newlywed', requirements_complete: false, source_ref: '제41조' }],
     }))
     expect(result.verdict).toBe('ineligible')
+  })
+  it('rejects a single-person household from public first-home supply', () => {
+    const result = evaluateAnnouncement(profile, announcement({
+      housing_types: [{ name: '59A', area_sqm: 59, households: 10, price_krw: null }],
+      supply_options: [{ id: 'first', label: '생애최초', kind: 'special_first_home', requires_homeless: true, requirements_complete: false, source_ref: '제43조' }],
+    }))
+    expect(result.verdict).toBe('ineligible')
+    expect(result.best?.reasons.join(' ')).toContain('1인 단독세대주')
+  })
+  it('applies the private-housing deposit table by area', () => {
+    const result = evaluateAnnouncement({ ...profile, account: { ...profile.account, total_deposit_krw: 3_000_000 } }, announcement({
+      housing_category: 'private',
+      housing_types: [{ name: '120A', area_sqm: 120, households: 10, price_krw: null }],
+      supply_options: [{ id: 'g1', label: '일반공급 1순위', kind: 'general_first', requirements_complete: true, source_ref: '제28조·별표2' }],
+    }))
+    expect(result.verdict).toBe('ineligible')
+    expect(result.best?.reasons.join(' ')).toContain('400만원')
   })
   it('uses the best housing type and supply option', () => {
     const verified = { ...profile, account: { ...profile.account, verified: true } }
