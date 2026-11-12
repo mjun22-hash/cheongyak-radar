@@ -9,6 +9,9 @@ const STORAGE_KEY = 'cheongyak-radar-profile-v1'
 const REGION_STORAGE_KEY = 'cheongyak-radar-regions-v1'
 const DISCLAIMER = '참고용, 최종 자격은 청약홈 공고문과 순위확인서로 확인'
 const TRADE_API_APPLY_URL = 'https://www.data.go.kr/data/15126468/openapi.do'
+const SEOUL_DISTRICTS = ['종로구', '중구', '용산구', '성동구', '광진구', '동대문구', '중랑구', '성북구', '강북구', '도봉구', '노원구', '은평구', '서대문구', '마포구', '양천구', '강서구', '구로구', '금천구', '영등포구', '동작구', '관악구', '서초구', '강남구', '송파구', '강동구']
+const GYEONGGI_CITIES = ['수원시', '성남시', '의정부시', '안양시', '부천시', '광명시', '평택시', '동두천시', '안산시', '고양시', '과천시', '구리시', '남양주시', '오산시', '시흥시', '군포시', '의왕시', '하남시', '용인시', '파주시', '이천시', '안성시', '김포시', '화성시', '광주시', '양주시', '포천시', '여주시']
+const REGION_OPTIONS = [...SEOUL_DISTRICTS.map((name) => `서울 ${name}`), ...GYEONGGI_CITIES.map((name) => `경기 ${name}`)]
 
 const EMPTY_PROFILE: Profile = {
   birth_year: 1995,
@@ -138,7 +141,7 @@ function loadSelectedRegions(): string[] {
 function estimateFor(evaluation: AnnouncementEvaluation, announcement: Announcement): PriceTypeEstimate | null {
   const estimates = announcement.price_gain.by_type ?? []
   if (!estimates.length) return null
-  return estimates.find((item) => item.housing_type === evaluation.best?.housingType.name) ?? estimates[0]
+  return estimates.find((item) => item.housing_type === evaluation.best?.housingType.name) ?? null
 }
 
 function confidenceLabel(value: PriceTypeEstimate['confidence']): string {
@@ -263,18 +266,25 @@ function AnnouncementCard({ announcement, evaluation, profile }: { announcement:
     announcement.policy?.public_land ? '공공주택지구' : null,
   ].filter((item): item is string => Boolean(item))
   const noticeFacts = announcement.notice_analysis?.facts ?? {}
+  const categoryLabel = announcement.housing_category === 'remaining' ? '무순위·잔여세대' : '일반·특별공급'
+  const visibleFact = (value: string | null | undefined) => value || '미표기'
   return <article className={`announcement-card ${meta.className} ${status === 'closed' ? 'is-closed' : ''}`}>
-    <div className="card-topline"><div className="tag-row"><span className={`verdict-chip ${meta.className}`}>{meta.icon} {meta.label}</span><span className={`lead-chip ${lead.tone}`}>{lead.label}</span>{announcement.is_sample && <span className="sample-chip">샘플</span>}</div><span className="region-text">{regionLabel(announcement.region.sido)} · {announcement.region.sigungu}</span></div>
+    <div className="card-topline"><div className="tag-row"><span className={`verdict-chip ${meta.className}`}>{meta.icon} {meta.label}</span><span className={`supply-chip ${announcement.housing_category === 'remaining' ? 'remaining' : ''}`}>{categoryLabel}</span><span className={`lead-chip ${lead.tone}`}>{lead.label}</span>{announcement.is_sample && <span className="sample-chip">샘플</span>}</div><span className="region-text">{regionLabel(announcement.region.sido)} · {announcement.region.sigungu}</span></div>
     <h3>{announcement.name}</h3>
     <p className="verdict-reason">{oneReason}</p>
-    {(policyTags.length > 0 || Object.keys(noticeFacts).length > 0) && <div className="fact-chips">{policyTags.map((tag) => <span key={tag}>{tag}</span>)}{noticeFacts.rewinning && <span>재당첨 {noticeFacts.rewinning}</span>}{noticeFacts.contract_deposit && <span>계약금 {noticeFacts.contract_deposit}</span>}</div>}
+    {policyTags.length > 0 && <div className="fact-chips">{policyTags.map((tag) => <span key={tag}>{tag}</span>)}</div>}
     <div className="key-grid">
-      <div><span>추천 경로</span><strong>{best ? `${best.option.label} · ${best.housingType.name}` : '공급유형 미제공'}</strong></div>
       <div><span>분양가</span><strong>{priceRange(announcement)}</strong></div>
+      <div><span>계약금</span><strong>{visibleFact(noticeFacts.contract_deposit)}</strong></div>
+      <div><span>전매제한</span><strong>{visibleFact(announcement.restrictions.resale)}</strong></div>
+      <div><span>거주의무</span><strong>{visibleFact(announcement.restrictions.residence)}</strong></div>
+      <div><span>재당첨 제한</span><strong>{visibleFact(noticeFacts.rewinning)}</strong></div>
       <div><span>접수</span><strong>{formatDate(announcement.application_start)}–{formatDate(announcement.application_end)}</strong></div>
       <div><span>발표</span><strong>{formatDate(announcement.winner_date)}</strong></div>
+      <div><span>입주예정</span><strong>{announcement.move_in_month || '미표기'}</strong></div>
+      <div className="key-wide"><span>내 추천 경로</span><strong>{best ? `${best.option.label} · ${best.housingType.name}` : '공급유형 미제공'}</strong></div>
     </div>
-    <div className="gain-row"><div><span className="mini-label">현실화 시세차익 · {estimate?.housing_type ?? announcement.price_gain.housing_type ?? '대표형'}</span><strong>{estimate ? `${formatKrw(estimate.gain_low_krw)} ~ ${formatKrw(estimate.gain_high_krw)}` : announcement.price_gain.status === 'estimated' && announcement.price_gain.estimated_krw !== null ? formatKrw(announcement.price_gain.estimated_krw) : '비교단지 부족'}</strong></div><p>{estimate ? `기준 ${formatKrw(estimate.gain_base_krw)} · 예상 시세 ${formatKrw(estimate.market_base_krw)} · 신뢰도 ${confidenceLabel(estimate.confidence)}` : announcement.price_gain.basis}</p>{estimate && <details className="comparable-details"><summary>비교 근거 {estimate.complex_count}개 단지</summary><p>{announcement.price_gain.basis}</p><ul>{estimate.comparables.map((item) => <li key={`${item.name}-${item.month}`}><strong>{item.name}</strong><span>{item.legal_dong ? `${item.legal_dong} · ` : ''}{item.build_year ? `${item.build_year}년 · ` : ''}{item.area_sqm}㎡ · {item.month} · {formatKrw(item.price_krw)}</span></li>)}</ul></details>}</div>
+    {estimate && <div className="gain-row"><div><span className="mini-label">현실화 시세차익 · {estimate.housing_type}</span><strong>{formatKrw(estimate.gain_low_krw)} ~ {formatKrw(estimate.gain_high_krw)}</strong></div><p>기준 {formatKrw(estimate.gain_base_krw)} · 예상 시세 {formatKrw(estimate.market_base_krw)} · 신뢰도 {confidenceLabel(estimate.confidence)}</p><details className="comparable-details"><summary>비교 근거 {estimate.complex_count}개 단지</summary><p>{announcement.price_gain.basis}</p><ul>{estimate.comparables.map((item) => <li key={`${item.name}-${item.month}`}><strong>{item.name}</strong><span>{item.legal_dong ? `${item.legal_dong} · ` : ''}{item.build_year ? `${item.build_year}년 · ` : ''}{item.area_sqm}㎡ · {item.month} · {formatKrw(item.price_krw)}</span></li>)}</ul></details></div>}
     <p className="recommendation">{recommendation(announcement, evaluation, profile)}</p>
     <details className="card-details" open={evaluation.verdict !== 'ineligible' && status !== 'closed'}>
       <summary>주택형·판정 근거 자세히</summary>
@@ -292,25 +302,36 @@ export default function App() {
   const [editing, setEditing] = useState(false)
   const [verdictFilter, setVerdictFilter] = useState<'all' | 'eligible' | 'review'>('all')
   const [selectedRegions, setSelectedRegions] = useState<string[]>(() => loadSelectedRegions())
-  const [statusFilter, setStatusFilter] = useState<'all' | 'active' | 'upcoming' | 'closed'>('all')
+  const [opportunityFilter, setOpportunityFilter] = useState<'open' | 'remaining' | 'upcoming' | 'active'>('open')
 
   const evaluated = useMemo(() => data.announcements.map((announcement) => ({ announcement, evaluation: evaluateAnnouncement(profile, announcement) })), [profile])
-  const regionOptions = useMemo(() => [...new Set(data.announcements.map(specificRegionLabel))].filter((item) => !item.endsWith(' ')).sort((a, b) => a.localeCompare(b, 'ko')), [])
   const scoped = useMemo(() => selectedRegions.length ? evaluated.filter(({ announcement }) => selectedRegions.includes(specificRegionLabel(announcement))) : evaluated, [evaluated, selectedRegions])
   const filtered = useMemo(() => evaluated.filter(({ announcement, evaluation }) => {
     if (profile && evaluation.verdict === 'ineligible') return false
     if (verdictFilter !== 'all' && evaluation.verdict !== verdictFilter) return false
     if (selectedRegions.length && !selectedRegions.includes(specificRegionLabel(announcement))) return false
-    if (statusFilter !== 'all' && statusOf(announcement) !== statusFilter) return false
+    const status = statusOf(announcement)
+    if (opportunityFilter === 'open' && status === 'closed') return false
+    if (opportunityFilter === 'remaining' && (announcement.housing_category !== 'remaining' || status === 'closed')) return false
+    if (opportunityFilter === 'upcoming' && status !== 'upcoming') return false
+    if (opportunityFilter === 'active' && status !== 'active') return false
     return true
   }).sort((a, b) => {
     const aClosed = statusOf(a.announcement) === 'closed' ? 1 : 0
     const bClosed = statusOf(b.announcement) === 'closed' ? 1 : 0
     if (aClosed !== bClosed) return aClosed - bClosed
     return (a.announcement.application_start ?? '9999').localeCompare(b.announcement.application_start ?? '9999')
-  }), [evaluated, profile, verdictFilter, selectedRegions, statusFilter])
+  }), [evaluated, profile, verdictFilter, selectedRegions, opportunityFilter])
 
   const counts = scoped.reduce((acc, item) => ({ ...acc, [item.evaluation.verdict]: acc[item.evaluation.verdict] + 1 }), { eligible: 0, review: 0, ineligible: 0 })
+  const categoryCounts = scoped.filter((item) => !profile || item.evaluation.verdict !== 'ineligible').reduce((acc, { announcement }) => {
+    const status = statusOf(announcement)
+    if (status !== 'closed') acc.open += 1
+    if (status !== 'closed' && announcement.housing_category === 'remaining') acc.remaining += 1
+    if (status === 'upcoming') acc.upcoming += 1
+    if (status === 'active') acc.active += 1
+    return acc
+  }, { open: 0, remaining: 0, upcoming: 0, active: 0 })
   const urgent = scoped.filter(({ announcement }) => {
     const status = statusOf(announcement)
     if (status === 'active') return true
@@ -362,14 +383,20 @@ export default function App() {
         <button onClick={() => setEditing(true)}>{profile ? '수정' : '입력'}</button>
       </section>
 
-      <RegionPicker options={regionOptions} selected={selectedRegions} onChange={saveRegions} />
+      <RegionPicker options={REGION_OPTIONS} selected={selectedRegions} onChange={saveRegions} />
 
       <section className="lead-guide"><div className="section-heading"><div><p className="section-kicker">LEAD TIME</p><h2>접수까지 남은 시간</h2></div></div><div className="guide-row"><span><i className="green" />여유 · 7일 이상</span><span><i className="amber" />임박 · 7일 이내</span><span><i className="red" />하루 접수</span></div></section>
 
       <section className="list-section" aria-labelledby="list-title">
         <div className="section-heading"><div><p className="section-kicker">OPPORTUNITIES</p><h2 id="list-title">청약 공고</h2></div><span>{filtered.length}건</span></div>
+        <nav className="opportunity-tabs" aria-label="공고 종류">{([
+          ['open', '추천 공고', categoryCounts.open],
+          ['remaining', '무순위·잔여', categoryCounts.remaining],
+          ['upcoming', '다가오는 공고', categoryCounts.upcoming],
+          ['active', '접수 중', categoryCounts.active],
+        ] as const).map(([value, label, count]) => <button key={value} className={opportunityFilter === value ? 'active' : ''} onClick={() => setOpportunityFilter(value)}><strong>{count}</strong><span>{label}</span></button>)}</nav>
         <div className="filter-group" aria-label="판정 필터">{([['all', '추천만'], ['eligible', '✓ 가능'], ['review', '! 보완']] as const).map(([value, label]) => <button key={value} className={verdictFilter === value ? 'active' : ''} onClick={() => setVerdictFilter(value)}>{label}</button>)}</div>
-        <div className="filter-row"><span className="selected-region-summary">{selectedRegions.length ? selectedRegions.join(' · ') : '서울·경기 전체'}</span><select aria-label="진행 상태" value={statusFilter} onChange={(e) => setStatusFilter(e.target.value as typeof statusFilter)}><option value="all">전체 상태</option><option value="active">진행중</option><option value="upcoming">예정</option><option value="closed">마감</option></select></div>
+        <div className="filter-row"><span className="selected-region-summary">{selectedRegions.length ? selectedRegions.join(' · ') : '서울·경기 전체'}</span></div>
         <div className="card-list">{filtered.map((item) => <AnnouncementCard key={item.announcement.id} {...item} profile={profile} />)}{!filtered.length && <div className="empty-state">선택한 조건에 맞는 공고가 없습니다.</div>}</div>
       </section>
 
