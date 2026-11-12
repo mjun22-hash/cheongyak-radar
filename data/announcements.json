@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-12T16:13:23+09:00",
+    "generated_at": "2026-11-12T16:22:05+09:00",
     "source": "한국부동산원 청약홈 분양정보 조회 서비스",
     "is_sample": false,
     "last_fetch_error": null,
@@ -79,7 +79,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://apply.lh.or.kr/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -1424,7 +1424,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://www.jh-raon.com/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -1644,7 +1644,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://apply.lh.or.kr/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -1812,7 +1812,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://apply.lh.or.kr/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -1964,7 +1964,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://apply.lh.or.kr/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -2086,7 +2086,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://xn--hc0bse624alpgn0dn2h81ac9gr89a.com/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -2214,7 +2214,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://xn--hc0bse624alpgn0dn2h81ac9gr89a.com/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -2377,7 +2377,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://pg2.lynn.co.kr/fileview/1882/%EA%B5%AC%EB%82%B4%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0%EC%84%A4%EB%B9%84%ED%98%91%EC%9D%98%EC%84%9C.pdf",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -3173,7 +3173,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://guri.ensvil.com/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -3522,11 +3522,11 @@
       "notice_analysis": {
         "status": "parsed",
         "source_url": "https://xn--2e0b97q70h3ub54eo3dtwdc4o60ksscp5d6za.com/assets/download/heights-gongo-full.pdf?v=20261104",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {
           "resale": "3년",
-          "residence": "10년",
+          "residence": "3년",
           "rewinning": "10년",
           "contract_deposit": "10%",
           "interim_payment": "60%",
@@ -3542,7 +3542,7 @@
       },
       "restrictions": {
         "resale": "3년",
-        "residence": "10년"
+        "residence": "3년"
       }
     },
     {
@@ -3644,7 +3644,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://www.xn--9m1bw2f72b22pdwdr3cdz1bca395c.com/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -4296,7 +4296,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://apply.lh.or.kr/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -4702,7 +4702,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://apply.lh.or.kr/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -5101,7 +5101,7 @@
       "notice_analysis": {
         "status": "error",
         "source_url": "https://www.gtx운정중앙역시티프라디움.com",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -5444,7 +5444,7 @@
       "notice_analysis": {
         "status": "error",
         "source_url": "https://www.gtx운정중앙역시티프라디움.com",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -6028,7 +6028,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://www.hwaseong-lottecastlesignature.com/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -6185,11 +6185,11 @@
       "notice_analysis": {
         "status": "parsed",
         "source_url": "https://xn--2q1b89hgtam35a9rngpa.kr/data/gongo95_01.pdf",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {
           "resale": "소유권이전등기일까지",
-          "residence": "10 년",
+          "residence": "없음",
           "contract_deposit": "10%",
           "interim_payment": "60%",
           "balance_payment": "30%"
@@ -6204,7 +6204,7 @@
       },
       "restrictions": {
         "resale": "소유권이전등기일까지",
-        "residence": "10 년"
+        "residence": "없음"
       }
     },
     {
@@ -6342,11 +6342,11 @@
       "notice_analysis": {
         "status": "parsed",
         "source_url": "https://xn--2q1b89hgtam35a9rngpa.kr/data/gongo95_01.pdf",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {
           "resale": "소유권이전등기일까지",
-          "residence": "10 년",
+          "residence": "없음",
           "contract_deposit": "10%",
           "interim_payment": "60%",
           "balance_payment": "30%"
@@ -6361,7 +6361,7 @@
       },
       "restrictions": {
         "resale": "소유권이전등기일까지",
-        "residence": "10 년"
+        "residence": "없음"
       }
     },
     {
@@ -6556,7 +6556,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://www.i-sh.co.kr/main/index.do",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -17691,7 +17691,7 @@
       "notice_analysis": {
         "status": "error",
         "source_url": "http://평택고덕대광로제비앙모아엘가.com",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -18440,7 +18440,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://xn--989a62gh9h1mjj1f9xaj1y.com/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -18918,11 +18918,11 @@
       "notice_analysis": {
         "status": "parsed",
         "source_url": "https://xn--hc0bz5m11b1ue95n2zf6zxvzd.com/resources/file/261019_%EA%B4%91%EB%AA%85%20%EC%8B%9C%ED%8B%B0%ED%94%84%EB%9D%BC%EB%94%94%EC%9B%80%20%EC%97%90%EB%93%80%ED%95%98%EC%9E%84%20%EB%AA%A8%EC%A7%91%EA%B3%B5%EA%B3%A0_%EC%A0%84%EB%AC%B8_%EC%A0%95%EC%A0%95.pdf",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {
           "resale": "소유권이전등기일까지",
-          "residence": "10년",
+          "residence": "3년",
           "rewinning": "10년",
           "contract_deposit": "10%",
           "interim_payment": "40%",
@@ -18938,7 +18938,7 @@
       },
       "restrictions": {
         "resale": "소유권이전등기일까지",
-        "residence": "10년"
+        "residence": "3년"
       }
     },
     {
@@ -19000,7 +19000,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://www.idsd.co.kr/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -19075,7 +19075,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://cent.villiv.co.kr/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -19354,7 +19354,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "http://www.detre-gc.co.kr/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -19613,11 +19613,11 @@
       "notice_analysis": {
         "status": "parsed",
         "source_url": "https://xn--ok1btgm3zxqdwrcgyl3jvsze.kr/data/gongo_mu.pdf",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {
           "resale": "10년",
-          "residence": "10년",
+          "residence": "3년",
           "rewinning": "10년",
           "contract_deposit": "10%",
           "interim_payment": "60%",
@@ -19633,7 +19633,7 @@
       },
       "restrictions": {
         "resale": "10년",
-        "residence": "10년"
+        "residence": "3년"
       }
     },
     {
@@ -19689,7 +19689,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://www.lynn.co.kr/ko/index.do",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -19906,7 +19906,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://www.xn--h50bp5wx7b30b79e72a035f.com/",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -19981,7 +19981,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://www.lynn.co.kr/ko/index.do",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -20260,7 +20260,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "https://xn--950bx0l9xa587a4zb1e20bn04a.com/grand/index.asp",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -20421,7 +20421,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -20514,7 +20514,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": "http://halla-shincheon.co.kr/data/registration_transfer_notice01.pdf",
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
@@ -21015,7 +21015,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-12T07:13:24.049Z",
+        "checked_at": "2026-11-12T07:22:06.113Z",
         "parser_version": "2026-11-12-v2",
         "facts": {}
       },
