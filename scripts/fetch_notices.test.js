@@ -19,4 +19,10 @@ describe('official notice fact extraction', () => {
       balance_payment: '30%',
     })
   })
+
+  it('does not borrow a value from the next table heading', () => {
+    const facts = extractFacts('거주의무기간 재당첨 제한기간 10년')
+    expect(facts.residence).toBeUndefined()
+    expect(facts.rewinning).toBe('10년')
+  })
 })

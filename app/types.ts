@@ -118,6 +118,7 @@ export interface Announcement {
     status: 'parsed' | 'not_found' | 'error'
     source_url: string | null
     checked_at: string
+    parser_version?: string
     facts: Record<string, string>
   }
   housing_types: HousingType[]

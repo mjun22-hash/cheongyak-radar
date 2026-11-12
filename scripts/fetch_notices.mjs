@@ -7,6 +7,8 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const dataPath = path.join(root, 'data', 'announcements.json')
 const userAgent = 'Mozilla/5.0 (compatible; CheongyakRadar/1.0; personal research)'
 const checkedAt = new Date().toISOString()
+const parserVersion = '2026-11-12-v2'
+const nextFactLabel = /전매제한기간|전매제한|거주의무기간|거주의무|재당첨 제한기간|재당첨제한|재당첨 제한|우선공급|해당지역|계약금|중도금|잔금/
 
 const htmlDecode = (value) => value.replaceAll('&amp;', '&').replaceAll('&quot;', '"').replaceAll('&#39;', "'")
 const normalizeUrl = (href, base) => {
@@ -32,7 +34,9 @@ function factNear(text, labels, valuePattern) {
     while (cursor < text.length) {
       const index = text.indexOf(label, cursor)
       if (index < 0) break
-      const window = text.slice(index, index + 240)
+      const tail = text.slice(index + label.length, index + label.length + 180)
+      const nextLabelIndex = tail.search(nextFactLabel)
+      const window = nextLabelIndex >= 0 ? tail.slice(0, nextLabelIndex) : tail
       const match = window.match(valuePattern)
       if (match) return match[1].replace(/\s+/g, ' ').trim()
       cursor = index + label.length
@@ -44,14 +48,14 @@ function factNear(text, labels, valuePattern) {
 export function extractFacts(rawText) {
   const text = rawText.replace(/\u0000/g, '').replace(/\s+/g, ' ')
   const facts = {}
-  const resale = factNear(text, ['전매제한기간', '전매제한'], /(?:전매제한(?:기간)?[^\d없소]{0,80})?(없음|소유권이전등기[^,.;]{0,30}|\d+\s*(?:년|개월))/)
-  const residence = factNear(text, ['거주의무기간', '거주의무'], /(?:거주의무(?:기간)?[^\d없]{0,80})?(없음|\d+\s*년)/)
-  const rewinning = factNear(text, ['재당첨 제한기간', '재당첨제한', '재당첨 제한'], /(?:재당첨\s*제한(?:기간)?[^\d없]{0,80})?(없음|\d+\s*년)/)
+  const resale = factNear(text, ['전매제한기간', '전매제한'], /(없음|소유권이전등기[^,.;]{0,35}|\d+\s*(?:년|개월))/)
+  const residence = factNear(text, ['거주의무기간', '거주의무'], /(없음|\d+\s*년)/)
+  const rewinning = factNear(text, ['재당첨 제한기간', '재당첨제한', '재당첨 제한'], /(없음|\d+\s*년)/)
   const priorityResidence = factNear(text, ['우선공급', '해당지역'], /(계속하여\s*\d+\s*(?:년|개월)\s*이상)/)
-  const deposit = factNear(text, ['계약금'], /(?:계약금[^\d]{0,60})?(\d+\s*%)/)
-  const interim = factNear(text, ['중도금'], /(?:중도금[^\d]{0,60})?(\d+\s*%)/)
-  const balance = factNear(text, ['잔금'], /(?:잔금[^\d]{0,60})?(\d+\s*%)/)
-  if (resale) facts.resale = resale
+  const deposit = factNear(text, ['계약금'], /(\d+\s*%)/)
+  const interim = factNear(text, ['중도금'], /(\d+\s*%)/)
+  const balance = factNear(text, ['잔금'], /(\d+\s*%)/)
+  if (resale) facts.resale = resale.includes('소유권이전등기') ? '소유권이전등기일까지' : resale
   if (residence) facts.residence = residence
   if (rewinning) facts.rewinning = rewinning
   if (priorityResidence) facts.priority_residence = priorityResidence
@@ -102,21 +106,21 @@ async function main() {
   for (const announcement of data.announcements) {
     const endTime = Date.parse(`${announcement.application_end ?? announcement.application_start ?? announcement.announcement_date}T00:00:00+09:00`)
     if (Number.isFinite(endTime) && endTime < activeCutoff) continue
-    if (announcement.notice_analysis?.status === 'parsed' && Object.keys(announcement.notice_analysis.facts ?? {}).length) continue
+    if (announcement.notice_analysis?.parser_version === parserVersion && announcement.notice_analysis?.status === 'parsed' && Object.keys(announcement.notice_analysis.facts ?? {}).length) continue
     const homepage = announcement.links?.homepage
     if (!homepage || !/^https?:\/\//i.test(homepage) || /homedubu\.com/i.test(homepage)) {
-      announcement.notice_analysis = { status: 'not_found', source_url: null, checked_at: checkedAt, facts: {} }
+      announcement.notice_analysis = { status: 'not_found', source_url: null, checked_at: checkedAt, parser_version: parserVersion, facts: {} }
       continue
     }
     try {
       const notice = await findNotice(homepage)
       const facts = extractFacts(notice.text)
-      announcement.notice_analysis = { status: Object.keys(facts).length ? 'parsed' : 'not_found', source_url: notice.sourceUrl, checked_at: checkedAt, facts }
+      announcement.notice_analysis = { status: Object.keys(facts).length ? 'parsed' : 'not_found', source_url: notice.sourceUrl, checked_at: checkedAt, parser_version: parserVersion, facts }
       if (facts.resale) announcement.restrictions.resale = facts.resale
       if (facts.residence) announcement.restrictions.residence = facts.residence
       if (Object.keys(facts).length) parsedCount += 1
     } catch {
-      announcement.notice_analysis = { status: 'error', source_url: homepage, checked_at: checkedAt, facts: {} }
+      announcement.notice_analysis = { status: 'error', source_url: homepage, checked_at: checkedAt, parser_version: parserVersion, facts: {} }
     }
   }
   await fs.writeFile(dataPath, `${JSON.stringify(data, null, 2)}\n`)
