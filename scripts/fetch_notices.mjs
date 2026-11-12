@@ -49,7 +49,7 @@ export function extractFacts(rawText) {
   const text = rawText.replace(/\u0000/g, '').replace(/\s+/g, ' ')
   const facts = {}
   const resale = factNear(text, ['전매제한기간', '전매제한'], /(없음|소유권이전등기[^,.;]{0,35}|\d+\s*(?:년|개월))/)
-  const residence = factNear(text, ['거주의무기간', '거주의무'], /(없음|\d+\s*년)/)
+  const residence = factNear(text, ['거주의무기간', '거주의무'], /(없음|[1-5]\s*년)/)
   const rewinning = factNear(text, ['재당첨 제한기간', '재당첨제한', '재당첨 제한'], /(없음|\d+\s*년)/)
   const priorityResidence = factNear(text, ['우선공급', '해당지역'], /(계속하여\s*\d+\s*(?:년|개월)\s*이상)/)
   const deposit = factNear(text, ['계약금'], /(\d+\s*%)/)
@@ -106,7 +106,9 @@ async function main() {
   for (const announcement of data.announcements) {
     const endTime = Date.parse(`${announcement.application_end ?? announcement.application_start ?? announcement.announcement_date}T00:00:00+09:00`)
     if (Number.isFinite(endTime) && endTime < activeCutoff) continue
-    if (announcement.notice_analysis?.parser_version === parserVersion && announcement.notice_analysis?.status === 'parsed' && Object.keys(announcement.notice_analysis.facts ?? {}).length) continue
+    const priorFacts = announcement.notice_analysis?.facts ?? {}
+    const suspiciousResidence = priorFacts.residence?.replace(/\s/g, '') === '10년'
+    if (!suspiciousResidence && announcement.notice_analysis?.parser_version === parserVersion && announcement.notice_analysis?.status === 'parsed' && Object.keys(priorFacts).length) continue
     const homepage = announcement.links?.homepage
     if (!homepage || !/^https?:\/\//i.test(homepage) || /homedubu\.com/i.test(homepage)) {
       announcement.notice_analysis = { status: 'not_found', source_url: null, checked_at: checkedAt, parser_version: parserVersion, facts: {} }

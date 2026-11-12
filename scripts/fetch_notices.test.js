@@ -25,4 +25,8 @@ describe('official notice fact extraction', () => {
     expect(facts.residence).toBeUndefined()
     expect(facts.rewinning).toBe('10년')
   })
+
+  it('rejects an implausible ten-year residence value', () => {
+    expect(extractFacts('거주의무기간 10년').residence).toBeUndefined()
+  })
 })
