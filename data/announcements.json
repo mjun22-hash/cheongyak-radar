@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-12T16:06:11+09:00",
+    "generated_at": "2026-11-12T16:13:23+09:00",
     "source": "한국부동산원 청약홈 분양정보 조회 서비스",
     "is_sample": false,
     "last_fetch_error": null,
@@ -76,6 +76,13 @@
           "source_ref": "주택공급에 관한 규칙 제27조 및 별표 2"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://apply.lh.or.kr/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -123932689,
@@ -444,12 +451,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://apply.lh.or.kr/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -548,6 +549,20 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "http://jeil-foredu.co.kr/data/gongo01.pdf",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {
+          "resale": "6개월",
+          "residence": "없음",
+          "rewinning": "10년",
+          "contract_deposit": "5%",
+          "interim_payment": "60%",
+          "balance_payment": "35%"
+        }
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -262882128,
@@ -768,19 +783,6 @@
       "restrictions": {
         "resale": "6개월",
         "residence": "없음"
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "http://jeil-foredu.co.kr/data/gongo01.pdf",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {
-          "resale": "6개월",
-          "residence": "없음",
-          "rewinning": "없음",
-          "contract_deposit": "5%",
-          "interim_payment": "60%",
-          "balance_payment": "35%"
-        }
       }
     },
     {
@@ -891,6 +893,20 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://feliztower-yangwoo.co.kr/data/gongo01_1112.pdf",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {
+          "resale": "1년",
+          "residence": "없음",
+          "rewinning": "10년",
+          "contract_deposit": "5%",
+          "interim_payment": "60%",
+          "balance_payment": "35%"
+        }
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -10619559,
@@ -1259,19 +1275,6 @@
       "restrictions": {
         "resale": "1년",
         "residence": "없음"
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "https://feliztower-yangwoo.co.kr/data/gongo01_1112.pdf",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {
-          "resale": "1년",
-          "residence": "없음",
-          "rewinning": "없음",
-          "contract_deposit": "5%",
-          "interim_payment": "60%",
-          "balance_payment": "35%"
-        }
       }
     },
     {
@@ -1418,6 +1421,13 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://www.jh-raon.com/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -227800248,
@@ -1572,12 +1582,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://www.jh-raon.com/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -1637,6 +1641,13 @@
           "source_ref": "주택공급에 관한 규칙 제27조 및 별표 2"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://apply.lh.or.kr/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 127465047,
@@ -1739,12 +1750,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://apply.lh.or.kr/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -1804,6 +1809,13 @@
           "source_ref": "주택공급에 관한 규칙 제27조 및 별표 2"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://apply.lh.or.kr/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -1814,12 +1826,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://apply.lh.or.kr/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -1955,6 +1961,13 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://apply.lh.or.kr/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -1965,12 +1978,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://apply.lh.or.kr/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -2076,6 +2083,13 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://xn--hc0bse624alpgn0dn2h81ac9gr89a.com/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -2086,12 +2100,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://xn--hc0bse624alpgn0dn2h81ac9gr89a.com/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -2203,6 +2211,13 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://xn--hc0bse624alpgn0dn2h81ac9gr89a.com/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -2213,12 +2228,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://xn--hc0bse624alpgn0dn2h81ac9gr89a.com/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -2365,6 +2374,13 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://pg2.lynn.co.kr/fileview/1882/%EA%B5%AC%EB%82%B4%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0%EC%84%A4%EB%B9%84%ED%98%91%EC%9D%98%EC%84%9C.pdf",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -83022020,
@@ -3056,12 +3072,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://pg2.lynn.co.kr/fileview/1882/%EA%B5%AC%EB%82%B4%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0%EC%84%A4%EB%B9%84%ED%98%91%EC%9D%98%EC%84%9C.pdf",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -3160,6 +3170,13 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://guri.ensvil.com/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 52418547,
@@ -3380,12 +3397,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://guri.ensvil.com/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -3508,6 +3519,20 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://xn--2e0b97q70h3ub54eo3dtwdc4o60ksscp5d6za.com/assets/download/heights-gongo-full.pdf?v=20261104",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {
+          "resale": "3년",
+          "residence": "10년",
+          "rewinning": "10년",
+          "contract_deposit": "10%",
+          "interim_payment": "60%",
+          "balance_payment": "30%"
+        }
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -3518,19 +3543,6 @@
       "restrictions": {
         "resale": "3년",
         "residence": "10년"
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "https://xn--2e0b97q70h3ub54eo3dtwdc4o60ksscp5d6za.com/assets/download/heights-gongo-full.pdf?v=20261104",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {
-          "resale": "3년",
-          "residence": "10년",
-          "rewinning": "10년",
-          "contract_deposit": "10%",
-          "interim_payment": "60%",
-          "balance_payment": "30%"
-        }
       }
     },
     {
@@ -3629,6 +3641,13 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://www.xn--9m1bw2f72b22pdwdr3cdz1bca395c.com/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -3639,12 +3658,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://www.xn--9m1bw2f72b22pdwdr3cdz1bca395c.com/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -3761,6 +3774,18 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://jije.forena.co.kr/data/gongo01.pdf",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {
+          "residence": "없음",
+          "contract_deposit": "10%",
+          "interim_payment": "60%",
+          "balance_payment": "30%"
+        }
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -311000670,
@@ -4203,19 +4228,6 @@
       "restrictions": {
         "resale": "없음",
         "residence": "없음"
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "https://jije.forena.co.kr/data/gongo01.pdf",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {
-          "resale": "없음",
-          "residence": "없음",
-          "rewinning": "없음",
-          "contract_deposit": "10%",
-          "interim_payment": "60%",
-          "balance_payment": "30%"
-        }
       }
     },
     {
@@ -4281,6 +4293,13 @@
           "source_ref": "주택공급에 관한 규칙 제27조 및 별표 2"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://apply.lh.or.kr/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 40218704,
@@ -4575,12 +4594,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://apply.lh.or.kr/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -4686,6 +4699,13 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://apply.lh.or.kr/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -50035050,
@@ -4980,12 +5000,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://apply.lh.or.kr/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -5084,6 +5098,13 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "error",
+        "source_url": "https://www.gtx운정중앙역시티프라디움.com",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -196820046,
@@ -5304,12 +5325,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "error",
-        "source_url": "https://www.gtx운정중앙역시티프라디움.com",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -5426,6 +5441,13 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "error",
+        "source_url": "https://www.gtx운정중앙역시티프라디움.com",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -180820046,
@@ -5857,12 +5879,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "error",
-        "source_url": "https://www.gtx운정중앙역시티프라디움.com",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -6009,6 +6025,13 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://www.hwaseong-lottecastlesignature.com/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -6019,12 +6042,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://www.hwaseong-lottecastlesignature.com/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -6165,6 +6182,19 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://xn--2q1b89hgtam35a9rngpa.kr/data/gongo95_01.pdf",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {
+          "resale": "소유권이전등기일까지",
+          "residence": "10 년",
+          "contract_deposit": "10%",
+          "interim_payment": "60%",
+          "balance_payment": "30%"
+        }
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -6173,21 +6203,8 @@
         "by_type": []
       },
       "restrictions": {
-        "resale": "소유권이전등기를 완료한 경우 소유권이전등기를 완료한 때까지 3",
+        "resale": "소유권이전등기일까지",
         "residence": "10 년"
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "https://xn--2q1b89hgtam35a9rngpa.kr/data/gongo95_01.pdf",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {
-          "resale": "소유권이전등기를 완료한 경우 소유권이전등기를 완료한 때까지 3",
-          "residence": "10 년",
-          "rewinning": "10 년",
-          "contract_deposit": "10%",
-          "interim_payment": "60%",
-          "balance_payment": "30%"
-        }
       }
     },
     {
@@ -6322,6 +6339,19 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://xn--2q1b89hgtam35a9rngpa.kr/data/gongo95_01.pdf",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {
+          "resale": "소유권이전등기일까지",
+          "residence": "10 년",
+          "contract_deposit": "10%",
+          "interim_payment": "60%",
+          "balance_payment": "30%"
+        }
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -6330,21 +6360,8 @@
         "by_type": []
       },
       "restrictions": {
-        "resale": "소유권이전등기를 완료한 경우 소유권이전등기를 완료한 때까지 3",
+        "resale": "소유권이전등기일까지",
         "residence": "10 년"
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "https://xn--2q1b89hgtam35a9rngpa.kr/data/gongo95_01.pdf",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {
-          "resale": "소유권이전등기를 완료한 경우 소유권이전등기를 완료한 때까지 3",
-          "residence": "10 년",
-          "rewinning": "10 년",
-          "contract_deposit": "10%",
-          "interim_payment": "60%",
-          "balance_payment": "30%"
-        }
       }
     },
     {
@@ -6536,6 +6553,13 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://www.i-sh.co.kr/main/index.do",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 705691194,
@@ -8088,12 +8112,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://www.i-sh.co.kr/main/index.do",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -17670,6 +17688,13 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "error",
+        "source_url": "http://평택고덕대광로제비앙모아엘가.com",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 2343210,
@@ -17890,12 +17915,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "error",
-        "source_url": "http://평택고덕대광로제비앙모아엘가.com",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -17960,6 +17979,18 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://xi.co.kr/Files/cmsPage/20231027_163245_774001.pdf",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {
+          "resale": "6개월",
+          "contract_deposit": "10%",
+          "interim_payment": "60%",
+          "balance_payment": "30%"
+        }
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -132971193,
@@ -18180,17 +18211,6 @@
       "restrictions": {
         "resale": "6개월",
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "https://xi.co.kr/Files/cmsPage/20231027_163245_774001.pdf",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {
-          "resale": "6개월",
-          "contract_deposit": "10%",
-          "interim_payment": "60%",
-          "balance_payment": "30%"
-        }
       }
     },
     {
@@ -18243,6 +18263,18 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://xi.co.kr/Files/cmsPage/20231013_141906_018001.pdf",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {
+          "resale": "1년",
+          "contract_deposit": "10%",
+          "interim_payment": "60%",
+          "balance_payment": "30%"
+        }
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -18253,17 +18285,6 @@
       "restrictions": {
         "resale": "1년",
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "https://xi.co.kr/Files/cmsPage/20231013_141906_018001.pdf",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {
-          "resale": "1년",
-          "contract_deposit": "10%",
-          "interim_payment": "60%",
-          "balance_payment": "30%"
-        }
       }
     },
     {
@@ -18340,6 +18361,20 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "http://xn--2j1b9hun72mdquifbid72sy0i.com/bon/img/sale/come.pdf",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {
+          "resale": "1년",
+          "residence": "없음",
+          "rewinning": "10년",
+          "contract_deposit": "10%",
+          "interim_payment": "60%",
+          "balance_payment": "30%"
+        }
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -18350,19 +18385,6 @@
       "restrictions": {
         "resale": "1년",
         "residence": "없음"
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "http://xn--2j1b9hun72mdquifbid72sy0i.com/bon/img/sale/come.pdf",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {
-          "resale": "1년",
-          "residence": "없음",
-          "rewinning": "없음",
-          "contract_deposit": "10%",
-          "interim_payment": "60%",
-          "balance_payment": "30%"
-        }
       }
     },
     {
@@ -18415,6 +18437,13 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://xn--989a62gh9h1mjj1f9xaj1y.com/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 7327003,
@@ -18539,12 +18568,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://xn--989a62gh9h1mjj1f9xaj1y.com/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -18603,6 +18626,17 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://www.xn--q20b152av7aa413bca79ak6fvvae81e0yqoma.com/theme/theme/img/%EC%9E%85%EC%A3%BC%EC%9E%90%EB%AA%A8%EC%A7%91%EA%B3%B5%EA%B3%A0_%EC%B6%95%EC%95%BD_2%EC%B0%A8.pdf",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {
+          "contract_deposit": "10%",
+          "interim_payment": "60%",
+          "balance_payment": "70%"
+        }
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 155261551,
@@ -18823,16 +18857,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "https://www.xn--q20b152av7aa413bca79ak6fvvae81e0yqoma.com/theme/theme/img/%EC%9E%85%EC%A3%BC%EC%9E%90%EB%AA%A8%EC%A7%91%EA%B3%B5%EA%B3%A0_%EC%B6%95%EC%95%BD_2%EC%B0%A8.pdf",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {
-          "contract_deposit": "10%",
-          "interim_payment": "60%",
-          "balance_payment": "70%"
-        }
       }
     },
     {
@@ -18891,6 +18915,20 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://xn--hc0bz5m11b1ue95n2zf6zxvzd.com/resources/file/261019_%EA%B4%91%EB%AA%85%20%EC%8B%9C%ED%8B%B0%ED%94%84%EB%9D%BC%EB%94%94%EC%9B%80%20%EC%97%90%EB%93%80%ED%95%98%EC%9E%84%20%EB%AA%A8%EC%A7%91%EA%B3%B5%EA%B3%A0_%EC%A0%84%EB%AC%B8_%EC%A0%95%EC%A0%95.pdf",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {
+          "resale": "소유권이전등기일까지",
+          "residence": "10년",
+          "rewinning": "10년",
+          "contract_deposit": "10%",
+          "interim_payment": "40%",
+          "balance_payment": "10%"
+        }
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -18899,21 +18937,8 @@
         "by_type": []
       },
       "restrictions": {
-        "resale": "소유권이전등기일까지(다만",
+        "resale": "소유권이전등기일까지",
         "residence": "10년"
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "https://xn--hc0bz5m11b1ue95n2zf6zxvzd.com/resources/file/261019_%EA%B4%91%EB%AA%85%20%EC%8B%9C%ED%8B%B0%ED%94%84%EB%9D%BC%EB%94%94%EC%9B%80%20%EC%97%90%EB%93%80%ED%95%98%EC%9E%84%20%EB%AA%A8%EC%A7%91%EA%B3%B5%EA%B3%A0_%EC%A0%84%EB%AC%B8_%EC%A0%95%EC%A0%95.pdf",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {
-          "resale": "소유권이전등기일까지(다만",
-          "residence": "10년",
-          "rewinning": "10년",
-          "contract_deposit": "10%",
-          "interim_payment": "40%",
-          "balance_payment": "10%"
-        }
       }
     },
     {
@@ -18972,6 +18997,13 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://www.idsd.co.kr/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -18982,12 +19014,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://www.idsd.co.kr/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -19046,6 +19072,13 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://cent.villiv.co.kr/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 187428382,
@@ -19266,12 +19299,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://cent.villiv.co.kr/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -19324,6 +19351,13 @@
           "source_ref": "주택공급에 관한 규칙 및 원 공급유형 자격"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "http://www.detre-gc.co.kr/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 1228819546,
@@ -19470,12 +19504,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "http://www.detre-gc.co.kr/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -19582,6 +19610,20 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://xn--ok1btgm3zxqdwrcgyl3jvsze.kr/data/gongo_mu.pdf",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {
+          "resale": "10년",
+          "residence": "10년",
+          "rewinning": "10년",
+          "contract_deposit": "10%",
+          "interim_payment": "60%",
+          "balance_payment": "30%"
+        }
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -19592,19 +19634,6 @@
       "restrictions": {
         "resale": "10년",
         "residence": "10년"
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "https://xn--ok1btgm3zxqdwrcgyl3jvsze.kr/data/gongo_mu.pdf",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {
-          "resale": "10년",
-          "residence": "10년",
-          "rewinning": "10년",
-          "contract_deposit": "10%",
-          "interim_payment": "60%",
-          "balance_payment": "30%"
-        }
       }
     },
     {
@@ -19657,6 +19686,13 @@
           "source_ref": "주택공급에 관한 규칙 및 원 공급유형 자격"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://www.lynn.co.kr/ko/index.do",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 14929820,
@@ -19803,12 +19839,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://www.lynn.co.kr/ko/index.do",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -19873,6 +19903,13 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://www.xn--h50bp5wx7b30b79e72a035f.com/",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -19883,12 +19920,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://www.xn--h50bp5wx7b30b79e72a035f.com/",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -19947,6 +19978,13 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://www.lynn.co.kr/ko/index.do",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 14929820,
@@ -20167,12 +20205,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://www.lynn.co.kr/ko/index.do",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -20225,6 +20257,13 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "https://xn--950bx0l9xa587a4zb1e20bn04a.com/grand/index.asp",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -472543314,
@@ -20327,12 +20366,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "https://xn--950bx0l9xa587a4zb1e20bn04a.com/grand/index.asp",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -20385,6 +20418,13 @@
           "source_ref": "주택공급에 관한 규칙 및 원 공급유형 자격"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": null,
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -20395,12 +20435,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": null,
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -20477,6 +20511,13 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": "http://halla-shincheon.co.kr/data/registration_transfer_notice01.pdf",
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -132874312,
@@ -20919,12 +20960,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": "http://halla-shincheon.co.kr/data/registration_transfer_notice01.pdf",
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
@@ -20977,6 +21012,13 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": null,
+        "checked_at": "2026-11-12T07:13:24.049Z",
+        "parser_version": "2026-11-12-v2",
+        "facts": {}
+      },
       "price_gain": {
         "status": "unavailable",
         "estimated_krw": null,
@@ -20987,12 +21029,6 @@
       "restrictions": {
         "resale": null,
         "residence": null
-      },
-      "notice_analysis": {
-        "status": "not_found",
-        "source_url": null,
-        "checked_at": "2026-11-12T07:06:12.157Z",
-        "facts": {}
       }
     },
     {
