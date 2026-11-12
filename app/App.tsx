@@ -10,7 +10,8 @@ const REGION_STORAGE_KEY = 'cheongyak-radar-regions-v1'
 const DISCLAIMER = '참고용, 최종 자격은 청약홈 공고문과 순위확인서로 확인'
 const TRADE_API_APPLY_URL = 'https://www.data.go.kr/data/15126468/openapi.do'
 const SEOUL_DISTRICTS = ['종로구', '중구', '용산구', '성동구', '광진구', '동대문구', '중랑구', '성북구', '강북구', '도봉구', '노원구', '은평구', '서대문구', '마포구', '양천구', '강서구', '구로구', '금천구', '영등포구', '동작구', '관악구', '서초구', '강남구', '송파구', '강동구']
-const GYEONGGI_CITIES = ['수원시', '성남시', '의정부시', '안양시', '부천시', '광명시', '평택시', '동두천시', '안산시', '고양시', '과천시', '구리시', '남양주시', '오산시', '시흥시', '군포시', '의왕시', '하남시', '용인시', '파주시', '이천시', '안성시', '김포시', '화성시', '광주시', '양주시', '포천시', '여주시']
+const NORTHERN_GYEONGGI = new Set(['고양시', '남양주시', '파주시', '의정부시', '양주시', '구리시', '포천시', '동두천시', '가평군', '연천군'])
+const GYEONGGI_CITIES = ['수원시', '성남시', '안양시', '부천시', '광명시', '평택시', '안산시', '과천시', '오산시', '시흥시', '군포시', '의왕시', '하남시', '용인시', '이천시', '안성시', '김포시', '화성시', '광주시', '여주시']
 const REGION_OPTIONS = [...SEOUL_DISTRICTS.map((name) => `서울 ${name}`), ...GYEONGGI_CITIES.map((name) => `경기 ${name}`)]
 
 const EMPTY_PROFILE: Profile = {
@@ -129,6 +130,11 @@ function specificRegionLabel(announcement: Announcement): string {
   const prefix = regionLabel(announcement.region.sido)
   const normalized = announcement.region.sigungu.replace('특례시', '시')
   return `${prefix} ${normalized}`
+}
+
+function isSupportedRegion(announcement: Announcement): boolean {
+  if (announcement.region.sido.startsWith('서울')) return true
+  return announcement.region.sido.startsWith('경기') && !NORTHERN_GYEONGGI.has(announcement.region.sigungu.replace('특례시', '시'))
 }
 
 function loadSelectedRegions(): string[] {
@@ -304,7 +310,7 @@ export default function App() {
   const [selectedRegions, setSelectedRegions] = useState<string[]>(() => loadSelectedRegions())
   const [opportunityFilter, setOpportunityFilter] = useState<'open' | 'remaining' | 'upcoming' | 'active'>('open')
 
-  const evaluated = useMemo(() => data.announcements.map((announcement) => ({ announcement, evaluation: evaluateAnnouncement(profile, announcement) })), [profile])
+  const evaluated = useMemo(() => data.announcements.filter(isSupportedRegion).map((announcement) => ({ announcement, evaluation: evaluateAnnouncement(profile, announcement) })), [profile])
   const scoped = useMemo(() => selectedRegions.length ? evaluated.filter(({ announcement }) => selectedRegions.includes(specificRegionLabel(announcement))) : evaluated, [evaluated, selectedRegions])
   const filtered = useMemo(() => evaluated.filter(({ announcement, evaluation }) => {
     if (profile && evaluation.verdict === 'ineligible') return false
