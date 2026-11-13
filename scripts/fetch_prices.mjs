@@ -79,6 +79,11 @@ for (const announcement of data.announcements) {
   if (!estimates.length) { announcement.price_gain = { status: 'unavailable', estimated_krw: null, basis: '같은 동·준신축·유사면적 비교단지 3곳 미만', comparables: [], by_type: [] }; continue }
   const representative = [...estimates].sort((a, b) => b.complex_count - a.complex_count || b.trade_count - a.trade_count)[0]
   const scopeLabel = representative.scope === 'same_dong' ? `${targetDong} 동일 법정동` : announcement.region.sigungu
+  const basis = representative.method === 'strict'
+    ? `${scopeLabel} · ${representative.age_limit_years}년 이내 준신축 ${representative.complex_count}개 단지 · 최근 12개월 유사면적 ${representative.trade_count}건`
+    : representative.method === 'regional_relaxed'
+      ? `${scopeLabel} · 유사면적 실거래 ${representative.complex_count}개 단지 ${representative.trade_count}건을 넓게 비교한 보완 추정`
+      : `${announcement.region.sigungu} · 가장 가까운 면적의 실거래 ${representative.complex_count}개 단지 ${representative.trade_count}건으로 환산한 보완 추정`
   announcement.price_gain = {
     status: 'estimated',
     estimated_krw: representative.gain_base_krw,
@@ -87,7 +92,7 @@ for (const announcement of data.announcements) {
     market_estimated_krw: representative.market_base_krw,
     confidence: representative.confidence,
     housing_type: representative.housing_type,
-    basis: `${scopeLabel} · ${representative.age_limit_years}년 이내 준신축 ${representative.complex_count}개 단지 · 최근 12개월 유사면적 ${representative.trade_count}건`,
+    basis,
     comparables: representative.comparables,
     by_type: estimates,
   }

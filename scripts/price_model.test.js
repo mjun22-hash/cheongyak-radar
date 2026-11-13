@@ -45,9 +45,12 @@ describe('realistic price model', () => {
     expect(result?.comparables.map((item) => item.name)).not.toContain('저층거래')
   })
 
-  it('does not invent a value with fewer than three comparable complexes', () => {
+  it('falls back to a low-confidence regional estimate with fewer than three comparable complexes', () => {
     const trades = Array.from({ length: 6 }, (_, index) => trade(index < 3 ? '가단지' : '나단지', '망우동', 600_000_000 + index * 1_000_000))
-    expect(estimateTypePrice({ trades, targetArea: 84, salePrice: 500_000_000, targetDong: '망우동', currentYear: 2026 })).toBeNull()
+    const result = estimateTypePrice({ trades, targetArea: 84, salePrice: 500_000_000, targetDong: '망우동', currentYear: 2026 })
+    expect(result?.confidence).toBe('low')
+    expect(result?.method).toBe('regional_relaxed')
+    expect(result?.gain_base_krw).toBeGreaterThan(0)
   })
 
   it('normalizes legal dong names and calculates robust statistics', () => {

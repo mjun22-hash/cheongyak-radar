@@ -86,6 +86,7 @@ export interface PriceTypeEstimate {
   gain_high_krw: number
   confidence: 'high' | 'medium' | 'low'
   scope: 'same_dong' | 'sigungu'
+  method?: 'strict' | 'regional_relaxed' | 'nearest_area' | 'homedubu'
   age_limit_years: number
   trade_count: number
   complex_count: number
@@ -107,7 +108,16 @@ export interface Announcement {
   contract_start: string | null
   contract_end: string | null
   move_in_month?: string | null
-  links: { official: string; homepage?: string | null; homedubu: string }
+  links: { official: string; homepage?: string | null; homedubu?: string | null }
+  homedubu?: {
+    url: string
+    title: string
+    rating?: number | null
+    gain_estimate_krw?: number | null
+    gain_basis?: string | null
+    cash_needed_krw?: number | null
+    checked_at: string
+  }
   policy?: {
     regulated: boolean | null
     price_cap: boolean | null

@@ -30,7 +30,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820015&pblancNo=2026820015",
         "homepage": "https://apply.lh.or.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": "https://homedubu.com/12879/"
       },
       "policy": {
         "regulated": false,
@@ -451,6 +451,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12879/",
+        "title": "시흥 거모 아테라 (시흥거모 A-6BL) 신혼희망타운 청약 (’26. 11/26~27)",
+        "rating": 2,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:02:17.635Z"
       }
     },
     {
@@ -476,7 +485,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000557&pblancNo=2026000557",
         "homepage": "http://jeil-foredu.co.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -808,7 +817,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000553&pblancNo=2026000553",
         "homepage": "https://feliztower-yangwoo.co.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": "https://homedubu.com/12872/"
       },
       "policy": {
         "regulated": false,
@@ -1275,6 +1284,15 @@
       "restrictions": {
         "resale": "1년",
         "residence": "없음"
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12872/",
+        "title": "의정부역 펠리스타워 양우내안愛 청약 (’26. 11/16~18)",
+        "rating": 3,
+        "gain_estimate_krw": 100000000,
+        "gain_basis": "홈두부 분석의 시세차익·안전마진 기준",
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:02:18.201Z"
       }
     },
     {
@@ -1300,7 +1318,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000497&pblancNo=2026000497",
         "homepage": "https://www.jh-raon.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": "https://homedubu.com/12885/"
       },
       "policy": {
         "regulated": true,
@@ -1582,6 +1600,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12885/",
+        "title": "중화역 라온프라이빗 센트로 청약 (’26. 11/16~18)",
+        "rating": 4,
+        "gain_estimate_krw": 100000000,
+        "gain_basis": "홈두부 분석의 시세차익·안전마진 기준",
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:02:17.628Z"
       }
     },
     {
@@ -1607,7 +1634,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820014&pblancNo=2026820014",
         "homepage": "https://apply.lh.or.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -1775,7 +1802,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820013&pblancNo=2026820013",
         "homepage": "https://apply.lh.or.kr/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": "https://homedubu.com/12821/"
       },
       "policy": {
         "regulated": false,
@@ -1826,6 +1853,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12821/",
+        "title": "안산신길2 A-6블록 신혼희망타운 청약 (’26. 11/23~24)",
+        "rating": 3,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:02:22.940Z"
       }
     },
     {
@@ -1851,7 +1887,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000533&pblancNo=2026000533",
         "homepage": "https://apply.lh.or.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": "https://homedubu.com/12814/"
       },
       "policy": {
         "regulated": false,
@@ -1978,6 +2014,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12814/",
+        "title": "안산신길2지구 B-1블록 공공분양주택 청약 (’26. 11/16~18)",
+        "rating": 2,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:02:22.839Z"
       }
     },
     {
@@ -2003,7 +2048,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000528&pblancNo=2026000528",
         "homepage": "http://www.gwanggyo-centreville.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": "https://homedubu.com/12762/"
       },
       "policy": {
         "regulated": true,
@@ -2100,6 +2145,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12762/",
+        "title": "광교 자연앤 센트레빌 청약 (’26. 11/9~11)",
+        "rating": 4,
+        "gain_estimate_krw": 500000000,
+        "gain_basis": "홈두부 분석의 시세차익·안전마진 기준",
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:02:28.315Z"
       }
     },
     {
@@ -2125,7 +2179,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000527&pblancNo=2026000527",
         "homepage": "http://www.gwanggyo-centreville.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": "https://homedubu.com/12762/"
       },
       "policy": {
         "regulated": true,
@@ -2228,6 +2282,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12762/",
+        "title": "광교 자연앤 센트레빌 청약 (’26. 11/9~11)",
+        "rating": 4,
+        "gain_estimate_krw": 500000000,
+        "gain_basis": "홈두부 분석의 시세차익·안전마진 기준",
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:02:28.315Z"
       }
     },
     {
@@ -2253,7 +2316,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000515&pblancNo=2026000515",
         "homepage": "https://pg2.lynn.co.kr/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -3097,7 +3160,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000472&pblancNo=2026000472",
         "homepage": "https://guri.ensvil.com/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": "https://homedubu.com/12776/"
       },
       "policy": {
         "regulated": true,
@@ -3397,6 +3460,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12776/",
+        "title": "구리갈매역세권 신안인스빌 디센트 청약 (’26. 11/9~11)",
+        "rating": 3,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:02:28.292Z"
       }
     },
     {
@@ -3422,7 +3494,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000535&pblancNo=2026000535",
         "homepage": "https://www.중앙하이츠구성플랫폼시티.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": true,
@@ -3568,7 +3640,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000525&pblancNo=2026000525",
         "homepage": "https://www.엘리프시흥더프라임.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -3683,7 +3755,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000499&pblancNo=2026000499",
         "homepage": "https://jije.forena.co.kr/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": "https://homedubu.com/12799/"
       },
       "policy": {
         "regulated": false,
@@ -4228,6 +4300,15 @@
       "restrictions": {
         "resale": "없음",
         "residence": "없음"
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12799/",
+        "title": "한화포레나 지제역 청약 (’26. 11/9~11)",
+        "rating": 3,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:02:25.602Z"
       }
     },
     {
@@ -4253,7 +4334,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820012&pblancNo=2026820012",
         "homepage": "https://apply.lh.or.kr/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -4619,7 +4700,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000531&pblancNo=2026000531",
         "homepage": "https://apply.lh.or.kr/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": "https://homedubu.com/12662/"
       },
       "policy": {
         "regulated": false,
@@ -5000,6 +5081,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12662/",
+        "title": "시흥거모지구 S-1블록 공공분양주택 청약 (’26. 11/16~17)",
+        "rating": 2,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:02:30.828Z"
       }
     },
     {
@@ -5025,7 +5115,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000518&pblancNo=2026000518",
         "homepage": "https://www.gtx운정중앙역시티프라디움.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -5350,7 +5440,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000517&pblancNo=2026000517",
         "homepage": "https://www.gtx운정중앙역시티프라디움.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -5904,7 +5994,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000502&pblancNo=2026000502",
         "homepage": "https://www.hwaseong-lottecastlesignature.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -6067,7 +6157,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000509&pblancNo=2026000509",
         "homepage": "https://아크메르동탄.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": true,
@@ -6230,7 +6320,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000508&pblancNo=2026000508",
         "homepage": "https://아크메르동탄.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": true,
@@ -6387,7 +6477,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000373&pblancNo=2026000373",
         "homepage": "https://www.i-sh.co.kr/main/index.do",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": true,
@@ -8137,7 +8227,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000468&pblancNo=2026000468",
         "homepage": "http://쌍용더플래티넘한강.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -8627,7 +8717,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000463&pblancNo=2026000463",
         "homepage": "https://향남역스위첸.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -8771,7 +8861,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000386&pblancNo=2026000386",
         "homepage": "https://www.starhills-yg.co.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -8907,7 +8997,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820011&pblancNo=2026820011",
         "homepage": "https://www.apply.lh.or.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -9186,7 +9276,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000453&pblancNo=2026000453",
         "homepage": "https://광명시티프라디움.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": true,
@@ -9324,7 +9414,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000449&pblancNo=2026000449",
         "homepage": "https://www.화서역아너스빌.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -9468,7 +9558,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000438&pblancNo=2026000438",
         "homepage": "https://hillstate.co.kr/s/gd12",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -9787,7 +9877,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000437&pblancNo=2026000437",
         "homepage": "https://hillstate.co.kr/s/gd12",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -10186,7 +10276,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000103&pblancNo=2026000103",
         "homepage": "https://더샵분당하이스트.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": true,
@@ -10360,7 +10450,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000314&pblancNo=2026000314",
         "homepage": "http://중동역다채로움더원.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -10484,7 +10574,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000431&pblancNo=2026000431",
         "homepage": "https://www.오남역서희스타힐스여의재.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -10962,7 +11052,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000393&pblancNo=2026000393",
         "homepage": "http://efete-eungye.com/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -11106,7 +11196,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000394&pblancNo=2026000394",
         "homepage": "https://더샵여주역더퍼스트.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -11504,7 +11594,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820009&pblancNo=2026820009",
         "homepage": "https://apply.lh.or.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -11567,7 +11657,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000399&pblancNo=2026000399",
         "homepage": "https://www.브라운스톤월곡센트럴.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": true,
@@ -11823,7 +11913,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000416&pblancNo=2026000416",
         "homepage": "https://apply.lh.or.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -12234,7 +12324,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000409&pblancNo=2026000409",
         "homepage": "https://apply.lh.or.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -12343,7 +12433,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000372&pblancNo=2026000372",
         "homepage": "https://www.쌍용더플래티넘서대문.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": true,
@@ -12741,7 +12831,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000354&pblancNo=2026000354",
         "homepage": "https://www.lottecastle.co.kr/APT/AT00430/main/index.do",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -12909,7 +12999,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000377&pblancNo=2026000377",
         "homepage": "https://의왕역한신더휴.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": true,
@@ -13029,7 +13119,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000365&pblancNo=2026000365",
         "homepage": "https://오남역서희스타힐스1단지.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -13507,7 +13597,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000382&pblancNo=2026000382",
         "homepage": "https://두산위브더제니스부천.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -13639,7 +13729,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820008&pblancNo=2026820008",
         "homepage": "https://apply.lh.or.kr/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": true,
@@ -13720,7 +13810,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820006&pblancNo=2026820006",
         "homepage": "https://apply.lh.or.kr/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -13999,7 +14089,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000374&pblancNo=2026000374",
         "homepage": "https://더샵신길센트럴시티.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": true,
@@ -14920,7 +15010,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000371&pblancNo=2026000371",
         "homepage": "https://용인동일하이빌파크밸리.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -15052,7 +15142,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000364&pblancNo=2026000364",
         "homepage": "https://summitclavion.com/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": true,
@@ -15578,7 +15668,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000358&pblancNo=2026000358",
         "homepage": "https://충정로역자이르네.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": true,
@@ -16092,7 +16182,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000367&pblancNo=2026000367",
         "homepage": "https://prugio-riverfront.com/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -16988,7 +17078,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820007&pblancNo=2026820007",
         "homepage": "https://apply.lh.or.kr/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -17057,7 +17147,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000355&pblancNo=2026000355",
         "homepage": "https://wg-sclass.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": true,
@@ -17461,7 +17551,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000327&pblancNo=2026000327",
         "homepage": "http://www.역북프라임시티.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -17541,7 +17631,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000291&pblancNo=2026000291",
         "homepage": "https://www.이천휴먼빌클래스원.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": false,
@@ -17655,7 +17745,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910297&pblancNo=2026910297",
         "homepage": "http://평택고덕대광로제비앙모아엘가.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -17940,7 +18030,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910293&pblancNo=2026910293",
         "homepage": "https://xi.co.kr/irc",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -18236,7 +18326,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910288&pblancNo=2026910288",
         "homepage": "https://xi.co.kr/YYH",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": "https://homedubu.com/12917/"
       },
       "policy": {
         "regulated": null,
@@ -18285,6 +18375,15 @@
       "restrictions": {
         "resale": "1년",
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12917/",
+        "title": "안양자이 더 포레스트 무순위 줍줍 (’26. 11/16)",
+        "rating": 4,
+        "gain_estimate_krw": 100000000,
+        "gain_basis": "홈두부가 확인한 현재 매물 호가 기준",
+        "cash_needed_krw": 200000000,
+        "checked_at": "2026-11-13T01:02:15.160Z"
       }
     },
     {
@@ -18310,7 +18409,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910284&pblancNo=2026910284",
         "homepage": "http://중동역다채로움더원.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -18410,7 +18509,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910290&pblancNo=2026910290",
         "homepage": "https://청계노르웨이숲.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -18593,7 +18692,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910280&pblancNo=2026910280",
         "homepage": "https://www.오남역서희스타힐스여의재.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -18882,7 +18981,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910282&pblancNo=2026910282",
         "homepage": "https://광명시티프라디움.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": "https://homedubu.com/12217/"
       },
       "policy": {
         "regulated": null,
@@ -18939,6 +19038,15 @@
       "restrictions": {
         "resale": "소유권이전등기일까지",
         "residence": "3년"
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12217/",
+        "title": "광명 시티프라디움 에듀하임 줍줍 (’26. 11/10)",
+        "rating": 2,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:02:21.205Z"
       }
     },
     {
@@ -18964,7 +19072,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910279&pblancNo=2026910279",
         "homepage": "https://www.idsd.co.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -19039,7 +19147,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910281&pblancNo=2026910281",
         "homepage": "https://cent.villiv.co.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -19324,7 +19432,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026930043&pblancNo=2026930043",
         "homepage": "http://www.detre-gc.co.kr/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": "https://homedubu.com/9192/"
       },
       "policy": {
         "regulated": null,
@@ -19504,6 +19612,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/9192/",
+        "title": "과천 디에트르 퍼스티지 불법행위재공급 줍줍 2차 (’26. 11/2)",
+        "rating": 5,
+        "gain_estimate_krw": 700000000,
+        "gain_basis": "홈두부 분석의 시세차익·안전마진 기준",
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:02:31.345Z"
       }
     },
     {
@@ -19529,7 +19646,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910275&pblancNo=2026910275",
         "homepage": "https://더샵분당하이스트.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": "https://homedubu.com/12108/"
       },
       "policy": {
         "regulated": null,
@@ -19634,6 +19751,15 @@
       "restrictions": {
         "resale": "10년",
         "residence": "3년"
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12108/",
+        "title": "더샵 분당하이스트 줍줍 (’26. 11/2)",
+        "rating": 3,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:02:29.500Z"
       }
     },
     {
@@ -19659,7 +19785,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026930042&pblancNo=2026930042",
         "homepage": "https://www.lynn.co.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -19864,7 +19990,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910269&pblancNo=2026910269",
         "homepage": "https://www.화서역아너스빌.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -19945,7 +20071,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910257&pblancNo=2026910257",
         "homepage": "https://www.lynn.co.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -20230,7 +20356,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910270&pblancNo=2026910270",
         "homepage": "https://충정로역자이르네.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -20391,7 +20517,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026930044&pblancNo=2026930044",
         "homepage": null,
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -20460,7 +20586,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910268&pblancNo=2026910268",
         "homepage": "http://halla-shincheon.co.kr/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -20985,7 +21111,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910265&pblancNo=2026910265",
         "homepage": null,
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -21054,7 +21180,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910264&pblancNo=2026910264",
         "homepage": "http://efete-eungye.com/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -21134,7 +21260,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910262&pblancNo=2026910262",
         "homepage": null,
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -21214,7 +21340,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910263&pblancNo=2026910263",
         "homepage": "https://청계노르웨이숲.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -21390,7 +21516,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910260&pblancNo=2026910260",
         "homepage": "https://의왕역한신더휴.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -21458,7 +21584,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910256&pblancNo=2026910256",
         "homepage": "https://www.lottecastle.co.kr/APT/AT00430/main/index.do",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -21556,7 +21682,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026930038&pblancNo=2026930038",
         "homepage": "https://www.arteragy.co.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -21624,7 +21750,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910253&pblancNo=2026910253",
         "homepage": "https://www.오남역서희스타힐스1단지.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -21822,7 +21948,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910250&pblancNo=2026910250",
         "homepage": null,
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -22106,7 +22232,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910251&pblancNo=2026910251",
         "homepage": "https://충정로역자이르네.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -22318,7 +22444,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026930040&pblancNo=2026930040",
         "homepage": "https://www.i-park.com/gangbyeon",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -22472,7 +22598,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026930037&pblancNo=2026930037",
         "homepage": null,
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -22670,7 +22796,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026930036&pblancNo=2026930036",
         "homepage": null,
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -22868,7 +22994,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910220&pblancNo=2026910220",
         "homepage": "https://www.acro.co.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -22930,7 +23056,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910247&pblancNo=2026910247",
         "homepage": "http://halla-shincheon.co.kr/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -23448,7 +23574,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026930031&pblancNo=2026930031",
         "homepage": "https://www.xi.co.kr/csx",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -23516,7 +23642,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910236&pblancNo=2026910236",
         "homepage": "https://xi.co.kr/csh",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -23584,7 +23710,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910246&pblancNo=2026910246",
         "homepage": "https://용인동일하이빌파크밸리.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -23670,7 +23796,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910241&pblancNo=2026910241",
         "homepage": "https://두산위브더제니스부천.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -23732,7 +23858,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910244&pblancNo=2026910244",
         "homepage": "https://www.더리치먼드미아.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -23930,7 +24056,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910238&pblancNo=2026910238",
         "homepage": "https://www.xi.co.kr/osantf",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -23992,7 +24118,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910232&pblancNo=2026910232",
         "homepage": "http://www.역북프라임시티.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -24066,7 +24192,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910227&pblancNo=2026910227",
         "homepage": "https://prugio-riverfront.com/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -24430,7 +24556,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910235&pblancNo=2026910235",
         "homepage": "https://청계노르웨이숲.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -24606,7 +24732,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910233&pblancNo=2026910233",
         "homepage": "https://altia.skdefine.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -24810,7 +24936,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910228&pblancNo=2026910228",
         "homepage": "https://nj-seohan.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -25248,7 +25374,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910225&pblancNo=2026910225",
         "homepage": "https://uws.skview.co.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -25316,7 +25442,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910226&pblancNo=2026910226",
         "homepage": "https://www.에스아이팰리스.net",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -25749,7 +25875,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910224&pblancNo=2026910224",
         "homepage": "https://www.prugio.com/hb/2026/markone/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -25811,7 +25937,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910221&pblancNo=2026910221",
         "homepage": "https://www.여의도더로드캐슬.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -25879,7 +26005,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910229&pblancNo=2026910229",
         "homepage": "https://hobansummit-pungmu3.co.kr/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -25947,7 +26073,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910222&pblancNo=2026910222",
         "homepage": "https://www.xi.co.kr/osxi",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -26151,7 +26277,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026930028&pblancNo=2026930028",
         "homepage": "https://www.lottecastle.co.kr/APT/AT00383/main/index.do",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -26305,7 +26431,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910218&pblancNo=2026910218",
         "homepage": "https://천왕역모아엘가트레뷰.net",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -26583,7 +26709,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026930026&pblancNo=2026930026",
         "homepage": null,
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -26781,7 +26907,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026930025&pblancNo=2026930025",
         "homepage": "https://cleanup.seoul.go.kr/cafe/mainIndx.do?cafeUrl=geoyeo21",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -26957,7 +27083,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910214&pblancNo=2026910214",
         "homepage": "https://altia.skdefine.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -27167,7 +27293,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910213&pblancNo=2026910213",
         "homepage": "https://청계노르웨이숲.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -27343,7 +27469,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910210&pblancNo=2026910210",
         "homepage": "https://www.ihoban.co.kr/web",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -27621,7 +27747,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910212&pblancNo=2026910212",
         "homepage": "https://www.prugio.com/hb/2026/markone/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -27911,7 +28037,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910211&pblancNo=2026910211",
         "homepage": "https://brand.hldni.com/yangpyeong/",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -28109,7 +28235,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910202&pblancNo=2026910202",
         "homepage": "https://www.더리치먼드미아.com",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -28307,7 +28433,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910208&pblancNo=2026910208",
         "homepage": "http://www.elife.co.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -28375,7 +28501,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910201&pblancNo=2026910201",
         "homepage": "https://blog.naver.com/kkvista",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -28437,7 +28563,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910200&pblancNo=2026910200",
         "homepage": null,
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -28505,7 +28631,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910194&pblancNo=2026910194",
         "homepage": "https://www.acro.co.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -28567,7 +28693,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026930024&pblancNo=2026930024",
         "homepage": "https://www.elife.co.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -28765,7 +28891,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910198&pblancNo=2026910198",
         "homepage": "https://blog.naver.com/kkvista",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -28827,7 +28953,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910180&pblancNo=2026910180",
         "homepage": "https://pg1.lynn.co.kr",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,
@@ -29268,7 +29394,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910182&pblancNo=2026910182",
         "homepage": "http://동탄파크릭스.com/grand/index.asp",
-        "homedubu": "https://homedubu.com/"
+        "homedubu": null
       },
       "policy": {
         "regulated": null,

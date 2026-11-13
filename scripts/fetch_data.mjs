@@ -147,7 +147,7 @@ function normalize(row, modelsRaw, remaining, previous) {
     links: {
       official: clean(row.PBLANC_URL) ?? clean(row.HMPG_ADRES) ?? 'https://www.applyhome.co.kr/',
       homepage: clean(row.HMPG_ADRES),
-      homedubu: 'https://homedubu.com/',
+      homedubu: null,
     },
     policy: {
       regulated: remaining ? null : booleanFlag(row.SPECLT_RDN_EARTH_AT, row.MDAT_TRGET_AREA_SECD),

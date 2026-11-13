@@ -45,37 +45,13 @@ function compactByComplex(trades, targetArea) {
   })
 }
 
-export function estimateTypePrice({ trades, targetArea, salePrice, targetDong, currentYear }) {
-  const areaTolerance = Math.max(2.5, targetArea * 0.05)
-  let comparable = trades.filter((trade) =>
-    !trade.cancelled && trade.floor >= 3 && Math.abs(trade.area_sqm - targetArea) <= areaTolerance,
-  )
-  if (comparable.length < 5) return null
-
-  const sameDong = comparable.filter((trade) => targetDong && trade.legal_dong === targetDong)
-  const sameDongComplexes = new Set(sameDong.map((trade) => trade.name)).size
-  const scope = sameDong.length >= 5 && sameDongComplexes >= 3 ? 'same_dong' : 'sigungu'
-  if (scope === 'same_dong') comparable = sameDong
-
-  const ageBands = [5, 10, 15]
-  let ageLimit = null
-  for (const years of ageBands) {
-    const recentBuildings = comparable.filter((trade) => trade.build_year && currentYear - trade.build_year <= years)
-    if (recentBuildings.length >= 5 && new Set(recentBuildings.map((trade) => trade.name)).size >= 3) {
-      comparable = recentBuildings
-      ageLimit = years
-      break
-    }
-  }
-  if (ageLimit === null) return null
-
+function summarizeEstimate({ comparable, targetArea, salePrice, scope, ageLimit, confidence, method }) {
   const complexes = compactByComplex(comparable, targetArea)
-  if (complexes.length < 3) return null
+  if (!complexes.length) return null
   const marketValues = complexes.map((item) => item.market_krw)
   const marketLow = Math.round(quantile(marketValues, 0.25))
   const marketBase = Math.round(median(marketValues))
   const marketHigh = Math.round(quantile(marketValues, 0.75))
-  const confidence = scope === 'same_dong' && ageLimit <= 10 && complexes.length >= 4 ? 'high' : scope === 'same_dong' || ageLimit <= 10 ? 'medium' : 'low'
   return {
     status: 'estimated',
     market_low_krw: marketLow,
@@ -85,10 +61,73 @@ export function estimateTypePrice({ trades, targetArea, salePrice, targetDong, c
     gain_base_krw: Math.round(marketBase - salePrice),
     gain_high_krw: Math.round(marketHigh - salePrice),
     confidence,
+    method,
     scope,
     age_limit_years: ageLimit,
     trade_count: comparable.length,
     complex_count: complexes.length,
     comparables: complexes.sort((a, b) => Math.abs(a.market_krw - marketBase) - Math.abs(b.market_krw - marketBase)).slice(0, 5),
   }
+}
+
+export function estimateTypePrice({ trades, targetArea, salePrice, targetDong, currentYear }) {
+  const areaTolerance = Math.max(2.5, targetArea * 0.05)
+  let comparable = trades.filter((trade) =>
+    !trade.cancelled && trade.floor >= 3 && Math.abs(trade.area_sqm - targetArea) <= areaTolerance,
+  )
+  if (comparable.length >= 5) {
+    const sameDong = comparable.filter((trade) => targetDong && trade.legal_dong === targetDong)
+    const sameDongComplexes = new Set(sameDong.map((trade) => trade.name)).size
+    const scope = sameDong.length >= 5 && sameDongComplexes >= 3 ? 'same_dong' : 'sigungu'
+    if (scope === 'same_dong') comparable = sameDong
+
+    const ageBands = [5, 10, 15]
+    for (const years of ageBands) {
+      const recentBuildings = comparable.filter((trade) => trade.build_year && currentYear - trade.build_year <= years)
+      if (recentBuildings.length >= 5 && new Set(recentBuildings.map((trade) => trade.name)).size >= 3) {
+        const strict = summarizeEstimate({
+          comparable: recentBuildings,
+          targetArea,
+          salePrice,
+          scope,
+          ageLimit: years,
+          confidence: scope === 'same_dong' && years <= 10 && new Set(recentBuildings.map((trade) => trade.name)).size >= 4 ? 'high' : scope === 'same_dong' || years <= 10 ? 'medium' : 'low',
+          method: 'strict',
+        })
+        if (strict && strict.complex_count >= 3) return strict
+      }
+    }
+  }
+
+  const relaxedTolerance = Math.max(5, targetArea * 0.1)
+  let relaxed = trades.filter((trade) =>
+    !trade.cancelled && trade.floor >= 2 && Math.abs(trade.area_sqm - targetArea) <= relaxedTolerance,
+  )
+  const relaxedSameDong = relaxed.filter((trade) => targetDong && trade.legal_dong === targetDong)
+  const relaxedScope = new Set(relaxedSameDong.map((trade) => trade.name)).size >= 2 ? 'same_dong' : 'sigungu'
+  if (relaxedScope === 'same_dong') relaxed = relaxedSameDong
+  const regional = summarizeEstimate({
+    comparable: relaxed,
+    targetArea,
+    salePrice,
+    scope: relaxedScope,
+    ageLimit: 30,
+    confidence: 'low',
+    method: 'regional_relaxed',
+  })
+  if (regional) return regional
+
+  const nearest = trades
+    .filter((trade) => !trade.cancelled && trade.floor >= 1 && trade.area_sqm > 0)
+    .sort((a, b) => Math.abs(a.area_sqm - targetArea) - Math.abs(b.area_sqm - targetArea))
+    .slice(0, 40)
+  return summarizeEstimate({
+    comparable: nearest,
+    targetArea,
+    salePrice,
+    scope: 'sigungu',
+    ageLimit: 50,
+    confidence: 'low',
+    method: 'nearest_area',
+  })
 }

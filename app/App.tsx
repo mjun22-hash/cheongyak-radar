@@ -1,10 +1,26 @@
 import { useEffect, useMemo, useState, type FormEvent } from 'react'
 import rawData from '../data/announcements.json'
+import rawHomedubu from '../data/homedubu.json'
 import { evaluateAnnouncement, getRuleVersion } from './eligibility'
 import { formatKrw, recommendation } from './recommendation'
 import type { Announcement, AnnouncementData, AnnouncementEvaluation, PriceTypeEstimate, Profile, Verdict } from './types'
 
 const data = rawData as AnnouncementData
+type HomedubuSupplement = {
+  id: string
+  url: string
+  title: string
+  name: string
+  application_start: string | null
+  application_end: string | null
+  region: { sido: string; sigungu: string }
+  category: 'remaining' | 'upcoming'
+  rating: number | null
+  gain_estimate_krw: number | null
+  gain_basis: string | null
+  cash_needed_krw: number | null
+}
+const homedubuData = rawHomedubu as { metadata: { generated_at: string | null; count: number; last_fetch_error: string | null }; items: HomedubuSupplement[] }
 const STORAGE_KEY = 'cheongyak-radar-profile-v1'
 const REGION_STORAGE_KEY = 'cheongyak-radar-regions-v1'
 const DISCLAIMER = '참고용, 최종 자격은 청약홈 공고문과 순위확인서로 확인'
@@ -154,6 +170,29 @@ function confidenceLabel(value: PriceTypeEstimate['confidence']): string {
   return value === 'high' ? '높음' : value === 'medium' ? '보통' : '낮음'
 }
 
+function ratingLabel(value: number | null | undefined): string {
+  if (!value) return '상세 분석 있음'
+  return `${'★'.repeat(value)}${'☆'.repeat(Math.max(0, 5 - value))}`
+}
+
+function HomedubuCard({ item }: { item: HomedubuSupplement }) {
+  const days = item.application_start ? dateDiff(todayKst(), item.application_start) : null
+  const lead = days === null ? { tone: 'gray', label: '일정 확인' } : days < 0 ? { tone: 'amber', label: '접수 확인' } : days <= 1 ? { tone: 'red', label: days === 0 ? '오늘 접수' : '내일 접수' } : days <= 7 ? { tone: 'amber', label: `임박 · D-${days}` } : { tone: 'green', label: `여유 · D-${days}` }
+  return <article className="announcement-card homedubu-card">
+    <div className="card-topline"><div className="tag-row"><span className="homedubu-chip">홈두부 추가 발견</span><span className={`supply-chip ${item.category === 'remaining' ? 'remaining' : ''}`}>{item.category === 'remaining' ? '무순위·줍줍' : '일반·예정'}</span><span className={`lead-chip ${lead.tone}`}>{lead.label}</span></div><span className="region-text">{regionLabel(item.region.sido)} · {item.region.sigungu}</span></div>
+    <h3>{item.name}</h3>
+    <p className="verdict-reason">청약홈 기본 API 목록 밖에서 홈두부 최신 청약 글로 보완 발견한 공고입니다.</p>
+    <div className="key-grid">
+      <div><span>접수</span><strong>{formatDate(item.application_start)}–{formatDate(item.application_end)}</strong></div>
+      <div><span>홈두부 평가</span><strong>{ratingLabel(item.rating)}</strong></div>
+      <div><span>시세차익</span><strong>{item.gain_estimate_krw ? `약 ${formatKrw(item.gain_estimate_krw)}` : '상세 글에서 확인'}</strong></div>
+      <div><span>필요 현금</span><strong>{item.cash_needed_krw ? `${formatKrw(item.cash_needed_krw)} 이상` : '상세 글에서 확인'}</strong></div>
+    </div>
+    <p className="recommendation">홈두부 분석을 먼저 확인한 뒤 공식 공고 원문과 신청 자격을 교차 확인하세요.</p>
+    <div className="card-links"><a className="homedubu-link" href={item.url} target="_blank" rel="noreferrer">홈두부 설명 바로보기 ↗</a></div>
+  </article>
+}
+
 function ProfileEditor({ profile, onSave, onClose }: { profile: Profile | null; onSave: (profile: Profile) => void; onClose: () => void }) {
   const [draft, setDraft] = useState<Profile>(() => structuredClone(profile ?? EMPTY_PROFILE))
   const [jsonText, setJsonText] = useState('')
@@ -266,6 +305,7 @@ function AnnouncementCard({ announcement, evaluation, profile }: { announcement:
   const status = statusOf(announcement)
   const oneReason = best?.reasons[0] ?? '공급유형 정보가 없습니다.'
   const estimate = estimateFor(evaluation, announcement)
+  const homedubuGain = announcement.homedubu?.gain_estimate_krw ?? null
   const policyTags = [
     announcement.policy?.regulated ? '규제지역' : null,
     announcement.policy?.price_cap ? '분양가상한제' : null,
@@ -290,7 +330,9 @@ function AnnouncementCard({ announcement, evaluation, profile }: { announcement:
       <div><span>입주예정</span><strong>{announcement.move_in_month || '미표기'}</strong></div>
       <div className="key-wide"><span>내 추천 경로</span><strong>{best ? `${best.option.label} · ${best.housingType.name}` : '공급유형 미제공'}</strong></div>
     </div>
+    {announcement.homedubu && <div className="homedubu-insight"><div><span>홈두부 관점</span><strong>{ratingLabel(announcement.homedubu.rating)}</strong></div><p>{homedubuGain ? `${announcement.homedubu.gain_basis ?? '홈두부 분석 기준'} 시세차익 약 ${formatKrw(homedubuGain)}` : '이 공고를 따로 분석한 홈두부 설명 글이 있습니다.'}{announcement.homedubu.cash_needed_krw ? ` · 필요 현금 ${formatKrw(announcement.homedubu.cash_needed_krw)} 이상` : ''}</p></div>}
     {estimate && <div className="gain-row"><div><span className="mini-label">현실화 시세차익 · {estimate.housing_type}</span><strong>{formatKrw(estimate.gain_low_krw)} ~ {formatKrw(estimate.gain_high_krw)}</strong></div><p>기준 {formatKrw(estimate.gain_base_krw)} · 예상 시세 {formatKrw(estimate.market_base_krw)} · 신뢰도 {confidenceLabel(estimate.confidence)}</p><details className="comparable-details"><summary>비교 근거 {estimate.complex_count}개 단지</summary><p>{announcement.price_gain.basis}</p><ul>{estimate.comparables.map((item) => <li key={`${item.name}-${item.month}`}><strong>{item.name}</strong><span>{item.legal_dong ? `${item.legal_dong} · ` : ''}{item.build_year ? `${item.build_year}년 · ` : ''}{item.area_sqm}㎡ · {item.month} · {formatKrw(item.price_krw)}</span></li>)}</ul></details></div>}
+    {!estimate && homedubuGain && <div className="gain-row homedubu-gain"><div><span className="mini-label">홈두부 보완 시세차익</span><strong>약 {formatKrw(homedubuGain)}</strong></div><p>{announcement.homedubu?.gain_basis} · 신뢰도 낮음 · 실거래가 추정이 생기면 자동 교체</p></div>}
     <p className="recommendation">{recommendation(announcement, evaluation, profile)}</p>
     <details className="card-details" open={evaluation.verdict !== 'ineligible' && status !== 'closed'}>
       <summary>주택형·판정 근거 자세히</summary>
@@ -299,7 +341,7 @@ function AnnouncementCard({ announcement, evaluation, profile }: { announcement:
       {hiddenEvaluationCount > 0 && <p className="hidden-option-note">입력 조건상 불가능한 공급유형 {hiddenEvaluationCount}개는 숨겼습니다.</p>}
       {(announcement.restrictions.resale || announcement.restrictions.residence || noticeFacts.priority_residence) && <div className="restriction-row">{announcement.restrictions.resale && <span>전매제한 {announcement.restrictions.resale}</span>}{announcement.restrictions.residence && <span>거주의무 {announcement.restrictions.residence}</span>}{noticeFacts.priority_residence && <span>지역우선 {noticeFacts.priority_residence}</span>}</div>}
     </details>
-    <div className="card-links"><a href={announcement.notice_analysis?.source_url ?? announcement.links.official} target="_blank" rel="noreferrer">공식 공고 원문 ↗</a>{announcement.links.homepage && <a href={announcement.links.homepage} target="_blank" rel="noreferrer">분양 홈페이지 ↗</a>}<a href={announcement.links.homedubu} target="_blank" rel="noreferrer">홈두부 참고 ↗</a></div>
+    <div className="card-links"><a href={announcement.notice_analysis?.source_url ?? announcement.links.official} target="_blank" rel="noreferrer">공식 공고 원문 ↗</a>{announcement.links.homepage && <a href={announcement.links.homepage} target="_blank" rel="noreferrer">분양 홈페이지 ↗</a>}{announcement.links.homedubu && <a className="homedubu-link" href={announcement.links.homedubu} target="_blank" rel="noreferrer">홈두부 설명 바로보기 ↗</a>}</div>
   </article>
 }
 
@@ -308,10 +350,15 @@ export default function App() {
   const [editing, setEditing] = useState(false)
   const [verdictFilter, setVerdictFilter] = useState<'all' | 'eligible' | 'review'>('all')
   const [selectedRegions, setSelectedRegions] = useState<string[]>(() => loadSelectedRegions())
-  const [opportunityFilter, setOpportunityFilter] = useState<'open' | 'remaining' | 'upcoming' | 'active'>('open')
+  const [opportunityFilter, setOpportunityFilter] = useState<'open' | 'remaining' | 'upcoming' | 'active' | 'homedubu' | 'all'>('open')
 
   const evaluated = useMemo(() => data.announcements.filter(isSupportedRegion).map((announcement) => ({ announcement, evaluation: evaluateAnnouncement(profile, announcement) })), [profile])
   const scoped = useMemo(() => selectedRegions.length ? evaluated.filter(({ announcement }) => selectedRegions.includes(specificRegionLabel(announcement))) : evaluated, [evaluated, selectedRegions])
+  const homedubuScoped = useMemo(() => homedubuData.items.filter((item) => {
+    if (item.region.sido.startsWith('경기') && NORTHERN_GYEONGGI.has(item.region.sigungu)) return false
+    if (!selectedRegions.length) return true
+    return selectedRegions.includes(`${regionLabel(item.region.sido)} ${item.region.sigungu}`)
+  }), [selectedRegions])
   const filtered = useMemo(() => evaluated.filter(({ announcement, evaluation }) => {
     if (profile && evaluation.verdict === 'ineligible') return false
     if (verdictFilter !== 'all' && evaluation.verdict !== verdictFilter) return false
@@ -321,6 +368,7 @@ export default function App() {
     if (opportunityFilter === 'remaining' && (announcement.housing_category !== 'remaining' || status === 'closed')) return false
     if (opportunityFilter === 'upcoming' && status !== 'upcoming') return false
     if (opportunityFilter === 'active' && status !== 'active') return false
+    if (opportunityFilter === 'homedubu') return false
     return true
   }).sort((a, b) => {
     const aClosed = statusOf(a.announcement) === 'closed' ? 1 : 0
@@ -337,7 +385,8 @@ export default function App() {
     if (status === 'upcoming') acc.upcoming += 1
     if (status === 'active') acc.active += 1
     return acc
-  }, { open: 0, remaining: 0, upcoming: 0, active: 0 })
+  }, { open: 0, remaining: 0, upcoming: 0, active: 0, all: 0 })
+  categoryCounts.all = scoped.filter((item) => !profile || item.evaluation.verdict !== 'ineligible').length
   const urgent = scoped.filter(({ announcement }) => {
     const status = statusOf(announcement)
     if (status === 'active') return true
@@ -394,19 +443,21 @@ export default function App() {
       <section className="lead-guide"><div className="section-heading"><div><p className="section-kicker">LEAD TIME</p><h2>접수까지 남은 시간</h2></div></div><div className="guide-row"><span><i className="green" />여유 · 7일 이상</span><span><i className="amber" />임박 · 7일 이내</span><span><i className="red" />하루 접수</span></div></section>
 
       <section className="list-section" aria-labelledby="list-title">
-        <div className="section-heading"><div><p className="section-kicker">OPPORTUNITIES</p><h2 id="list-title">청약 공고</h2></div><span>{filtered.length}건</span></div>
+        <div className="section-heading"><div><p className="section-kicker">OPPORTUNITIES</p><h2 id="list-title">청약 공고</h2></div><span>{opportunityFilter === 'homedubu' ? homedubuScoped.length : filtered.length}건</span></div>
         <nav className="opportunity-tabs" aria-label="공고 종류">{([
           ['open', '추천 공고', categoryCounts.open],
           ['remaining', '무순위·잔여', categoryCounts.remaining],
           ['upcoming', '다가오는 공고', categoryCounts.upcoming],
           ['active', '접수 중', categoryCounts.active],
+          ['homedubu', '홈두부 추가', homedubuScoped.length],
+          ['all', '전체 공식', categoryCounts.all],
         ] as const).map(([value, label, count]) => <button key={value} className={opportunityFilter === value ? 'active' : ''} onClick={() => setOpportunityFilter(value)}><strong>{count}</strong><span>{label}</span></button>)}</nav>
-        <div className="filter-group" aria-label="판정 필터">{([['all', '추천만'], ['eligible', '✓ 가능'], ['review', '! 보완']] as const).map(([value, label]) => <button key={value} className={verdictFilter === value ? 'active' : ''} onClick={() => setVerdictFilter(value)}>{label}</button>)}</div>
+        {opportunityFilter !== 'homedubu' && <div className="filter-group" aria-label="판정 필터">{([['all', '추천 전체'], ['eligible', '✓ 가능'], ['review', '! 보완']] as const).map(([value, label]) => <button key={value} className={verdictFilter === value ? 'active' : ''} onClick={() => setVerdictFilter(value)}>{label}</button>)}</div>}
         <div className="filter-row"><span className="selected-region-summary">{selectedRegions.length ? selectedRegions.join(' · ') : '서울·경기 전체'}</span></div>
-        <div className="card-list">{filtered.map((item) => <AnnouncementCard key={item.announcement.id} {...item} profile={profile} />)}{!filtered.length && <div className="empty-state">선택한 조건에 맞는 공고가 없습니다.</div>}</div>
+        <div className="card-list">{opportunityFilter === 'homedubu' ? homedubuScoped.map((item) => <HomedubuCard key={item.id} item={item} />) : filtered.map((item) => <AnnouncementCard key={item.announcement.id} {...item} profile={profile} />)}{opportunityFilter === 'homedubu' ? !homedubuScoped.length && <div className="empty-state">홈두부에서 추가로 발견된 공고가 없습니다.</div> : !filtered.length && <div className="empty-state">선택한 조건에 맞는 공고가 없습니다.</div>}</div>
       </section>
 
-      <section className="method-note"><p className="section-kicker">HOW IT WORKS</p><h2>판정 원칙</h2><div className="method-grid"><div><span>01</span><strong>공식 공고 자동분석</strong><p>청약홈 정보와 공식 분양 홈페이지의 모집공고를 읽어 제한사항과 납부 일정을 카드에 반영합니다.</p></div><div><span>02</span><strong>내 조건 자동 대조</strong><p>공고일 기준 통장·거주·무주택 조건을 계산하고, 부족한 입력이 있으면 그 항목만 정확히 알려줍니다.</p></div><div><span>03</span><strong>동·준신축 단지 비교</strong><p>같은 동을 우선해 유사면적·준신축·3층 이상 실거래를 단지별로 균형 있게 비교합니다.</p></div></div></section>
+      <section className="method-note"><p className="section-kicker">HOW IT WORKS</p><h2>판정 원칙</h2><div className="method-grid"><div><span>01</span><strong>공식 공고 + 홈두부 보완</strong><p>청약홈·공식 모집공고를 기본으로 삼고, 홈두부 최신 청약 목록에서 API 밖 공고와 개별 분석을 보완합니다.</p></div><div><span>02</span><strong>내 조건 자동 대조</strong><p>공고일 기준 통장·거주·무주택 조건을 계산하고, 부족한 입력이 있으면 그 항목만 정확히 알려줍니다.</p></div><div><span>03</span><strong>끝까지 시세차익 추정</strong><p>같은 동·준신축 비교가 부족하면 시군구 유사면적과 가까운 면적까지 단계적으로 넓히고, 홈두부 분석이 있으면 보완합니다.</p></div></div></section>
     </main>
 
     <footer><strong>청약 레이더</strong><p>{DISCLAIMER}</p><p>개인정보는 브라우저에만 저장 · 추적 도구 없음</p>{profile && <button onClick={clearProfile}>이 기기의 내 조건 삭제</button>}</footer>
