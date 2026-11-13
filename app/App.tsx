@@ -172,14 +172,14 @@ function confidenceLabel(value: PriceTypeEstimate['confidence']): string {
 
 function ratingLabel(value: number | null | undefined): string {
   if (!value) return '상세 분석 있음'
-  return `${'★'.repeat(value)}${'☆'.repeat(Math.max(0, 5 - value))}`
+  return `${'★'.repeat(value)}${'☆'.repeat(Math.max(0, 5 - value))} · ${value}/5`
 }
 
 function HomedubuCard({ item }: { item: HomedubuSupplement }) {
   const days = item.application_start ? dateDiff(todayKst(), item.application_start) : null
   const lead = days === null ? { tone: 'gray', label: '일정 확인' } : days < 0 ? { tone: 'amber', label: '접수 확인' } : days <= 1 ? { tone: 'red', label: days === 0 ? '오늘 접수' : '내일 접수' } : days <= 7 ? { tone: 'amber', label: `임박 · D-${days}` } : { tone: 'green', label: `여유 · D-${days}` }
   return <article className="announcement-card homedubu-card">
-    <div className="card-topline"><div className="tag-row"><span className="homedubu-chip">홈두부 추가 발견</span><span className={`supply-chip ${item.category === 'remaining' ? 'remaining' : ''}`}>{item.category === 'remaining' ? '무순위·줍줍' : '일반·예정'}</span><span className={`lead-chip ${lead.tone}`}>{lead.label}</span></div><span className="region-text">{regionLabel(item.region.sido)} · {item.region.sigungu}</span></div>
+    <div className="card-topline"><div className="tag-row"><span className="homedubu-chip">홈두부 추가 발견</span>{item.rating && <span className="homedubu-chip">두부 ★ {item.rating}/5</span>}<span className={`supply-chip ${item.category === 'remaining' ? 'remaining' : ''}`}>{item.category === 'remaining' ? '무순위·줍줍' : '일반·예정'}</span><span className={`lead-chip ${lead.tone}`}>{lead.label}</span></div><span className="region-text">{regionLabel(item.region.sido)} · {item.region.sigungu}</span></div>
     <h3>{item.name}</h3>
     <p className="verdict-reason">청약홈 기본 API 목록 밖에서 홈두부 최신 청약 글로 보완 발견한 공고입니다.</p>
     <div className="key-grid">
@@ -315,7 +315,7 @@ function AnnouncementCard({ announcement, evaluation, profile }: { announcement:
   const categoryLabel = announcement.housing_category === 'remaining' ? '무순위·잔여세대' : '일반·특별공급'
   const visibleFact = (value: string | null | undefined) => value || '미표기'
   return <article className={`announcement-card ${meta.className} ${status === 'closed' ? 'is-closed' : ''}`}>
-    <div className="card-topline"><div className="tag-row"><span className={`verdict-chip ${meta.className}`}>{meta.icon} {meta.label}</span><span className={`supply-chip ${announcement.housing_category === 'remaining' ? 'remaining' : ''}`}>{categoryLabel}</span><span className={`lead-chip ${lead.tone}`}>{lead.label}</span>{announcement.is_sample && <span className="sample-chip">샘플</span>}</div><span className="region-text">{regionLabel(announcement.region.sido)} · {announcement.region.sigungu}</span></div>
+    <div className="card-topline"><div className="tag-row"><span className={`verdict-chip ${meta.className}`}>{meta.icon} {meta.label}</span>{announcement.homedubu?.rating && <span className="homedubu-chip">두부 ★ {announcement.homedubu.rating}/5</span>}<span className={`supply-chip ${announcement.housing_category === 'remaining' ? 'remaining' : ''}`}>{categoryLabel}</span><span className={`lead-chip ${lead.tone}`}>{lead.label}</span>{announcement.is_sample && <span className="sample-chip">샘플</span>}</div><span className="region-text">{regionLabel(announcement.region.sido)} · {announcement.region.sigungu}</span></div>
     <h3>{announcement.name}</h3>
     <p className="verdict-reason">{oneReason}</p>
     {policyTags.length > 0 && <div className="fact-chips">{policyTags.map((tag) => <span key={tag}>{tag}</span>)}</div>}
