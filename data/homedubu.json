@@ -1,9 +1,46 @@
 {
   "metadata": {
-    "generated_at": "2026-11-13T01:07:11.853Z",
+    "generated_at": "2026-11-13T01:16:48.840Z",
     "source": "홈두부 공개 청약 카테고리",
-    "count": 0,
+    "count": 2,
     "last_fetch_error": null
   },
-  "items": []
+  "items": [
+    {
+      "id": "2760",
+      "url": "https://homedubu.com/2760/",
+      "title": "수원이목지구 대방 디에트르 더 리체Ⅰ(A4BL) 줍줍 (’26. 11/12~13)",
+      "name": "수원이목지구 대방 디에트르 더 리체Ⅰ(A4BL)",
+      "application_start": "2026-11-12",
+      "application_end": "2026-11-13",
+      "region": {
+        "sido": "경기도",
+        "sigungu": "수원시"
+      },
+      "category": "remaining",
+      "rating": null,
+      "gain_estimate_krw": null,
+      "gain_basis": null,
+      "cash_needed_krw": null,
+      "checked_at": "2026-11-13T01:16:46.458Z"
+    },
+    {
+      "id": "12902",
+      "url": "https://homedubu.com/12902/",
+      "title": "광교더포레스트·더리브·더힐 LH 공가세대 청약 (’26. 11/23~24)",
+      "name": "광교더포레스트·더리브·더힐 LH 공가세대",
+      "application_start": "2026-11-23",
+      "application_end": "2026-11-24",
+      "region": {
+        "sido": "경기도",
+        "sigungu": "수원시"
+      },
+      "category": "upcoming",
+      "rating": 3,
+      "gain_estimate_krw": null,
+      "gain_basis": null,
+      "cash_needed_krw": null,
+      "checked_at": "2026-11-13T01:16:46.647Z"
+    }
+  ]
 }

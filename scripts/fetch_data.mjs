@@ -147,7 +147,7 @@ function normalize(row, modelsRaw, remaining, previous) {
     links: {
       official: clean(row.PBLANC_URL) ?? clean(row.HMPG_ADRES) ?? 'https://www.applyhome.co.kr/',
       homepage: clean(row.HMPG_ADRES),
-      homedubu: null,
+      homedubu: prior?.links?.homedubu ?? null,
     },
     policy: {
       regulated: remaining ? null : booleanFlag(row.SPECLT_RDN_EARTH_AT, row.MDAT_TRGET_AREA_SECD),
@@ -158,6 +158,7 @@ function normalize(row, modelsRaw, remaining, previous) {
     housing_types: models.map(({ special_counts, ...model }) => model),
     supply_options: supplyOptions(models, remaining, category, row),
     notice_analysis: prior?.notice_analysis,
+    homedubu: prior?.homedubu,
     price_gain: prior?.price_gain ?? { status: 'unavailable', estimated_krw: null, basis: '실거래 비교자료가 아직 충분하지 않습니다.', comparables: [] },
     restrictions: prior?.restrictions ?? { resale: null, residence: null },
   }

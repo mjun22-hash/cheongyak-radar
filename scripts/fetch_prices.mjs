@@ -8,6 +8,13 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const dataPath = path.join(root, 'data', 'announcements.json')
 const cacheDir = path.join(root, '.cache', 'trades')
 const codes = JSON.parse(await fs.readFile(path.join(root, 'data', 'lawd_codes.json'), 'utf8'))
+const districtCodes = {
+  장안구: '41111', 권선구: '41113', 팔달구: '41115', 영통구: '41117',
+  수정구: '41131', 중원구: '41133', 분당구: '41135',
+  만안구: '41171', 동안구: '41173', 상록구: '41271', 단원구: '41273',
+  덕양구: '41281', 일산동구: '41285', 일산서구: '41287',
+  처인구: '41461', 기흥구: '41463', 수지구: '41465',
+}
 const key = process.env.DATA_GO_KR_KEY
 if (!key) { console.error('DATA_GO_KR_KEY가 없어 실거래가를 조회할 수 없습니다.'); process.exit(1) }
 
@@ -55,7 +62,8 @@ const data = JSON.parse(await fs.readFile(dataPath, 'utf8'))
 const tradesByCode = new Map()
 const currentYear = new Date().getUTCFullYear()
 for (const announcement of data.announcements) {
-  const code = announcement.lawd_code ?? codes[announcement.region.sido]?.[announcement.region.sigungu]
+  const district = String(announcement.region.address ?? '').match(/\s([가-힣]+구)\s/)?.[1]
+  const code = announcement.lawd_code ?? districtCodes[district] ?? codes[announcement.region.sido]?.[announcement.region.sigungu]
   if (!code) { announcement.price_gain = { status: 'unavailable', estimated_krw: null, basis: '비교지역 코드 없음', comparables: [], by_type: [] }; continue }
   let trades = tradesByCode.get(code)
   if (!trades) {

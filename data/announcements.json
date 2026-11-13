@@ -176,7 +176,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000457&pblancNo=2026000457",
         "homepage": "https://www.부천대장하우스토리디센트.com",
-        "homedubu": null
+        "homedubu": "https://homedubu.com/12944/"
       },
       "policy": {
         "regulated": false,
@@ -292,6 +292,15 @@
           "interim_payment": "60%",
           "balance_payment": "30%"
         }
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12944/",
+        "title": "부천대장 하우스토리 디센트(부천대장지구 A2BL)공공분양주택 청약 (’26. 11/23~25)",
+        "rating": 3,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:16:46.441Z"
       }
     },
     {
@@ -317,7 +326,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820015&pblancNo=2026820015",
         "homepage": "https://apply.lh.or.kr",
-        "homedubu": null
+        "homedubu": "https://homedubu.com/12879/"
       },
       "policy": {
         "regulated": false,
@@ -742,6 +751,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12879/",
+        "title": "시흥 거모 아테라 (시흥거모 A-6BL) 신혼희망타운 청약 (’26. 11/26~27)",
+        "rating": 2,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:16:46.854Z"
       }
     },
     {
@@ -1101,7 +1119,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000553&pblancNo=2026000553",
         "homepage": "https://feliztower-yangwoo.co.kr",
-        "homedubu": null
+        "homedubu": "https://homedubu.com/12872/"
       },
       "policy": {
         "regulated": false,
@@ -1572,6 +1590,15 @@
       "restrictions": {
         "resale": "1년",
         "residence": "없음"
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12872/",
+        "title": "의정부역 펠리스타워 양우내안愛 청약 (’26. 11/16~18)",
+        "rating": 3,
+        "gain_estimate_krw": 100000000,
+        "gain_basis": "홈두부 분석의 시세차익·안전마진 기준",
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:16:46.849Z"
       }
     },
     {
@@ -1597,7 +1624,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000497&pblancNo=2026000497",
         "homepage": "https://www.jh-raon.com",
-        "homedubu": null
+        "homedubu": "https://homedubu.com/12885/"
       },
       "policy": {
         "regulated": true,
@@ -2503,6 +2530,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12885/",
+        "title": "중화역 라온프라이빗 센트로 청약 (’26. 11/16~18)",
+        "rating": 4,
+        "gain_estimate_krw": 100000000,
+        "gain_basis": "홈두부 분석의 시세차익·안전마진 기준",
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:16:46.828Z"
       }
     },
     {
@@ -2794,7 +2830,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820013&pblancNo=2026820013",
         "homepage": "https://apply.lh.or.kr/",
-        "homedubu": null
+        "homedubu": "https://homedubu.com/12821/"
       },
       "policy": {
         "regulated": false,
@@ -2845,6 +2881,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12821/",
+        "title": "안산신길2 A-6블록 신혼희망타운 청약 (’26. 11/23~24)",
+        "rating": 3,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:16:47.626Z"
       }
     },
     {
@@ -2870,7 +2915,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000533&pblancNo=2026000533",
         "homepage": "https://apply.lh.or.kr",
-        "homedubu": null
+        "homedubu": "https://homedubu.com/12814/"
       },
       "policy": {
         "regulated": false,
@@ -2997,6 +3042,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12814/",
+        "title": "안산신길2지구 B-1블록 공공분양주택 청약 (’26. 11/16~18)",
+        "rating": 2,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:16:47.825Z"
       }
     },
     {
@@ -3022,7 +3076,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000528&pblancNo=2026000528",
         "homepage": "http://www.gwanggyo-centreville.com",
-        "homedubu": null
+        "homedubu": "https://homedubu.com/12762/"
       },
       "policy": {
         "regulated": true,
@@ -3119,6 +3173,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12762/",
+        "title": "광교 자연앤 센트레빌 청약 (’26. 11/9~11)",
+        "rating": 4,
+        "gain_estimate_krw": 500000000,
+        "gain_basis": "홈두부 분석의 시세차익·안전마진 기준",
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:16:48.433Z"
       }
     },
     {
@@ -3144,7 +3207,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000527&pblancNo=2026000527",
         "homepage": "http://www.gwanggyo-centreville.com",
-        "homedubu": null
+        "homedubu": "https://homedubu.com/12762/"
       },
       "policy": {
         "regulated": true,
@@ -3247,6 +3310,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12762/",
+        "title": "광교 자연앤 센트레빌 청약 (’26. 11/9~11)",
+        "rating": 4,
+        "gain_estimate_krw": 500000000,
+        "gain_basis": "홈두부 분석의 시세차익·안전마진 기준",
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:16:48.433Z"
       }
     },
     {
@@ -4126,7 +4198,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000472&pblancNo=2026000472",
         "homepage": "https://guri.ensvil.com/",
-        "homedubu": null
+        "homedubu": "https://homedubu.com/12776/"
       },
       "policy": {
         "regulated": true,
@@ -4428,6 +4500,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12776/",
+        "title": "구리갈매역세권 신안인스빌 디센트 청약 (’26. 11/9~11)",
+        "rating": 3,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:16:48.208Z"
       }
     },
     {
@@ -4926,7 +5007,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000499&pblancNo=2026000499",
         "homepage": "https://jije.forena.co.kr/",
-        "homedubu": null
+        "homedubu": "https://homedubu.com/12799/"
       },
       "policy": {
         "regulated": false,
@@ -5476,6 +5557,15 @@
       "restrictions": {
         "resale": "없음",
         "residence": "없음"
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12799/",
+        "title": "한화포레나 지제역 청약 (’26. 11/9~11)",
+        "rating": 3,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:16:47.994Z"
       }
     },
     {
@@ -5870,7 +5960,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000531&pblancNo=2026000531",
         "homepage": "https://apply.lh.or.kr/",
-        "homedubu": null
+        "homedubu": "https://homedubu.com/12662/"
       },
       "policy": {
         "regulated": false,
@@ -6254,6 +6344,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12662/",
+        "title": "시흥거모지구 S-1블록 공공분양주택 청약 (’26. 11/16~17)",
+        "rating": 2,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:16:48.776Z"
       }
     },
     {
@@ -23073,7 +23172,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910288&pblancNo=2026910288",
         "homepage": "https://xi.co.kr/YYH",
-        "homedubu": null
+        "homedubu": "https://homedubu.com/12917/"
       },
       "policy": {
         "regulated": null,
@@ -23122,6 +23221,15 @@
       "restrictions": {
         "resale": "1년",
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12917/",
+        "title": "안양자이 더 포레스트 무순위 줍줍 (’26. 11/16)",
+        "rating": 4,
+        "gain_estimate_krw": 100000000,
+        "gain_basis": "홈두부가 확인한 현재 매물 호가 기준",
+        "cash_needed_krw": 200000000,
+        "checked_at": "2026-11-13T01:16:46.460Z"
       }
     },
     {
@@ -23722,7 +23830,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910282&pblancNo=2026910282",
         "homepage": "https://광명시티프라디움.com",
-        "homedubu": null
+        "homedubu": "https://homedubu.com/12217/"
       },
       "policy": {
         "regulated": null,
@@ -23991,6 +24099,15 @@
       "restrictions": {
         "resale": "소유권이전등기일까지",
         "residence": "3년"
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12217/",
+        "title": "광명 시티프라디움 에듀하임 줍줍 (’26. 11/10)",
+        "rating": 2,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:16:47.389Z"
       }
     },
     {
@@ -24378,7 +24495,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026930043&pblancNo=2026930043",
         "homepage": "http://www.detre-gc.co.kr/",
-        "homedubu": null
+        "homedubu": "https://homedubu.com/9192/"
       },
       "policy": {
         "regulated": null,
@@ -24559,6 +24676,15 @@
       "restrictions": {
         "resale": null,
         "residence": null
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/9192/",
+        "title": "과천 디에트르 퍼스티지 불법행위재공급 줍줍 2차 (’26. 11/2)",
+        "rating": 5,
+        "gain_estimate_krw": 700000000,
+        "gain_basis": "홈두부 분석의 시세차익·안전마진 기준",
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:16:48.590Z"
       }
     },
     {
@@ -24584,7 +24710,7 @@
       "links": {
         "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910275&pblancNo=2026910275",
         "homepage": "https://더샵분당하이스트.kr",
-        "homedubu": null
+        "homedubu": "https://homedubu.com/12108/"
       },
       "policy": {
         "regulated": null,
@@ -24689,6 +24815,15 @@
       "restrictions": {
         "resale": "10년",
         "residence": "3년"
+      },
+      "homedubu": {
+        "url": "https://homedubu.com/12108/",
+        "title": "더샵 분당하이스트 줍줍 (’26. 11/2)",
+        "rating": 3,
+        "gain_estimate_krw": null,
+        "gain_basis": null,
+        "cash_needed_krw": null,
+        "checked_at": "2026-11-13T01:16:48.592Z"
       }
     },
     {

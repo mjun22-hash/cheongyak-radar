@@ -168,6 +168,7 @@ async function main() {
       fetchHtml('https://homedubu.com/category/subscription/page/3/'),
     ])
     const postMap = new Map(categoryPages.flatMap(parseResults).map((post) => [post.url, post]))
+    if (postMap.size < 5) throw new Error(`홈두부 목록 응답이 비정상적으로 적습니다 (${postMap.size}건)`)
     const openAnnouncements = data.announcements.filter((item) => !item.application_end || item.application_end >= todayKst())
     const unmatched = openAnnouncements.filter((item) => (bestMatch(item.name, [...postMap.values()])?.score ?? 0) < 0.48)
     const searchResults = await mapLimit(unmatched.slice(0, 30), 3, async (item) => {
