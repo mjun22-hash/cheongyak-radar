@@ -16,13 +16,16 @@ export function quantile(values, ratio) {
 }
 
 export function legalDongFromAddress(address) {
-  return String(address ?? '').split(/\s+/).find((part) => /(?:동|가|읍|면|리)$/.test(part))?.replace(/[0-9-]+$/, '') ?? ''
+  return String(address ?? '').split(/\s+/).find((part) => /(?:동|가|읍|면|리)[,]?$/.test(part))?.replace(/\d+동,?$/, '동').replace(/,$/, '') ?? ''
 }
+
+const complexKey = (trade) => trade.apt_seq || `${trade.legal_dong}|${trade.name}|${trade.build_year}`
+const complexName = (name) => String(name ?? '').split(/[([]/)[0].replace(/(?:무순위|잔여세대|줍줍).*$/, '').replace(/[^가-힣a-zA-Z0-9]/g, '').toLowerCase()
 
 function compactByComplex(trades, targetArea) {
   const groups = new Map()
   for (const trade of trades) {
-    const key = `${trade.name}|${Math.round(trade.area_sqm * 10)}`
+    const key = complexKey(trade)
     if (!groups.has(key)) groups.set(key, [])
     groups.get(key).push(trade)
   }
@@ -48,7 +51,7 @@ function compactByComplex(trades, targetArea) {
 function summarizeEstimate({ comparable, targetArea, salePrice, scope, ageLimit, confidence, method }) {
   const complexes = compactByComplex(comparable, targetArea)
   if (!complexes.length) return null
-  const marketValues = complexes.map((item) => item.market_krw)
+  const marketValues = method === 'same_complex' ? comparable.map((trade) => trade.price_krw / trade.area_sqm * targetArea) : complexes.map((item) => item.market_krw)
   const marketLow = Math.round(quantile(marketValues, 0.25))
   const marketBase = Math.round(median(marketValues))
   const marketHigh = Math.round(quantile(marketValues, 0.75))
@@ -70,28 +73,33 @@ function summarizeEstimate({ comparable, targetArea, salePrice, scope, ageLimit,
   }
 }
 
-export function estimateTypePrice({ trades, targetArea, salePrice, targetDong, currentYear }) {
+export function estimateTypePrice({ trades, targetArea, salePrice, targetDong, targetName, currentYear }) {
+  const name = complexName(targetName)
+  const exact = trades.filter((t) => name.length >= 5 && complexName(t.name) === name && (!targetDong || t.legal_dong === targetDong) &&
+    !t.cancelled && t.floor > 0 && Math.abs(t.area_sqm - targetArea) <= 1)
+    .sort((a,b) => b.date.localeCompare(a.date)).slice(0,8)
+  if (exact.length) return summarizeEstimate({comparable:exact,targetArea,salePrice,scope:'same_complex',ageLimit:0,confidence:exact.length >= 3 ? 'high' : 'low',method:'same_complex'})
   const areaTolerance = Math.max(2.5, targetArea * 0.05)
   let comparable = trades.filter((trade) =>
     !trade.cancelled && trade.floor >= 3 && Math.abs(trade.area_sqm - targetArea) <= areaTolerance,
   )
   if (comparable.length >= 5) {
     const sameDong = comparable.filter((trade) => targetDong && trade.legal_dong === targetDong)
-    const sameDongComplexes = new Set(sameDong.map((trade) => trade.name)).size
+    const sameDongComplexes = new Set(sameDong.map(complexKey)).size
     const scope = sameDong.length >= 5 && sameDongComplexes >= 3 ? 'same_dong' : 'sigungu'
     if (scope === 'same_dong') comparable = sameDong
 
     const ageBands = [5, 10, 15]
     for (const years of ageBands) {
       const recentBuildings = comparable.filter((trade) => trade.build_year && currentYear - trade.build_year <= years)
-      if (recentBuildings.length >= 5 && new Set(recentBuildings.map((trade) => trade.name)).size >= 3) {
+      if (recentBuildings.length >= 5 && new Set(recentBuildings.map(complexKey)).size >= 3) {
         const strict = summarizeEstimate({
           comparable: recentBuildings,
           targetArea,
           salePrice,
           scope,
           ageLimit: years,
-          confidence: scope === 'same_dong' && years <= 10 && new Set(recentBuildings.map((trade) => trade.name)).size >= 4 ? 'high' : scope === 'same_dong' || years <= 10 ? 'medium' : 'low',
+          confidence: scope === 'same_dong' && years <= 10 && new Set(recentBuildings.map(complexKey)).size >= 4 ? 'high' : scope === 'same_dong' || years <= 10 ? 'medium' : 'low',
           method: 'strict',
         })
         if (strict && strict.complex_count >= 3) return strict

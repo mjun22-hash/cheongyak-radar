@@ -137,7 +137,10 @@ function bestAnnouncementMatch(announcement, insights) {
     let dateScore = 0
     if (announcement.application_start && item.application_start) {
       const gap = Math.abs((Date.parse(announcement.application_start) - Date.parse(item.application_start)) / 86_400_000)
-      dateScore = gap <= 3 ? 0.2 : gap <= 31 ? 0.05 : -0.2
+      const insideWindow = item.application_start >= announcement.application_start &&
+        item.application_start <= (announcement.application_end ?? announcement.application_start)
+      if (!insideWindow && gap > 3) return { post: item, score: 0 }
+      dateScore = insideWindow || gap <= 3 ? 0.2 : 0
     }
     return { post: item, score: nameScore + dateScore }
   }).sort((a, b) => b.score - a.score)[0]
@@ -184,6 +187,7 @@ async function main() {
     const insights = (await mapLimit(posts, 4, async (post) => {
       try { return parseInsight(post, await fetchHtml(post.url)) } catch { return null }
     })).filter(Boolean)
+    if (!insights.length) throw new Error('홈두부 개별 분석을 확인하지 못했습니다.')
 
     for (const announcement of data.announcements) {
       const match = bestAnnouncementMatch(announcement, insights)
@@ -199,9 +203,6 @@ async function main() {
           cash_needed_krw: item.cash_needed_krw,
           checked_at: item.checked_at,
         }
-      } else {
-        announcement.links.homedubu = null
-        delete announcement.homedubu
       }
     }
 
@@ -218,6 +219,10 @@ async function main() {
     }).map(({ id, url, title, name, application_start, application_end, region, category, rating, gain_estimate_krw, gain_basis, cash_needed_krw, checked_at }) => ({
       id, url, title, name, application_start, application_end, region, category, rating, gain_estimate_krw, gain_basis, cash_needed_krw, checked_at,
     }))
+    for (const prior of priorSupplements.items ?? []) {
+      if (prior.application_end >= todayKst() && !supplements.some((item) => item.id === prior.id) &&
+          !data.announcements.some((item) => item.links?.homedubu === prior.url)) supplements.push(prior)
+    }
 
     await fs.writeFile(dataPath, `${JSON.stringify(data, null, 2)}\n`)
     await fs.writeFile(supplementsPath, `${JSON.stringify({ metadata: { generated_at: checkedAt(), source: '홈두부 공개 청약 카테고리', count: supplements.length, last_fetch_error: null }, items: supplements }, null, 2)}\n`)

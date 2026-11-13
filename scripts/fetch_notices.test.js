@@ -1,7 +1,12 @@
 import { describe, expect, it } from 'vitest'
-import { extractFacts } from './fetch_notices.mjs'
+import { extractFacts, officialAttachment } from './fetch_notices.mjs'
 
 describe('official notice fact extraction', () => {
+  it('only links the attachment for this notice, and reads the new two-stage payment schedule', () => {
+    const makeLink = (number) => `<a href="https://static.applyhome.co.kr/ai/aia/getAtchmnfl.do?pblancNo=${number}">모집공고문 보기</a>`
+    expect(officialAttachment(makeLink('2023000431') + makeLink('2026910288'), 'https://www.applyhome.co.kr', '2026910288')).toContain('2026910288')
+    expect(extractFacts('중도금 60% 계약금(10%) 잔금(90%)')).toEqual({contract_deposit:'10%',balance_payment:'90%'})
+  })
   it('extracts restrictions, local priority and payment schedule', () => {
     const facts = extractFacts(`
       전매제한기간 3년, 거주의무기간 없음, 재당첨 제한기간 10년

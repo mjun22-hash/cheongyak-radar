@@ -7,18 +7,20 @@ export function recommendation(announcement: Announcement, evaluation: Announcem
   const estimate = announcement.price_gain.by_type?.find((item) => item.housing_type === best.housingType.name)
   const homedubuGain = !estimate ? announcement.homedubu?.gain_estimate_krw : null
   const salePrice = best.housingType.price_krw
-  const depositText = announcement.notice_analysis?.facts?.contract_deposit
-  const depositRate = Number(depositText?.match(/\d+/)?.[0] ?? 10) / 100
-  const contractCash = salePrice ? salePrice * depositRate : null
+  const depositText = announcement.notice_analysis?.verified_notice_number === announcement.notice_number ? announcement.notice_analysis.facts.contract_deposit : null
+  const rate = depositText?.match(/^(\d+(?:\.\d+)?)\s*%$/)?.[1]
+  const contractCash = salePrice && rate ? salePrice * Number(rate) / 100 : null
   const capitalGap = profile?.assets.financial_krw !== null && profile?.assets.financial_krw !== undefined && contractCash ? profile.assets.financial_krw - contractCash : null
   const gainText = estimate ? `안전마진 ${formatKrw(estimate.gain_low_krw)}~${formatKrw(estimate.gain_high_krw)}` : homedubuGain ? `홈두부 보완 안전마진 약 ${formatKrw(homedubuGain)}` : null
   const capitalText = contractCash ? `계약금 약 ${formatKrw(contractCash)}${capitalGap !== null && capitalGap < 0 ? `, 금융자산 대비 ${formatKrw(Math.abs(capitalGap))} 부족` : ''}` : null
-  const investmentText = [gainText, capitalText].filter(Boolean).join(', ')
+  const quote = estimate && announcement.homedubu?.gain_estimate_krw
+    ? `홈두부 별도 추정 약 ${formatKrw(announcement.homedubu.gain_estimate_krw)} (실거래와 다른 기준)` : null
+  const investmentText = [gainText, quote, capitalText].filter(Boolean).join(', ')
   if (evaluation.verdict === 'ineligible') {
     return `현재 입력값으로는 ${best.option.label} 신청이 어렵습니다. · 근거: ${best.reasons[0]} · 참고용`
   }
   if (evaluation.verdict === 'review') {
-    return `조건 보완 후 검토 · ${best.option.label}에서 ${best.reasons[0]}${investmentText ? ` ${investmentText}.` : ''} · 참고용`
+    return `검토 후보 · ${best.reasons[0]}${investmentText ? ` ${investmentText}.` : ''} · 참고용`
   }
   const priorityGain = estimate?.gain_base_krw ?? homedubuGain
   const priority = priorityGain !== null && priorityGain !== undefined && priorityGain >= 100_000_000 ? '우선 검토' : priorityGain !== null && priorityGain !== undefined && priorityGain < 0 ? '후순위' : '검토 후보'

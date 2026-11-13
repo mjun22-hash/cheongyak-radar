@@ -12,7 +12,8 @@
     "fetch:notices": "node scripts/fetch_notices.mjs",
     "fetch:prices": "node scripts/fetch_prices.mjs",
     "fetch:homedubu": "node scripts/fetch_homedubu.mjs",
-    "update:data": "npm run fetch:data && npm run fetch:homedubu && npm run fetch:notices && npm run fetch:prices"
+    "fetch:lh": "node scripts/fetch_lh.mjs",
+    "update:data": "npm run fetch:data && npm run fetch:homedubu && npm run fetch:lh && npm run fetch:notices && npm run fetch:prices"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

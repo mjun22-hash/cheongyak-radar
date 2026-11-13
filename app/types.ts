@@ -19,6 +19,8 @@ export interface Profile {
   no_win_last_5_years: boolean | null
   never_owned_home: boolean | null
   income_tax_paid_5_years: boolean | null
+  income_tax_paid_since?: string
+  checked_remaining_notices?: string[]
   residence: { sido: string; sigungu: string; registered_since: string }
   account: {
     type: string
@@ -85,8 +87,9 @@ export interface PriceTypeEstimate {
   gain_base_krw: number
   gain_high_krw: number
   confidence: 'high' | 'medium' | 'low'
-  scope: 'same_dong' | 'sigungu'
-  method?: 'strict' | 'regional_relaxed' | 'nearest_area' | 'homedubu'
+  scope: 'same_complex' | 'same_dong' | 'sigungu'
+  method?: 'same_complex' | 'strict' | 'regional_relaxed' | 'nearest_area' | 'homedubu'
+  basis?: string
   age_limit_years: number
   trade_count: number
   complex_count: number
@@ -129,6 +132,8 @@ export interface Announcement {
     source_url: string | null
     checked_at: string
     parser_version?: string
+    verified_notice_number?: string
+    eligibility?: { residence_sido?: string; requires_homeless?: boolean }
     facts: Record<string, string>
   }
   housing_types: HousingType[]

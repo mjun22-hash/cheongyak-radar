@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "checked_at": "2026-11-13T02:05:34.836Z",
+    "last_fetch_error": null
+  },
+  "items": [
+    {
+      "id": "lh-2015122300021027",
+      "url": "https://apply.lh.or.kr/lhapply/apply/wt/wrtanc/selectWrtancInfo.do?mi=1027&panId=2015122300021027&ccrCnntSysDsCd=03&aisTpCd=05&uppAisTpCd=05",
+      "name": "[정정공고]경기남부권(수원 광교) 공가세대 일반매각 공고(무순위, 무주택세대구성원)",
+      "sido": "경기도",
+      "published": "2026-11-05",
+      "end": "2026-11-24",
+      "source": "lh",
+      "title": "[정정공고]경기남부권(수원 광교) 공가세대 일반매각 공고(무순위, 무주택세대구성원)",
+      "region": {
+        "sido": "경기도",
+        "sigungu": "수원시"
+      },
+      "application_start": "2026-11-23",
+      "application_end": "2026-11-24",
+      "category": "remaining",
+      "requirement": "",
+      "requires_homeless": true,
+      "rating": null,
+      "gain_estimate_krw": null,
+      "gain_basis": null,
+      "cash_needed_krw": null
+    },
+    {
+      "id": "lh-2015122300021009",
+      "url": "https://apply.lh.or.kr/lhapply/apply/wt/wrtanc/selectWrtancInfo.do?mi=1027&panId=2015122300021009&ccrCnntSysDsCd=03&aisTpCd=05&uppAisTpCd=05",
+      "name": "경기남부권(수원·용인 광교) 공가세대 일반매각 공고(무순위, 유주택자 가능)",
+      "sido": "경기도",
+      "published": "2026-11-05",
+      "end": "2026-11-24",
+      "source": "lh",
+      "title": "경기남부권(수원·용인 광교) 공가세대 일반매각 공고(무순위, 유주택자 가능)",
+      "region": {
+        "sido": "경기도",
+        "sigungu": "수원시"
+      },
+      "application_start": "2026-11-23",
+      "application_end": "2026-11-24",
+      "category": "remaining",
+      "requirement": "",
+      "requires_homeless": false,
+      "rating": null,
+      "gain_estimate_krw": null,
+      "gain_basis": null,
+      "cash_needed_krw": null
+    },
+    {
+      "id": "lh-2015122300021015",
+      "url": "https://apply.lh.or.kr/lhapply/apply/wt/wrtanc/selectWrtancInfo.do?mi=1027&panId=2015122300021015&ccrCnntSysDsCd=03&aisTpCd=05&uppAisTpCd=05",
+      "name": "경기남부권(안성 동인힐타운) 다세대주택 공가세대 일반매각 공고(무순위, 무주택세대구성원)",
+      "sido": "경기도",
+      "published": "2026-11-05",
+      "end": "2026-11-24",
+      "source": "lh",
+      "title": "경기남부권(안성 동인힐타운) 다세대주택 공가세대 일반매각 공고(무순위, 무주택세대구성원)",
+      "region": {
+        "sido": "경기도",
+        "sigungu": "안성시"
+      },
+      "application_start": "2026-11-23",
+      "application_end": "2026-11-24",
+      "category": "remaining",
+      "requirement": "수도권 거주 성년 무주택세대구성원",
+      "requires_homeless": true,
+      "rating": null,
+      "gain_estimate_krw": null,
+      "gain_basis": null,
+      "cash_needed_krw": null
+    }
+  ]
+}

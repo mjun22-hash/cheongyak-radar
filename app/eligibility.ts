@@ -55,6 +55,8 @@ function evaluateSupply(profile: Profile | null, announcement: Announcement, opt
   const failures: string[] = []
   const warnings: string[] = []
   const basisDate = announcement.announcement_date
+  const verified = announcement.notice_analysis?.verified_notice_number === announcement.notice_number
+  const extracted = verified ? announcement.notice_analysis?.eligibility : undefined
 
   if (!profile) {
     return { option, housingType, verdict: 'review', reasons: ['내 조건을 입력하면 자동 판정됩니다.'], sourceRef: option.source_ref }
@@ -63,7 +65,7 @@ function evaluateSupply(profile: Profile | null, announcement: Announcement, opt
   const age = ageAt(profile.birth_year, basisDate)
   const adultAge = option.min_age ?? ruleNumber('adult', 'min_age', 19)
   if (age < adultAge) failures.push(`공고일 기준 만 ${adultAge}세 이상 요건을 충족하지 않습니다.`)
-  if (option.requires_homeless === true && !profile.homeless) failures.push('무주택세대구성원 요건을 충족하지 않습니다.')
+  if ((extracted?.requires_homeless ?? option.requires_homeless) === true && !profile.homeless) failures.push('무주택세대구성원 요건을 충족하지 않습니다.')
   if (option.requires_household_head && !profile.is_household_head) failures.push('세대주 요건을 충족하지 않습니다.')
 
   if (option.kind === 'special_newlywed' && profile.marital_status !== 'married') failures.push('혼인 중이 아니어서 신혼부부 공급 대상이 아닙니다.')
@@ -114,8 +116,11 @@ function evaluateSupply(profile: Profile | null, announcement: Announcement, opt
   if (regulated && profile.no_win_last_5_years === false) failures.push('규제지역 1순위의 과거 5년 당첨 제한을 충족하지 않습니다.')
   else if (regulated && profile.no_win_last_5_years === null) warnings.push('본인·세대원의 최근 5년 당첨이력 여부를 입력해야 합니다.')
 
-  if (option.residence_sido) {
-    if (profile.residence.sido !== option.residence_sido) failures.push(`${option.residence_sido} 거주자 요건을 충족하지 않습니다.`)
+  const requiredSido = extracted?.residence_sido ?? option.residence_sido
+  if (requiredSido) {
+    const regionKey = (s: string) => s.replace(/특별자치도|특별자치시|특별시|광역시|도$/g, '').trim()
+    if (!profile.residence.sido) warnings.push(`${requiredSido} 거주 요건을 대조할 현재 거주지가 필요합니다.`)
+    else if (regionKey(profile.residence.sido) !== regionKey(requiredSido)) failures.push(`${requiredSido} 거주자 요건을 충족하지 않습니다.`)
     if (option.residence_min_months) {
       const lived = monthsBetween(profile.residence.registered_since, basisDate)
       if (lived === null) warnings.push('거주 시작일을 확인할 수 없습니다.')
@@ -139,6 +144,13 @@ function evaluateSupply(profile: Profile | null, announcement: Announcement, opt
   }
 
   if (option.kind === 'remaining' && !option.requirements_complete) warnings.push('계약취소주택은 원래 배정된 공급유형의 자격을 동일하게 충족해야 합니다.')
+  if (!failures.length && !announcement.is_sample) {
+    if (!verified) warnings.push('이번 공고의 원문과 공고번호가 아직 대조되지 않았습니다.')
+    else if (extracted?.residence_sido && option.kind === 'remaining' && option.requirements_complete) {
+      if (!profile.checked_remaining_notices?.includes(announcement.notice_number)) warnings.push(`${extracted.residence_sido} 거주·무주택 조건을 대조했습니다. 이 공고의 당첨·청약 제한 이력을 확인해 주세요.`)
+    }
+    else warnings.push('이번 공고의 공급유형별 추가 자격을 아직 구조화하지 못했습니다.')
+  }
 
   const reasons = [...failures, ...warnings]
   const verdict: Verdict = failures.length ? 'ineligible' : warnings.length ? 'review' : 'eligible'

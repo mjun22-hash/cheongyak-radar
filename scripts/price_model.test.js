@@ -15,6 +15,14 @@ const trade = (name, legalDong, price, overrides = {}) => ({
 })
 
 describe('realistic price model', () => {
+  it('prefers same-complex comparable area and does not count different sizes as separate complexes', () => {
+    const trades = [trade('안양자이더포레스트', '석수동', 800_000_000), trade('안양자이더포레스트', '석수동', 790_000_000, {area_sqm:84.4}),
+      ...Array.from({length:8}, (_, i) => trade('다른단지' + i, '석수동', 600_000_000))]
+    const result = estimateTypePrice({trades,targetArea:84,salePrice:700_000_000,targetDong:'석수동',targetName:'안양자이 더 포레스트',currentYear:2026})
+    expect(result?.method).toBe('same_complex')
+    expect(result?.complex_count).toBe(1)
+    expect(result?.trade_count).toBe(2)
+  })
   it('uses the same legal dong before wider sigungu outliers', () => {
     const trades = [
       trade('가단지', '망우동', 600_000_000), trade('가단지', '망우동', 610_000_000, { date: '2026-09-10' }),

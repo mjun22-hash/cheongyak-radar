@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, type FormEvent } from 'react'
 import rawData from '../data/announcements.json'
 import rawHomedubu from '../data/homedubu.json'
+import rawLh from '../data/lh.json'
 import { evaluateAnnouncement, getRuleVersion } from './eligibility'
 import { formatKrw, recommendation } from './recommendation'
 import type { Announcement, AnnouncementData, AnnouncementEvaluation, PriceTypeEstimate, Profile, Verdict } from './types'
@@ -19,19 +20,24 @@ type HomedubuSupplement = {
   gain_estimate_krw: number | null
   gain_basis: string | null
   cash_needed_krw: number | null
+  source?: 'lh'
+  requirement?: string
+  requires_homeless?: boolean
+  homedubu_url?: string
 }
 const homedubuData = rawHomedubu as { metadata: { generated_at: string | null; count: number; last_fetch_error: string | null }; items: HomedubuSupplement[] }
+const lhData = rawLh as {metadata:{checked_at:string|null;last_fetch_error:string|null};items:HomedubuSupplement[]}
 const STORAGE_KEY = 'cheongyak-radar-profile-v1'
 const REGION_STORAGE_KEY = 'cheongyak-radar-regions-v1'
 const DISCLAIMER = '참고용, 최종 자격은 청약홈 공고문과 순위확인서로 확인'
 const TRADE_API_APPLY_URL = 'https://www.data.go.kr/data/15126468/openapi.do'
 const SEOUL_DISTRICTS = ['종로구', '중구', '용산구', '성동구', '광진구', '동대문구', '중랑구', '성북구', '강북구', '도봉구', '노원구', '은평구', '서대문구', '마포구', '양천구', '강서구', '구로구', '금천구', '영등포구', '동작구', '관악구', '서초구', '강남구', '송파구', '강동구']
 const NORTHERN_GYEONGGI = new Set(['고양시', '남양주시', '파주시', '의정부시', '양주시', '구리시', '포천시', '동두천시', '가평군', '연천군'])
-const GYEONGGI_CITIES = ['수원시', '성남시', '안양시', '부천시', '광명시', '평택시', '안산시', '과천시', '오산시', '시흥시', '군포시', '의왕시', '하남시', '용인시', '이천시', '안성시', '김포시', '화성시', '광주시', '여주시']
+const GYEONGGI_CITIES = ['수원시', '성남시', '안양시', '부천시', '광명시', '평택시', '안산시', '과천시', '오산시', '시흥시', '군포시', '의왕시', '하남시', '용인시', '이천시', '안성시', '김포시', '화성시', '광주시', '여주시', '양평군']
 const REGION_OPTIONS = [...SEOUL_DISTRICTS.map((name) => `서울 ${name}`), ...GYEONGGI_CITIES.map((name) => `경기 ${name}`)]
 
 const EMPTY_PROFILE: Profile = {
-  birth_year: 1995,
+  birth_year: 0,
   marital_status: 'single',
   children: 0,
   household_size: 1,
@@ -40,7 +46,8 @@ const EMPTY_PROFILE: Profile = {
   no_win_last_5_years: null,
   never_owned_home: null,
   income_tax_paid_5_years: null,
-  residence: { sido: '경기도', sigungu: '', registered_since: '' },
+  residence: { sido: '', sigungu: '', registered_since: '' },
+  income_tax_paid_since: '',
   account: { type: '주택청약종합저축', rank_base_date: '', total_deposit_krw: null, deposit_count_estimate: null, verified: false },
   income: { gross_annual_krw: null, basis_verified: false },
   assets: { financial_krw: null, real_estate_krw: 0, car_value_krw: null, verified: false },
@@ -179,17 +186,16 @@ function HomedubuCard({ item }: { item: HomedubuSupplement }) {
   const days = item.application_start ? dateDiff(todayKst(), item.application_start) : null
   const lead = days === null ? { tone: 'gray', label: '일정 확인' } : days < 0 ? { tone: 'amber', label: '접수 확인' } : days <= 1 ? { tone: 'red', label: days === 0 ? '오늘 접수' : '내일 접수' } : days <= 7 ? { tone: 'amber', label: `임박 · D-${days}` } : { tone: 'green', label: `여유 · D-${days}` }
   return <article className="announcement-card homedubu-card">
-    <div className="card-topline"><div className="tag-row"><span className="homedubu-chip">홈두부 추가 발견</span>{item.rating && <span className="homedubu-chip">두부 ★ {item.rating}/5</span>}<span className={`supply-chip ${item.category === 'remaining' ? 'remaining' : ''}`}>{item.category === 'remaining' ? '무순위·줍줍' : '일반·예정'}</span><span className={`lead-chip ${lead.tone}`}>{lead.label}</span></div><span className="region-text">{regionLabel(item.region.sido)} · {item.region.sigungu}</span></div>
+    <div className="card-topline"><div className="tag-row"><span className="homedubu-chip">{item.source === 'lh' ? 'LH 공식' : '홈두부 추가 발견'}</span>{item.rating && <span className="homedubu-chip">두부 ★ {item.rating}/5</span>}<span className={`supply-chip ${item.category === 'remaining' ? 'remaining' : ''}`}>{item.category === 'remaining' ? '무순위·줍줍' : '일반·예정'}</span><span className={`lead-chip ${lead.tone}`}>{lead.label}</span></div><span className="region-text">{regionLabel(item.region.sido)} · {item.region.sigungu || '세부 지역 미정'}</span></div>
     <h3>{item.name}</h3>
-    <p className="verdict-reason">청약홈 기본 API 목록 밖에서 홈두부 최신 청약 글로 보완 발견한 공고입니다.</p>
+    <p className="verdict-reason">{item.requirement || (item.source === 'lh' ? 'LH 청약플러스에서 수집한 공고입니다.' : '홈두부에서 발견한 공고입니다. 공식 접수 조건은 아직 대조되지 않았습니다.')}</p>
     <div className="key-grid">
       <div><span>접수</span><strong>{formatDate(item.application_start)}–{formatDate(item.application_end)}</strong></div>
       <div><span>홈두부 평가</span><strong>{ratingLabel(item.rating)}</strong></div>
       <div><span>시세차익</span><strong>{item.gain_estimate_krw ? `약 ${formatKrw(item.gain_estimate_krw)}` : '상세 글에서 확인'}</strong></div>
       <div><span>필요 현금</span><strong>{item.cash_needed_krw ? `${formatKrw(item.cash_needed_krw)} 이상` : '상세 글에서 확인'}</strong></div>
     </div>
-    <p className="recommendation">홈두부 분석을 먼저 확인한 뒤 공식 공고 원문과 신청 자격을 교차 확인하세요.</p>
-    <div className="card-links"><a className="homedubu-link" href={item.url} target="_blank" rel="noreferrer">홈두부 설명 바로보기 ↗</a></div>
+    <div className="card-links">{item.source === 'lh' && <a href={item.url} target="_blank" rel="noreferrer">LH 공식 공고 ↗</a>}{(item.source !== 'lh' || item.homedubu_url) && <a className="homedubu-link" href={item.homedubu_url ?? item.url} target="_blank" rel="noreferrer">홈두부 설명 바로보기 ↗</a>}</div>
   </article>
 }
 
@@ -237,7 +243,7 @@ function ProfileEditor({ profile, onSave, onClose }: { profile: Profile | null; 
       <p className="privacy-note">입력값은 이 기기의 localStorage에만 저장되며 서버·분석도구로 전송하지 않습니다.</p>
       <form onSubmit={save} className="profile-form">
         <fieldset><legend>기본 조건</legend><div className="form-grid">
-          <label>출생연도<input type="number" min="1900" max="2100" value={draft.birth_year} onChange={(e) => set('birth_year', Number(e.target.value))} /></label>
+          <label>출생연도<input required type="number" min="1900" max="2100" value={draft.birth_year || ''} onChange={(e) => set('birth_year', Number(e.target.value))} /></label>
           <label>혼인 상태<select value={draft.marital_status} onChange={(e) => set('marital_status', e.target.value as Profile['marital_status'])}><option value="single">미혼</option><option value="married">기혼</option></select></label>
           <label>자녀 수<input type="number" min="0" value={draft.children} onChange={(e) => set('children', Number(e.target.value))} /></label>
           <label>가구원 수<input type="number" min="1" value={draft.household_size} onChange={(e) => set('household_size', Number(e.target.value))} /></label>
@@ -247,11 +253,12 @@ function ProfileEditor({ profile, onSave, onClose }: { profile: Profile | null; 
         </div><div className="form-grid history-grid">
           <label>최근 5년 세대원 당첨이력<select value={draft.no_win_last_5_years === null ? 'unknown' : draft.no_win_last_5_years ? 'none' : 'has'} onChange={(e) => set('no_win_last_5_years', e.target.value === 'unknown' ? null : e.target.value === 'none')}><option value="unknown">모름</option><option value="none">없음</option><option value="has">있음</option></select></label>
           <label>본인·세대원 과거 주택소유<select value={draft.never_owned_home === null ? 'unknown' : draft.never_owned_home ? 'none' : 'has'} onChange={(e) => set('never_owned_home', e.target.value === 'unknown' ? null : e.target.value === 'none')}><option value="unknown">모름</option><option value="none">없음</option><option value="has">있음</option></select></label>
-          <label className="span-2">최근 5개년도 소득세 납부<select value={draft.income_tax_paid_5_years === null ? 'unknown' : draft.income_tax_paid_5_years ? 'yes' : 'no'} onChange={(e) => set('income_tax_paid_5_years', e.target.value === 'unknown' ? null : e.target.value === 'yes')}><option value="unknown">모름</option><option value="yes">충족</option><option value="no">미충족</option></select></label>
+          <label>소득세 납부 시작월<input type="month" value={draft.income_tax_paid_since ?? ''} onChange={(e) => set('income_tax_paid_since', e.target.value)} /></label>
+          <label>생애최초 소득세 5년 요건<select value={draft.income_tax_paid_5_years === null ? 'unknown' : draft.income_tax_paid_5_years ? 'yes' : 'no'} onChange={(e) => set('income_tax_paid_5_years', e.target.value === 'unknown' ? null : e.target.value === 'yes')}><option value="unknown">모름</option><option value="yes">충족</option><option value="no">미충족</option></select></label>
         </div></fieldset>
 
         <fieldset><legend>거주지</legend><div className="form-grid">
-          <label>시·도<select value={draft.residence.sido} onChange={(e) => set('residence', { ...draft.residence, sido: e.target.value })}><option>경기도</option><option>서울특별시</option><option>인천광역시</option></select></label>
+          <label>시·도<select required value={draft.residence.sido} onChange={(e) => set('residence', { ...draft.residence, sido: e.target.value })}><option value="">선택</option><option>경기도</option><option>서울특별시</option><option>인천광역시</option><option value="기타">그 외 지역</option></select></label>
           <label>시·군·구<input value={draft.residence.sigungu} placeholder="예: 수원시" onChange={(e) => set('residence', { ...draft.residence, sigungu: e.target.value })} /></label>
           <label className="span-2">전입 기준월<input type="month" value={draft.residence.registered_since} onChange={(e) => set('residence', { ...draft.residence, registered_since: e.target.value })} /></label>
         </div></fieldset>
@@ -296,7 +303,7 @@ function RegionPicker({ options, selected, onChange }: { options: string[]; sele
   </details>
 }
 
-function AnnouncementCard({ announcement, evaluation, profile }: { announcement: Announcement; evaluation: AnnouncementEvaluation; profile: Profile | null }) {
+function AnnouncementCard({ announcement, evaluation, profile, onRemainingCheck }: { announcement: Announcement; evaluation: AnnouncementEvaluation; profile: Profile | null; onRemainingCheck: (id:string, checked:boolean) => void }) {
   const meta = verdictMeta[evaluation.verdict]
   const lead = leadTime(announcement)
   const best = evaluation.best
@@ -311,7 +318,7 @@ function AnnouncementCard({ announcement, evaluation, profile }: { announcement:
     announcement.policy?.price_cap ? '분양가상한제' : null,
     announcement.policy?.public_land ? '공공주택지구' : null,
   ].filter((item): item is string => Boolean(item))
-  const noticeFacts = announcement.notice_analysis?.facts ?? {}
+  const noticeFacts = announcement.notice_analysis?.verified_notice_number === announcement.notice_number ? announcement.notice_analysis.facts : {}
   const categoryLabel = announcement.housing_category === 'remaining' ? '무순위·잔여세대' : '일반·특별공급'
   const visibleFact = (value: string | null | undefined) => value || '미표기'
   return <article className={`announcement-card ${meta.className} ${status === 'closed' ? 'is-closed' : ''}`}>
@@ -322,8 +329,10 @@ function AnnouncementCard({ announcement, evaluation, profile }: { announcement:
     <div className="key-grid">
       <div><span>분양가</span><strong>{priceRange(announcement)}</strong></div>
       <div><span>계약금</span><strong>{visibleFact(noticeFacts.contract_deposit)}</strong></div>
-      <div><span>전매제한</span><strong>{visibleFact(announcement.restrictions.resale)}</strong></div>
-      <div><span>거주의무</span><strong>{visibleFact(announcement.restrictions.residence)}</strong></div>
+      <div><span>전매제한</span><strong>{visibleFact(noticeFacts.resale)}</strong></div>
+      <div><span>거주의무</span><strong>{visibleFact(noticeFacts.residence)}</strong></div>
+      <div><span>계약일</span><strong>{formatDate(announcement.contract_start)}{announcement.contract_end && announcement.contract_end !== announcement.contract_start ? `–${formatDate(announcement.contract_end)}` : ''}</strong></div>
+      <div><span>공급 세대</span><strong>{announcement.total_households ?? '미표기'}</strong></div>
       <div><span>재당첨 제한</span><strong>{visibleFact(noticeFacts.rewinning)}</strong></div>
       <div><span>접수</span><strong>{formatDate(announcement.application_start)}–{formatDate(announcement.application_end)}</strong></div>
       <div><span>발표</span><strong>{formatDate(announcement.winner_date)}</strong></div>
@@ -331,17 +340,18 @@ function AnnouncementCard({ announcement, evaluation, profile }: { announcement:
       <div className="key-wide"><span>내 추천 경로</span><strong>{best ? `${best.option.label} · ${best.housingType.name}` : '공급유형 미제공'}</strong></div>
     </div>
     {announcement.homedubu && <div className="homedubu-insight"><div><span>홈두부 관점</span><strong>{ratingLabel(announcement.homedubu.rating)}</strong></div><p>{homedubuGain ? `${announcement.homedubu.gain_basis ?? '홈두부 분석 기준'} 시세차익 약 ${formatKrw(homedubuGain)}` : '이 공고를 따로 분석한 홈두부 설명 글이 있습니다.'}{announcement.homedubu.cash_needed_krw ? ` · 필요 현금 ${formatKrw(announcement.homedubu.cash_needed_krw)} 이상` : ''}</p></div>}
-    {estimate && <div className="gain-row"><div><span className="mini-label">현실화 시세차익 · {estimate.housing_type}</span><strong>{formatKrw(estimate.gain_low_krw)} ~ {formatKrw(estimate.gain_high_krw)}</strong></div><p>기준 {formatKrw(estimate.gain_base_krw)} · 예상 시세 {formatKrw(estimate.market_base_krw)} · 신뢰도 {confidenceLabel(estimate.confidence)}</p><details className="comparable-details"><summary>비교 근거 {estimate.complex_count}개 단지</summary><p>{announcement.price_gain.basis}</p><ul>{estimate.comparables.map((item) => <li key={`${item.name}-${item.month}`}><strong>{item.name}</strong><span>{item.legal_dong ? `${item.legal_dong} · ` : ''}{item.build_year ? `${item.build_year}년 · ` : ''}{item.area_sqm}㎡ · {item.month} · {formatKrw(item.price_krw)}</span></li>)}</ul></details></div>}
+    {estimate && <div className="gain-row"><div><span className="mini-label">실거래 기준 시세차익 추정 · {estimate.housing_type}</span><strong>{formatKrw(estimate.gain_low_krw)} ~ {formatKrw(estimate.gain_high_krw)}</strong></div><p>기준 {formatKrw(estimate.gain_base_krw)} · 예상 시세 {formatKrw(estimate.market_base_krw)} · 신뢰도 {confidenceLabel(estimate.confidence)}</p><details className="comparable-details"><summary>비교 근거</summary><p>{estimate.basis ?? announcement.price_gain.basis}</p><ul>{estimate.comparables.map((item, index) => <li key={`${item.name}-${item.month}-${index}`}><strong>{item.name}</strong><span>{item.legal_dong ? `${item.legal_dong} · ` : ''}{item.build_year ? `${item.build_year}년 · ` : ''}{item.area_sqm}㎡ · {item.month} · {formatKrw(item.price_krw)}</span></li>)}</ul></details></div>}
     {!estimate && homedubuGain && <div className="gain-row homedubu-gain"><div><span className="mini-label">홈두부 보완 시세차익</span><strong>약 {formatKrw(homedubuGain)}</strong></div><p>{announcement.homedubu?.gain_basis} · 신뢰도 낮음 · 실거래가 추정이 생기면 자동 교체</p></div>}
     <p className="recommendation">{recommendation(announcement, evaluation, profile)}</p>
+    {profile && best?.option.kind === 'remaining' && best.option.requirements_complete && evaluation.verdict !== 'ineligible' && announcement.notice_analysis?.verified_notice_number === announcement.notice_number && announcement.notice_analysis.eligibility?.residence_sido && <label className="checkbox-label verdict-reason"><input type="checkbox" checked={profile.checked_remaining_notices?.includes(announcement.notice_number) ?? false} onChange={(e) => onRemainingCheck(announcement.notice_number, e.target.checked)} />이 단지의 기존 당첨·계약 이력이나 부적격 등으로 인한 신청 제한에 해당하지 않음을 확인했습니다.</label>}
     <details className="card-details" open={evaluation.verdict !== 'ineligible' && status !== 'closed'}>
       <summary>주택형·판정 근거 자세히</summary>
       <div className="type-list">{announcement.housing_types.map((type, index) => <div key={`${type.name}-${index}`}><strong>{type.name}</strong><span>{type.area_sqm ? `${type.area_sqm}㎡` : '면적 확인'} · {type.households ?? '–'}세대 · {type.price_krw ? formatKrw(type.price_krw) : '가격 확인'}</span></div>)}</div>
       <div className="evaluation-list">{visibleEvaluations.map((item, index) => <div key={`${item.option.id}-${item.housingType.name}-${index}`} className={`evaluation-item ${item.verdict}`}><strong>{verdictMeta[item.verdict].icon} {item.option.label} · {item.housingType.name}</strong><ul>{item.reasons.slice(0, 4).map((reason, reasonIndex) => <li key={`${reason}-${reasonIndex}`}>{reason}</li>)}</ul><small>근거: {item.sourceRef}</small></div>)}</div>
       {hiddenEvaluationCount > 0 && <p className="hidden-option-note">입력 조건상 불가능한 공급유형 {hiddenEvaluationCount}개는 숨겼습니다.</p>}
-      {(announcement.restrictions.resale || announcement.restrictions.residence || noticeFacts.priority_residence) && <div className="restriction-row">{announcement.restrictions.resale && <span>전매제한 {announcement.restrictions.resale}</span>}{announcement.restrictions.residence && <span>거주의무 {announcement.restrictions.residence}</span>}{noticeFacts.priority_residence && <span>지역우선 {noticeFacts.priority_residence}</span>}</div>}
+      {(noticeFacts.priority_residence || noticeFacts.balance_payment || noticeFacts.interim_payment) && <div className="restriction-row">{noticeFacts.interim_payment && <span>중도금 {noticeFacts.interim_payment}</span>}{noticeFacts.balance_payment && <span>잔금 {noticeFacts.balance_payment}</span>}{noticeFacts.priority_residence && <span>지역우선 {noticeFacts.priority_residence}</span>}</div>}
     </details>
-    <div className="card-links"><a href={announcement.notice_analysis?.source_url ?? announcement.links.official} target="_blank" rel="noreferrer">공식 공고 원문 ↗</a>{announcement.links.homepage && <a href={announcement.links.homepage} target="_blank" rel="noreferrer">분양 홈페이지 ↗</a>}{announcement.links.homedubu && <a className="homedubu-link" href={announcement.links.homedubu} target="_blank" rel="noreferrer">홈두부 설명 바로보기 ↗</a>}</div>
+    <div className="card-links"><a href={(announcement.notice_analysis?.verified_notice_number === announcement.notice_number && announcement.notice_analysis.source_url) || announcement.links.official} target="_blank" rel="noreferrer">공식 공고 원문 ↗</a>{announcement.links.homepage && <a href={announcement.links.homepage} target="_blank" rel="noreferrer">분양 홈페이지 ↗</a>}{announcement.links.homedubu && <a className="homedubu-link" href={announcement.links.homedubu} target="_blank" rel="noreferrer">홈두부 설명 바로보기 ↗</a>}</div>
   </article>
 }
 
@@ -355,11 +365,34 @@ export default function App() {
   const evaluated = useMemo(() => data.announcements.filter(isSupportedRegion).map((announcement) => ({ announcement, evaluation: evaluateAnnouncement(profile, announcement) })), [profile])
   const scoped = useMemo(() => selectedRegions.length ? evaluated.filter(({ announcement }) => selectedRegions.includes(specificRegionLabel(announcement))) : evaluated, [evaluated, selectedRegions])
   const homedubuScoped = useMemo(() => homedubuData.items.filter((item) => {
+    if (item.application_end && item.application_end < todayKst()) return false
     if (item.region.sido.startsWith('경기') && NORTHERN_GYEONGGI.has(item.region.sigungu)) return false
     if (!selectedRegions.length) return true
     return selectedRegions.includes(`${regionLabel(item.region.sido)} ${item.region.sigungu}`)
   }), [selectedRegions])
+  const lhScoped = useMemo(() => lhData.items.filter((item) =>
+    (!item.application_end || item.application_end >= todayKst()) && (opportunityFilter === 'all' || !profile || !item.requires_homeless || profile.homeless) &&
+    (opportunityFilter === 'all' || !selectedRegions.length || selectedRegions.includes(`${regionLabel(item.region.sido)} ${item.region.sigungu}`))), [selectedRegions, profile, opportunityFilter])
+  const extraItems = opportunityFilter === 'homedubu' ? homedubuScoped : [
+    ...lhScoped,
+    ...(opportunityFilter === 'all' ? [] : homedubuScoped.filter((item) =>
+      !(item.id === '12902' && lhScoped.some((lh) => lh.id === 'lh-2015122300021027')))),
+  ].filter((item) => {
+    const today = todayKst()
+    const upcoming = !item.application_start || item.application_start > today
+    const active = Boolean(item.application_start && item.application_start <= today && (!item.application_end || item.application_end >= today))
+    return opportunityFilter === 'all' || (verdictFilter !== 'eligible' && (
+      opportunityFilter === 'open' || (opportunityFilter === 'remaining' && item.category === 'remaining') ||
+      (opportunityFilter === 'upcoming' && upcoming) || (opportunityFilter === 'active' && active)
+    ))
+  }).map((item) => {
+    if (item.id !== 'lh-2015122300021027') return item
+    const insight = homedubuData.items.find((x) => x.id === '12902')
+    return insight ? {...item, rating:insight.rating, homedubu_url:insight.url} : item
+  })
   const filtered = useMemo(() => evaluated.filter(({ announcement, evaluation }) => {
+    if (opportunityFilter === 'all') return true
+    if (opportunityFilter === 'homedubu') return false
     if (profile && evaluation.verdict === 'ineligible') return false
     if (verdictFilter !== 'all' && evaluation.verdict !== verdictFilter) return false
     if (selectedRegions.length && !selectedRegions.includes(specificRegionLabel(announcement))) return false
@@ -368,7 +401,6 @@ export default function App() {
     if (opportunityFilter === 'remaining' && (announcement.housing_category !== 'remaining' || status === 'closed')) return false
     if (opportunityFilter === 'upcoming' && status !== 'upcoming') return false
     if (opportunityFilter === 'active' && status !== 'active') return false
-    if (opportunityFilter === 'homedubu') return false
     return true
   }).sort((a, b) => {
     const aClosed = statusOf(a.announcement) === 'closed' ? 1 : 0
@@ -378,15 +410,6 @@ export default function App() {
   }), [evaluated, profile, verdictFilter, selectedRegions, opportunityFilter])
 
   const counts = scoped.reduce((acc, item) => ({ ...acc, [item.evaluation.verdict]: acc[item.evaluation.verdict] + 1 }), { eligible: 0, review: 0, ineligible: 0 })
-  const categoryCounts = scoped.filter((item) => !profile || item.evaluation.verdict !== 'ineligible').reduce((acc, { announcement }) => {
-    const status = statusOf(announcement)
-    if (status !== 'closed') acc.open += 1
-    if (status !== 'closed' && announcement.housing_category === 'remaining') acc.remaining += 1
-    if (status === 'upcoming') acc.upcoming += 1
-    if (status === 'active') acc.active += 1
-    return acc
-  }, { open: 0, remaining: 0, upcoming: 0, active: 0, all: 0 })
-  categoryCounts.all = scoped.filter((item) => !profile || item.evaluation.verdict !== 'ineligible').length
   const urgent = scoped.filter(({ announcement }) => {
     const status = statusOf(announcement)
     if (status === 'active') return true
@@ -424,6 +447,7 @@ export default function App() {
     <main>
       {data.metadata.is_sample && <section className="notice sample-notice"><strong>지금은 안전한 샘플 데이터입니다.</strong><span>API 키를 설정하고 자동 갱신을 실행하면 실제 서울·경기 공고로 교체됩니다. 샘플에는 실제 단지명·가격을 넣지 않았습니다.</span></section>}
       {data.metadata.last_fetch_error && <section className="notice error-notice"><strong>최근 자동 갱신에 실패했습니다.</strong><span>이전 정상 데이터를 유지합니다. {data.metadata.last_fetch_error}</span></section>}
+      {(homedubuData.metadata.last_fetch_error || lhData.metadata.last_fetch_error) && <section className="notice sample-notice"><strong>{[homedubuData.metadata.last_fetch_error && '홈두부', lhData.metadata.last_fetch_error && 'LH'].filter(Boolean).join('·')} 최신 목록 재확인 중</strong><span>마지막으로 확인된 공고를 표시합니다.</span></section>}
       {tradeApiAccessMissing && <section className="notice error-notice"><strong>실거래가 API 권한이 아직 없습니다.</strong><span><a href={TRADE_API_APPLY_URL} target="_blank" rel="noreferrer">공공데이터포털에서 활용신청</a>하면 다음 자동 갱신부터 추정 시세차익을 계산합니다.</span></section>}
 
       <section className="daily-brief" aria-labelledby="brief-title">
@@ -443,18 +467,28 @@ export default function App() {
       <section className="lead-guide"><div className="section-heading"><div><p className="section-kicker">LEAD TIME</p><h2>접수까지 남은 시간</h2></div></div><div className="guide-row"><span><i className="green" />여유 · 7일 이상</span><span><i className="amber" />임박 · 7일 이내</span><span><i className="red" />하루 접수</span></div></section>
 
       <section className="list-section" aria-labelledby="list-title">
-        <div className="section-heading"><div><p className="section-kicker">OPPORTUNITIES</p><h2 id="list-title">청약 공고</h2></div><span>{opportunityFilter === 'homedubu' ? homedubuScoped.length : filtered.length}건</span></div>
+        <div className="section-heading"><div><p className="section-kicker">OPPORTUNITIES</p><h2 id="list-title">청약 공고</h2></div><span>{filtered.length + extraItems.length}건</span></div>
         <nav className="opportunity-tabs" aria-label="공고 종류">{([
-          ['open', '추천 공고', categoryCounts.open],
-          ['remaining', '무순위·잔여', categoryCounts.remaining],
-          ['upcoming', '다가오는 공고', categoryCounts.upcoming],
-          ['active', '접수 중', categoryCounts.active],
-          ['homedubu', '홈두부 추가', homedubuScoped.length],
-          ['all', '전체 공식', categoryCounts.all],
-        ] as const).map(([value, label, count]) => <button key={value} className={opportunityFilter === value ? 'active' : ''} onClick={() => setOpportunityFilter(value)}><strong>{count}</strong><span>{label}</span></button>)}</nav>
-        {opportunityFilter !== 'homedubu' && <div className="filter-group" aria-label="판정 필터">{([['all', '추천 전체'], ['eligible', '✓ 가능'], ['review', '! 보완']] as const).map(([value, label]) => <button key={value} className={verdictFilter === value ? 'active' : ''} onClick={() => setVerdictFilter(value)}>{label}</button>)}</div>}
-        <div className="filter-row"><span className="selected-region-summary">{selectedRegions.length ? selectedRegions.join(' · ') : '서울·경기 전체'}</span></div>
-        <div className="card-list">{opportunityFilter === 'homedubu' ? homedubuScoped.map((item) => <HomedubuCard key={item.id} item={item} />) : filtered.map((item) => <AnnouncementCard key={item.announcement.id} {...item} profile={profile} />)}{opportunityFilter === 'homedubu' ? !homedubuScoped.length && <div className="empty-state">홈두부에서 추가로 발견된 공고가 없습니다.</div> : !filtered.length && <div className="empty-state">선택한 조건에 맞는 공고가 없습니다.</div>}</div>
+          ['open', '추천 공고'],
+          ['remaining', '무순위·잔여'],
+          ['upcoming', '다가오는 공고'],
+          ['active', '접수 중'],
+          ['homedubu', '홈두부 추가'],
+          ['all', '전체 공식'],
+        ] as const).map(([value, label]) => <button key={value} className={opportunityFilter === value ? 'active' : ''} onClick={() => setOpportunityFilter(value)}><span>{label}</span></button>)}</nav>
+        {opportunityFilter !== 'homedubu' && opportunityFilter !== 'all' && <div className="filter-group" aria-label="판정 필터">{([['all', '추천 전체'], ['eligible', '✓ 가능'], ['review', '! 보완']] as const).map(([value, label]) => <button key={value} className={verdictFilter === value ? 'active' : ''} onClick={() => setVerdictFilter(value)}>{label}</button>)}</div>}
+        <div className="filter-row"><span className="selected-region-summary">{opportunityFilter === 'all' ? '서울·경기 남부 · 관심 지역과 자격 필터 미적용' : selectedRegions.length ? selectedRegions.join(' · ') : '서울·경기 남부 전체'}</span></div>
+        <div className="card-list">{[
+          ...filtered.map((item) => ({ date: item.announcement.application_start, node: <AnnouncementCard key={item.announcement.id} {...item} profile={profile} onRemainingCheck={(id, checked) => {
+            if (!profile) return
+            const ids = new Set(profile.checked_remaining_notices ?? [])
+            if (checked) ids.add(id); else ids.delete(id)
+            const next = {...profile, checked_remaining_notices:[...ids]}
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(next))
+            setProfile(next)
+          }} /> })),
+          ...extraItems.map((item) => ({ date: item.application_start, node: <HomedubuCard key={item.id} item={item} /> })),
+        ].sort((a,b) => opportunityFilter === 'all' ? 0 : (a.date ?? '9999').localeCompare(b.date ?? '9999')).map(({node}) => node)}{!filtered.length && !extraItems.length && <div className="empty-state">선택한 조건에 맞는 공고가 없습니다.</div>}</div>
       </section>
 
       <section className="method-note"><p className="section-kicker">HOW IT WORKS</p><h2>판정 원칙</h2><div className="method-grid"><div><span>01</span><strong>공식 공고 + 홈두부 보완</strong><p>청약홈·공식 모집공고를 기본으로 삼고, 홈두부 최신 청약 목록에서 API 밖 공고와 개별 분석을 보완합니다.</p></div><div><span>02</span><strong>내 조건 자동 대조</strong><p>공고일 기준 통장·거주·무주택 조건을 계산하고, 부족한 입력이 있으면 그 항목만 정확히 알려줍니다.</p></div><div><span>03</span><strong>끝까지 시세차익 추정</strong><p>같은 동·준신축 비교가 부족하면 시군구 유사면적과 가까운 면적까지 단계적으로 넓히고, 홈두부 분석이 있으면 보완합니다.</p></div></div></section>

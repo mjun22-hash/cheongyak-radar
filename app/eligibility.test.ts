@@ -20,7 +20,7 @@ const profile: Profile = {
 
 function announcement(overrides: Partial<Announcement> = {}): Announcement {
   return {
-    id: 'test', notice_number: 'test', name: '테스트', region: { sido: '경기도', sigungu: '예시시', address: '경기도 예시시' },
+    id: 'test', notice_number: 'test', is_sample: true, name: '테스트', region: { sido: '경기도', sigungu: '예시시', address: '경기도 예시시' },
     total_households: 10, housing_category: 'national', announcement_date: '2026-11-10', application_start: '2026-11-12', application_end: '2026-11-12',
     winner_date: null, contract_start: null, contract_end: null, links: { official: '#', homedubu: '#' },
     housing_types: [{ name: '59A', area_sqm: 59, households: 10, price_krw: null }],
@@ -30,6 +30,14 @@ function announcement(overrides: Partial<Announcement> = {}): Announcement {
 }
 
 describe('eligibility engine', () => {
+  it('does not pass an unverified real notice and applies the verified residence requirement', () => {
+    const current = announcement({ is_sample: false, housing_category: 'remaining',
+      supply_options: [{ id: 'r', label: '무순위', kind: 'remaining', requirements_complete: true, source_ref: '청약홈' }] })
+    expect(evaluateAnnouncement(profile, current).verdict).toBe('review')
+    const confirmed = {...current, notice_analysis: { status: 'parsed' as const, source_url: null, checked_at: '', verified_notice_number: 'test', facts: {}, eligibility: {residence_sido:'경기도', requires_homeless:true} }}
+    expect(evaluateAnnouncement({...profile, residence:{...profile.residence, sido:'부산광역시'}}, confirmed).verdict).toBe('ineligible')
+    expect(evaluateAnnouncement(profile, confirmed).best?.reasons[0]).toContain('경기도 거주·무주택')
+  })
   it('computes month differences at the announcement basis date', () => expect(monthsBetween('2019-03', '2026-11-10')).toBe(92))
   it('uses entered account figures for an automatic general-supply verdict', () => expect(evaluateAnnouncement(profile, announcement()).verdict).toBe('eligible'))
   it('rejects a single-person household from first-home supply over 60㎡', () => {

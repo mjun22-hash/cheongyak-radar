@@ -12,6 +12,7 @@ const districtCodes = {
   장안구: '41111', 권선구: '41113', 팔달구: '41115', 영통구: '41117',
   수정구: '41131', 중원구: '41133', 분당구: '41135',
   만안구: '41171', 동안구: '41173', 상록구: '41271', 단원구: '41273',
+  원미구: '41192', 소사구: '41194', 오정구: '41196',
   덕양구: '41281', 일산동구: '41285', 일산서구: '41287',
   처인구: '41461', 기흥구: '41463', 수지구: '41465',
 }
@@ -21,7 +22,7 @@ if (!key) { console.error('DATA_GO_KR_KEY가 없어 실거래가를 조회할 �
 const decode = (text) => text.replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&amp;', '&')
 const tag = (xml, name) => decode(xml.match(new RegExp(`<${name}>(?:<!\\[CDATA\\[)?(.*?)(?:\\]\\]>)?</${name}>`, 's'))?.[1]?.trim() ?? '')
 const number = (value) => Number(String(value).replaceAll(',', '').trim())
-const months = Array.from({ length: 12 }, (_, index) => { const date = new Date(); date.setUTCMonth(date.getUTCMonth() - index); return `${date.getUTCFullYear()}${String(date.getUTCMonth() + 1).padStart(2, '0')}` })
+const months = Array.from({ length: 12 }, (_, index) => { const date = new Date(); date.setUTCDate(1); date.setUTCMonth(date.getUTCMonth() - index); return `${date.getUTCFullYear()}${String(date.getUTCMonth() + 1).padStart(2, '0')}` })
 
 async function fetchTrades(lawdCode, dealMonth) {
   await fs.mkdir(cacheDir, { recursive: true })
@@ -44,6 +45,7 @@ async function fetchTrades(lawdCode, dealMonth) {
     const day = String(tag(match[1], 'dealDay') || '1').padStart(2, '0')
     return {
       name: tag(match[1], 'aptNm'),
+      apt_seq: tag(match[1], 'aptSeq'),
       legal_dong: tag(match[1], 'umdNm'),
       area_sqm: number(tag(match[1], 'excluUseAr')),
       price_krw: number(tag(match[1], 'dealAmount')) * 10_000,
@@ -69,10 +71,14 @@ for (const announcement of data.announcements) {
   if (!trades) {
     trades = []
     try {
-      for (const month of months) trades.push(...await fetchTrades(code, month))
+      for (let i = 0; i < months.length; i += 4) {
+        const batch = await Promise.allSettled(months.slice(i, i + 4).map((month) => fetchTrades(code, month)))
+        for (const result of batch) if (result.status === 'fulfilled') trades.push(...result.value)
+        if (batch.every((result) => result.status === 'rejected')) throw batch[0].reason
+      }
       tradesByCode.set(code, trades)
     } catch (error) {
-      announcement.price_gain = { status: 'unavailable', estimated_krw: null, basis: error instanceof Error ? error.message : '실거래가 API 호출 오류', comparables: [] }
+      if (announcement.price_gain?.status !== 'estimated') announcement.price_gain = { status: 'unavailable', estimated_krw: null, basis: error instanceof Error ? error.message : '실거래가 API 호출 오류', comparables: [] }
       continue
     }
   }
@@ -80,18 +86,15 @@ for (const announcement of data.announcements) {
   const targetDong = legalDongFromAddress(announcement.region.address)
   for (const type of announcement.housing_types) {
     if (!type.area_sqm || !type.price_krw) continue
-    const estimate = estimateTypePrice({ trades, targetArea: type.area_sqm, salePrice: type.price_krw, targetDong, currentYear })
+    const estimate = estimateTypePrice({ trades, targetArea: type.area_sqm, salePrice: type.price_krw, targetDong, targetName: announcement.name, currentYear })
     if (!estimate) continue
-    estimates.push({ housing_type: type.name, area_sqm: type.area_sqm, sale_price_krw: type.price_krw, ...estimate })
+    const location = estimate.scope === 'same_dong' ? targetDong : district ?? announcement.region.sigungu
+    const basis = estimate.method === 'same_complex' ? `동일 단지·동일 면적 실거래 ${estimate.trade_count}건` :
+      `${location} · ${estimate.method === 'strict' ? estimate.age_limit_years + '년 이내 준신축' : estimate.method === 'nearest_area' ? '근접면적 보완 추정' : '유사면적 보완 추정'} · ${estimate.complex_count}개 단지 ${estimate.trade_count}건`
+    estimates.push({ housing_type: type.name, area_sqm: type.area_sqm, sale_price_krw: type.price_krw, ...estimate, basis })
   }
-  if (!estimates.length) { announcement.price_gain = { status: 'unavailable', estimated_krw: null, basis: '같은 동·준신축·유사면적 비교단지 3곳 미만', comparables: [], by_type: [] }; continue }
-  const representative = [...estimates].sort((a, b) => b.complex_count - a.complex_count || b.trade_count - a.trade_count)[0]
-  const scopeLabel = representative.scope === 'same_dong' ? `${targetDong} 동일 법정동` : announcement.region.sigungu
-  const basis = representative.method === 'strict'
-    ? `${scopeLabel} · ${representative.age_limit_years}년 이내 준신축 ${representative.complex_count}개 단지 · 최근 12개월 유사면적 ${representative.trade_count}건`
-    : representative.method === 'regional_relaxed'
-      ? `${scopeLabel} · 유사면적 실거래 ${representative.complex_count}개 단지 ${representative.trade_count}건을 넓게 비교한 보완 추정`
-      : `${announcement.region.sigungu} · 가장 가까운 면적의 실거래 ${representative.complex_count}개 단지 ${representative.trade_count}건으로 환산한 보완 추정`
+  if (!estimates.length) { announcement.price_gain = { status: 'unavailable', estimated_krw: null, basis: '가격·면적 또는 거래 자료 미확보', comparables: [], by_type: [] }; continue }
+  const representative = [...estimates].sort((a, b) => Number(b.method === 'same_complex') - Number(a.method === 'same_complex') || b.complex_count - a.complex_count || b.trade_count - a.trade_count)[0]
   announcement.price_gain = {
     status: 'estimated',
     estimated_krw: representative.gain_base_krw,
@@ -100,7 +103,7 @@ for (const announcement of data.announcements) {
     market_estimated_krw: representative.market_base_krw,
     confidence: representative.confidence,
     housing_type: representative.housing_type,
-    basis,
+    basis: representative.basis,
     comparables: representative.comparables,
     by_type: estimates,
   }
