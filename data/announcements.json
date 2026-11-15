@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-14T10:58:21+09:00",
+    "generated_at": "2026-11-15T10:31:01+09:00",
     "source": "한국부동산원 청약홈 분양정보 조회 서비스",
     "is_sample": false,
     "last_fetch_error": null,
@@ -109,6 +109,21 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://static.applyhome.co.kr/ai/aia/getAtchmnfl.do?houseManageNo=2026000560&pblancNo=2026000560&atchmnflSeqNo=2022113&atchmnflSn=4",
+        "checked_at": "2026-11-14T01:58:32.401Z",
+        "parser_version": "notice-id-v4",
+        "verified_notice_number": "2026000560",
+        "facts": {
+          "resale": "소유권이전등기일까지",
+          "residence": "3년",
+          "rewinning": "10년",
+          "contract_deposit": "10%",
+          "balance_payment": "90%"
+        },
+        "eligibility": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -486828023,
@@ -409,21 +424,6 @@
       "restrictions": {
         "resale": "소유권이전등기일까지",
         "residence": "3년"
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "https://static.applyhome.co.kr/ai/aia/getAtchmnfl.do?houseManageNo=2026000560&pblancNo=2026000560&atchmnflSeqNo=2022113&atchmnflSn=4",
-        "checked_at": "2026-11-14T01:58:32.401Z",
-        "parser_version": "notice-id-v4",
-        "verified_notice_number": "2026000560",
-        "facts": {
-          "resale": "소유권이전등기일까지",
-          "residence": "3년",
-          "rewinning": "10년",
-          "contract_deposit": "10%",
-          "balance_payment": "90%"
-        },
-        "eligibility": {}
       }
     },
     {
@@ -534,6 +534,22 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://static.applyhome.co.kr/ai/aia/getAtchmnfl.do?houseManageNo=2026000505&pblancNo=2026000505&atchmnflSeqNo=2012203&atchmnflSn=4",
+        "checked_at": "2026-11-14T01:58:32.401Z",
+        "parser_version": "notice-id-v4",
+        "verified_notice_number": "2026000505",
+        "facts": {
+          "resale": "소유권이전등기일까지",
+          "residence": "3년",
+          "rewinning": "10년",
+          "contract_deposit": "10%",
+          "interim_payment": "60%",
+          "balance_payment": "30%"
+        },
+        "eligibility": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -786618648,
@@ -855,22 +871,6 @@
       "restrictions": {
         "resale": "소유권이전등기일까지",
         "residence": "3년"
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "https://static.applyhome.co.kr/ai/aia/getAtchmnfl.do?houseManageNo=2026000505&pblancNo=2026000505&atchmnflSeqNo=2012203&atchmnflSn=4",
-        "checked_at": "2026-11-14T01:58:32.401Z",
-        "parser_version": "notice-id-v4",
-        "verified_notice_number": "2026000505",
-        "facts": {
-          "resale": "소유권이전등기일까지",
-          "residence": "3년",
-          "rewinning": "10년",
-          "contract_deposit": "10%",
-          "interim_payment": "60%",
-          "balance_payment": "30%"
-        },
-        "eligibility": {}
       }
     },
     {
@@ -2172,7 +2172,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-14T01:58:32.401Z",
+        "checked_at": "2026-11-15T01:31:09.269Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -4361,7 +4361,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-14T01:58:32.401Z",
+        "checked_at": "2026-11-15T01:31:09.269Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -4629,7 +4629,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-14T01:58:32.401Z",
+        "checked_at": "2026-11-15T01:31:09.269Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -4938,7 +4938,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-14T01:58:32.401Z",
+        "checked_at": "2026-11-15T01:31:09.269Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -9196,7 +9196,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-14T01:58:32.401Z",
+        "checked_at": "2026-11-15T01:31:09.269Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -9564,7 +9564,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-14T01:58:32.401Z",
+        "checked_at": "2026-11-15T01:31:09.269Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -29894,6 +29894,20 @@
           "source_ref": "주택공급에 관한 규칙 제26조제5항"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://static.applyhome.co.kr/ai/aia/getAtchmnfl.do?houseManageNo=2026910299&pblancNo=2026910299&atchmnflSeqNo=2023067&atchmnflSn=3",
+        "checked_at": "2026-11-14T01:58:32.401Z",
+        "parser_version": "notice-id-v4",
+        "verified_notice_number": "2026910299",
+        "facts": {
+          "resale": "10년",
+          "residence": "없음",
+          "contract_deposit": "5%",
+          "interim_payment": "60%"
+        },
+        "eligibility": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 27068107,
@@ -30270,20 +30284,6 @@
       "restrictions": {
         "resale": "10년",
         "residence": "없음"
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "https://static.applyhome.co.kr/ai/aia/getAtchmnfl.do?houseManageNo=2026910299&pblancNo=2026910299&atchmnflSeqNo=2023067&atchmnflSn=3",
-        "checked_at": "2026-11-14T01:58:32.401Z",
-        "parser_version": "notice-id-v4",
-        "verified_notice_number": "2026910299",
-        "facts": {
-          "resale": "10년",
-          "residence": "없음",
-          "contract_deposit": "5%",
-          "interim_payment": "60%"
-        },
-        "eligibility": {}
       }
     },
     {
@@ -37938,7 +37938,7 @@
         "market_estimated_krw": 632512627,
         "confidence": "low",
         "housing_type": "56",
-        "basis": "관악구 · 유사면적 보완 추정 · 76개 단지 733건",
+        "basis": "관악구 · 유사면적 보완 추정 · 76개 단지 732건",
         "comparables": [
           {
             "name": "보라매갑을",
@@ -38120,7 +38120,7 @@
             "method": "regional_relaxed",
             "scope": "sigungu",
             "age_limit_years": 30,
-            "trade_count": 733,
+            "trade_count": 732,
             "complex_count": 76,
             "comparables": [
               {
@@ -38179,7 +38179,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "관악구 · 유사면적 보완 추정 · 76개 단지 733건"
+            "basis": "관악구 · 유사면적 보완 추정 · 76개 단지 732건"
           }
         ]
       },
