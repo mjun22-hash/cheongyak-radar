@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-15T10:31:01+09:00",
+    "generated_at": "2026-11-16T10:33:54+09:00",
     "source": "한국부동산원 청약홈 분양정보 조회 서비스",
     "is_sample": false,
     "last_fetch_error": null,
@@ -2172,7 +2172,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-15T01:31:09.269Z",
+        "checked_at": "2026-11-16T01:34:03.426Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -4361,7 +4361,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-15T01:31:09.269Z",
+        "checked_at": "2026-11-16T01:34:03.426Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -4629,7 +4629,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-15T01:31:09.269Z",
+        "checked_at": "2026-11-16T01:34:03.426Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -4938,7 +4938,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-15T01:31:09.269Z",
+        "checked_at": "2026-11-16T01:34:03.426Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -9196,7 +9196,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-15T01:31:09.269Z",
+        "checked_at": "2026-11-16T01:34:03.426Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -9564,7 +9564,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-15T01:31:09.269Z",
+        "checked_at": "2026-11-16T01:34:03.426Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
