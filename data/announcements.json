@@ -1,12 +1,849 @@
 {
   "metadata": {
-    "generated_at": "2026-11-19T11:56:10+09:00",
+    "generated_at": "2026-11-20T11:50:52+09:00",
     "source": "한국부동산원 청약홈 분양정보 조회 서비스",
     "is_sample": false,
     "last_fetch_error": null,
     "count": 124
   },
   "announcements": [
+    {
+      "id": "2026000585",
+      "notice_number": "2026000585",
+      "name": "고양 한신더휴 퍼스트원",
+      "is_sample": false,
+      "region": {
+        "sido": "경기도",
+        "sigungu": "고양시",
+        "address": "경기도 고양시 덕양구 행신동 173-1번지 일원"
+      },
+      "lawd_code": null,
+      "total_households": 102,
+      "housing_category": "private",
+      "announcement_date": "2026-11-19",
+      "application_start": "2026-11-30",
+      "application_end": "2026-12-02",
+      "winner_date": "2026-12-09",
+      "contract_start": "2026-12-21",
+      "contract_end": "2026-12-23",
+      "move_in_month": "202905",
+      "links": {
+        "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000585&pblancNo=2026000585",
+        "homepage": "https://gy-thehue.com",
+        "homedubu": null
+      },
+      "policy": {
+        "regulated": false,
+        "price_cap": false,
+        "public_land": false,
+        "large_land": false
+      },
+      "housing_types": [
+        {
+          "name": "59",
+          "area_sqm": 59.8728,
+          "households": 7,
+          "price_krw": 644720000
+        },
+        {
+          "name": "71",
+          "area_sqm": 71.9348,
+          "households": 21,
+          "price_krw": 729440000
+        },
+        {
+          "name": "84",
+          "area_sqm": 84.9614,
+          "households": 13,
+          "price_krw": 845790000
+        }
+      ],
+      "supply_options": [
+        {
+          "id": "general-first",
+          "label": "일반공급 1순위",
+          "kind": "general_first",
+          "min_account_months": 12,
+          "requires_homeless": null,
+          "requirements_complete": true,
+          "source_ref": "주택공급에 관한 규칙 제28조 및 별표 2"
+        },
+        {
+          "id": "first_home",
+          "label": "생애최초 특별공급",
+          "kind": "special_first_home",
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
+        },
+        {
+          "id": "newlywed",
+          "label": "신혼부부 특별공급",
+          "kind": "special_newlywed",
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
+        },
+        {
+          "id": "multi_child",
+          "label": "다자녀 특별공급",
+          "kind": "special_multi_child",
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
+        },
+        {
+          "id": "newborn",
+          "label": "신생아 특별공급",
+          "kind": "special_newborn",
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
+        },
+        {
+          "id": "elderly_parent",
+          "label": "노부모부양 특별공급",
+          "kind": "special_elderly_parent",
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
+        }
+      ],
+      "price_gain": {
+        "status": "estimated",
+        "estimated_krw": -339729820,
+        "estimated_low_krw": -375434094,
+        "estimated_high_krw": -290947968,
+        "market_estimated_krw": 506060180,
+        "confidence": "low",
+        "housing_type": "84",
+        "basis": "행신동 · 유사면적 보완 추정 · 22개 단지 207건",
+        "comparables": [
+          {
+            "name": "햇빛주공(18-2)",
+            "legal_dong": "행신동",
+            "build_year": 1998,
+            "month": "2026-09",
+            "area_sqm": 84.79,
+            "floor": 8,
+            "price_krw": 499000000,
+            "market_krw": 507022861.1864606,
+            "trade_count": 14
+          },
+          {
+            "name": "무원마을(삼보)",
+            "legal_dong": "행신동",
+            "build_year": 1994,
+            "month": "2026-10",
+            "area_sqm": 84.945,
+            "floor": 12,
+            "price_krw": 515000000,
+            "market_krw": 505097498.3813056,
+            "trade_count": 2
+          },
+          {
+            "name": "무원마을(서광)",
+            "legal_dong": "행신동",
+            "build_year": 1994,
+            "month": "2026-11",
+            "area_sqm": 84.99,
+            "floor": 10,
+            "price_krw": 502000000,
+            "market_krw": 503330567.1255442,
+            "trade_count": 15
+          },
+          {
+            "name": "햇빛주공(18-1)",
+            "legal_dong": "행신동",
+            "build_year": 1998,
+            "month": "2026-10",
+            "area_sqm": 84.79,
+            "floor": 2,
+            "price_krw": 430000000,
+            "market_krw": 500188402.06129706,
+            "trade_count": 25
+          },
+          {
+            "name": "소만마을(신안)2",
+            "legal_dong": "행신동",
+            "build_year": 1996,
+            "month": "2026-10",
+            "area_sqm": 84.75,
+            "floor": 3,
+            "price_krw": 480000000,
+            "market_krw": 497476623.468426,
+            "trade_count": 6
+          }
+        ],
+        "by_type": [
+          {
+            "housing_type": "59",
+            "area_sqm": 59.8728,
+            "sale_price_krw": 644720000,
+            "status": "estimated",
+            "market_low_krw": 323558586,
+            "market_base_krw": 347392050,
+            "market_high_krw": 382981270,
+            "gain_low_krw": -321161414,
+            "gain_base_krw": -297327950,
+            "gain_high_krw": -261738730,
+            "confidence": "low",
+            "method": "regional_relaxed",
+            "scope": "same_dong",
+            "age_limit_years": 30,
+            "trade_count": 281,
+            "complex_count": 14,
+            "comparables": [
+              {
+                "name": "샘터마을2",
+                "legal_dong": "행신동",
+                "build_year": 1996,
+                "month": "2026-11",
+                "area_sqm": 59.93,
+                "floor": 3,
+                "price_krw": 347000000,
+                "market_krw": 345526100.7031266,
+                "trade_count": 71
+              },
+              {
+                "name": "소만마을(동성)",
+                "legal_dong": "행신동",
+                "build_year": 1994,
+                "month": "2026-11",
+                "area_sqm": 59.4,
+                "floor": 2,
+                "price_krw": 338000000,
+                "market_krw": 349258000,
+                "trade_count": 12
+              },
+              {
+                "name": "햇빛주공23",
+                "legal_dong": "행신동",
+                "build_year": 1996,
+                "month": "2026-10",
+                "area_sqm": 59.97,
+                "floor": 20,
+                "price_krw": 324000000,
+                "market_krw": 354541892.29104793,
+                "trade_count": 43
+              },
+              {
+                "name": "행신벽산",
+                "legal_dong": "행신동",
+                "build_year": 2000,
+                "month": "2026-09",
+                "area_sqm": 59.43,
+                "floor": 5,
+                "price_krw": 337000000,
+                "market_krw": 339510913.67995965,
+                "trade_count": 3
+              },
+              {
+                "name": "햇빛주공22",
+                "legal_dong": "행신동",
+                "build_year": 1996,
+                "month": "2026-09",
+                "area_sqm": 59.98,
+                "floor": 8,
+                "price_krw": 318000000,
+                "market_krw": 325916458.81960654,
+                "trade_count": 10
+              }
+            ],
+            "basis": "행신동 · 유사면적 보완 추정 · 14개 단지 281건"
+          },
+          {
+            "housing_type": "71",
+            "area_sqm": 71.9348,
+            "sale_price_krw": 729440000,
+            "status": "estimated",
+            "market_low_krw": 436610815,
+            "market_base_krw": 462625946,
+            "market_high_krw": 468872083,
+            "gain_low_krw": -292829185,
+            "gain_base_krw": -266814054,
+            "gain_high_krw": -260567917,
+            "confidence": "low",
+            "method": "regional_relaxed",
+            "scope": "same_dong",
+            "age_limit_years": 30,
+            "trade_count": 111,
+            "complex_count": 10,
+            "comparables": [
+              {
+                "name": "소만마을(풍림)",
+                "legal_dong": "행신동",
+                "build_year": 1994,
+                "month": "2026-10",
+                "area_sqm": 73.02,
+                "floor": 11,
+                "price_krw": 470000000,
+                "market_krw": 463015009.5864147,
+                "trade_count": 3
+              },
+              {
+                "name": "무원마을1단지",
+                "legal_dong": "행신동",
+                "build_year": 1995,
+                "month": "2026-11",
+                "area_sqm": 68.98,
+                "floor": 14,
+                "price_krw": 436500000,
+                "market_krw": 462236881.704842,
+                "trade_count": 38
+              },
+              {
+                "name": "햇빛주공(18-2)",
+                "legal_dong": "행신동",
+                "build_year": 1998,
+                "month": "2026-11",
+                "area_sqm": 65.97,
+                "floor": 15,
+                "price_krw": 415000000,
+                "market_krw": 463972372.290435,
+                "trade_count": 13
+              },
+              {
+                "name": "햇빛주공(18-1)",
+                "legal_dong": "행신동",
+                "build_year": 1998,
+                "month": "2026-11",
+                "area_sqm": 65.97,
+                "floor": 18,
+                "price_krw": 425000000,
+                "market_krw": 455249037.4412612,
+                "trade_count": 19
+              },
+              {
+                "name": "행신2차에스케이뷰",
+                "legal_dong": "행신동",
+                "build_year": 2006,
+                "month": "2026-05",
+                "area_sqm": 78.0223,
+                "floor": 8,
+                "price_krw": 530000000,
+                "market_krw": 470505320.3830726,
+                "trade_count": 6
+              }
+            ],
+            "basis": "행신동 · 유사면적 보완 추정 · 10개 단지 111건"
+          },
+          {
+            "housing_type": "84",
+            "area_sqm": 84.9614,
+            "sale_price_krw": 845790000,
+            "status": "estimated",
+            "market_low_krw": 470355906,
+            "market_base_krw": 506060180,
+            "market_high_krw": 554842032,
+            "gain_low_krw": -375434094,
+            "gain_base_krw": -339729820,
+            "gain_high_krw": -290947968,
+            "confidence": "low",
+            "method": "regional_relaxed",
+            "scope": "same_dong",
+            "age_limit_years": 30,
+            "trade_count": 207,
+            "complex_count": 22,
+            "comparables": [
+              {
+                "name": "햇빛주공(18-2)",
+                "legal_dong": "행신동",
+                "build_year": 1998,
+                "month": "2026-09",
+                "area_sqm": 84.79,
+                "floor": 8,
+                "price_krw": 499000000,
+                "market_krw": 507022861.1864606,
+                "trade_count": 14
+              },
+              {
+                "name": "무원마을(삼보)",
+                "legal_dong": "행신동",
+                "build_year": 1994,
+                "month": "2026-10",
+                "area_sqm": 84.945,
+                "floor": 12,
+                "price_krw": 515000000,
+                "market_krw": 505097498.3813056,
+                "trade_count": 2
+              },
+              {
+                "name": "무원마을(서광)",
+                "legal_dong": "행신동",
+                "build_year": 1994,
+                "month": "2026-11",
+                "area_sqm": 84.99,
+                "floor": 10,
+                "price_krw": 502000000,
+                "market_krw": 503330567.1255442,
+                "trade_count": 15
+              },
+              {
+                "name": "햇빛주공(18-1)",
+                "legal_dong": "행신동",
+                "build_year": 1998,
+                "month": "2026-10",
+                "area_sqm": 84.79,
+                "floor": 2,
+                "price_krw": 430000000,
+                "market_krw": 500188402.06129706,
+                "trade_count": 25
+              },
+              {
+                "name": "소만마을(신안)2",
+                "legal_dong": "행신동",
+                "build_year": 1996,
+                "month": "2026-10",
+                "area_sqm": 84.75,
+                "floor": 3,
+                "price_krw": 480000000,
+                "market_krw": 497476623.468426,
+                "trade_count": 6
+              }
+            ],
+            "basis": "행신동 · 유사면적 보완 추정 · 22개 단지 207건"
+          }
+        ]
+      },
+      "restrictions": {
+        "resale": null,
+        "residence": "없음"
+      },
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://static.applyhome.co.kr/ai/aia/getAtchmnfl.do?houseManageNo=2026000585&pblancNo=2026000585&atchmnflSeqNo=2021027&atchmnflSn=5",
+        "checked_at": "2026-11-20T02:51:00.639Z",
+        "parser_version": "notice-id-v4",
+        "verified_notice_number": "2026000585",
+        "facts": {
+          "residence": "없음",
+          "contract_deposit": "10%",
+          "balance_payment": "90%"
+        },
+        "eligibility": {}
+      }
+    },
+    {
+      "id": "2026000575",
+      "notice_number": "2026000575",
+      "name": "왕숙 한신더휴 센텀(남양주 왕숙 A-17BL) 공공분양주택",
+      "is_sample": false,
+      "region": {
+        "sido": "경기도",
+        "sigungu": "남양주시",
+        "address": "경기도 남양주시 진건읍 진관리 일원 남양주 왕숙 공공주택지구 A-17BL"
+      },
+      "lawd_code": null,
+      "total_households": 379,
+      "housing_category": "national",
+      "announcement_date": "2026-11-19",
+      "application_start": "2026-11-30",
+      "application_end": "2026-12-02",
+      "winner_date": "2026-12-08",
+      "contract_start": "2027-02-15",
+      "contract_end": "2027-02-17",
+      "move_in_month": "202907",
+      "links": {
+        "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000575&pblancNo=2026000575",
+        "homepage": "https://ws-thehue.com",
+        "homedubu": null
+      },
+      "policy": {
+        "regulated": false,
+        "price_cap": true,
+        "public_land": true,
+        "large_land": true
+      },
+      "housing_types": [
+        {
+          "name": "59A",
+          "area_sqm": 59.96,
+          "households": 57,
+          "price_krw": 607500000
+        },
+        {
+          "name": "59B",
+          "area_sqm": 59.71,
+          "households": 15,
+          "price_krw": 604960000
+        },
+        {
+          "name": "59C",
+          "area_sqm": 59.14,
+          "households": 19,
+          "price_krw": 599190000
+        }
+      ],
+      "supply_options": [
+        {
+          "id": "general-first",
+          "label": "일반공급 1순위",
+          "kind": "general_first",
+          "min_account_months": 12,
+          "min_deposit_count": 12,
+          "requires_homeless": true,
+          "requirements_complete": true,
+          "source_ref": "주택공급에 관한 규칙 제27조 및 별표 2"
+        },
+        {
+          "id": "first_home",
+          "label": "생애최초 특별공급",
+          "kind": "special_first_home",
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
+        },
+        {
+          "id": "newlywed",
+          "label": "신혼부부 특별공급",
+          "kind": "special_newlywed",
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
+        },
+        {
+          "id": "multi_child",
+          "label": "다자녀 특별공급",
+          "kind": "special_multi_child",
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
+        },
+        {
+          "id": "newborn",
+          "label": "신생아 특별공급",
+          "kind": "special_newborn",
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
+        },
+        {
+          "id": "elderly_parent",
+          "label": "노부모부양 특별공급",
+          "kind": "special_elderly_parent",
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
+        }
+      ],
+      "price_gain": {
+        "status": "estimated",
+        "estimated_krw": -112151758,
+        "estimated_low_krw": -198023586,
+        "estimated_high_krw": 82941549,
+        "market_estimated_krw": 495348242,
+        "confidence": "medium",
+        "housing_type": "59A",
+        "basis": "공공주택지구 · 5년 이내 준신축 · 12개 단지 342건",
+        "comparables": [
+          {
+            "name": "e편한세상평내메트로원",
+            "legal_dong": "평내동",
+            "build_year": 2022,
+            "month": "2026-11",
+            "area_sqm": 59.9917,
+            "floor": 21,
+            "price_krw": 525000000,
+            "market_krw": 520724700.2502013,
+            "trade_count": 64
+          },
+          {
+            "name": "금곡역한신더휴",
+            "legal_dong": "금곡동",
+            "build_year": 2025,
+            "month": "2026-08",
+            "area_sqm": 59.9636,
+            "floor": 15,
+            "price_krw": 478000000,
+            "market_krw": 469971782.88161486,
+            "trade_count": 3
+          },
+          {
+            "name": "퇴계원청광플러스원",
+            "legal_dong": "퇴계원읍 퇴계원리",
+            "build_year": 2023,
+            "month": "2026-10",
+            "area_sqm": 59.4169,
+            "floor": 5,
+            "price_krw": 420000000,
+            "market_krw": 423839008.76686597,
+            "trade_count": 1
+          },
+          {
+            "name": "두산알프하임",
+            "legal_dong": "호평동",
+            "build_year": 2021,
+            "month": "2026-11",
+            "area_sqm": 59.9599,
+            "floor": 11,
+            "price_krw": 406000000,
+            "market_krw": 417315562.668267,
+            "trade_count": 29
+          },
+          {
+            "name": "진접삼부르네상스더퍼스트",
+            "legal_dong": "진접읍 금곡리",
+            "build_year": 2023,
+            "month": "2026-11",
+            "area_sqm": 59.8487,
+            "floor": 11,
+            "price_krw": 348000000,
+            "market_krw": 385958968.1961829,
+            "trade_count": 26
+          }
+        ],
+        "by_type": [
+          {
+            "housing_type": "59A",
+            "area_sqm": 59.96,
+            "sale_price_krw": 607500000,
+            "status": "estimated",
+            "market_low_krw": 409476414,
+            "market_base_krw": 495348242,
+            "market_high_krw": 690441549,
+            "gain_low_krw": -198023586,
+            "gain_base_krw": -112151758,
+            "gain_high_krw": 82941549,
+            "confidence": "medium",
+            "method": "strict",
+            "scope": "sigungu",
+            "age_limit_years": 5,
+            "trade_count": 342,
+            "complex_count": 12,
+            "comparables": [
+              {
+                "name": "e편한세상평내메트로원",
+                "legal_dong": "평내동",
+                "build_year": 2022,
+                "month": "2026-11",
+                "area_sqm": 59.9917,
+                "floor": 21,
+                "price_krw": 525000000,
+                "market_krw": 520724700.2502013,
+                "trade_count": 64
+              },
+              {
+                "name": "금곡역한신더휴",
+                "legal_dong": "금곡동",
+                "build_year": 2025,
+                "month": "2026-08",
+                "area_sqm": 59.9636,
+                "floor": 15,
+                "price_krw": 478000000,
+                "market_krw": 469971782.88161486,
+                "trade_count": 3
+              },
+              {
+                "name": "퇴계원청광플러스원",
+                "legal_dong": "퇴계원읍 퇴계원리",
+                "build_year": 2023,
+                "month": "2026-10",
+                "area_sqm": 59.4169,
+                "floor": 5,
+                "price_krw": 420000000,
+                "market_krw": 423839008.76686597,
+                "trade_count": 1
+              },
+              {
+                "name": "두산알프하임",
+                "legal_dong": "호평동",
+                "build_year": 2021,
+                "month": "2026-11",
+                "area_sqm": 59.9599,
+                "floor": 11,
+                "price_krw": 406000000,
+                "market_krw": 417315562.668267,
+                "trade_count": 29
+              },
+              {
+                "name": "진접삼부르네상스더퍼스트",
+                "legal_dong": "진접읍 금곡리",
+                "build_year": 2023,
+                "month": "2026-11",
+                "area_sqm": 59.8487,
+                "floor": 11,
+                "price_krw": 348000000,
+                "market_krw": 385958968.1961829,
+                "trade_count": 26
+              }
+            ],
+            "basis": "공공주택지구 · 5년 이내 준신축 · 12개 단지 342건"
+          },
+          {
+            "housing_type": "59B",
+            "area_sqm": 59.71,
+            "sale_price_krw": 604960000,
+            "status": "estimated",
+            "market_low_krw": 407769124,
+            "market_base_krw": 493282914,
+            "market_high_krw": 687562790,
+            "gain_low_krw": -197190876,
+            "gain_base_krw": -111677086,
+            "gain_high_krw": 82602790,
+            "confidence": "medium",
+            "method": "strict",
+            "scope": "sigungu",
+            "age_limit_years": 5,
+            "trade_count": 342,
+            "complex_count": 12,
+            "comparables": [
+              {
+                "name": "e편한세상평내메트로원",
+                "legal_dong": "평내동",
+                "build_year": 2022,
+                "month": "2026-11",
+                "area_sqm": 59.9917,
+                "floor": 21,
+                "price_krw": 525000000,
+                "market_krw": 518553566.57670975,
+                "trade_count": 64
+              },
+              {
+                "name": "금곡역한신더휴",
+                "legal_dong": "금곡동",
+                "build_year": 2025,
+                "month": "2026-08",
+                "area_sqm": 59.9636,
+                "floor": 15,
+                "price_krw": 478000000,
+                "market_krw": 468012260.77153474,
+                "trade_count": 3
+              },
+              {
+                "name": "퇴계원청광플러스원",
+                "legal_dong": "퇴계원읍 퇴계원리",
+                "build_year": 2023,
+                "month": "2026-10",
+                "area_sqm": 59.4169,
+                "floor": 5,
+                "price_krw": 420000000,
+                "market_krw": 422071834.7810135,
+                "trade_count": 1
+              },
+              {
+                "name": "두산알프하임",
+                "legal_dong": "호평동",
+                "build_year": 2021,
+                "month": "2026-11",
+                "area_sqm": 59.9599,
+                "floor": 11,
+                "price_krw": 406000000,
+                "market_krw": 415575587.84059745,
+                "trade_count": 29
+              },
+              {
+                "name": "진접삼부르네상스더퍼스트",
+                "legal_dong": "진접읍 금곡리",
+                "build_year": 2023,
+                "month": "2026-11",
+                "area_sqm": 59.8487,
+                "floor": 11,
+                "price_krw": 348000000,
+                "market_krw": 384349733.0052382,
+                "trade_count": 26
+              }
+            ],
+            "basis": "공공주택지구 · 5년 이내 준신축 · 12개 단지 342건"
+          },
+          {
+            "housing_type": "59C",
+            "area_sqm": 59.14,
+            "sale_price_krw": 599190000,
+            "status": "estimated",
+            "market_low_krw": 403876503,
+            "market_base_krw": 488573966,
+            "market_high_krw": 680999219,
+            "gain_low_krw": -195313497,
+            "gain_base_krw": -110616034,
+            "gain_high_krw": 81809219,
+            "confidence": "medium",
+            "method": "strict",
+            "scope": "sigungu",
+            "age_limit_years": 5,
+            "trade_count": 342,
+            "complex_count": 12,
+            "comparables": [
+              {
+                "name": "금곡역한신더휴",
+                "legal_dong": "금곡동",
+                "build_year": 2025,
+                "month": "2026-08",
+                "area_sqm": 59.9636,
+                "floor": 15,
+                "price_krw": 478000000,
+                "market_krw": 463544550.3605521,
+                "trade_count": 3
+              },
+              {
+                "name": "e편한세상평내메트로원",
+                "legal_dong": "평내동",
+                "build_year": 2022,
+                "month": "2026-11",
+                "area_sqm": 59.9917,
+                "floor": 21,
+                "price_krw": 525000000,
+                "market_krw": 513603381.80114913,
+                "trade_count": 64
+              },
+              {
+                "name": "퇴계원청광플러스원",
+                "legal_dong": "퇴계원읍 퇴계원리",
+                "build_year": 2023,
+                "month": "2026-10",
+                "area_sqm": 59.4169,
+                "floor": 5,
+                "price_krw": 420000000,
+                "market_krw": 418042678.09326977,
+                "trade_count": 1
+              },
+              {
+                "name": "두산알프하임",
+                "legal_dong": "호평동",
+                "build_year": 2021,
+                "month": "2026-11",
+                "area_sqm": 59.9599,
+                "floor": 11,
+                "price_krw": 406000000,
+                "market_krw": 411608445.23351085,
+                "trade_count": 29
+              },
+              {
+                "name": "진접삼부르네상스더퍼스트",
+                "legal_dong": "진접읍 금곡리",
+                "build_year": 2023,
+                "month": "2026-11",
+                "area_sqm": 59.8487,
+                "floor": 11,
+                "price_krw": 348000000,
+                "market_krw": 380680676.7698842,
+                "trade_count": 26
+              }
+            ],
+            "basis": "공공주택지구 · 5년 이내 준신축 · 12개 단지 342건"
+          }
+        ]
+      },
+      "restrictions": {
+        "resale": "3년",
+        "residence": "3년"
+      },
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://static.applyhome.co.kr/ai/aia/getAtchmnfl.do?houseManageNo=2026000575&pblancNo=2026000575&atchmnflSeqNo=2027378&atchmnflSn=2",
+        "checked_at": "2026-11-20T02:51:00.639Z",
+        "parser_version": "notice-id-v4",
+        "verified_notice_number": "2026000575",
+        "facts": {
+          "resale": "3년",
+          "residence": "3년",
+          "rewinning": "10년",
+          "contract_deposit": "10%",
+          "balance_payment": "90%"
+        },
+        "eligibility": {}
+      }
+    },
     {
       "id": "2026000560",
       "notice_number": "2026000560",
@@ -2172,7 +3009,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-19T02:56:18.517Z",
+        "checked_at": "2026-11-20T02:51:00.639Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -3585,15 +4422,15 @@
             "status": "estimated",
             "market_low_krw": 343510530,
             "market_base_krw": 517630438,
-            "market_high_krw": 569886076,
+            "market_high_krw": 582097920,
             "gain_low_krw": -314489470,
             "gain_base_krw": -140369562,
-            "gain_high_krw": -88113924,
+            "gain_high_krw": -75902080,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "sigungu",
             "age_limit_years": 30,
-            "trade_count": 193,
+            "trade_count": 194,
             "complex_count": 17,
             "comparables": [
               {
@@ -3652,7 +4489,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "중랑구 · 유사면적 보완 추정 · 17개 단지 193건"
+            "basis": "중랑구 · 유사면적 보완 추정 · 17개 단지 194건"
           },
           {
             "housing_type": "58",
@@ -4361,7 +5198,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-19T02:56:18.517Z",
+        "checked_at": "2026-11-20T02:51:00.639Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -4373,7 +5210,7 @@
         "market_estimated_krw": 232262220,
         "confidence": "low",
         "housing_type": "55O",
-        "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2239건",
+        "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2242건",
         "comparables": [
           {
             "name": "신명",
@@ -4501,7 +5338,7 @@
             "method": "regional_relaxed",
             "scope": "sigungu",
             "age_limit_years": 30,
-            "trade_count": 2239,
+            "trade_count": 2242,
             "complex_count": 166,
             "comparables": [
               {
@@ -4560,7 +5397,7 @@
                 "trade_count": 4
               }
             ],
-            "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2239건"
+            "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2242건"
           }
         ]
       },
@@ -4629,7 +5466,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-19T02:56:18.517Z",
+        "checked_at": "2026-11-20T02:51:00.639Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -4938,7 +5775,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-19T02:56:18.517Z",
+        "checked_at": "2026-11-20T02:51:00.639Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -5752,12 +6589,12 @@
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 574832542,
-        "estimated_low_krw": 446570401,
+        "estimated_low_krw": 452180520,
         "estimated_high_krw": 699309471,
         "market_estimated_krw": 1524132542,
         "confidence": "high",
         "housing_type": "84A",
-        "basis": "원천동 · 10년 이내 준신축 · 4개 단지 99건",
+        "basis": "원천동 · 10년 이내 준신축 · 4개 단지 100건",
         "comparables": [
           {
             "name": "광교아이파크",
@@ -5782,6 +6619,17 @@
             "trade_count": 12
           },
           {
+            "name": "영흥숲푸르지오파크비엔",
+            "legal_dong": "원천동",
+            "build_year": 2023,
+            "month": "2026-11",
+            "area_sqm": 84.9868,
+            "floor": 16,
+            "price_krw": 1097000000,
+            "market_krw": 1034739219.431824,
+            "trade_count": 35
+          },
+          {
             "name": "광교중흥에스클래스",
             "legal_dong": "원천동",
             "build_year": 2019,
@@ -5791,17 +6639,6 @@
             "price_krw": 2120000000,
             "market_krw": 2020825494.3559363,
             "trade_count": 37
-          },
-          {
-            "name": "영흥숲푸르지오파크비엔",
-            "legal_dong": "원천동",
-            "build_year": 2023,
-            "month": "2026-11",
-            "area_sqm": 84.9954,
-            "floor": 19,
-            "price_krw": 1000000000,
-            "market_krw": 1012298742.3203032,
-            "trade_count": 34
           }
         ],
         "by_type": [
@@ -5810,17 +6647,17 @@
             "area_sqm": 84.7637,
             "sale_price_krw": 949300000,
             "status": "estimated",
-            "market_low_krw": 1395870401,
+            "market_low_krw": 1401480520,
             "market_base_krw": 1524132542,
             "market_high_krw": 1648609471,
-            "gain_low_krw": 446570401,
+            "gain_low_krw": 452180520,
             "gain_base_krw": 574832542,
             "gain_high_krw": 699309471,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 10,
-            "trade_count": 99,
+            "trade_count": 100,
             "complex_count": 4,
             "comparables": [
               {
@@ -5846,6 +6683,17 @@
                 "trade_count": 12
               },
               {
+                "name": "영흥숲푸르지오파크비엔",
+                "legal_dong": "원천동",
+                "build_year": 2023,
+                "month": "2026-11",
+                "area_sqm": 84.9868,
+                "floor": 16,
+                "price_krw": 1097000000,
+                "market_krw": 1034739219.431824,
+                "trade_count": 35
+              },
+              {
                 "name": "광교중흥에스클래스",
                 "legal_dong": "원천동",
                 "build_year": 2019,
@@ -5855,37 +6703,26 @@
                 "price_krw": 2120000000,
                 "market_krw": 2020825494.3559363,
                 "trade_count": 37
-              },
-              {
-                "name": "영흥숲푸르지오파크비엔",
-                "legal_dong": "원천동",
-                "build_year": 2023,
-                "month": "2026-11",
-                "area_sqm": 84.9954,
-                "floor": 19,
-                "price_krw": 1000000000,
-                "market_krw": 1012298742.3203032,
-                "trade_count": 34
               }
             ],
-            "basis": "원천동 · 10년 이내 준신축 · 4개 단지 99건"
+            "basis": "원천동 · 10년 이내 준신축 · 4개 단지 100건"
           },
           {
             "housing_type": "84B",
             "area_sqm": 84.8159,
             "sale_price_krw": 948900000,
             "status": "estimated",
-            "market_low_krw": 1396730019,
+            "market_low_krw": 1402343593,
             "market_base_krw": 1525071148,
             "market_high_krw": 1649624734,
-            "gain_low_krw": 447830019,
+            "gain_low_krw": 453443593,
             "gain_base_krw": 576171148,
             "gain_high_krw": 700724734,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 10,
-            "trade_count": 99,
+            "trade_count": 100,
             "complex_count": 4,
             "comparables": [
               {
@@ -5911,6 +6748,17 @@
                 "trade_count": 12
               },
               {
+                "name": "영흥숲푸르지오파크비엔",
+                "legal_dong": "원천동",
+                "build_year": 2023,
+                "month": "2026-11",
+                "area_sqm": 84.9868,
+                "floor": 16,
+                "price_krw": 1097000000,
+                "market_krw": 1035376442.5267849,
+                "trade_count": 35
+              },
+              {
                 "name": "광교중흥에스클래스",
                 "legal_dong": "원천동",
                 "build_year": 2019,
@@ -5920,37 +6768,26 @@
                 "price_krw": 2120000000,
                 "market_krw": 2022069978.6199005,
                 "trade_count": 37
-              },
-              {
-                "name": "영흥숲푸르지오파크비엔",
-                "legal_dong": "원천동",
-                "build_year": 2023,
-                "month": "2026-11",
-                "area_sqm": 84.9954,
-                "floor": 19,
-                "price_krw": 1000000000,
-                "market_krw": 1012922145.9040203,
-                "trade_count": 34
               }
             ],
-            "basis": "원천동 · 10년 이내 준신축 · 4개 단지 99건"
+            "basis": "원천동 · 10년 이내 준신축 · 4개 단지 100건"
           },
           {
             "housing_type": "84C",
             "area_sqm": 84.6192,
             "sale_price_krw": 938600000,
             "status": "estimated",
-            "market_low_krw": 1393490806,
+            "market_low_krw": 1399091361,
             "market_base_krw": 1521534294,
             "market_high_krw": 1645799022,
-            "gain_low_krw": 454890806,
+            "gain_low_krw": 460491361,
             "gain_base_krw": 582934294,
             "gain_high_krw": 707199022,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 10,
-            "trade_count": 99,
+            "trade_count": 100,
             "complex_count": 4,
             "comparables": [
               {
@@ -5976,6 +6813,17 @@
                 "trade_count": 16
               },
               {
+                "name": "영흥숲푸르지오파크비엔",
+                "legal_dong": "원천동",
+                "build_year": 2023,
+                "month": "2026-11",
+                "area_sqm": 84.9868,
+                "floor": 16,
+                "price_krw": 1097000000,
+                "market_krw": 1032975258.9486468,
+                "trade_count": 35
+              },
+              {
                 "name": "광교중흥에스클래스",
                 "legal_dong": "원천동",
                 "build_year": 2019,
@@ -5985,20 +6833,9 @@
                 "price_krw": 2120000000,
                 "market_krw": 2017380513.9700584,
                 "trade_count": 37
-              },
-              {
-                "name": "영흥숲푸르지오파크비엔",
-                "legal_dong": "원천동",
-                "build_year": 2023,
-                "month": "2026-11",
-                "area_sqm": 84.9954,
-                "floor": 19,
-                "price_krw": 1000000000,
-                "market_krw": 1010573036.9975617,
-                "trade_count": 34
               }
             ],
-            "basis": "원천동 · 10년 이내 준신축 · 4개 단지 99건"
+            "basis": "원천동 · 10년 이내 준신축 · 4개 단지 100건"
           }
         ]
       },
@@ -7877,7 +8714,7 @@
         "market_estimated_krw": 668696513,
         "confidence": "low",
         "housing_type": "79",
-        "basis": "마북동 · 유사면적 보완 추정 · 19개 단지 338건",
+        "basis": "마북동 · 유사면적 보완 추정 · 19개 단지 340건",
         "comparables": [
           {
             "name": "구성우림필유",
@@ -7916,12 +8753,12 @@
             "name": "교동마을구성자이3차",
             "legal_dong": "마북동",
             "build_year": 2010,
-            "month": "2026-10",
+            "month": "2026-11",
             "area_sqm": 84.9724,
-            "floor": 4,
-            "price_krw": 625000000,
-            "market_krw": 588264542.3690516,
-            "trade_count": 12
+            "floor": 12,
+            "price_krw": 640000000,
+            "market_krw": 590617600.5385277,
+            "trade_count": 13
           },
           {
             "name": "교동마을마북이편한세상",
@@ -8050,29 +8887,18 @@
             "sale_price_krw": 716800000,
             "status": "estimated",
             "market_low_krw": 534377713,
-            "market_base_krw": 684107032,
-            "market_high_krw": 698682606,
+            "market_base_krw": 698682606,
+            "market_high_krw": 713850816,
             "gain_low_krw": -182422287,
-            "gain_base_krw": -32692968,
-            "gain_high_krw": -18117394,
+            "gain_base_krw": -18117394,
+            "gain_high_krw": -2949184,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 10,
-            "trade_count": 71,
+            "trade_count": 72,
             "complex_count": 5,
             "comparables": [
-              {
-                "name": "용인동백두산위브더제니스",
-                "legal_dong": "동백동",
-                "build_year": 2021,
-                "month": "2026-11",
-                "area_sqm": 69.5624,
-                "floor": 18,
-                "price_krw": 720000000,
-                "market_krw": 684107031.9597944,
-                "trade_count": 19
-              },
               {
                 "name": "신흥덕롯데캐슬레이시티",
                 "legal_dong": "신갈동",
@@ -8083,6 +8909,17 @@
                 "price_krw": 770000000,
                 "market_krw": 698682606.2278914,
                 "trade_count": 13
+              },
+              {
+                "name": "용인동백두산위브더제니스",
+                "legal_dong": "동백동",
+                "build_year": 2021,
+                "month": "2026-11",
+                "area_sqm": 69.5624,
+                "floor": 15,
+                "price_krw": 720000000,
+                "market_krw": 713850815.9580463,
+                "trade_count": 20
               },
               {
                 "name": "하우스디동백카바나",
@@ -8118,7 +8955,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "기흥구 · 10년 이내 준신축 · 5개 단지 71건"
+            "basis": "기흥구 · 10년 이내 준신축 · 5개 단지 72건"
           },
           {
             "housing_type": "74",
@@ -8189,7 +9026,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 338,
+            "trade_count": 340,
             "complex_count": 19,
             "comparables": [
               {
@@ -8229,12 +9066,12 @@
                 "name": "교동마을구성자이3차",
                 "legal_dong": "마북동",
                 "build_year": 2010,
-                "month": "2026-10",
+                "month": "2026-11",
                 "area_sqm": 84.9724,
-                "floor": 4,
-                "price_krw": 625000000,
-                "market_krw": 588264542.3690516,
-                "trade_count": 12
+                "floor": 12,
+                "price_krw": 640000000,
+                "market_krw": 590617600.5385277,
+                "trade_count": 13
               },
               {
                 "name": "교동마을마북이편한세상",
@@ -8248,7 +9085,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "마북동 · 유사면적 보완 추정 · 19개 단지 338건"
+            "basis": "마북동 · 유사면적 보완 추정 · 19개 단지 340건"
           },
           {
             "housing_type": "84",
@@ -9218,7 +10055,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-19T02:56:18.517Z",
+        "checked_at": "2026-11-20T02:51:00.639Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -9586,7 +10423,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-19T02:56:18.517Z",
+        "checked_at": "2026-11-20T02:51:00.639Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -10701,17 +11538,17 @@
             "area_sqm": 115.3141,
             "sale_price_krw": 994000000,
             "status": "estimated",
-            "market_low_krw": 802889232,
+            "market_low_krw": 805746923,
             "market_base_krw": 817055877,
             "market_high_krw": 819240718,
-            "gain_low_krw": -191110768,
+            "gain_low_krw": -188253077,
             "gain_base_krw": -176944123,
             "gain_high_krw": -174759282,
             "confidence": "medium",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 10,
-            "trade_count": 23,
+            "trade_count": 24,
             "complex_count": 3,
             "comparables": [
               {
@@ -10742,13 +11579,13 @@
                 "build_year": 2026,
                 "month": "2026-11",
                 "area_sqm": 121.0566,
-                "floor": 11,
-                "price_krw": 828000000,
-                "market_krw": 788722587.6160407,
-                "trade_count": 3
+                "floor": 25,
+                "price_krw": 872000000,
+                "market_krw": 794437968.6857221,
+                "trade_count": 4
               }
             ],
-            "basis": "동패동 · 10년 이내 준신축 · 3개 단지 23건"
+            "basis": "동패동 · 10년 이내 준신축 · 3개 단지 24건"
           }
         ]
       },
@@ -13845,13 +14682,13 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": 27068107,
+        "estimated_krw": 21827465,
         "estimated_low_krw": -25449458,
         "estimated_high_krw": 102274385,
-        "market_estimated_krw": 606068107,
+        "market_estimated_krw": 600827465,
         "confidence": "medium",
         "housing_type": "84A",
-        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 122건",
+        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건",
         "comparables": [
           {
             "name": "힐스테이트용인둔전역",
@@ -13859,10 +14696,10 @@
             "build_year": 2024,
             "month": "2026-11",
             "area_sqm": 84.9156,
-            "floor": 5,
-            "price_krw": 600000000,
-            "market_krw": 606068107.1678171,
-            "trade_count": 21
+            "floor": 18,
+            "price_krw": 599000000,
+            "market_krw": 600827465.05253,
+            "trade_count": 22
           },
           {
             "name": "힐스테이트몬테로이1단지",
@@ -13872,19 +14709,8 @@
             "area_sqm": 84.846,
             "floor": 17,
             "price_krw": 376000000,
-            "market_krw": 599716671.0697266,
-            "trade_count": 11
-          },
-          {
-            "name": "힐스테이트몬테로이2단지",
-            "legal_dong": "모현읍 왕산리",
-            "build_year": 2025,
-            "month": "2026-11",
-            "area_sqm": 84.846,
-            "floor": 12,
-            "price_krw": 627000000,
-            "market_krw": 626940046.8607707,
-            "trade_count": 15
+            "market_krw": 598364218.7832754,
+            "trade_count": 12
           },
           {
             "name": "힐스테이트몬테로이3단지",
@@ -13896,6 +14722,17 @@
             "price_krw": 585000000,
             "market_krw": 580870680.2112136,
             "trade_count": 12
+          },
+          {
+            "name": "힐스테이트몬테로이2단지",
+            "legal_dong": "모현읍 왕산리",
+            "build_year": 2025,
+            "month": "2026-11",
+            "area_sqm": 84.846,
+            "floor": 12,
+            "price_krw": 627000000,
+            "market_krw": 626940046.8607707,
+            "trade_count": 15
           },
           {
             "name": "서희스타힐스포레스트",
@@ -13925,7 +14762,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 227,
+            "trade_count": 229,
             "complex_count": 9,
             "comparables": [
               {
@@ -13984,7 +14821,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 227건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
           },
           {
             "housing_type": "59B",
@@ -14001,7 +14838,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 227,
+            "trade_count": 229,
             "complex_count": 9,
             "comparables": [
               {
@@ -14060,7 +14897,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 227건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
           },
           {
             "housing_type": "59C",
@@ -14077,7 +14914,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 227,
+            "trade_count": 229,
             "complex_count": 9,
             "comparables": [
               {
@@ -14136,7 +14973,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 227건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
           },
           {
             "housing_type": "69A",
@@ -14350,16 +15187,16 @@
             "sale_price_krw": 579000000,
             "status": "estimated",
             "market_low_krw": 553550542,
-            "market_base_krw": 606068107,
+            "market_base_krw": 600827465,
             "market_high_krw": 681274385,
             "gain_low_krw": -25449458,
-            "gain_base_krw": 27068107,
+            "gain_base_krw": 21827465,
             "gain_high_krw": 102274385,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 122,
+            "trade_count": 124,
             "complex_count": 13,
             "comparables": [
               {
@@ -14368,10 +15205,10 @@
                 "build_year": 2024,
                 "month": "2026-11",
                 "area_sqm": 84.9156,
-                "floor": 5,
-                "price_krw": 600000000,
-                "market_krw": 606068107.1678171,
-                "trade_count": 21
+                "floor": 18,
+                "price_krw": 599000000,
+                "market_krw": 600827465.05253,
+                "trade_count": 22
               },
               {
                 "name": "힐스테이트몬테로이1단지",
@@ -14381,19 +15218,8 @@
                 "area_sqm": 84.846,
                 "floor": 17,
                 "price_krw": 376000000,
-                "market_krw": 599716671.0697266,
-                "trade_count": 11
-              },
-              {
-                "name": "힐스테이트몬테로이2단지",
-                "legal_dong": "모현읍 왕산리",
-                "build_year": 2025,
-                "month": "2026-11",
-                "area_sqm": 84.846,
-                "floor": 12,
-                "price_krw": 627000000,
-                "market_krw": 626940046.8607707,
-                "trade_count": 15
+                "market_krw": 598364218.7832754,
+                "trade_count": 12
               },
               {
                 "name": "힐스테이트몬테로이3단지",
@@ -14407,6 +15233,17 @@
                 "trade_count": 12
               },
               {
+                "name": "힐스테이트몬테로이2단지",
+                "legal_dong": "모현읍 왕산리",
+                "build_year": 2025,
+                "month": "2026-11",
+                "area_sqm": 84.846,
+                "floor": 12,
+                "price_krw": 627000000,
+                "market_krw": 626940046.8607707,
+                "trade_count": 15
+              },
+              {
                 "name": "서희스타힐스포레스트",
                 "legal_dong": "역북동",
                 "build_year": 2023,
@@ -14418,7 +15255,7 @@
                 "trade_count": 12
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 122건"
+            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건"
           },
           {
             "housing_type": "84B",
@@ -14426,16 +15263,16 @@
             "sale_price_krw": 553000000,
             "status": "estimated",
             "market_low_krw": 553544030,
-            "market_base_krw": 606060977,
+            "market_base_krw": 600820396,
             "market_high_krw": 681266370,
             "gain_low_krw": 544030,
-            "gain_base_krw": 53060977,
+            "gain_base_krw": 47820396,
             "gain_high_krw": 128266370,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 122,
+            "trade_count": 124,
             "complex_count": 13,
             "comparables": [
               {
@@ -14444,10 +15281,10 @@
                 "build_year": 2024,
                 "month": "2026-11",
                 "area_sqm": 84.9156,
-                "floor": 5,
-                "price_krw": 600000000,
-                "market_krw": 606060976.9464033,
-                "trade_count": 21
+                "floor": 18,
+                "price_krw": 599000000,
+                "market_krw": 600820396.4858017,
+                "trade_count": 22
               },
               {
                 "name": "힐스테이트몬테로이1단지",
@@ -14457,19 +15294,8 @@
                 "area_sqm": 84.846,
                 "floor": 17,
                 "price_krw": 376000000,
-                "market_krw": 599709615.5711782,
-                "trade_count": 11
-              },
-              {
-                "name": "힐스테이트몬테로이2단지",
-                "legal_dong": "모현읍 왕산리",
-                "build_year": 2025,
-                "month": "2026-11",
-                "area_sqm": 84.846,
-                "floor": 12,
-                "price_krw": 627000000,
-                "market_krw": 626932671.0868361,
-                "trade_count": 15
+                "market_krw": 598357179.1959491,
+                "trade_count": 12
               },
               {
                 "name": "힐스테이트몬테로이3단지",
@@ -14483,6 +15309,17 @@
                 "trade_count": 12
               },
               {
+                "name": "힐스테이트몬테로이2단지",
+                "legal_dong": "모현읍 왕산리",
+                "build_year": 2025,
+                "month": "2026-11",
+                "area_sqm": 84.846,
+                "floor": 12,
+                "price_krw": 627000000,
+                "market_krw": 626932671.0868361,
+                "trade_count": 15
+              },
+              {
                 "name": "서희스타힐스포레스트",
                 "legal_dong": "역북동",
                 "build_year": 2023,
@@ -14494,7 +15331,7 @@
                 "trade_count": 12
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 122건"
+            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건"
           }
         ]
       },
@@ -14887,7 +15724,7 @@
         "market_estimated_krw": 633182355,
         "confidence": "low",
         "housing_type": "84A",
-        "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 204건",
+        "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 205건",
         "comparables": [
           {
             "name": "동양메이저1차",
@@ -15091,7 +15928,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 204,
+            "trade_count": 205,
             "complex_count": 18,
             "comparables": [
               {
@@ -15150,7 +15987,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 204건"
+            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 205건"
           },
           {
             "housing_type": "84B",
@@ -15167,7 +16004,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 204,
+            "trade_count": 205,
             "complex_count": 18,
             "comparables": [
               {
@@ -15226,7 +16063,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 204건"
+            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 205건"
           },
           {
             "housing_type": "84C",
@@ -15243,7 +16080,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 204,
+            "trade_count": 205,
             "complex_count": 18,
             "comparables": [
               {
@@ -15302,7 +16139,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 204건"
+            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 205건"
           },
           {
             "housing_type": "84D",
@@ -15319,7 +16156,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 204,
+            "trade_count": 205,
             "complex_count": 18,
             "comparables": [
               {
@@ -15378,7 +16215,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 204건"
+            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 205건"
           },
           {
             "housing_type": "84E",
@@ -15395,7 +16232,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 204,
+            "trade_count": 205,
             "complex_count": 18,
             "comparables": [
               {
@@ -15454,7 +16291,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 204건"
+            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 205건"
           }
         ]
       },
@@ -17153,7 +17990,7 @@
         "market_estimated_krw": 1814052018,
         "confidence": "low",
         "housing_type": "84A",
-        "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건",
+        "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건",
         "comparables": [
           {
             "name": "상록마을(보성)",
@@ -17227,7 +18064,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 49,
+            "trade_count": 50,
             "complex_count": 12,
             "comparables": [
               {
@@ -17280,13 +18117,13 @@
                 "build_year": 1994,
                 "month": "2026-10",
                 "area_sqm": 68.04,
-                "floor": 11,
-                "price_krw": 1690000000,
-                "market_krw": 1634479717.813051,
-                "trade_count": 4
+                "floor": 12,
+                "price_krw": 1750000000,
+                "market_krw": 1666005291.005291,
+                "trade_count": 5
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 12개 단지 49건"
+            "basis": "정자동 · 유사면적 보완 추정 · 12개 단지 50건"
           },
           {
             "housing_type": "74A",
@@ -17303,7 +18140,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 59,
+            "trade_count": 60,
             "complex_count": 14,
             "comparables": [
               {
@@ -17340,17 +18177,6 @@
                 "trade_count": 7
               },
               {
-                "name": "정든마을(7단지)(한진)",
-                "legal_dong": "정자동",
-                "build_year": 1994,
-                "month": "2026-10",
-                "area_sqm": 68.04,
-                "floor": 11,
-                "price_krw": 1690000000,
-                "market_krw": 1832598471.48736,
-                "trade_count": 4
-              },
-              {
                 "name": "한솔마을(5단지)(주공)",
                 "legal_dong": "정자동",
                 "build_year": 1994,
@@ -17360,9 +18186,20 @@
                 "price_krw": 1695000000,
                 "market_krw": 1638956310.6796117,
                 "trade_count": 20
+              },
+              {
+                "name": "정든마을(2단지)(동아)",
+                "legal_dong": "정자동",
+                "build_year": 1995,
+                "month": "2026-07",
+                "area_sqm": 69.055,
+                "floor": 12,
+                "price_krw": 1635000000,
+                "market_krw": 1623488523.6405761,
+                "trade_count": 5
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 14개 단지 59건"
+            "basis": "정자동 · 유사면적 보완 추정 · 14개 단지 60건"
           },
           {
             "housing_type": "74B",
@@ -17379,7 +18216,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 59,
+            "trade_count": 60,
             "complex_count": 14,
             "comparables": [
               {
@@ -17416,17 +18253,6 @@
                 "trade_count": 7
               },
               {
-                "name": "정든마을(7단지)(한진)",
-                "legal_dong": "정자동",
-                "build_year": 1994,
-                "month": "2026-10",
-                "area_sqm": 68.04,
-                "floor": 11,
-                "price_krw": 1690000000,
-                "market_krw": 1832598471.48736,
-                "trade_count": 4
-              },
-              {
                 "name": "한솔마을(5단지)(주공)",
                 "legal_dong": "정자동",
                 "build_year": 1994,
@@ -17436,9 +18262,20 @@
                 "price_krw": 1695000000,
                 "market_krw": 1638956310.6796117,
                 "trade_count": 20
+              },
+              {
+                "name": "정든마을(2단지)(동아)",
+                "legal_dong": "정자동",
+                "build_year": 1995,
+                "month": "2026-07",
+                "area_sqm": 69.055,
+                "floor": 12,
+                "price_krw": 1635000000,
+                "market_krw": 1623488523.6405761,
+                "trade_count": 5
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 14개 단지 59건"
+            "basis": "정자동 · 유사면적 보완 추정 · 14개 단지 60건"
           },
           {
             "housing_type": "74C",
@@ -17455,7 +18292,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 59,
+            "trade_count": 60,
             "complex_count": 14,
             "comparables": [
               {
@@ -17492,17 +18329,6 @@
                 "trade_count": 7
               },
               {
-                "name": "정든마을(7단지)(한진)",
-                "legal_dong": "정자동",
-                "build_year": 1994,
-                "month": "2026-10",
-                "area_sqm": 68.04,
-                "floor": 11,
-                "price_krw": 1690000000,
-                "market_krw": 1832598471.48736,
-                "trade_count": 4
-              },
-              {
                 "name": "한솔마을(5단지)(주공)",
                 "legal_dong": "정자동",
                 "build_year": 1994,
@@ -17512,9 +18338,20 @@
                 "price_krw": 1695000000,
                 "market_krw": 1638956310.6796117,
                 "trade_count": 20
+              },
+              {
+                "name": "정든마을(2단지)(동아)",
+                "legal_dong": "정자동",
+                "build_year": 1995,
+                "month": "2026-07",
+                "area_sqm": 69.055,
+                "floor": 12,
+                "price_krw": 1635000000,
+                "market_krw": 1623488523.6405761,
+                "trade_count": 5
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 14개 단지 59건"
+            "basis": "정자동 · 유사면적 보완 추정 · 14개 단지 60건"
           },
           {
             "housing_type": "74D",
@@ -17531,7 +18368,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 59,
+            "trade_count": 60,
             "complex_count": 14,
             "comparables": [
               {
@@ -17568,17 +18405,6 @@
                 "trade_count": 7
               },
               {
-                "name": "정든마을(7단지)(한진)",
-                "legal_dong": "정자동",
-                "build_year": 1994,
-                "month": "2026-10",
-                "area_sqm": 68.04,
-                "floor": 11,
-                "price_krw": 1690000000,
-                "market_krw": 1843495002.9394472,
-                "trade_count": 4
-              },
-              {
                 "name": "한솔마을(5단지)(주공)",
                 "legal_dong": "정자동",
                 "build_year": 1994,
@@ -17588,9 +18414,20 @@
                 "price_krw": 1695000000,
                 "market_krw": 1648701456.3106794,
                 "trade_count": 20
+              },
+              {
+                "name": "정든마을(2단지)(동아)",
+                "legal_dong": "정자동",
+                "build_year": 1995,
+                "month": "2026-07",
+                "area_sqm": 69.055,
+                "floor": 12,
+                "price_krw": 1635000000,
+                "market_krw": 1633141698.6460066,
+                "trade_count": 5
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 14개 단지 59건"
+            "basis": "정자동 · 유사면적 보완 추정 · 14개 단지 60건"
           },
           {
             "housing_type": "84A",
@@ -17607,7 +18444,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 70,
+            "trade_count": 71,
             "complex_count": 21,
             "comparables": [
               {
@@ -17666,7 +18503,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건"
           },
           {
             "housing_type": "84B",
@@ -17683,7 +18520,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 70,
+            "trade_count": 71,
             "complex_count": 21,
             "comparables": [
               {
@@ -17742,7 +18579,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건"
           },
           {
             "housing_type": "84C",
@@ -17759,7 +18596,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 70,
+            "trade_count": 71,
             "complex_count": 21,
             "comparables": [
               {
@@ -17818,7 +18655,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건"
           },
           {
             "housing_type": "84D",
@@ -17835,7 +18672,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 70,
+            "trade_count": 71,
             "complex_count": 21,
             "comparables": [
               {
@@ -17894,7 +18731,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건"
           },
           {
             "housing_type": "84E",
@@ -17911,7 +18748,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 70,
+            "trade_count": 71,
             "complex_count": 21,
             "comparables": [
               {
@@ -17970,7 +18807,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건"
           },
           {
             "housing_type": "84F",
@@ -17987,7 +18824,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 70,
+            "trade_count": 71,
             "complex_count": 21,
             "comparables": [
               {
@@ -18046,7 +18883,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건"
           },
           {
             "housing_type": "84G",
@@ -18063,7 +18900,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 70,
+            "trade_count": 71,
             "complex_count": 21,
             "comparables": [
               {
@@ -18122,7 +18959,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건"
           },
           {
             "housing_type": "84H",
@@ -18139,7 +18976,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 70,
+            "trade_count": 71,
             "complex_count": 21,
             "comparables": [
               {
@@ -18198,7 +19035,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건"
           }
         ]
       },
@@ -18860,24 +19697,24 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -44654872,
+        "estimated_krw": -40673301,
         "estimated_low_krw": -126194681,
         "estimated_high_krw": 153623819,
-        "market_estimated_krw": 489345128,
+        "market_estimated_krw": 493326699,
         "confidence": "medium",
         "housing_type": "59A",
-        "basis": "남양주시 · 5년 이내 준신축 · 12개 단지 340건",
+        "basis": "남양주시 · 5년 이내 준신축 · 12개 단지 342건",
         "comparables": [
           {
             "name": "e편한세상평내메트로원",
             "legal_dong": "평내동",
             "build_year": 2022,
-            "month": "2026-10",
+            "month": "2026-11",
             "area_sqm": 59.9917,
-            "floor": 9,
-            "price_krw": 507000000,
-            "market_krw": 510636453.04267085,
-            "trade_count": 63
+            "floor": 21,
+            "price_krw": 525000000,
+            "market_krw": 518599594.6105878,
+            "trade_count": 64
           },
           {
             "name": "금곡역한신더휴",
@@ -18931,28 +19768,28 @@
             "sale_price_krw": 534000000,
             "status": "estimated",
             "market_low_krw": 407805319,
-            "market_base_krw": 489345128,
+            "market_base_krw": 493326699,
             "market_high_krw": 687623819,
             "gain_low_krw": -126194681,
-            "gain_base_krw": -44654872,
+            "gain_base_krw": -40673301,
             "gain_high_krw": 153623819,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 340,
+            "trade_count": 342,
             "complex_count": 12,
             "comparables": [
               {
                 "name": "e편한세상평내메트로원",
                 "legal_dong": "평내동",
                 "build_year": 2022,
-                "month": "2026-10",
+                "month": "2026-11",
                 "area_sqm": 59.9917,
-                "floor": 9,
-                "price_krw": 507000000,
-                "market_krw": 510636453.04267085,
-                "trade_count": 63
+                "floor": 21,
+                "price_krw": 525000000,
+                "market_krw": 518599594.6105878,
+                "trade_count": 64
               },
               {
                 "name": "금곡역한신더휴",
@@ -18999,7 +19836,7 @@
                 "trade_count": 26
               }
             ],
-            "basis": "남양주시 · 5년 이내 준신축 · 12개 단지 340건"
+            "basis": "남양주시 · 5년 이내 준신축 · 12개 단지 342건"
           },
           {
             "housing_type": "59B",
@@ -19007,29 +19844,18 @@
             "sale_price_krw": 528000000,
             "status": "estimated",
             "market_low_krw": 409505097,
-            "market_base_krw": 491384773,
+            "market_base_krw": 495382939,
             "market_high_krw": 690489912,
             "gain_low_krw": -118494903,
-            "gain_base_krw": -36615227,
+            "gain_base_krw": -32617061,
             "gain_high_krw": 162489912,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 340,
+            "trade_count": 342,
             "complex_count": 12,
             "comparables": [
-              {
-                "name": "e편한세상평내메트로원",
-                "legal_dong": "평내동",
-                "build_year": 2022,
-                "month": "2026-10",
-                "area_sqm": 59.9917,
-                "floor": 9,
-                "price_krw": 507000000,
-                "market_krw": 512764842.469875,
-                "trade_count": 63
-              },
               {
                 "name": "금곡역한신더휴",
                 "legal_dong": "금곡동",
@@ -19040,6 +19866,17 @@
                 "price_krw": 478000000,
                 "market_krw": 470004702.8530642,
                 "trade_count": 3
+              },
+              {
+                "name": "e편한세상평내메트로원",
+                "legal_dong": "평내동",
+                "build_year": 2022,
+                "month": "2026-11",
+                "area_sqm": 59.9917,
+                "floor": 21,
+                "price_krw": 525000000,
+                "market_krw": 520761175.29591596,
+                "trade_count": 64
               },
               {
                 "name": "퇴계원청광플러스원",
@@ -19075,7 +19912,7 @@
                 "trade_count": 26
               }
             ],
-            "basis": "남양주시 · 5년 이내 준신축 · 12개 단지 340건"
+            "basis": "남양주시 · 5년 이내 준신축 · 12개 단지 342건"
           },
           {
             "housing_type": "75",
@@ -20491,7 +21328,7 @@
         "market_estimated_krw": 232262220,
         "confidence": "low",
         "housing_type": "55O",
-        "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2239건",
+        "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2242건",
         "comparables": [
           {
             "name": "신명",
@@ -20565,7 +21402,7 @@
             "method": "regional_relaxed",
             "scope": "sigungu",
             "age_limit_years": 30,
-            "trade_count": 2239,
+            "trade_count": 2242,
             "complex_count": 166,
             "comparables": [
               {
@@ -20624,7 +21461,7 @@
                 "trade_count": 4
               }
             ],
-            "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2239건"
+            "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2242건"
           }
         ]
       },
@@ -22546,7 +23383,7 @@
         "market_estimated_krw": 769315292,
         "confidence": "low",
         "housing_type": "84A",
-        "basis": "상동 · 유사면적 보완 추정 · 22개 단지 505건",
+        "basis": "상동 · 유사면적 보완 추정 · 22개 단지 506건",
         "comparables": [
           {
             "name": "진달래마을(신동아)",
@@ -22620,7 +23457,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 505,
+            "trade_count": 506,
             "complex_count": 22,
             "comparables": [
               {
@@ -22679,7 +23516,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 505건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 506건"
           },
           {
             "housing_type": "84B",
@@ -22696,7 +23533,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 505,
+            "trade_count": 506,
             "complex_count": 22,
             "comparables": [
               {
@@ -22755,7 +23592,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 505건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 506건"
           },
           {
             "housing_type": "84C",
@@ -22772,7 +23609,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 505,
+            "trade_count": 506,
             "complex_count": 22,
             "comparables": [
               {
@@ -22831,7 +23668,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 505건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 506건"
           },
           {
             "housing_type": "84D",
@@ -22848,7 +23685,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 505,
+            "trade_count": 506,
             "complex_count": 22,
             "comparables": [
               {
@@ -22907,7 +23744,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 505건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 506건"
           },
           {
             "housing_type": "84E",
@@ -22924,7 +23761,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 505,
+            "trade_count": 506,
             "complex_count": 22,
             "comparables": [
               {
@@ -22983,7 +23820,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 505건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 506건"
           },
           {
             "housing_type": "84F",
@@ -23000,7 +23837,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 505,
+            "trade_count": 506,
             "complex_count": 22,
             "comparables": [
               {
@@ -23059,7 +23896,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 505건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 506건"
           },
           {
             "housing_type": "113A",
@@ -23802,16 +24639,16 @@
             "sale_price_krw": 857000000,
             "status": "estimated",
             "market_low_krw": 416017123,
-            "market_base_krw": 531729390,
-            "market_high_krw": 627172388,
+            "market_base_krw": 539229690,
+            "market_high_krw": 638422838,
             "gain_low_krw": -440982877,
-            "gain_base_krw": -325270610,
-            "gain_high_krw": -229827612,
+            "gain_base_krw": -317770310,
+            "gain_high_krw": -218577162,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 17,
+            "trade_count": 18,
             "complex_count": 4,
             "comparables": [
               {
@@ -23829,12 +24666,12 @@
                 "name": "의왕역푸르지오라포레",
                 "legal_dong": "삼동",
                 "build_year": 2019,
-                "month": "2026-07",
+                "month": "2026-11",
                 "area_sqm": 74.99,
                 "floor": 5,
-                "price_krw": 630000000,
-                "market_krw": 602524103.2137618,
-                "trade_count": 9
+                "price_krw": 720000000,
+                "market_krw": 617524703.2937725,
+                "trade_count": 10
               },
               {
                 "name": "의왕푸르지오포레움2블럭",
@@ -23859,7 +24696,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "삼동 · 유사면적 보완 추정 · 4개 단지 17건"
+            "basis": "삼동 · 유사면적 보완 추정 · 4개 단지 18건"
           },
           {
             "housing_type": "84B",
@@ -24054,24 +24891,24 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -64654872,
+        "estimated_krw": -60673301,
         "estimated_low_krw": -146194681,
         "estimated_high_krw": 133623819,
-        "market_estimated_krw": 489345128,
+        "market_estimated_krw": 493326699,
         "confidence": "medium",
         "housing_type": "59A",
-        "basis": "남양주시 · 5년 이내 준신축 · 12개 단지 340건",
+        "basis": "남양주시 · 5년 이내 준신축 · 12개 단지 342건",
         "comparables": [
           {
             "name": "e편한세상평내메트로원",
             "legal_dong": "평내동",
             "build_year": 2022,
-            "month": "2026-10",
+            "month": "2026-11",
             "area_sqm": 59.9917,
-            "floor": 9,
-            "price_krw": 507000000,
-            "market_krw": 510636453.04267085,
-            "trade_count": 63
+            "floor": 21,
+            "price_krw": 525000000,
+            "market_krw": 518599594.6105878,
+            "trade_count": 64
           },
           {
             "name": "금곡역한신더휴",
@@ -24125,28 +24962,28 @@
             "sale_price_krw": 554000000,
             "status": "estimated",
             "market_low_krw": 407805319,
-            "market_base_krw": 489345128,
+            "market_base_krw": 493326699,
             "market_high_krw": 687623819,
             "gain_low_krw": -146194681,
-            "gain_base_krw": -64654872,
+            "gain_base_krw": -60673301,
             "gain_high_krw": 133623819,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 340,
+            "trade_count": 342,
             "complex_count": 12,
             "comparables": [
               {
                 "name": "e편한세상평내메트로원",
                 "legal_dong": "평내동",
                 "build_year": 2022,
-                "month": "2026-10",
+                "month": "2026-11",
                 "area_sqm": 59.9917,
-                "floor": 9,
-                "price_krw": 507000000,
-                "market_krw": 510636453.04267085,
-                "trade_count": 63
+                "floor": 21,
+                "price_krw": 525000000,
+                "market_krw": 518599594.6105878,
+                "trade_count": 64
               },
               {
                 "name": "금곡역한신더휴",
@@ -24193,7 +25030,7 @@
                 "trade_count": 26
               }
             ],
-            "basis": "남양주시 · 5년 이내 준신축 · 12개 단지 340건"
+            "basis": "남양주시 · 5년 이내 준신축 · 12개 단지 342건"
           },
           {
             "housing_type": "59B",
@@ -24201,29 +25038,18 @@
             "sale_price_krw": 548000000,
             "status": "estimated",
             "market_low_krw": 409505097,
-            "market_base_krw": 491384773,
+            "market_base_krw": 495382939,
             "market_high_krw": 690489912,
             "gain_low_krw": -138494903,
-            "gain_base_krw": -56615227,
+            "gain_base_krw": -52617061,
             "gain_high_krw": 142489912,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 340,
+            "trade_count": 342,
             "complex_count": 12,
             "comparables": [
-              {
-                "name": "e편한세상평내메트로원",
-                "legal_dong": "평내동",
-                "build_year": 2022,
-                "month": "2026-10",
-                "area_sqm": 59.9917,
-                "floor": 9,
-                "price_krw": 507000000,
-                "market_krw": 512764842.469875,
-                "trade_count": 63
-              },
               {
                 "name": "금곡역한신더휴",
                 "legal_dong": "금곡동",
@@ -24234,6 +25060,17 @@
                 "price_krw": 478000000,
                 "market_krw": 470004702.8530642,
                 "trade_count": 3
+              },
+              {
+                "name": "e편한세상평내메트로원",
+                "legal_dong": "평내동",
+                "build_year": 2022,
+                "month": "2026-11",
+                "area_sqm": 59.9917,
+                "floor": 21,
+                "price_krw": 525000000,
+                "market_krw": 520761175.29591596,
+                "trade_count": 64
               },
               {
                 "name": "퇴계원청광플러스원",
@@ -24269,7 +25106,7 @@
                 "trade_count": 26
               }
             ],
-            "basis": "남양주시 · 5년 이내 준신축 · 12개 단지 340건"
+            "basis": "남양주시 · 5년 이내 준신축 · 12개 단지 342건"
           },
           {
             "housing_type": "75",
@@ -25069,7 +25906,7 @@
         "market_estimated_krw": 728776042,
         "confidence": "low",
         "housing_type": "55A",
-        "basis": "신흥동 · 유사면적 보완 추정 · 9개 단지 160건",
+        "basis": "신흥동 · 유사면적 보완 추정 · 9개 단지 161건",
         "comparables": [
           {
             "name": "한신",
@@ -25143,7 +25980,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 160,
+            "trade_count": 161,
             "complex_count": 9,
             "comparables": [
               {
@@ -25202,7 +26039,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "신흥동 · 유사면적 보완 추정 · 9개 단지 160건"
+            "basis": "신흥동 · 유사면적 보완 추정 · 9개 단지 161건"
           },
           {
             "housing_type": "55B",
@@ -25219,7 +26056,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 160,
+            "trade_count": 161,
             "complex_count": 9,
             "comparables": [
               {
@@ -25278,7 +26115,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "신흥동 · 유사면적 보완 추정 · 9개 단지 160건"
+            "basis": "신흥동 · 유사면적 보완 추정 · 9개 단지 161건"
           },
           {
             "housing_type": "55C",
@@ -25295,7 +26132,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 160,
+            "trade_count": 161,
             "complex_count": 9,
             "comparables": [
               {
@@ -25354,7 +26191,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "신흥동 · 유사면적 보완 추정 · 9개 단지 160건"
+            "basis": "신흥동 · 유사면적 보완 추정 · 9개 단지 161건"
           },
           {
             "housing_type": "56T",
@@ -25371,7 +26208,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 10,
-            "trade_count": 15,
+            "trade_count": 16,
             "complex_count": 5,
             "comparables": [
               {
@@ -25422,15 +26259,15 @@
                 "name": "판교밸리포레자이",
                 "legal_dong": "고등동",
                 "build_year": 2021,
-                "month": "2026-10",
+                "month": "2026-11",
                 "area_sqm": 59.72,
-                "floor": 7,
-                "price_krw": 1190000000,
-                "market_krw": 1125070328.1982586,
-                "trade_count": 5
+                "floor": 15,
+                "price_krw": 1170000000,
+                "market_krw": 1115535833.8914938,
+                "trade_count": 6
               }
             ],
-            "basis": "수정구 · 10년 이내 준신축 · 5개 단지 15건"
+            "basis": "수정구 · 10년 이내 준신축 · 5개 단지 16건"
           }
         ]
       },
@@ -25855,11 +26692,11 @@
         "status": "estimated",
         "estimated_krw": -888399129,
         "estimated_low_krw": -913528080,
-        "estimated_high_krw": -620657247,
+        "estimated_high_krw": -626617435,
         "market_estimated_krw": 811600871,
         "confidence": "low",
         "housing_type": "74A",
-        "basis": "신길동 · 유사면적 보완 추정 · 7개 단지 14건",
+        "basis": "신길동 · 유사면적 보완 추정 · 7개 단지 15건",
         "comparables": [
           {
             "name": "동훈노보빌",
@@ -26521,15 +27358,15 @@
             "status": "estimated",
             "market_low_krw": 786471920,
             "market_base_krw": 811600871,
-            "market_high_krw": 1079342753,
+            "market_high_krw": 1073382565,
             "gain_low_krw": -913528080,
             "gain_base_krw": -888399129,
-            "gain_high_krw": -620657247,
+            "gain_high_krw": -626617435,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 14,
+            "trade_count": 15,
             "complex_count": 7,
             "comparables": [
               {
@@ -26588,7 +27425,7 @@
                 "trade_count": 4
               }
             ],
-            "basis": "신길동 · 유사면적 보완 추정 · 7개 단지 14건"
+            "basis": "신길동 · 유사면적 보완 추정 · 7개 단지 15건"
           },
           {
             "housing_type": "74B",
@@ -26597,15 +27434,15 @@
             "status": "estimated",
             "market_low_krw": 786477163,
             "market_base_krw": 811606282,
-            "market_high_krw": 1079349949,
+            "market_high_krw": 1073389722,
             "gain_low_krw": -893522837,
             "gain_base_krw": -868393718,
-            "gain_high_krw": -600650051,
+            "gain_high_krw": -606610278,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 14,
+            "trade_count": 15,
             "complex_count": 7,
             "comparables": [
               {
@@ -26664,7 +27501,7 @@
                 "trade_count": 4
               }
             ],
-            "basis": "신길동 · 유사면적 보완 추정 · 7개 단지 14건"
+            "basis": "신길동 · 유사면적 보완 추정 · 7개 단지 15건"
           },
           {
             "housing_type": "74C",
@@ -26673,15 +27510,15 @@
             "status": "estimated",
             "market_low_krw": 786451994,
             "market_base_krw": 811580309,
-            "market_high_krw": 1079315408,
+            "market_high_krw": 1073355371,
             "gain_low_krw": -863548006,
             "gain_base_krw": -838419691,
-            "gain_high_krw": -570684592,
+            "gain_high_krw": -576644629,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 14,
+            "trade_count": 15,
             "complex_count": 7,
             "comparables": [
               {
@@ -26740,7 +27577,7 @@
                 "trade_count": 4
               }
             ],
-            "basis": "신길동 · 유사면적 보완 추정 · 7개 단지 14건"
+            "basis": "신길동 · 유사면적 보완 추정 · 7개 단지 15건"
           },
           {
             "housing_type": "84A",
@@ -26925,13 +27762,13 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": 70341168,
+        "estimated_krw": 65115458,
         "estimated_low_krw": 17973247,
         "estimated_high_krw": 145333152,
-        "market_estimated_krw": 604341168,
+        "market_estimated_krw": 599115458,
         "confidence": "medium",
         "housing_type": "84A",
-        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 122건",
+        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건",
         "comparables": [
           {
             "name": "힐스테이트용인둔전역",
@@ -26939,10 +27776,10 @@
             "build_year": 2024,
             "month": "2026-11",
             "area_sqm": 84.9156,
-            "floor": 5,
-            "price_krw": 600000000,
-            "market_krw": 604341167.5413465,
-            "trade_count": 21
+            "floor": 18,
+            "price_krw": 599000000,
+            "market_krw": 599115458.1909254,
+            "trade_count": 22
           },
           {
             "name": "힐스테이트몬테로이1단지",
@@ -26952,19 +27789,8 @@
             "area_sqm": 84.846,
             "floor": 17,
             "price_krw": 376000000,
-            "market_krw": 598007829.3212881,
-            "trade_count": 11
-          },
-          {
-            "name": "힐스테이트몬테로이2단지",
-            "legal_dong": "모현읍 왕산리",
-            "build_year": 2025,
-            "month": "2026-11",
-            "area_sqm": 84.846,
-            "floor": 12,
-            "price_krw": 627000000,
-            "market_krw": 625153634.4138186,
-            "trade_count": 15
+            "market_krw": 596659230.732827,
+            "trade_count": 12
           },
           {
             "name": "힐스테이트몬테로이3단지",
@@ -26976,6 +27802,17 @@
             "price_krw": 585000000,
             "market_krw": 579215538.5140214,
             "trade_count": 12
+          },
+          {
+            "name": "힐스테이트몬테로이2단지",
+            "legal_dong": "모현읍 왕산리",
+            "build_year": 2025,
+            "month": "2026-11",
+            "area_sqm": 84.846,
+            "floor": 12,
+            "price_krw": 627000000,
+            "market_krw": 625153634.4138186,
+            "trade_count": 15
           },
           {
             "name": "서희스타힐스포레스트",
@@ -27005,7 +27842,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 227,
+            "trade_count": 229,
             "complex_count": 9,
             "comparables": [
               {
@@ -27064,7 +27901,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 227건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
           },
           {
             "housing_type": "59B",
@@ -27081,7 +27918,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 227,
+            "trade_count": 229,
             "complex_count": 9,
             "comparables": [
               {
@@ -27140,7 +27977,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 227건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
           },
           {
             "housing_type": "59C",
@@ -27157,7 +27994,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 227,
+            "trade_count": 229,
             "complex_count": 9,
             "comparables": [
               {
@@ -27216,7 +28053,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 227건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
           },
           {
             "housing_type": "71A",
@@ -27365,16 +28202,16 @@
             "sale_price_krw": 534000000,
             "status": "estimated",
             "market_low_krw": 551973247,
-            "market_base_krw": 604341168,
+            "market_base_krw": 599115458,
             "market_high_krw": 679333152,
             "gain_low_krw": 17973247,
-            "gain_base_krw": 70341168,
+            "gain_base_krw": 65115458,
             "gain_high_krw": 145333152,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 122,
+            "trade_count": 124,
             "complex_count": 13,
             "comparables": [
               {
@@ -27383,10 +28220,10 @@
                 "build_year": 2024,
                 "month": "2026-11",
                 "area_sqm": 84.9156,
-                "floor": 5,
-                "price_krw": 600000000,
-                "market_krw": 604341167.5413465,
-                "trade_count": 21
+                "floor": 18,
+                "price_krw": 599000000,
+                "market_krw": 599115458.1909254,
+                "trade_count": 22
               },
               {
                 "name": "힐스테이트몬테로이1단지",
@@ -27396,19 +28233,8 @@
                 "area_sqm": 84.846,
                 "floor": 17,
                 "price_krw": 376000000,
-                "market_krw": 598007829.3212881,
-                "trade_count": 11
-              },
-              {
-                "name": "힐스테이트몬테로이2단지",
-                "legal_dong": "모현읍 왕산리",
-                "build_year": 2025,
-                "month": "2026-11",
-                "area_sqm": 84.846,
-                "floor": 12,
-                "price_krw": 627000000,
-                "market_krw": 625153634.4138186,
-                "trade_count": 15
+                "market_krw": 596659230.732827,
+                "trade_count": 12
               },
               {
                 "name": "힐스테이트몬테로이3단지",
@@ -27422,6 +28248,17 @@
                 "trade_count": 12
               },
               {
+                "name": "힐스테이트몬테로이2단지",
+                "legal_dong": "모현읍 왕산리",
+                "build_year": 2025,
+                "month": "2026-11",
+                "area_sqm": 84.846,
+                "floor": 12,
+                "price_krw": 627000000,
+                "market_krw": 625153634.4138186,
+                "trade_count": 15
+              },
+              {
                 "name": "서희스타힐스포레스트",
                 "legal_dong": "역북동",
                 "build_year": 2023,
@@ -27433,7 +28270,7 @@
                 "trade_count": 12
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 122건"
+            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건"
           }
         ]
       },
@@ -29860,6 +30697,20 @@
           "source_ref": "주택공급에 관한 규칙 및 원 공급유형 자격"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://static.applyhome.co.kr/ai/aia/getAtchmnfl.do?houseManageNo=2026930046&pblancNo=2026930046&atchmnflSeqNo=2024084&atchmnflSn=5",
+        "checked_at": "2026-11-19T02:56:18.517Z",
+        "parser_version": "notice-id-v4",
+        "verified_notice_number": "2026930046",
+        "facts": {
+          "residence": "없음",
+          "rewinning": "없음",
+          "contract_deposit": "20%",
+          "balance_payment": "80%"
+        },
+        "eligibility": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 21051173,
@@ -29952,20 +30803,6 @@
       "restrictions": {
         "resale": null,
         "residence": "없음"
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "https://static.applyhome.co.kr/ai/aia/getAtchmnfl.do?houseManageNo=2026930046&pblancNo=2026930046&atchmnflSeqNo=2024084&atchmnflSn=5",
-        "checked_at": "2026-11-19T02:56:18.517Z",
-        "parser_version": "notice-id-v4",
-        "verified_notice_number": "2026930046",
-        "facts": {
-          "residence": "없음",
-          "rewinning": "없음",
-          "contract_deposit": "20%",
-          "balance_payment": "80%"
-        },
-        "eligibility": {}
       }
     },
     {
@@ -30049,11 +30886,11 @@
         "status": "estimated",
         "estimated_krw": -28794394,
         "estimated_low_krw": -304564249,
-        "estimated_high_krw": 222175581,
+        "estimated_high_krw": 230438997,
         "market_estimated_krw": 1076685606,
         "confidence": "low",
         "housing_type": "43",
-        "basis": "송파구 · 유사면적 보완 추정 · 17개 단지 228건",
+        "basis": "송파구 · 유사면적 보완 추정 · 17개 단지 230건",
         "comparables": [
           {
             "name": "거여1단지",
@@ -30119,15 +30956,15 @@
             "status": "estimated",
             "market_low_krw": 800915751,
             "market_base_krw": 1076685606,
-            "market_high_krw": 1327655581,
+            "market_high_krw": 1335918997,
             "gain_low_krw": -304564249,
             "gain_base_krw": -28794394,
-            "gain_high_krw": 222175581,
+            "gain_high_krw": 230438997,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "sigungu",
             "age_limit_years": 30,
-            "trade_count": 228,
+            "trade_count": 230,
             "complex_count": 17,
             "comparables": [
               {
@@ -30186,36 +31023,36 @@
                 "trade_count": 2
               }
             ],
-            "basis": "송파구 · 유사면적 보완 추정 · 17개 단지 228건"
+            "basis": "송파구 · 유사면적 보완 추정 · 17개 단지 230건"
           },
           {
             "housing_type": "59A",
             "area_sqm": 59.47,
             "sale_price_krw": 1579390000,
             "status": "estimated",
-            "market_low_krw": 1446979834,
-            "market_base_krw": 1782656110,
-            "market_high_krw": 1816589794,
-            "gain_low_krw": -132410166,
-            "gain_base_krw": 203266110,
-            "gain_high_krw": 237199794,
+            "market_low_krw": 1450625968,
+            "market_base_krw": 1792427121,
+            "market_high_krw": 1817829165,
+            "gain_low_krw": -128764032,
+            "gain_base_krw": 213037121,
+            "gain_high_krw": 238439165,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 46,
+            "trade_count": 49,
             "complex_count": 6,
             "comparables": [
               {
                 "name": "e편한세상송파파크센트럴",
                 "legal_dong": "거여동",
                 "build_year": 2021,
-                "month": "2026-09",
-                "area_sqm": 59.94,
-                "floor": 17,
+                "month": "2026-11",
+                "area_sqm": 59.96,
+                "floor": 13,
                 "price_krw": 1800000000,
-                "market_krw": 1760787378.4391463,
-                "trade_count": 8
+                "market_krw": 1775371914.6097398,
+                "trade_count": 9
               },
               {
                 "name": "송파시그니처롯데캐슬",
@@ -30223,10 +31060,10 @@
                 "build_year": 2021,
                 "month": "2026-11",
                 "area_sqm": 59.98,
-                "floor": 10,
-                "price_krw": 1840000000,
-                "market_krw": 1804524841.6138713,
-                "trade_count": 19
+                "floor": 7,
+                "price_krw": 1855000000,
+                "market_krw": 1809482327.442481,
+                "trade_count": 21
               },
               {
                 "name": "힐스테이트e편한세상문정",
@@ -30262,7 +31099,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "송파구 · 5년 이내 준신축 · 6개 단지 46건"
+            "basis": "송파구 · 5년 이내 준신축 · 6개 단지 49건"
           },
           {
             "housing_type": "84D",
@@ -30270,16 +31107,16 @@
             "sale_price_krw": 1856070000,
             "status": "estimated",
             "market_low_krw": 2310501244,
-            "market_base_krw": 2920844439,
-            "market_high_krw": 3374699818,
+            "market_base_krw": 2913958458,
+            "market_high_krw": 3400460885,
             "gain_low_krw": 454431244,
-            "gain_base_krw": 1064774439,
-            "gain_high_krw": 1518629818,
+            "gain_base_krw": 1057888458,
+            "gain_high_krw": 1544390885,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 125,
+            "trade_count": 127,
             "complex_count": 5,
             "comparables": [
               {
@@ -30290,8 +31127,8 @@
                 "area_sqm": 84.79,
                 "floor": 24,
                 "price_krw": 3030000000,
-                "market_krw": 2920844439.202736,
-                "trade_count": 85
+                "market_krw": 2913958458.1654024,
+                "trade_count": 86
               },
               {
                 "name": "장미2",
@@ -30299,10 +31136,10 @@
                 "build_year": 1979,
                 "month": "2026-10",
                 "area_sqm": 82.45,
-                "floor": 14,
-                "price_krw": 3400000000,
-                "market_krw": 3374699818.0715585,
-                "trade_count": 16
+                "floor": 12,
+                "price_krw": 3320000000,
+                "market_krw": 3400460885.3850813,
+                "trade_count": 17
               },
               {
                 "name": "장미1",
@@ -30338,7 +31175,7 @@
                 "trade_count": 5
               }
             ],
-            "basis": "신천동 · 유사면적 보완 추정 · 5개 단지 125건"
+            "basis": "신천동 · 유사면적 보완 추정 · 5개 단지 127건"
           }
         ]
       },
@@ -30431,13 +31268,13 @@
       },
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": 27068107,
+        "estimated_krw": 21827465,
         "estimated_low_krw": -25449458,
         "estimated_high_krw": 102274385,
-        "market_estimated_krw": 606068107,
+        "market_estimated_krw": 600827465,
         "confidence": "medium",
         "housing_type": "84A",
-        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 122건",
+        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건",
         "comparables": [
           {
             "name": "힐스테이트용인둔전역",
@@ -30445,10 +31282,10 @@
             "build_year": 2024,
             "month": "2026-11",
             "area_sqm": 84.9156,
-            "floor": 5,
-            "price_krw": 600000000,
-            "market_krw": 606068107.1678171,
-            "trade_count": 21
+            "floor": 18,
+            "price_krw": 599000000,
+            "market_krw": 600827465.05253,
+            "trade_count": 22
           },
           {
             "name": "힐스테이트몬테로이1단지",
@@ -30458,19 +31295,8 @@
             "area_sqm": 84.846,
             "floor": 17,
             "price_krw": 376000000,
-            "market_krw": 599716671.0697266,
-            "trade_count": 11
-          },
-          {
-            "name": "힐스테이트몬테로이2단지",
-            "legal_dong": "모현읍 왕산리",
-            "build_year": 2025,
-            "month": "2026-11",
-            "area_sqm": 84.846,
-            "floor": 12,
-            "price_krw": 627000000,
-            "market_krw": 626940046.8607707,
-            "trade_count": 15
+            "market_krw": 598364218.7832754,
+            "trade_count": 12
           },
           {
             "name": "힐스테이트몬테로이3단지",
@@ -30482,6 +31308,17 @@
             "price_krw": 585000000,
             "market_krw": 580870680.2112136,
             "trade_count": 12
+          },
+          {
+            "name": "힐스테이트몬테로이2단지",
+            "legal_dong": "모현읍 왕산리",
+            "build_year": 2025,
+            "month": "2026-11",
+            "area_sqm": 84.846,
+            "floor": 12,
+            "price_krw": 627000000,
+            "market_krw": 626940046.8607707,
+            "trade_count": 15
           },
           {
             "name": "서희스타힐스포레스트",
@@ -30511,7 +31348,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 227,
+            "trade_count": 229,
             "complex_count": 9,
             "comparables": [
               {
@@ -30570,7 +31407,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 227건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
           },
           {
             "housing_type": "74A",
@@ -30654,16 +31491,16 @@
             "sale_price_krw": 579000000,
             "status": "estimated",
             "market_low_krw": 553550542,
-            "market_base_krw": 606068107,
+            "market_base_krw": 600827465,
             "market_high_krw": 681274385,
             "gain_low_krw": -25449458,
-            "gain_base_krw": 27068107,
+            "gain_base_krw": 21827465,
             "gain_high_krw": 102274385,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 122,
+            "trade_count": 124,
             "complex_count": 13,
             "comparables": [
               {
@@ -30672,10 +31509,10 @@
                 "build_year": 2024,
                 "month": "2026-11",
                 "area_sqm": 84.9156,
-                "floor": 5,
-                "price_krw": 600000000,
-                "market_krw": 606068107.1678171,
-                "trade_count": 21
+                "floor": 18,
+                "price_krw": 599000000,
+                "market_krw": 600827465.05253,
+                "trade_count": 22
               },
               {
                 "name": "힐스테이트몬테로이1단지",
@@ -30685,19 +31522,8 @@
                 "area_sqm": 84.846,
                 "floor": 17,
                 "price_krw": 376000000,
-                "market_krw": 599716671.0697266,
-                "trade_count": 11
-              },
-              {
-                "name": "힐스테이트몬테로이2단지",
-                "legal_dong": "모현읍 왕산리",
-                "build_year": 2025,
-                "month": "2026-11",
-                "area_sqm": 84.846,
-                "floor": 12,
-                "price_krw": 627000000,
-                "market_krw": 626940046.8607707,
-                "trade_count": 15
+                "market_krw": 598364218.7832754,
+                "trade_count": 12
               },
               {
                 "name": "힐스테이트몬테로이3단지",
@@ -30711,6 +31537,17 @@
                 "trade_count": 12
               },
               {
+                "name": "힐스테이트몬테로이2단지",
+                "legal_dong": "모현읍 왕산리",
+                "build_year": 2025,
+                "month": "2026-11",
+                "area_sqm": 84.846,
+                "floor": 12,
+                "price_krw": 627000000,
+                "market_krw": 626940046.8607707,
+                "trade_count": 15
+              },
+              {
                 "name": "서희스타힐스포레스트",
                 "legal_dong": "역북동",
                 "build_year": 2023,
@@ -30722,7 +31559,7 @@
                 "trade_count": 12
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 122건"
+            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건"
           },
           {
             "housing_type": "84B",
@@ -30730,16 +31567,16 @@
             "sale_price_krw": 553000000,
             "status": "estimated",
             "market_low_krw": 553544030,
-            "market_base_krw": 606060977,
+            "market_base_krw": 600820396,
             "market_high_krw": 681266370,
             "gain_low_krw": 544030,
-            "gain_base_krw": 53060977,
+            "gain_base_krw": 47820396,
             "gain_high_krw": 128266370,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 122,
+            "trade_count": 124,
             "complex_count": 13,
             "comparables": [
               {
@@ -30748,10 +31585,10 @@
                 "build_year": 2024,
                 "month": "2026-11",
                 "area_sqm": 84.9156,
-                "floor": 5,
-                "price_krw": 600000000,
-                "market_krw": 606060976.9464033,
-                "trade_count": 21
+                "floor": 18,
+                "price_krw": 599000000,
+                "market_krw": 600820396.4858017,
+                "trade_count": 22
               },
               {
                 "name": "힐스테이트몬테로이1단지",
@@ -30761,19 +31598,8 @@
                 "area_sqm": 84.846,
                 "floor": 17,
                 "price_krw": 376000000,
-                "market_krw": 599709615.5711782,
-                "trade_count": 11
-              },
-              {
-                "name": "힐스테이트몬테로이2단지",
-                "legal_dong": "모현읍 왕산리",
-                "build_year": 2025,
-                "month": "2026-11",
-                "area_sqm": 84.846,
-                "floor": 12,
-                "price_krw": 627000000,
-                "market_krw": 626932671.0868361,
-                "trade_count": 15
+                "market_krw": 598357179.1959491,
+                "trade_count": 12
               },
               {
                 "name": "힐스테이트몬테로이3단지",
@@ -30787,6 +31613,17 @@
                 "trade_count": 12
               },
               {
+                "name": "힐스테이트몬테로이2단지",
+                "legal_dong": "모현읍 왕산리",
+                "build_year": 2025,
+                "month": "2026-11",
+                "area_sqm": 84.846,
+                "floor": 12,
+                "price_krw": 627000000,
+                "market_krw": 626932671.0868361,
+                "trade_count": 15
+              },
+              {
                 "name": "서희스타힐스포레스트",
                 "legal_dong": "역북동",
                 "build_year": 2023,
@@ -30798,7 +31635,7 @@
                 "trade_count": 12
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 122건"
+            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건"
           }
         ]
       },
@@ -32565,7 +33402,7 @@
         "market_estimated_krw": 634163679,
         "confidence": "low",
         "housing_type": "84D",
-        "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 204건",
+        "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 205건",
         "comparables": [
           {
             "name": "동양메이저1차",
@@ -32704,7 +33541,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 204,
+            "trade_count": 205,
             "complex_count": 18,
             "comparables": [
               {
@@ -32763,7 +33600,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 204건"
+            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 205건"
           }
         ]
       },
@@ -33512,7 +34349,7 @@
         "market_estimated_krw": 1814052018,
         "confidence": "low",
         "housing_type": "84A",
-        "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건",
+        "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건",
         "comparables": [
           {
             "name": "상록마을(보성)",
@@ -33586,7 +34423,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 59,
+            "trade_count": 60,
             "complex_count": 14,
             "comparables": [
               {
@@ -33623,17 +34460,6 @@
                 "trade_count": 7
               },
               {
-                "name": "정든마을(7단지)(한진)",
-                "legal_dong": "정자동",
-                "build_year": 1994,
-                "month": "2026-10",
-                "area_sqm": 68.04,
-                "floor": 11,
-                "price_krw": 1690000000,
-                "market_krw": 1832598471.48736,
-                "trade_count": 4
-              },
-              {
                 "name": "한솔마을(5단지)(주공)",
                 "legal_dong": "정자동",
                 "build_year": 1994,
@@ -33643,9 +34469,20 @@
                 "price_krw": 1695000000,
                 "market_krw": 1638956310.6796117,
                 "trade_count": 20
+              },
+              {
+                "name": "정든마을(2단지)(동아)",
+                "legal_dong": "정자동",
+                "build_year": 1995,
+                "month": "2026-07",
+                "area_sqm": 69.055,
+                "floor": 12,
+                "price_krw": 1635000000,
+                "market_krw": 1623488523.6405761,
+                "trade_count": 5
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 14개 단지 59건"
+            "basis": "정자동 · 유사면적 보완 추정 · 14개 단지 60건"
           },
           {
             "housing_type": "74C",
@@ -33662,7 +34499,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 59,
+            "trade_count": 60,
             "complex_count": 14,
             "comparables": [
               {
@@ -33699,17 +34536,6 @@
                 "trade_count": 7
               },
               {
-                "name": "정든마을(7단지)(한진)",
-                "legal_dong": "정자동",
-                "build_year": 1994,
-                "month": "2026-10",
-                "area_sqm": 68.04,
-                "floor": 11,
-                "price_krw": 1690000000,
-                "market_krw": 1832598471.48736,
-                "trade_count": 4
-              },
-              {
                 "name": "한솔마을(5단지)(주공)",
                 "legal_dong": "정자동",
                 "build_year": 1994,
@@ -33719,9 +34545,20 @@
                 "price_krw": 1695000000,
                 "market_krw": 1638956310.6796117,
                 "trade_count": 20
+              },
+              {
+                "name": "정든마을(2단지)(동아)",
+                "legal_dong": "정자동",
+                "build_year": 1995,
+                "month": "2026-07",
+                "area_sqm": 69.055,
+                "floor": 12,
+                "price_krw": 1635000000,
+                "market_krw": 1623488523.6405761,
+                "trade_count": 5
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 14개 단지 59건"
+            "basis": "정자동 · 유사면적 보완 추정 · 14개 단지 60건"
           },
           {
             "housing_type": "74D",
@@ -33738,7 +34575,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 59,
+            "trade_count": 60,
             "complex_count": 14,
             "comparables": [
               {
@@ -33775,17 +34612,6 @@
                 "trade_count": 7
               },
               {
-                "name": "정든마을(7단지)(한진)",
-                "legal_dong": "정자동",
-                "build_year": 1994,
-                "month": "2026-10",
-                "area_sqm": 68.04,
-                "floor": 11,
-                "price_krw": 1690000000,
-                "market_krw": 1843495002.9394472,
-                "trade_count": 4
-              },
-              {
                 "name": "한솔마을(5단지)(주공)",
                 "legal_dong": "정자동",
                 "build_year": 1994,
@@ -33795,9 +34621,20 @@
                 "price_krw": 1695000000,
                 "market_krw": 1648701456.3106794,
                 "trade_count": 20
+              },
+              {
+                "name": "정든마을(2단지)(동아)",
+                "legal_dong": "정자동",
+                "build_year": 1995,
+                "month": "2026-07",
+                "area_sqm": 69.055,
+                "floor": 12,
+                "price_krw": 1635000000,
+                "market_krw": 1633141698.6460066,
+                "trade_count": 5
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 14개 단지 59건"
+            "basis": "정자동 · 유사면적 보완 추정 · 14개 단지 60건"
           },
           {
             "housing_type": "84A",
@@ -33814,7 +34651,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 70,
+            "trade_count": 71,
             "complex_count": 21,
             "comparables": [
               {
@@ -33873,7 +34710,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건"
           },
           {
             "housing_type": "84B",
@@ -33890,7 +34727,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 70,
+            "trade_count": 71,
             "complex_count": 21,
             "comparables": [
               {
@@ -33949,7 +34786,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건"
           },
           {
             "housing_type": "84C",
@@ -33966,7 +34803,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 70,
+            "trade_count": 71,
             "complex_count": 21,
             "comparables": [
               {
@@ -34025,7 +34862,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건"
           },
           {
             "housing_type": "84D",
@@ -34042,7 +34879,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 70,
+            "trade_count": 71,
             "complex_count": 21,
             "comparables": [
               {
@@ -34101,7 +34938,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건"
           },
           {
             "housing_type": "84E",
@@ -34118,7 +34955,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 70,
+            "trade_count": 71,
             "complex_count": 21,
             "comparables": [
               {
@@ -34177,7 +35014,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건"
           },
           {
             "housing_type": "84F",
@@ -34194,7 +35031,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 70,
+            "trade_count": 71,
             "complex_count": 21,
             "comparables": [
               {
@@ -34253,7 +35090,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건"
           },
           {
             "housing_type": "84G",
@@ -34270,7 +35107,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 70,
+            "trade_count": 71,
             "complex_count": 21,
             "comparables": [
               {
@@ -34329,7 +35166,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 70건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 71건"
           }
         ]
       },
@@ -37364,7 +38201,7 @@
         "market_estimated_krw": 769315292,
         "confidence": "low",
         "housing_type": "84A",
-        "basis": "상동 · 유사면적 보완 추정 · 22개 단지 505건",
+        "basis": "상동 · 유사면적 보완 추정 · 22개 단지 506건",
         "comparables": [
           {
             "name": "진달래마을(신동아)",
@@ -37438,7 +38275,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 505,
+            "trade_count": 506,
             "complex_count": 22,
             "comparables": [
               {
@@ -37497,7 +38334,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 505건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 506건"
           },
           {
             "housing_type": "84B",
@@ -37514,7 +38351,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 505,
+            "trade_count": 506,
             "complex_count": 22,
             "comparables": [
               {
@@ -37573,7 +38410,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 505건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 506건"
           },
           {
             "housing_type": "84C",
@@ -37590,7 +38427,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 505,
+            "trade_count": 506,
             "complex_count": 22,
             "comparables": [
               {
@@ -37649,7 +38486,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 505건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 506건"
           },
           {
             "housing_type": "84D",
@@ -37666,7 +38503,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 505,
+            "trade_count": 506,
             "complex_count": 22,
             "comparables": [
               {
@@ -37725,7 +38562,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 505건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 506건"
           },
           {
             "housing_type": "84E",
@@ -37742,7 +38579,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 505,
+            "trade_count": 506,
             "complex_count": 22,
             "comparables": [
               {
@@ -37801,7 +38638,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 505건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 506건"
           },
           {
             "housing_type": "84F",
@@ -37818,7 +38655,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 505,
+            "trade_count": 506,
             "complex_count": 22,
             "comparables": [
               {
@@ -37877,7 +38714,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 505건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 506건"
           },
           {
             "housing_type": "187P",
@@ -38979,11 +39816,11 @@
         "status": "estimated",
         "estimated_krw": 827006523,
         "estimated_low_krw": 651401168,
-        "estimated_high_krw": 865036058,
+        "estimated_high_krw": 900039971,
         "market_estimated_krw": 2049026523,
         "confidence": "medium",
         "housing_type": "84C",
-        "basis": "구의동 · 10년 이내 준신축 · 3개 단지 26건",
+        "basis": "구의동 · 10년 이내 준신축 · 3개 단지 27건",
         "comparables": [
           {
             "name": "래미안파크스위트",
@@ -39000,12 +39837,12 @@
             "name": "e편한세상광진그랜드파크",
             "legal_dong": "구의동",
             "build_year": 2021,
-            "month": "2026-07",
-            "area_sqm": 84.9957,
-            "floor": 10,
-            "price_krw": 2040000000,
-            "market_krw": 2125085592.427539,
-            "trade_count": 17
+            "month": "2026-10",
+            "area_sqm": 84.9716,
+            "floor": 14,
+            "price_krw": 2380000000,
+            "market_krw": 2195093418.571804,
+            "trade_count": 18
           },
           {
             "name": "강변에스케이뷰",
@@ -39027,15 +39864,15 @@
             "status": "estimated",
             "market_low_krw": 1873421168,
             "market_base_krw": 2049026523,
-            "market_high_krw": 2087056058,
+            "market_high_krw": 2122059971,
             "gain_low_krw": 651401168,
             "gain_base_krw": 827006523,
-            "gain_high_krw": 865036058,
+            "gain_high_krw": 900039971,
             "confidence": "medium",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 10,
-            "trade_count": 26,
+            "trade_count": 27,
             "complex_count": 3,
             "comparables": [
               {
@@ -39053,12 +39890,12 @@
                 "name": "e편한세상광진그랜드파크",
                 "legal_dong": "구의동",
                 "build_year": 2021,
-                "month": "2026-07",
-                "area_sqm": 84.9957,
-                "floor": 10,
-                "price_krw": 2040000000,
-                "market_krw": 2125085592.427539,
-                "trade_count": 17
+                "month": "2026-10",
+                "area_sqm": 84.9716,
+                "floor": 14,
+                "price_krw": 2380000000,
+                "market_krw": 2195093418.571804,
+                "trade_count": 18
               },
               {
                 "name": "강변에스케이뷰",
@@ -39072,7 +39909,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "구의동 · 10년 이내 준신축 · 3개 단지 26건"
+            "basis": "구의동 · 10년 이내 준신축 · 3개 단지 27건"
           }
         ]
       },
@@ -40607,13 +41444,13 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": 70341168,
+        "estimated_krw": 65115458,
         "estimated_low_krw": 17973247,
         "estimated_high_krw": 145333152,
-        "market_estimated_krw": 604341168,
+        "market_estimated_krw": 599115458,
         "confidence": "medium",
         "housing_type": "84A",
-        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 122건",
+        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건",
         "comparables": [
           {
             "name": "힐스테이트용인둔전역",
@@ -40621,10 +41458,10 @@
             "build_year": 2024,
             "month": "2026-11",
             "area_sqm": 84.9156,
-            "floor": 5,
-            "price_krw": 600000000,
-            "market_krw": 604341167.5413465,
-            "trade_count": 21
+            "floor": 18,
+            "price_krw": 599000000,
+            "market_krw": 599115458.1909254,
+            "trade_count": 22
           },
           {
             "name": "힐스테이트몬테로이1단지",
@@ -40634,19 +41471,8 @@
             "area_sqm": 84.846,
             "floor": 17,
             "price_krw": 376000000,
-            "market_krw": 598007829.3212881,
-            "trade_count": 11
-          },
-          {
-            "name": "힐스테이트몬테로이2단지",
-            "legal_dong": "모현읍 왕산리",
-            "build_year": 2025,
-            "month": "2026-11",
-            "area_sqm": 84.846,
-            "floor": 12,
-            "price_krw": 627000000,
-            "market_krw": 625153634.4138186,
-            "trade_count": 15
+            "market_krw": 596659230.732827,
+            "trade_count": 12
           },
           {
             "name": "힐스테이트몬테로이3단지",
@@ -40658,6 +41484,17 @@
             "price_krw": 585000000,
             "market_krw": 579215538.5140214,
             "trade_count": 12
+          },
+          {
+            "name": "힐스테이트몬테로이2단지",
+            "legal_dong": "모현읍 왕산리",
+            "build_year": 2025,
+            "month": "2026-11",
+            "area_sqm": 84.846,
+            "floor": 12,
+            "price_krw": 627000000,
+            "market_krw": 625153634.4138186,
+            "trade_count": 15
           },
           {
             "name": "서희스타힐스포레스트",
@@ -40687,7 +41524,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 227,
+            "trade_count": 229,
             "complex_count": 9,
             "comparables": [
               {
@@ -40746,7 +41583,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 227건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
           },
           {
             "housing_type": "59C",
@@ -40763,7 +41600,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 227,
+            "trade_count": 229,
             "complex_count": 9,
             "comparables": [
               {
@@ -40822,7 +41659,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 227건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
           },
           {
             "housing_type": "71A",
@@ -40971,16 +41808,16 @@
             "sale_price_krw": 534000000,
             "status": "estimated",
             "market_low_krw": 551973247,
-            "market_base_krw": 604341168,
+            "market_base_krw": 599115458,
             "market_high_krw": 679333152,
             "gain_low_krw": 17973247,
-            "gain_base_krw": 70341168,
+            "gain_base_krw": 65115458,
             "gain_high_krw": 145333152,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 122,
+            "trade_count": 124,
             "complex_count": 13,
             "comparables": [
               {
@@ -40989,10 +41826,10 @@
                 "build_year": 2024,
                 "month": "2026-11",
                 "area_sqm": 84.9156,
-                "floor": 5,
-                "price_krw": 600000000,
-                "market_krw": 604341167.5413465,
-                "trade_count": 21
+                "floor": 18,
+                "price_krw": 599000000,
+                "market_krw": 599115458.1909254,
+                "trade_count": 22
               },
               {
                 "name": "힐스테이트몬테로이1단지",
@@ -41002,19 +41839,8 @@
                 "area_sqm": 84.846,
                 "floor": 17,
                 "price_krw": 376000000,
-                "market_krw": 598007829.3212881,
-                "trade_count": 11
-              },
-              {
-                "name": "힐스테이트몬테로이2단지",
-                "legal_dong": "모현읍 왕산리",
-                "build_year": 2025,
-                "month": "2026-11",
-                "area_sqm": 84.846,
-                "floor": 12,
-                "price_krw": 627000000,
-                "market_krw": 625153634.4138186,
-                "trade_count": 15
+                "market_krw": 596659230.732827,
+                "trade_count": 12
               },
               {
                 "name": "힐스테이트몬테로이3단지",
@@ -41028,6 +41854,17 @@
                 "trade_count": 12
               },
               {
+                "name": "힐스테이트몬테로이2단지",
+                "legal_dong": "모현읍 왕산리",
+                "build_year": 2025,
+                "month": "2026-11",
+                "area_sqm": 84.846,
+                "floor": 12,
+                "price_krw": 627000000,
+                "market_krw": 625153634.4138186,
+                "trade_count": 15
+              },
+              {
                 "name": "서희스타힐스포레스트",
                 "legal_dong": "역북동",
                 "build_year": 2023,
@@ -41039,7 +41876,7 @@
                 "trade_count": 12
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 122건"
+            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건"
           }
         ]
       },
@@ -41434,14 +42271,25 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -1029322492,
+        "estimated_krw": -1032626990,
         "estimated_low_krw": -1101630159,
         "estimated_high_krw": -995302349,
-        "market_estimated_krw": 457077508,
+        "market_estimated_krw": 453773010,
         "confidence": "low",
         "housing_type": "124P",
-        "basis": "오산시 · 유사면적 보완 추정 · 17개 단지 122건",
+        "basis": "오산시 · 유사면적 보완 추정 · 17개 단지 123건",
         "comparables": [
+          {
+            "name": "대동",
+            "legal_dong": "오산동",
+            "build_year": 2000,
+            "month": "2026-11",
+            "area_sqm": 129.52,
+            "floor": 3,
+            "price_krw": 480000000,
+            "market_krw": 453773009.8366345,
+            "trade_count": 7
+          },
           {
             "name": "현대",
             "legal_dong": "오산동",
@@ -41476,17 +42324,6 @@
             "trade_count": 32
           },
           {
-            "name": "대동",
-            "legal_dong": "오산동",
-            "build_year": 2000,
-            "month": "2026-08",
-            "area_sqm": 129.52,
-            "floor": 16,
-            "price_krw": 400000000,
-            "market_krw": 477784899.89222443,
-            "trade_count": 6
-          },
-          {
             "name": "꿈에그린 더 센트럴",
             "legal_dong": "금암동",
             "build_year": 2011,
@@ -41505,18 +42342,29 @@
             "sale_price_krw": 1486400000,
             "status": "estimated",
             "market_low_krw": 384769841,
-            "market_base_krw": 457077508,
+            "market_base_krw": 453773010,
             "market_high_krw": 491097651,
             "gain_low_krw": -1101630159,
-            "gain_base_krw": -1029322492,
+            "gain_base_krw": -1032626990,
             "gain_high_krw": -995302349,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "sigungu",
             "age_limit_years": 30,
-            "trade_count": 122,
+            "trade_count": 123,
             "complex_count": 17,
             "comparables": [
+              {
+                "name": "대동",
+                "legal_dong": "오산동",
+                "build_year": 2000,
+                "month": "2026-11",
+                "area_sqm": 129.52,
+                "floor": 3,
+                "price_krw": 480000000,
+                "market_krw": 453773009.8366345,
+                "trade_count": 7
+              },
               {
                 "name": "현대",
                 "legal_dong": "오산동",
@@ -41551,17 +42399,6 @@
                 "trade_count": 32
               },
               {
-                "name": "대동",
-                "legal_dong": "오산동",
-                "build_year": 2000,
-                "month": "2026-08",
-                "area_sqm": 129.52,
-                "floor": 16,
-                "price_krw": 400000000,
-                "market_krw": 477784899.89222443,
-                "trade_count": 6
-              },
-              {
                 "name": "꿈에그린 더 센트럴",
                 "legal_dong": "금암동",
                 "build_year": 2011,
@@ -41573,7 +42410,7 @@
                 "trade_count": 12
               }
             ],
-            "basis": "오산시 · 유사면적 보완 추정 · 17개 단지 122건"
+            "basis": "오산시 · 유사면적 보완 추정 · 17개 단지 123건"
           }
         ]
       },
@@ -41716,17 +42553,17 @@
             "area_sqm": 59.9987,
             "sale_price_krw": 457000000,
             "status": "estimated",
-            "market_low_krw": 459741223,
+            "market_low_krw": 460967350,
             "market_base_krw": 515229131,
             "market_high_krw": 551720708,
-            "gain_low_krw": 2741223,
+            "gain_low_krw": 3967350,
             "gain_base_krw": 58229131,
             "gain_high_krw": 94720708,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 10,
-            "trade_count": 209,
+            "trade_count": 210,
             "complex_count": 6,
             "comparables": [
               {
@@ -41779,13 +42616,13 @@
                 "build_year": 2019,
                 "month": "2026-11",
                 "area_sqm": 59.0334,
-                "floor": 15,
-                "price_krw": 445000000,
-                "market_krw": 450133521.4212805,
-                "trade_count": 11
+                "floor": 12,
+                "price_krw": 444000000,
+                "market_krw": 451768357.4044524,
+                "trade_count": 12
               }
             ],
-            "basis": "역북동 · 10년 이내 준신축 · 6개 단지 209건"
+            "basis": "역북동 · 10년 이내 준신축 · 6개 단지 210건"
           },
           {
             "housing_type": "74A",
@@ -42585,12 +43422,12 @@
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -1131408793,
-        "estimated_low_krw": -1367765779,
+        "estimated_low_krw": -1417469921,
         "estimated_high_krw": -1018764518,
         "market_estimated_krw": 1528591207,
         "confidence": "low",
         "housing_type": "84B",
-        "basis": "노량진동 · 유사면적 보완 추정 · 7개 단지 64건",
+        "basis": "노량진동 · 유사면적 보완 추정 · 7개 단지 63건",
         "comparables": [
           {
             "name": "우성",
@@ -42654,17 +43491,17 @@
             "area_sqm": 84,
             "sale_price_krw": 2660000000,
             "status": "estimated",
-            "market_low_krw": 1292234221,
+            "market_low_krw": 1242530079,
             "market_base_krw": 1528591207,
             "market_high_krw": 1641235482,
-            "gain_low_krw": -1367765779,
+            "gain_low_krw": -1417469921,
             "gain_base_krw": -1131408793,
             "gain_high_krw": -1018764518,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 64,
+            "trade_count": 63,
             "complex_count": 7,
             "comparables": [
               {
@@ -42723,7 +43560,7 @@
                 "trade_count": 4
               }
             ],
-            "basis": "노량진동 · 유사면적 보완 추정 · 7개 단지 64건"
+            "basis": "노량진동 · 유사면적 보완 추정 · 7개 단지 63건"
           },
           {
             "housing_type": "109A",
@@ -45320,7 +46157,7 @@
         "market_estimated_krw": 649136589,
         "confidence": "medium",
         "housing_type": "84A",
-        "basis": "광주시 · 5년 이내 준신축 · 13개 단지 218건",
+        "basis": "광주시 · 5년 이내 준신축 · 13개 단지 221건",
         "comparables": [
           {
             "name": "오포자이디오브(3단지)",
@@ -45350,10 +46187,10 @@
             "build_year": 2024,
             "month": "2026-11",
             "area_sqm": 84.9959,
-            "floor": 9,
-            "price_krw": 705000000,
-            "market_krw": 687076964.8888946,
-            "trade_count": 7
+            "floor": 20,
+            "price_krw": 720000000,
+            "market_krw": 702067735.031925,
+            "trade_count": 8
           },
           {
             "name": "두산위브광주센트럴파크",
@@ -45394,7 +46231,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 218,
+            "trade_count": 221,
             "complex_count": 13,
             "comparables": [
               {
@@ -45425,10 +46262,10 @@
                 "build_year": 2024,
                 "month": "2026-11",
                 "area_sqm": 84.9959,
-                "floor": 9,
-                "price_krw": 705000000,
-                "market_krw": 687076964.8888946,
-                "trade_count": 7
+                "floor": 20,
+                "price_krw": 720000000,
+                "market_krw": 702067735.031925,
+                "trade_count": 8
               },
               {
                 "name": "두산위브광주센트럴파크",
@@ -45453,7 +46290,7 @@
                 "trade_count": 23
               }
             ],
-            "basis": "광주시 · 5년 이내 준신축 · 13개 단지 218건"
+            "basis": "광주시 · 5년 이내 준신축 · 13개 단지 221건"
           }
         ]
       },
@@ -45639,12 +46476,12 @@
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -1189408793,
-        "estimated_low_krw": -1425765779,
+        "estimated_low_krw": -1475469921,
         "estimated_high_krw": -1076764518,
         "market_estimated_krw": 1528591207,
         "confidence": "low",
         "housing_type": "84B",
-        "basis": "노량진동 · 유사면적 보완 추정 · 7개 단지 64건",
+        "basis": "노량진동 · 유사면적 보완 추정 · 7개 단지 63건",
         "comparables": [
           {
             "name": "우성",
@@ -45784,17 +46621,17 @@
             "area_sqm": 84,
             "sale_price_krw": 2718000000,
             "status": "estimated",
-            "market_low_krw": 1292234221,
+            "market_low_krw": 1242530079,
             "market_base_krw": 1528591207,
             "market_high_krw": 1641235482,
-            "gain_low_krw": -1425765779,
+            "gain_low_krw": -1475469921,
             "gain_base_krw": -1189408793,
             "gain_high_krw": -1076764518,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 64,
+            "trade_count": 63,
             "complex_count": 7,
             "comparables": [
               {
@@ -45853,7 +46690,7 @@
                 "trade_count": 4
               }
             ],
-            "basis": "노량진동 · 유사면적 보완 추정 · 7개 단지 64건"
+            "basis": "노량진동 · 유사면적 보완 추정 · 7개 단지 63건"
           },
           {
             "housing_type": "109A",
@@ -46169,7 +47006,7 @@
         "market_estimated_krw": 505951306,
         "confidence": "medium",
         "housing_type": "84P",
-        "basis": "오산시 · 5년 이내 준신축 · 15개 단지 185건",
+        "basis": "오산시 · 5년 이내 준신축 · 15개 단지 187건",
         "comparables": [
           {
             "name": "오산SKVIEW1차",
@@ -46216,15 +47053,15 @@
             "trade_count": 3
           },
           {
-            "name": "오산롯데캐슬스카이파크",
-            "legal_dong": "원동",
-            "build_year": 2024,
-            "month": "2026-11",
-            "area_sqm": 84.9967,
-            "floor": 23,
-            "price_krw": 550000000,
-            "market_krw": 518398126.0448935,
-            "trade_count": 50
+            "name": "오산SKVIEW2차",
+            "legal_dong": "가수동",
+            "build_year": 2025,
+            "month": "2025-12",
+            "area_sqm": 84.9823,
+            "floor": 5,
+            "price_krw": 497790000,
+            "market_krw": 492456671.5657261,
+            "trade_count": 3
           }
         ],
         "by_type": [
@@ -46319,7 +47156,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 185,
+            "trade_count": 187,
             "complex_count": 15,
             "comparables": [
               {
@@ -46367,18 +47204,18 @@
                 "trade_count": 3
               },
               {
-                "name": "오산롯데캐슬스카이파크",
-                "legal_dong": "원동",
-                "build_year": 2024,
-                "month": "2026-11",
-                "area_sqm": 84.9967,
-                "floor": 23,
-                "price_krw": 550000000,
-                "market_krw": 518398126.0448935,
-                "trade_count": 50
+                "name": "오산SKVIEW2차",
+                "legal_dong": "가수동",
+                "build_year": 2025,
+                "month": "2025-12",
+                "area_sqm": 84.9823,
+                "floor": 5,
+                "price_krw": 497790000,
+                "market_krw": 492456671.5657261,
+                "trade_count": 3
               }
             ],
-            "basis": "오산시 · 5년 이내 준신축 · 15개 단지 185건"
+            "basis": "오산시 · 5년 이내 준신축 · 15개 단지 187건"
           }
         ]
       },
@@ -47355,14 +48192,25 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": 136178661,
+        "estimated_krw": 131270092,
         "estimated_low_krw": 40268262,
-        "estimated_high_krw": 230444752,
-        "market_estimated_krw": 665178661,
+        "estimated_high_krw": 223081898,
+        "market_estimated_krw": 660270092,
         "confidence": "high",
         "housing_type": "59",
-        "basis": "고잔동 · 10년 이내 준신축 · 4개 단지 103건",
+        "basis": "고잔동 · 10년 이내 준신축 · 4개 단지 104건",
         "comparables": [
+          {
+            "name": "힐스테이트중앙",
+            "legal_dong": "고잔동",
+            "build_year": 2018,
+            "month": "2026-11",
+            "area_sqm": 59.9633,
+            "floor": 34,
+            "price_krw": 730000000,
+            "market_krw": 741477426.9677703,
+            "trade_count": 38
+          },
           {
             "name": "고잔롯데캐슬골드파크",
             "legal_dong": "고잔동",
@@ -47375,15 +48223,15 @@
             "trade_count": 25
           },
           {
-            "name": "힐스테이트중앙",
+            "name": "포레나안산고잔",
             "legal_dong": "고잔동",
-            "build_year": 2018,
+            "build_year": 2023,
             "month": "2026-11",
-            "area_sqm": 59.9633,
-            "floor": 20,
-            "price_krw": 699000000,
-            "market_krw": 751294565.6902735,
-            "trade_count": 37
+            "area_sqm": 59.9803,
+            "floor": 4,
+            "price_krw": 500000000,
+            "market_krw": 539884779.4523356,
+            "trade_count": 18
           },
           {
             "name": "안산레이크타운푸르지오",
@@ -47395,17 +48243,6 @@
             "price_krw": 777000000,
             "market_krw": 783895312.9170957,
             "trade_count": 23
-          },
-          {
-            "name": "포레나안산고잔",
-            "legal_dong": "고잔동",
-            "build_year": 2023,
-            "month": "2026-11",
-            "area_sqm": 59.9803,
-            "floor": 4,
-            "price_krw": 500000000,
-            "market_krw": 539884779.4523356,
-            "trade_count": 18
           }
         ],
         "by_type": [
@@ -47480,18 +48317,29 @@
             "sale_price_krw": 529000000,
             "status": "estimated",
             "market_low_krw": 569268262,
-            "market_base_krw": 665178661,
-            "market_high_krw": 759444752,
+            "market_base_krw": 660270092,
+            "market_high_krw": 752081898,
             "gain_low_krw": 40268262,
-            "gain_base_krw": 136178661,
-            "gain_high_krw": 230444752,
+            "gain_base_krw": 131270092,
+            "gain_high_krw": 223081898,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 10,
-            "trade_count": 103,
+            "trade_count": 104,
             "complex_count": 4,
             "comparables": [
+              {
+                "name": "힐스테이트중앙",
+                "legal_dong": "고잔동",
+                "build_year": 2018,
+                "month": "2026-11",
+                "area_sqm": 59.9633,
+                "floor": 34,
+                "price_krw": 730000000,
+                "market_krw": 741477426.9677703,
+                "trade_count": 38
+              },
               {
                 "name": "고잔롯데캐슬골드파크",
                 "legal_dong": "고잔동",
@@ -47504,15 +48352,15 @@
                 "trade_count": 25
               },
               {
-                "name": "힐스테이트중앙",
+                "name": "포레나안산고잔",
                 "legal_dong": "고잔동",
-                "build_year": 2018,
+                "build_year": 2023,
                 "month": "2026-11",
-                "area_sqm": 59.9633,
-                "floor": 20,
-                "price_krw": 699000000,
-                "market_krw": 751294565.6902735,
-                "trade_count": 37
+                "area_sqm": 59.9803,
+                "floor": 4,
+                "price_krw": 500000000,
+                "market_krw": 539884779.4523356,
+                "trade_count": 18
               },
               {
                 "name": "안산레이크타운푸르지오",
@@ -47524,20 +48372,9 @@
                 "price_krw": 777000000,
                 "market_krw": 783895312.9170957,
                 "trade_count": 23
-              },
-              {
-                "name": "포레나안산고잔",
-                "legal_dong": "고잔동",
-                "build_year": 2023,
-                "month": "2026-11",
-                "area_sqm": 59.9803,
-                "floor": 4,
-                "price_krw": 500000000,
-                "market_krw": 539884779.4523356,
-                "trade_count": 18
               }
             ],
-            "basis": "고잔동 · 10년 이내 준신축 · 4개 단지 103건"
+            "basis": "고잔동 · 10년 이내 준신축 · 4개 단지 104건"
           }
         ]
       },
@@ -47672,406 +48509,6 @@
               }
             ],
             "basis": "대방동 · 유사면적 보완 추정 · 2개 단지 10건"
-          }
-        ]
-      },
-      "restrictions": {
-        "resale": null,
-        "residence": null
-      }
-    },
-    {
-      "id": "2026930024",
-      "notice_number": "2026930024",
-      "name": "e편한세상 강동 프레스티지원",
-      "is_sample": false,
-      "region": {
-        "sido": "서울특별시",
-        "sigungu": "강동구",
-        "address": "서울특별시 강동구 올림픽로78길 37 e편한세상 강동 프레스티지원"
-      },
-      "lawd_code": null,
-      "total_households": 1,
-      "housing_category": "remaining",
-      "announcement_date": "2026-07-22",
-      "application_start": "2026-07-27",
-      "application_end": "2026-07-27",
-      "winner_date": "2026-07-31",
-      "contract_start": "2026-08-07",
-      "contract_end": "2026-08-07",
-      "move_in_month": "202608",
-      "links": {
-        "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026930024&pblancNo=2026930024",
-        "homepage": "https://www.elife.co.kr",
-        "homedubu": null
-      },
-      "policy": {
-        "regulated": null,
-        "price_cap": null,
-        "public_land": null,
-        "large_land": null
-      },
-      "housing_types": [
-        {
-          "name": "84A",
-          "area_sqm": 84.75,
-          "households": 0,
-          "price_krw": 1341900000
-        }
-      ],
-      "supply_options": [
-        {
-          "id": "remaining",
-          "label": "계약취소주택 재공급",
-          "kind": "remaining",
-          "min_age": 19,
-          "requires_homeless": true,
-          "requirements_complete": false,
-          "source_ref": "주택공급에 관한 규칙 및 원 공급유형 자격"
-        }
-      ],
-      "price_gain": {
-        "status": "estimated",
-        "estimated_krw": 503527260,
-        "estimated_low_krw": 325542271,
-        "estimated_high_krw": 735504201,
-        "market_estimated_krw": 1845427260,
-        "confidence": "medium",
-        "housing_type": "84A",
-        "basis": "강동구 · 5년 이내 준신축 · 9개 단지 107건",
-        "comparables": [
-          {
-            "name": "고덕아르테스미소지움",
-            "legal_dong": "상일동",
-            "build_year": 2022,
-            "month": "2026-01",
-            "area_sqm": 84.96,
-            "floor": 8,
-            "price_krw": 1850000000,
-            "market_krw": 1845427259.8870058,
-            "trade_count": 1
-          },
-          {
-            "name": "고덕풍경채어바니티",
-            "legal_dong": "고덕동",
-            "build_year": 2024,
-            "month": "2026-09",
-            "area_sqm": 84.1,
-            "floor": 4,
-            "price_krw": 1830000000,
-            "market_krw": 1858702954.2116275,
-            "trade_count": 12
-          },
-          {
-            "name": "강동밀레니얼중흥S-클래스",
-            "legal_dong": "천호동",
-            "build_year": 2024,
-            "month": "2026-05",
-            "area_sqm": 84.1946,
-            "floor": 34,
-            "price_krw": 1800000000,
-            "market_krw": 1811873920.6552439,
-            "trade_count": 1
-          },
-          {
-            "name": "더샵파크솔레이유",
-            "legal_dong": "둔촌동",
-            "build_year": 2023,
-            "month": "2026-08",
-            "area_sqm": 84.88,
-            "floor": 8,
-            "price_krw": 1725000000,
-            "market_krw": 1667442271.442036,
-            "trade_count": 3
-          },
-          {
-            "name": "고덕자이",
-            "legal_dong": "상일동",
-            "build_year": 2021,
-            "month": "2026-10",
-            "area_sqm": 84.9712,
-            "floor": 7,
-            "price_krw": 2120000000,
-            "market_krw": 2077404200.8130755,
-            "trade_count": 17
-          }
-        ],
-        "by_type": [
-          {
-            "housing_type": "84A",
-            "area_sqm": 84.75,
-            "sale_price_krw": 1341900000,
-            "status": "estimated",
-            "market_low_krw": 1667442271,
-            "market_base_krw": 1845427260,
-            "market_high_krw": 2077404201,
-            "gain_low_krw": 325542271,
-            "gain_base_krw": 503527260,
-            "gain_high_krw": 735504201,
-            "confidence": "medium",
-            "method": "strict",
-            "scope": "sigungu",
-            "age_limit_years": 5,
-            "trade_count": 107,
-            "complex_count": 9,
-            "comparables": [
-              {
-                "name": "고덕아르테스미소지움",
-                "legal_dong": "상일동",
-                "build_year": 2022,
-                "month": "2026-01",
-                "area_sqm": 84.96,
-                "floor": 8,
-                "price_krw": 1850000000,
-                "market_krw": 1845427259.8870058,
-                "trade_count": 1
-              },
-              {
-                "name": "고덕풍경채어바니티",
-                "legal_dong": "고덕동",
-                "build_year": 2024,
-                "month": "2026-09",
-                "area_sqm": 84.1,
-                "floor": 4,
-                "price_krw": 1830000000,
-                "market_krw": 1858702954.2116275,
-                "trade_count": 12
-              },
-              {
-                "name": "강동밀레니얼중흥S-클래스",
-                "legal_dong": "천호동",
-                "build_year": 2024,
-                "month": "2026-05",
-                "area_sqm": 84.1946,
-                "floor": 34,
-                "price_krw": 1800000000,
-                "market_krw": 1811873920.6552439,
-                "trade_count": 1
-              },
-              {
-                "name": "더샵파크솔레이유",
-                "legal_dong": "둔촌동",
-                "build_year": 2023,
-                "month": "2026-08",
-                "area_sqm": 84.88,
-                "floor": 8,
-                "price_krw": 1725000000,
-                "market_krw": 1667442271.442036,
-                "trade_count": 3
-              },
-              {
-                "name": "고덕자이",
-                "legal_dong": "상일동",
-                "build_year": 2021,
-                "month": "2026-10",
-                "area_sqm": 84.9712,
-                "floor": 7,
-                "price_krw": 2120000000,
-                "market_krw": 2077404200.8130755,
-                "trade_count": 17
-              }
-            ],
-            "basis": "강동구 · 5년 이내 준신축 · 9개 단지 107건"
-          }
-        ]
-      },
-      "restrictions": {
-        "resale": null,
-        "residence": null
-      }
-    },
-    {
-      "id": "2026910198",
-      "notice_number": "2026910198",
-      "name": "판교TH212",
-      "is_sample": false,
-      "region": {
-        "sido": "경기도",
-        "sigungu": "성남시",
-        "address": "경기도 성남시 분당구 대장동 B2, B3BL"
-      },
-      "lawd_code": null,
-      "total_households": 1,
-      "housing_category": "remaining",
-      "announcement_date": "2026-07-22",
-      "application_start": "2026-07-27",
-      "application_end": "2026-07-27",
-      "winner_date": "2026-07-30",
-      "contract_start": "2026-08-06",
-      "contract_end": "2026-08-06",
-      "move_in_month": "202609",
-      "links": {
-        "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910198&pblancNo=2026910198",
-        "homepage": "https://blog.naver.com/kkvista",
-        "homedubu": null
-      },
-      "policy": {
-        "regulated": null,
-        "price_cap": null,
-        "public_land": null,
-        "large_land": null
-      },
-      "housing_types": [
-        {
-          "name": "135T",
-          "area_sqm": 135.4547,
-          "households": 1,
-          "price_krw": 1715000000
-        }
-      ],
-      "supply_options": [
-        {
-          "id": "remaining",
-          "label": "무순위·잔여세대",
-          "kind": "remaining",
-          "min_age": 19,
-          "requires_homeless": true,
-          "requirements_complete": true,
-          "source_ref": "주택공급에 관한 규칙 제26조제5항"
-        }
-      ],
-      "price_gain": {
-        "status": "estimated",
-        "estimated_krw": 1376182768,
-        "estimated_low_krw": 462869351,
-        "estimated_high_krw": 1443668116,
-        "market_estimated_krw": 3091182768,
-        "confidence": "low",
-        "housing_type": "135T",
-        "basis": "분당구 · 15년 이내 준신축 · 7개 단지 38건",
-        "comparables": [
-          {
-            "name": "판교호반써밋플레이스",
-            "legal_dong": "삼평동",
-            "build_year": 2012,
-            "month": "2026-08",
-            "area_sqm": 131.24,
-            "floor": 7,
-            "price_krw": 2995000000,
-            "market_krw": 3091182768.2109113,
-            "trade_count": 1
-          },
-          {
-            "name": "판교알파리움2단지",
-            "legal_dong": "백현동",
-            "build_year": 2015,
-            "month": "2026-09",
-            "area_sqm": 129.477,
-            "floor": 4,
-            "price_krw": 3000000000,
-            "market_krw": 3141118906.847676,
-            "trade_count": 12
-          },
-          {
-            "name": "판교알파리움1단지",
-            "legal_dong": "백현동",
-            "build_year": 2015,
-            "month": "2026-08",
-            "area_sqm": 142.013,
-            "floor": 6,
-            "price_krw": 3800000000,
-            "market_krw": 3176217325.1744556,
-            "trade_count": 6
-          },
-          {
-            "name": "판교푸르지오그랑블",
-            "legal_dong": "백현동",
-            "build_year": 2011,
-            "month": "2026-04",
-            "area_sqm": 139.7268,
-            "floor": 16,
-            "price_krw": 4330000000,
-            "market_krw": 3601415122.224226,
-            "trade_count": 2
-          },
-          {
-            "name": "판교푸르지오월드마크",
-            "legal_dong": "삼평동",
-            "build_year": 2013,
-            "month": "2026-04",
-            "area_sqm": 134.33,
-            "floor": 9,
-            "price_krw": 2390000000,
-            "market_krw": 2410010667.758505,
-            "trade_count": 1
-          }
-        ],
-        "by_type": [
-          {
-            "housing_type": "135T",
-            "area_sqm": 135.4547,
-            "sale_price_krw": 1715000000,
-            "status": "estimated",
-            "market_low_krw": 2177869351,
-            "market_base_krw": 3091182768,
-            "market_high_krw": 3158668116,
-            "gain_low_krw": 462869351,
-            "gain_base_krw": 1376182768,
-            "gain_high_krw": 1443668116,
-            "confidence": "low",
-            "method": "strict",
-            "scope": "sigungu",
-            "age_limit_years": 15,
-            "trade_count": 38,
-            "complex_count": 7,
-            "comparables": [
-              {
-                "name": "판교호반써밋플레이스",
-                "legal_dong": "삼평동",
-                "build_year": 2012,
-                "month": "2026-08",
-                "area_sqm": 131.24,
-                "floor": 7,
-                "price_krw": 2995000000,
-                "market_krw": 3091182768.2109113,
-                "trade_count": 1
-              },
-              {
-                "name": "판교알파리움2단지",
-                "legal_dong": "백현동",
-                "build_year": 2015,
-                "month": "2026-09",
-                "area_sqm": 129.477,
-                "floor": 4,
-                "price_krw": 3000000000,
-                "market_krw": 3141118906.847676,
-                "trade_count": 12
-              },
-              {
-                "name": "판교알파리움1단지",
-                "legal_dong": "백현동",
-                "build_year": 2015,
-                "month": "2026-08",
-                "area_sqm": 142.013,
-                "floor": 6,
-                "price_krw": 3800000000,
-                "market_krw": 3176217325.1744556,
-                "trade_count": 6
-              },
-              {
-                "name": "판교푸르지오그랑블",
-                "legal_dong": "백현동",
-                "build_year": 2011,
-                "month": "2026-04",
-                "area_sqm": 139.7268,
-                "floor": 16,
-                "price_krw": 4330000000,
-                "market_krw": 3601415122.224226,
-                "trade_count": 2
-              },
-              {
-                "name": "판교푸르지오월드마크",
-                "legal_dong": "삼평동",
-                "build_year": 2013,
-                "month": "2026-04",
-                "area_sqm": 134.33,
-                "floor": 9,
-                "price_krw": 2390000000,
-                "market_krw": 2410010667.758505,
-                "trade_count": 1
-              }
-            ],
-            "basis": "분당구 · 15년 이내 준신축 · 7개 단지 38건"
           }
         ]
       },
