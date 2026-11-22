@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-21T11:58:47+09:00",
+    "generated_at": "2026-11-22T10:53:21+09:00",
     "source": "한국부동산원 청약홈 분양정보 조회 서비스",
     "is_sample": false,
     "last_fetch_error": null,
@@ -125,6 +125,22 @@
           "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
         }
       ],
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://static.applyhome.co.kr/ai/aia/getAtchmnfl.do?houseManageNo=2026000591&pblancNo=2026000591&atchmnflSeqNo=2027261&atchmnflSn=4",
+        "checked_at": "2026-11-21T02:58:57.952Z",
+        "parser_version": "notice-id-v4",
+        "verified_notice_number": "2026000591",
+        "facts": {
+          "resale": "1년",
+          "residence": "없음",
+          "rewinning": "10년",
+          "contract_deposit": "10%",
+          "interim_payment": "60%",
+          "balance_payment": "30%"
+        },
+        "eligibility": {}
+      },
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -186589292,
@@ -553,22 +569,6 @@
       "restrictions": {
         "resale": "1년",
         "residence": "없음"
-      },
-      "notice_analysis": {
-        "status": "parsed",
-        "source_url": "https://static.applyhome.co.kr/ai/aia/getAtchmnfl.do?houseManageNo=2026000591&pblancNo=2026000591&atchmnflSeqNo=2027261&atchmnflSn=4",
-        "checked_at": "2026-11-21T02:58:57.952Z",
-        "parser_version": "notice-id-v4",
-        "verified_notice_number": "2026000591",
-        "facts": {
-          "resale": "1년",
-          "residence": "없음",
-          "rewinning": "10년",
-          "contract_deposit": "10%",
-          "interim_payment": "60%",
-          "balance_payment": "30%"
-        },
-        "eligibility": {}
       }
     },
     {
@@ -3573,7 +3573,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-21T02:58:57.952Z",
+        "checked_at": "2026-11-22T01:53:29.677Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -5762,7 +5762,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-21T02:58:57.952Z",
+        "checked_at": "2026-11-22T01:53:29.677Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -5774,7 +5774,7 @@
         "market_estimated_krw": 232262220,
         "confidence": "low",
         "housing_type": "55O",
-        "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2248건",
+        "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2247건",
         "comparables": [
           {
             "name": "신명",
@@ -5785,7 +5785,7 @@
             "floor": 11,
             "price_krw": 258000000,
             "market_krw": 233027522.9357798,
-            "trade_count": 32
+            "trade_count": 31
           },
           {
             "name": "장현주공",
@@ -5902,7 +5902,7 @@
             "method": "regional_relaxed",
             "scope": "sigungu",
             "age_limit_years": 30,
-            "trade_count": 2248,
+            "trade_count": 2247,
             "complex_count": 166,
             "comparables": [
               {
@@ -5914,7 +5914,7 @@
                 "floor": 11,
                 "price_krw": 258000000,
                 "market_krw": 233027522.9357798,
-                "trade_count": 32
+                "trade_count": 31
               },
               {
                 "name": "장현주공",
@@ -5961,7 +5961,7 @@
                 "trade_count": 4
               }
             ],
-            "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2248건"
+            "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2247건"
           }
         ]
       },
@@ -6030,7 +6030,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-21T02:58:57.952Z",
+        "checked_at": "2026-11-22T01:53:29.677Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -6339,7 +6339,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-21T02:58:57.952Z",
+        "checked_at": "2026-11-22T01:53:29.677Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -10630,7 +10630,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-21T02:58:57.952Z",
+        "checked_at": "2026-11-22T01:53:29.677Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -10998,7 +10998,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-21T02:58:57.952Z",
+        "checked_at": "2026-11-22T01:53:29.677Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -15263,7 +15263,7 @@
         "market_estimated_krw": 600827465,
         "confidence": "medium",
         "housing_type": "84A",
-        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건",
+        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 125건",
         "comparables": [
           {
             "name": "힐스테이트용인둔전역",
@@ -15315,10 +15315,10 @@
             "build_year": 2023,
             "month": "2026-11",
             "area_sqm": 84.4547,
-            "floor": 15,
+            "floor": 27,
             "price_krw": 550000000,
             "market_krw": 553550542.4801698,
-            "trade_count": 12
+            "trade_count": 13
           }
         ],
         "by_type": [
@@ -15337,7 +15337,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 229,
+            "trade_count": 230,
             "complex_count": 9,
             "comparables": [
               {
@@ -15396,7 +15396,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 230건"
           },
           {
             "housing_type": "59B",
@@ -15413,7 +15413,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 229,
+            "trade_count": 230,
             "complex_count": 9,
             "comparables": [
               {
@@ -15472,7 +15472,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 230건"
           },
           {
             "housing_type": "59C",
@@ -15489,7 +15489,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 229,
+            "trade_count": 230,
             "complex_count": 9,
             "comparables": [
               {
@@ -15548,7 +15548,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 230건"
           },
           {
             "housing_type": "69A",
@@ -15771,7 +15771,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 124,
+            "trade_count": 125,
             "complex_count": 13,
             "comparables": [
               {
@@ -15824,13 +15824,13 @@
                 "build_year": 2023,
                 "month": "2026-11",
                 "area_sqm": 84.4547,
-                "floor": 15,
+                "floor": 27,
                 "price_krw": 550000000,
                 "market_krw": 553550542.4801698,
-                "trade_count": 12
+                "trade_count": 13
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건"
+            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 125건"
           },
           {
             "housing_type": "84B",
@@ -15847,7 +15847,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 124,
+            "trade_count": 125,
             "complex_count": 13,
             "comparables": [
               {
@@ -15900,13 +15900,13 @@
                 "build_year": 2023,
                 "month": "2026-11",
                 "area_sqm": 84.4547,
-                "floor": 15,
+                "floor": 27,
                 "price_krw": 550000000,
                 "market_krw": 553544030.1131849,
-                "trade_count": 12
+                "trade_count": 13
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건"
+            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 125건"
           }
         ]
       },
@@ -21903,7 +21903,7 @@
         "market_estimated_krw": 232262220,
         "confidence": "low",
         "housing_type": "55O",
-        "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2248건",
+        "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2247건",
         "comparables": [
           {
             "name": "신명",
@@ -21914,7 +21914,7 @@
             "floor": 11,
             "price_krw": 258000000,
             "market_krw": 233027522.9357798,
-            "trade_count": 32
+            "trade_count": 31
           },
           {
             "name": "장현주공",
@@ -21977,7 +21977,7 @@
             "method": "regional_relaxed",
             "scope": "sigungu",
             "age_limit_years": 30,
-            "trade_count": 2248,
+            "trade_count": 2247,
             "complex_count": 166,
             "comparables": [
               {
@@ -21989,7 +21989,7 @@
                 "floor": 11,
                 "price_krw": 258000000,
                 "market_krw": 233027522.9357798,
-                "trade_count": 32
+                "trade_count": 31
               },
               {
                 "name": "장현주공",
@@ -22036,7 +22036,7 @@
                 "trade_count": 4
               }
             ],
-            "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2248건"
+            "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2247건"
           }
         ]
       },
@@ -28343,7 +28343,7 @@
         "market_estimated_krw": 599115458,
         "confidence": "medium",
         "housing_type": "84A",
-        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건",
+        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 125건",
         "comparables": [
           {
             "name": "힐스테이트용인둔전역",
@@ -28395,10 +28395,10 @@
             "build_year": 2023,
             "month": "2026-11",
             "area_sqm": 84.4547,
-            "floor": 15,
+            "floor": 27,
             "price_krw": 550000000,
             "market_krw": 551973247.196426,
-            "trade_count": 12
+            "trade_count": 13
           }
         ],
         "by_type": [
@@ -28417,7 +28417,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 229,
+            "trade_count": 230,
             "complex_count": 9,
             "comparables": [
               {
@@ -28476,7 +28476,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 230건"
           },
           {
             "housing_type": "59B",
@@ -28493,7 +28493,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 229,
+            "trade_count": 230,
             "complex_count": 9,
             "comparables": [
               {
@@ -28552,7 +28552,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 230건"
           },
           {
             "housing_type": "59C",
@@ -28569,7 +28569,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 229,
+            "trade_count": 230,
             "complex_count": 9,
             "comparables": [
               {
@@ -28628,7 +28628,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 230건"
           },
           {
             "housing_type": "71A",
@@ -28786,7 +28786,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 124,
+            "trade_count": 125,
             "complex_count": 13,
             "comparables": [
               {
@@ -28839,13 +28839,13 @@
                 "build_year": 2023,
                 "month": "2026-11",
                 "area_sqm": 84.4547,
-                "floor": 15,
+                "floor": 27,
                 "price_krw": 550000000,
                 "market_krw": 551973247.196426,
-                "trade_count": 12
+                "trade_count": 13
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건"
+            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 125건"
           }
         ]
       },
@@ -31632,7 +31632,7 @@
         "market_estimated_krw": 600827465,
         "confidence": "medium",
         "housing_type": "84A",
-        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건",
+        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 125건",
         "comparables": [
           {
             "name": "힐스테이트용인둔전역",
@@ -31684,10 +31684,10 @@
             "build_year": 2023,
             "month": "2026-11",
             "area_sqm": 84.4547,
-            "floor": 15,
+            "floor": 27,
             "price_krw": 550000000,
             "market_krw": 553550542.4801698,
-            "trade_count": 12
+            "trade_count": 13
           }
         ],
         "by_type": [
@@ -31706,7 +31706,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 229,
+            "trade_count": 230,
             "complex_count": 9,
             "comparables": [
               {
@@ -31765,7 +31765,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 230건"
           },
           {
             "housing_type": "74A",
@@ -31858,7 +31858,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 124,
+            "trade_count": 125,
             "complex_count": 13,
             "comparables": [
               {
@@ -31911,13 +31911,13 @@
                 "build_year": 2023,
                 "month": "2026-11",
                 "area_sqm": 84.4547,
-                "floor": 15,
+                "floor": 27,
                 "price_krw": 550000000,
                 "market_krw": 553550542.4801698,
-                "trade_count": 12
+                "trade_count": 13
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건"
+            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 125건"
           },
           {
             "housing_type": "84B",
@@ -31934,7 +31934,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 124,
+            "trade_count": 125,
             "complex_count": 13,
             "comparables": [
               {
@@ -31987,13 +31987,13 @@
                 "build_year": 2023,
                 "month": "2026-11",
                 "area_sqm": 84.4547,
-                "floor": 15,
+                "floor": 27,
                 "price_krw": 550000000,
                 "market_krw": 553544030.1131849,
-                "trade_count": 12
+                "trade_count": 13
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건"
+            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 125건"
           }
         ]
       },
@@ -41808,7 +41808,7 @@
         "market_estimated_krw": 599115458,
         "confidence": "medium",
         "housing_type": "84A",
-        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건",
+        "basis": "처인구 · 5년 이내 준신축 · 13개 단지 125건",
         "comparables": [
           {
             "name": "힐스테이트용인둔전역",
@@ -41860,10 +41860,10 @@
             "build_year": 2023,
             "month": "2026-11",
             "area_sqm": 84.4547,
-            "floor": 15,
+            "floor": 27,
             "price_krw": 550000000,
             "market_krw": 551973247.196426,
-            "trade_count": 12
+            "trade_count": 13
           }
         ],
         "by_type": [
@@ -41882,7 +41882,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 229,
+            "trade_count": 230,
             "complex_count": 9,
             "comparables": [
               {
@@ -41941,7 +41941,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 230건"
           },
           {
             "housing_type": "59C",
@@ -41958,7 +41958,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 229,
+            "trade_count": 230,
             "complex_count": 9,
             "comparables": [
               {
@@ -42017,7 +42017,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 229건"
+            "basis": "처인구 · 5년 이내 준신축 · 9개 단지 230건"
           },
           {
             "housing_type": "71A",
@@ -42175,7 +42175,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 124,
+            "trade_count": 125,
             "complex_count": 13,
             "comparables": [
               {
@@ -42228,13 +42228,13 @@
                 "build_year": 2023,
                 "month": "2026-11",
                 "area_sqm": 84.4547,
-                "floor": 15,
+                "floor": 27,
                 "price_krw": 550000000,
                 "market_krw": 551973247.196426,
-                "trade_count": 12
+                "trade_count": 13
               }
             ],
-            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 124건"
+            "basis": "처인구 · 5년 이내 준신축 · 13개 단지 125건"
           }
         ]
       },
@@ -42847,7 +42847,7 @@
         "market_estimated_krw": 608478176,
         "confidence": "high",
         "housing_type": "84B",
-        "basis": "역북동 · 10년 이내 준신축 · 7개 단지 139건",
+        "basis": "역북동 · 10년 이내 준신축 · 7개 단지 140건",
         "comparables": [
           {
             "name": "골드클래스",
@@ -42877,10 +42877,10 @@
             "build_year": 2023,
             "month": "2026-11",
             "area_sqm": 84.4547,
-            "floor": 15,
+            "floor": 27,
             "price_krw": 550000000,
             "market_krw": 553522539.3021348,
-            "trade_count": 12
+            "trade_count": 13
           },
           {
             "name": "용인명지대역동원로얄듀크",
@@ -42913,15 +42913,15 @@
             "status": "estimated",
             "market_low_krw": 460967350,
             "market_base_krw": 515229131,
-            "market_high_krw": 551720708,
+            "market_high_krw": 556595676,
             "gain_low_krw": 3967350,
             "gain_base_krw": 58229131,
-            "gain_high_krw": 94720708,
+            "gain_high_krw": 99595676,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 10,
-            "trade_count": 210,
+            "trade_count": 212,
             "complex_count": 6,
             "comparables": [
               {
@@ -42952,10 +42952,10 @@
                 "build_year": 2018,
                 "month": "2026-11",
                 "area_sqm": 59.9991,
-                "floor": 20,
-                "price_krw": 570000000,
-                "market_krw": 554996299.9444991,
-                "trade_count": 38
+                "floor": 9,
+                "price_krw": 568000000,
+                "market_krw": 561496256.6105158,
+                "trade_count": 39
               },
               {
                 "name": "우미린센트럴파크",
@@ -42980,7 +42980,7 @@
                 "trade_count": 12
               }
             ],
-            "basis": "역북동 · 10년 이내 준신축 · 6개 단지 210건"
+            "basis": "역북동 · 10년 이내 준신축 · 6개 단지 212건"
           },
           {
             "housing_type": "74A",
@@ -43073,7 +43073,7 @@
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 10,
-            "trade_count": 139,
+            "trade_count": 140,
             "complex_count": 7,
             "comparables": [
               {
@@ -43104,10 +43104,10 @@
                 "build_year": 2023,
                 "month": "2026-11",
                 "area_sqm": 84.4547,
-                "floor": 15,
+                "floor": 27,
                 "price_krw": 550000000,
                 "market_krw": 553522539.3021348,
-                "trade_count": 12
+                "trade_count": 13
               },
               {
                 "name": "용인명지대역동원로얄듀크",
@@ -43132,7 +43132,7 @@
                 "trade_count": 50
               }
             ],
-            "basis": "역북동 · 10년 이내 준신축 · 7개 단지 139건"
+            "basis": "역북동 · 10년 이내 준신축 · 7개 단지 140건"
           }
         ]
       },
