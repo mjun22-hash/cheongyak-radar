@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-22T10:53:21+09:00",
+    "generated_at": "2026-11-23T11:12:59+09:00",
     "source": "한국부동산원 청약홈 분양정보 조회 서비스",
     "is_sample": false,
     "last_fetch_error": null,
@@ -3573,7 +3573,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-22T01:53:29.677Z",
+        "checked_at": "2026-11-23T02:13:08.412Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -5762,30 +5762,30 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-22T01:53:29.677Z",
+        "checked_at": "2026-11-23T02:13:08.412Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -186817780,
+        "estimated_krw": -188062911,
         "estimated_low_krw": -242682808,
         "estimated_high_krw": -65335642,
-        "market_estimated_krw": 232262220,
+        "market_estimated_krw": 231017089,
         "confidence": "low",
         "housing_type": "55O",
-        "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2247건",
+        "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2246건",
         "comparables": [
           {
-            "name": "신명",
-            "legal_dong": "화도읍 창현리",
-            "build_year": 1997,
-            "month": "2026-11",
-            "area_sqm": 59.95,
-            "floor": 11,
-            "price_krw": 258000000,
-            "market_krw": 233027522.9357798,
-            "trade_count": 31
+            "name": "원일대궐터",
+            "legal_dong": "진접읍 내각리",
+            "build_year": 2004,
+            "month": "2026-09",
+            "area_sqm": 59.524,
+            "floor": 13,
+            "price_krw": 249000000,
+            "market_krw": 230537262.2807607,
+            "trade_count": 5
           },
           {
             "name": "장현주공",
@@ -5799,15 +5799,15 @@
             "trade_count": 26
           },
           {
-            "name": "원일대궐터",
-            "legal_dong": "진접읍 내각리",
-            "build_year": 2004,
-            "month": "2026-09",
-            "area_sqm": 59.524,
-            "floor": 13,
-            "price_krw": 249000000,
-            "market_krw": 230537262.2807607,
-            "trade_count": 5
+            "name": "신명",
+            "legal_dong": "화도읍 창현리",
+            "build_year": 1997,
+            "month": "2026-11",
+            "area_sqm": 59.95,
+            "floor": 11,
+            "price_krw": 258000000,
+            "market_krw": 233027522.9357798,
+            "trade_count": 31
           },
           {
             "name": "오남쌍용스윗닷홈지티(2단지)",
@@ -5821,15 +5821,15 @@
             "trade_count": 24
           },
           {
-            "name": "미라보",
-            "legal_dong": "금곡동",
-            "build_year": 1996,
-            "month": "2026-07",
-            "area_sqm": 59.96,
-            "floor": 3,
-            "price_krw": 243000000,
-            "market_krw": 237116410.9406271,
-            "trade_count": 4
+            "name": "파라다이스빌",
+            "legal_dong": "오남읍 오남리",
+            "build_year": 2004,
+            "month": "2026-10",
+            "area_sqm": 59.889,
+            "floor": 8,
+            "price_krw": 240000000,
+            "market_krw": 224999582.5610713,
+            "trade_count": 2
           }
         ],
         "by_type": [
@@ -5893,28 +5893,28 @@
             "sale_price_krw": 419080000,
             "status": "estimated",
             "market_low_krw": 176397192,
-            "market_base_krw": 232262220,
+            "market_base_krw": 231017089,
             "market_high_krw": 353744358,
             "gain_low_krw": -242682808,
-            "gain_base_krw": -186817780,
+            "gain_base_krw": -188062911,
             "gain_high_krw": -65335642,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "sigungu",
             "age_limit_years": 30,
-            "trade_count": 2247,
+            "trade_count": 2246,
             "complex_count": 166,
             "comparables": [
               {
-                "name": "신명",
-                "legal_dong": "화도읍 창현리",
-                "build_year": 1997,
-                "month": "2026-11",
-                "area_sqm": 59.95,
-                "floor": 11,
-                "price_krw": 258000000,
-                "market_krw": 233027522.9357798,
-                "trade_count": 31
+                "name": "원일대궐터",
+                "legal_dong": "진접읍 내각리",
+                "build_year": 2004,
+                "month": "2026-09",
+                "area_sqm": 59.524,
+                "floor": 13,
+                "price_krw": 249000000,
+                "market_krw": 230537262.2807607,
+                "trade_count": 5
               },
               {
                 "name": "장현주공",
@@ -5928,15 +5928,15 @@
                 "trade_count": 26
               },
               {
-                "name": "원일대궐터",
-                "legal_dong": "진접읍 내각리",
-                "build_year": 2004,
-                "month": "2026-09",
-                "area_sqm": 59.524,
-                "floor": 13,
-                "price_krw": 249000000,
-                "market_krw": 230537262.2807607,
-                "trade_count": 5
+                "name": "신명",
+                "legal_dong": "화도읍 창현리",
+                "build_year": 1997,
+                "month": "2026-11",
+                "area_sqm": 59.95,
+                "floor": 11,
+                "price_krw": 258000000,
+                "market_krw": 233027522.9357798,
+                "trade_count": 31
               },
               {
                 "name": "오남쌍용스윗닷홈지티(2단지)",
@@ -5950,18 +5950,18 @@
                 "trade_count": 24
               },
               {
-                "name": "미라보",
-                "legal_dong": "금곡동",
-                "build_year": 1996,
-                "month": "2026-07",
-                "area_sqm": 59.96,
-                "floor": 3,
-                "price_krw": 243000000,
-                "market_krw": 237116410.9406271,
-                "trade_count": 4
+                "name": "파라다이스빌",
+                "legal_dong": "오남읍 오남리",
+                "build_year": 2004,
+                "month": "2026-10",
+                "area_sqm": 59.889,
+                "floor": 8,
+                "price_krw": 240000000,
+                "market_krw": 224999582.5610713,
+                "trade_count": 2
               }
             ],
-            "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2247건"
+            "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2246건"
           }
         ]
       },
@@ -6030,7 +6030,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-22T01:53:29.677Z",
+        "checked_at": "2026-11-23T02:13:08.412Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -6339,7 +6339,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-22T01:53:29.677Z",
+        "checked_at": "2026-11-23T02:13:08.412Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -10630,7 +10630,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-22T01:53:29.677Z",
+        "checked_at": "2026-11-23T02:13:08.412Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -10998,7 +10998,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-22T01:53:29.677Z",
+        "checked_at": "2026-11-23T02:13:08.412Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -21897,24 +21897,24 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -152197780,
+        "estimated_krw": -153442911,
         "estimated_low_krw": -208062808,
         "estimated_high_krw": -30715642,
-        "market_estimated_krw": 232262220,
+        "market_estimated_krw": 231017089,
         "confidence": "low",
         "housing_type": "55O",
-        "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2247건",
+        "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2246건",
         "comparables": [
           {
-            "name": "신명",
-            "legal_dong": "화도읍 창현리",
-            "build_year": 1997,
-            "month": "2026-11",
-            "area_sqm": 59.95,
-            "floor": 11,
-            "price_krw": 258000000,
-            "market_krw": 233027522.9357798,
-            "trade_count": 31
+            "name": "원일대궐터",
+            "legal_dong": "진접읍 내각리",
+            "build_year": 2004,
+            "month": "2026-09",
+            "area_sqm": 59.524,
+            "floor": 13,
+            "price_krw": 249000000,
+            "market_krw": 230537262.2807607,
+            "trade_count": 5
           },
           {
             "name": "장현주공",
@@ -21928,15 +21928,15 @@
             "trade_count": 26
           },
           {
-            "name": "원일대궐터",
-            "legal_dong": "진접읍 내각리",
-            "build_year": 2004,
-            "month": "2026-09",
-            "area_sqm": 59.524,
-            "floor": 13,
-            "price_krw": 249000000,
-            "market_krw": 230537262.2807607,
-            "trade_count": 5
+            "name": "신명",
+            "legal_dong": "화도읍 창현리",
+            "build_year": 1997,
+            "month": "2026-11",
+            "area_sqm": 59.95,
+            "floor": 11,
+            "price_krw": 258000000,
+            "market_krw": 233027522.9357798,
+            "trade_count": 31
           },
           {
             "name": "오남쌍용스윗닷홈지티(2단지)",
@@ -21950,15 +21950,15 @@
             "trade_count": 24
           },
           {
-            "name": "미라보",
-            "legal_dong": "금곡동",
-            "build_year": 1996,
-            "month": "2026-07",
-            "area_sqm": 59.96,
-            "floor": 3,
-            "price_krw": 243000000,
-            "market_krw": 237116410.9406271,
-            "trade_count": 4
+            "name": "파라다이스빌",
+            "legal_dong": "오남읍 오남리",
+            "build_year": 2004,
+            "month": "2026-10",
+            "area_sqm": 59.889,
+            "floor": 8,
+            "price_krw": 240000000,
+            "market_krw": 224999582.5610713,
+            "trade_count": 2
           }
         ],
         "by_type": [
@@ -21968,28 +21968,28 @@
             "sale_price_krw": 384460000,
             "status": "estimated",
             "market_low_krw": 176397192,
-            "market_base_krw": 232262220,
+            "market_base_krw": 231017089,
             "market_high_krw": 353744358,
             "gain_low_krw": -208062808,
-            "gain_base_krw": -152197780,
+            "gain_base_krw": -153442911,
             "gain_high_krw": -30715642,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "sigungu",
             "age_limit_years": 30,
-            "trade_count": 2247,
+            "trade_count": 2246,
             "complex_count": 166,
             "comparables": [
               {
-                "name": "신명",
-                "legal_dong": "화도읍 창현리",
-                "build_year": 1997,
-                "month": "2026-11",
-                "area_sqm": 59.95,
-                "floor": 11,
-                "price_krw": 258000000,
-                "market_krw": 233027522.9357798,
-                "trade_count": 31
+                "name": "원일대궐터",
+                "legal_dong": "진접읍 내각리",
+                "build_year": 2004,
+                "month": "2026-09",
+                "area_sqm": 59.524,
+                "floor": 13,
+                "price_krw": 249000000,
+                "market_krw": 230537262.2807607,
+                "trade_count": 5
               },
               {
                 "name": "장현주공",
@@ -22003,15 +22003,15 @@
                 "trade_count": 26
               },
               {
-                "name": "원일대궐터",
-                "legal_dong": "진접읍 내각리",
-                "build_year": 2004,
-                "month": "2026-09",
-                "area_sqm": 59.524,
-                "floor": 13,
-                "price_krw": 249000000,
-                "market_krw": 230537262.2807607,
-                "trade_count": 5
+                "name": "신명",
+                "legal_dong": "화도읍 창현리",
+                "build_year": 1997,
+                "month": "2026-11",
+                "area_sqm": 59.95,
+                "floor": 11,
+                "price_krw": 258000000,
+                "market_krw": 233027522.9357798,
+                "trade_count": 31
               },
               {
                 "name": "오남쌍용스윗닷홈지티(2단지)",
@@ -22025,18 +22025,18 @@
                 "trade_count": 24
               },
               {
-                "name": "미라보",
-                "legal_dong": "금곡동",
-                "build_year": 1996,
-                "month": "2026-07",
-                "area_sqm": 59.96,
-                "floor": 3,
-                "price_krw": 243000000,
-                "market_krw": 237116410.9406271,
-                "trade_count": 4
+                "name": "파라다이스빌",
+                "legal_dong": "오남읍 오남리",
+                "build_year": 2004,
+                "month": "2026-10",
+                "area_sqm": 59.889,
+                "floor": 8,
+                "price_krw": 240000000,
+                "market_krw": 224999582.5610713,
+                "trade_count": 2
               }
             ],
-            "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2247건"
+            "basis": "공공주택지구 · 유사면적 보완 추정 · 166개 단지 2246건"
           }
         ]
       },
