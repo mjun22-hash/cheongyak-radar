@@ -1,32 +1,9 @@
 {
   "metadata": {
-    "checked_at": "2026-11-23T02:13:08.160Z",
+    "checked_at": "2026-11-24T05:44:20.000Z",
     "last_fetch_error": null
   },
   "items": [
-    {
-      "id": "lh-2015122300021113",
-      "url": "https://apply.lh.or.kr/lhapply/apply/wt/wrtanc/selectWrtancInfo.do?mi=1027&panId=2015122300021113&ccrCnntSysDsCd=03&aisTpCd=05&uppAisTpCd=05",
-      "name": "[정정공고]경기남부권(수원 광교) 공가세대 일반매각 공고(무순위, 무주택세대구성원)",
-      "sido": "경기도",
-      "published": "2026-11-18",
-      "end": "2026-11-24",
-      "source": "lh",
-      "title": "[정정공고]경기남부권(수원 광교) 공가세대 일반매각 공고(무순위, 무주택세대구성원)",
-      "region": {
-        "sido": "경기도",
-        "sigungu": "수원시"
-      },
-      "application_start": "2026-11-23",
-      "application_end": "2026-11-24",
-      "category": "remaining",
-      "requirement": "",
-      "requires_homeless": true,
-      "rating": null,
-      "gain_estimate_krw": null,
-      "gain_basis": null,
-      "cash_needed_krw": null
-    },
     {
       "id": "lh-2015122300021114",
       "url": "https://apply.lh.or.kr/lhapply/apply/wt/wrtanc/selectWrtancInfo.do?mi=1027&panId=2015122300021114&ccrCnntSysDsCd=03&aisTpCd=05&uppAisTpCd=05",
@@ -44,6 +21,29 @@
       "application_end": "2026-11-24",
       "category": "remaining",
       "requirement": "수도권 거주 성년 무주택세대구성원",
+      "requires_homeless": true,
+      "rating": null,
+      "gain_estimate_krw": null,
+      "gain_basis": null,
+      "cash_needed_krw": null
+    },
+    {
+      "id": "lh-2015122300021113",
+      "url": "https://apply.lh.or.kr/lhapply/apply/wt/wrtanc/selectWrtancInfo.do?mi=1027&panId=2015122300021113&ccrCnntSysDsCd=03&aisTpCd=05&uppAisTpCd=05",
+      "name": "[정정공고]경기남부권(수원 광교) 공가세대 일반매각 공고(무순위, 무주택세대구성원)",
+      "sido": "경기도",
+      "published": "2026-11-18",
+      "end": "2026-11-24",
+      "source": "lh",
+      "title": "[정정공고]경기남부권(수원 광교) 공가세대 일반매각 공고(무순위, 무주택세대구성원)",
+      "region": {
+        "sido": "경기도",
+        "sigungu": "수원시"
+      },
+      "application_start": "2026-11-23",
+      "application_end": "2026-11-24",
+      "category": "remaining",
+      "requirement": "",
       "requires_homeless": true,
       "rating": null,
       "gain_estimate_krw": null,
