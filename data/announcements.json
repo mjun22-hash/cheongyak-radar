@@ -1,12 +1,170 @@
 {
   "metadata": {
-    "generated_at": "2026-11-26T12:56:10+09:00",
+    "generated_at": "2026-11-27T12:56:02+09:00",
     "source": "한국부동산원 청약홈 분양정보 조회 서비스",
     "is_sample": false,
     "last_fetch_error": null,
-    "count": 128
+    "count": 130
   },
   "announcements": [
+    {
+      "id": "2026000611",
+      "notice_number": "2026000611",
+      "name": "병점복합타운 주복1블록 공공분양",
+      "is_sample": false,
+      "region": {
+        "sido": "경기도",
+        "sigungu": "화성시",
+        "address": "경기도 화성시 병점구 병점동, 진안동 일원 병점복합타운 내 주복1블록"
+      },
+      "lawd_code": null,
+      "total_households": 726,
+      "housing_category": "national",
+      "announcement_date": "2026-11-26",
+      "application_start": "2026-12-07",
+      "application_end": "2026-12-10",
+      "winner_date": "2026-12-23",
+      "contract_start": "2027-03-09",
+      "contract_end": "2027-03-12",
+      "move_in_month": "203006",
+      "links": {
+        "official": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000611&pblancNo=2026000611",
+        "homepage": "https://apply.lh.or.kr",
+        "homedubu": null
+      },
+      "policy": {
+        "regulated": false,
+        "price_cap": true,
+        "public_land": false,
+        "large_land": false
+      },
+      "housing_types": [
+        {
+          "name": "61A",
+          "area_sqm": 61.98,
+          "households": 10,
+          "price_krw": 500890000
+        },
+        {
+          "name": "63A",
+          "area_sqm": 63.83,
+          "households": 14,
+          "price_krw": 515840000
+        },
+        {
+          "name": "65A",
+          "area_sqm": 65.99,
+          "households": 20,
+          "price_krw": 538580000
+        },
+        {
+          "name": "66A",
+          "area_sqm": 66.97,
+          "households": 9,
+          "price_krw": 546570000
+        },
+        {
+          "name": "71A",
+          "area_sqm": 71.88,
+          "households": 30,
+          "price_krw": 586650000
+        },
+        {
+          "name": "72A",
+          "area_sqm": 72.98,
+          "households": 30,
+          "price_krw": 595620000
+        },
+        {
+          "name": "72B",
+          "area_sqm": 72.98,
+          "households": 30,
+          "price_krw": 595620000
+        },
+        {
+          "name": "73A",
+          "area_sqm": 73.99,
+          "households": 30,
+          "price_krw": 603880000
+        },
+        {
+          "name": "84A",
+          "area_sqm": 84.81,
+          "households": 10,
+          "price_krw": 692180000
+        }
+      ],
+      "supply_options": [
+        {
+          "id": "general-first",
+          "label": "일반공급 1순위",
+          "kind": "general_first",
+          "min_account_months": 12,
+          "min_deposit_count": 12,
+          "requires_homeless": true,
+          "requirements_complete": true,
+          "source_ref": "주택공급에 관한 규칙 제27조 및 별표 2"
+        },
+        {
+          "id": "first_home",
+          "label": "생애최초 특별공급",
+          "kind": "special_first_home",
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
+        },
+        {
+          "id": "newlywed",
+          "label": "신혼부부 특별공급",
+          "kind": "special_newlywed",
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
+        },
+        {
+          "id": "multi_child",
+          "label": "다자녀 특별공급",
+          "kind": "special_multi_child",
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
+        },
+        {
+          "id": "newborn",
+          "label": "신생아 특별공급",
+          "kind": "special_newborn",
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
+        },
+        {
+          "id": "elderly_parent",
+          "label": "노부모부양 특별공급",
+          "kind": "special_elderly_parent",
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 해당 입주자모집공고문"
+        }
+      ],
+      "price_gain": {
+        "status": "unavailable",
+        "estimated_krw": null,
+        "basis": "가격·면적 또는 거래 자료 미확보",
+        "comparables": [],
+        "by_type": []
+      },
+      "restrictions": {
+        "resale": null,
+        "residence": null
+      },
+      "notice_analysis": {
+        "status": "not_found",
+        "source_url": null,
+        "checked_at": "2026-11-27T03:56:07.138Z",
+        "parser_version": "notice-id-v4",
+        "facts": {}
+      }
+    },
     {
       "id": "2026000591",
       "notice_number": "2026000591",
@@ -3573,7 +3731,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-26T03:56:14.910Z",
+        "checked_at": "2026-11-27T03:56:07.138Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -4547,28 +4705,28 @@
             "sale_price_krw": 856920000,
             "status": "estimated",
             "market_low_krw": 587344610,
-            "market_base_krw": 697377541,
-            "market_high_krw": 815683043,
+            "market_base_krw": 702364095,
+            "market_high_krw": 823162875,
             "gain_low_krw": -269575390,
-            "gain_base_krw": -159542459,
-            "gain_high_krw": -41236957,
+            "gain_base_krw": -154555905,
+            "gain_high_krw": -33757125,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 5,
-            "trade_count": 44,
+            "trade_count": 45,
             "complex_count": 4,
             "comparables": [
               {
                 "name": "의정부역푸르지오더센트럴",
                 "legal_dong": "의정부동",
                 "build_year": 2023,
-                "month": "2026-09",
-                "area_sqm": 84.84,
-                "floor": 9,
-                "price_krw": 802500000,
-                "market_krw": 797215194.3494201,
-                "trade_count": 8
+                "month": "2026-11",
+                "area_sqm": 84.97,
+                "floor": 11,
+                "price_krw": 815000000,
+                "market_krw": 807188302.5052398,
+                "trade_count": 9
               },
               {
                 "name": "힐스테이트의정부역",
@@ -4604,7 +4762,7 @@
                 "trade_count": 27
               }
             ],
-            "basis": "의정부동 · 5년 이내 준신축 · 4개 단지 44건"
+            "basis": "의정부동 · 5년 이내 준신축 · 4개 단지 45건"
           },
           {
             "housing_type": "84B",
@@ -4612,16 +4770,16 @@
             "sale_price_krw": 836780000,
             "status": "estimated",
             "market_low_krw": 588329507,
-            "market_base_krw": 698546948,
-            "market_high_krw": 817050833,
+            "market_base_krw": 703541864,
+            "market_high_krw": 824543207,
             "gain_low_krw": -248450493,
-            "gain_base_krw": -138233052,
-            "gain_high_krw": -19729167,
+            "gain_base_krw": -133238136,
+            "gain_high_krw": -12236793,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 5,
-            "trade_count": 44,
+            "trade_count": 45,
             "complex_count": 4,
             "comparables": [
               {
@@ -4639,12 +4797,12 @@
                 "name": "의정부역푸르지오더센트럴",
                 "legal_dong": "의정부동",
                 "build_year": 2023,
-                "month": "2026-09",
-                "area_sqm": 84.84,
-                "floor": 9,
-                "price_krw": 802500000,
-                "market_krw": 798552016.0851345,
-                "trade_count": 8
+                "month": "2026-11",
+                "area_sqm": 84.97,
+                "floor": 11,
+                "price_krw": 815000000,
+                "market_krw": 808541847.7904425,
+                "trade_count": 9
               },
               {
                 "name": "이안더센트로의정부",
@@ -4669,7 +4827,7 @@
                 "trade_count": 27
               }
             ],
-            "basis": "의정부동 · 5년 이내 준신축 · 4개 단지 44건"
+            "basis": "의정부동 · 5년 이내 준신축 · 4개 단지 45건"
           },
           {
             "housing_type": "84C",
@@ -4677,18 +4835,29 @@
             "sale_price_krw": 863140000,
             "status": "estimated",
             "market_low_krw": 589074591,
-            "market_base_krw": 699431616,
-            "market_high_krw": 818085579,
+            "market_base_krw": 704432858,
+            "market_high_krw": 825587442,
             "gain_low_krw": -274065409,
-            "gain_base_krw": -163708384,
-            "gain_high_krw": -45054421,
+            "gain_base_krw": -158707142,
+            "gain_high_krw": -37552558,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 5,
-            "trade_count": 44,
+            "trade_count": 45,
             "complex_count": 4,
             "comparables": [
+              {
+                "name": "의정부역푸르지오더센트럴",
+                "legal_dong": "의정부동",
+                "build_year": 2023,
+                "month": "2026-11",
+                "area_sqm": 84.97,
+                "floor": 11,
+                "price_krw": 815000000,
+                "market_krw": 809565817.6578546,
+                "trade_count": 9
+              },
               {
                 "name": "힐스테이트의정부역",
                 "legal_dong": "의정부동",
@@ -4699,17 +4868,6 @@
                 "price_krw": 595000000,
                 "market_krw": 599299898.2001938,
                 "trade_count": 1
-              },
-              {
-                "name": "의정부역푸르지오더센트럴",
-                "legal_dong": "의정부동",
-                "build_year": 2023,
-                "month": "2026-09",
-                "area_sqm": 84.84,
-                "floor": 9,
-                "price_krw": 802500000,
-                "market_krw": 799563334.4284794,
-                "trade_count": 8
               },
               {
                 "name": "이안더센트로의정부",
@@ -4734,7 +4892,7 @@
                 "trade_count": 27
               }
             ],
-            "basis": "의정부동 · 5년 이내 준신축 · 4개 단지 44건"
+            "basis": "의정부동 · 5년 이내 준신축 · 4개 단지 45건"
           }
         ]
       },
@@ -5762,7 +5920,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-26T03:56:14.910Z",
+        "checked_at": "2026-11-27T03:56:07.138Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -5774,7 +5932,7 @@
         "market_estimated_krw": 233027523,
         "confidence": "low",
         "housing_type": "55O",
-        "basis": "공공주택지구 · 유사면적 보완 추정 · 167개 단지 2264건",
+        "basis": "공공주택지구 · 유사면적 보완 추정 · 167개 단지 2273건",
         "comparables": [
           {
             "name": "신명",
@@ -5799,6 +5957,17 @@
             "trade_count": 26
           },
           {
+            "name": "신성푸른솔",
+            "legal_dong": "금곡동",
+            "build_year": 1997,
+            "month": "2026-11",
+            "area_sqm": 59.964,
+            "floor": 4,
+            "price_krw": 250000000,
+            "market_krw": 235266159.6958175,
+            "trade_count": 45
+          },
+          {
             "name": "원일대궐터",
             "legal_dong": "진접읍 내각리",
             "build_year": 2004,
@@ -5819,17 +5988,6 @@
             "price_krw": 243000000,
             "market_krw": 237116410.9406271,
             "trade_count": 4
-          },
-          {
-            "name": "오남쌍용스윗닷홈지티(2단지)",
-            "legal_dong": "오남읍 양지리",
-            "build_year": 2005,
-            "month": "2026-10",
-            "area_sqm": 59.957,
-            "floor": 2,
-            "price_krw": 245000000,
-            "market_krw": 228872358.52360857,
-            "trade_count": 24
           }
         ],
         "by_type": [
@@ -5902,7 +6060,7 @@
             "method": "regional_relaxed",
             "scope": "sigungu",
             "age_limit_years": 30,
-            "trade_count": 2264,
+            "trade_count": 2273,
             "complex_count": 167,
             "comparables": [
               {
@@ -5928,6 +6086,17 @@
                 "trade_count": 26
               },
               {
+                "name": "신성푸른솔",
+                "legal_dong": "금곡동",
+                "build_year": 1997,
+                "month": "2026-11",
+                "area_sqm": 59.964,
+                "floor": 4,
+                "price_krw": 250000000,
+                "market_krw": 235266159.6958175,
+                "trade_count": 45
+              },
+              {
                 "name": "원일대궐터",
                 "legal_dong": "진접읍 내각리",
                 "build_year": 2004,
@@ -5948,20 +6117,9 @@
                 "price_krw": 243000000,
                 "market_krw": 237116410.9406271,
                 "trade_count": 4
-              },
-              {
-                "name": "오남쌍용스윗닷홈지티(2단지)",
-                "legal_dong": "오남읍 양지리",
-                "build_year": 2005,
-                "month": "2026-10",
-                "area_sqm": 59.957,
-                "floor": 2,
-                "price_krw": 245000000,
-                "market_krw": 228872358.52360857,
-                "trade_count": 24
               }
             ],
-            "basis": "공공주택지구 · 유사면적 보완 추정 · 167개 단지 2264건"
+            "basis": "공공주택지구 · 유사면적 보완 추정 · 167개 단지 2273건"
           }
         ]
       },
@@ -6030,7 +6188,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-26T03:56:14.910Z",
+        "checked_at": "2026-11-27T03:56:07.138Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -6339,7 +6497,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-26T03:56:14.910Z",
+        "checked_at": "2026-11-27T03:56:07.138Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -10998,7 +11156,7 @@
       "notice_analysis": {
         "status": "not_found",
         "source_url": null,
-        "checked_at": "2026-11-26T03:56:14.910Z",
+        "checked_at": "2026-11-27T03:56:07.138Z",
         "parser_version": "notice-id-v4",
         "facts": {}
       },
@@ -16294,12 +16452,12 @@
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -551817645,
-        "estimated_low_krw": -733918246,
+        "estimated_low_krw": -731423901,
         "estimated_high_krw": -339684159,
         "market_estimated_krw": 633182355,
         "confidence": "low",
         "housing_type": "84A",
-        "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 209건",
+        "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 211건",
         "comparables": [
           {
             "name": "동양메이저1차",
@@ -16493,17 +16651,17 @@
             "area_sqm": 84.8481,
             "sale_price_krw": 1185000000,
             "status": "estimated",
-            "market_low_krw": 451081754,
+            "market_low_krw": 453576099,
             "market_base_krw": 633182355,
             "market_high_krw": 845315841,
-            "gain_low_krw": -733918246,
+            "gain_low_krw": -731423901,
             "gain_base_krw": -551817645,
             "gain_high_krw": -339684159,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 209,
+            "trade_count": 211,
             "complex_count": 18,
             "comparables": [
               {
@@ -16562,24 +16720,24 @@
                 "trade_count": 1
               }
             ],
-            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 209건"
+            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 211건"
           },
           {
             "housing_type": "84B",
             "area_sqm": 84.9648,
             "sale_price_krw": 1197000000,
             "status": "estimated",
-            "market_low_krw": 451702171,
+            "market_low_krw": 454199947,
             "market_base_krw": 634053234,
             "market_high_krw": 846478488,
-            "gain_low_krw": -745297829,
+            "gain_low_krw": -742800053,
             "gain_base_krw": -562946766,
             "gain_high_krw": -350521512,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 209,
+            "trade_count": 211,
             "complex_count": 18,
             "comparables": [
               {
@@ -16638,24 +16796,24 @@
                 "trade_count": 1
               }
             ],
-            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 209건"
+            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 211건"
           },
           {
             "housing_type": "84C",
             "area_sqm": 84.9558,
             "sale_price_krw": 1180000000,
             "status": "estimated",
-            "market_low_krw": 451654324,
+            "market_low_krw": 454151835,
             "market_base_krw": 633986071,
             "market_high_krw": 846388823,
-            "gain_low_krw": -728345676,
+            "gain_low_krw": -725848165,
             "gain_base_krw": -546013929,
             "gain_high_krw": -333611177,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 209,
+            "trade_count": 211,
             "complex_count": 18,
             "comparables": [
               {
@@ -16714,24 +16872,24 @@
                 "trade_count": 1
               }
             ],
-            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 209건"
+            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 211건"
           },
           {
             "housing_type": "84D",
             "area_sqm": 84.9796,
             "sale_price_krw": 1198000000,
             "status": "estimated",
-            "market_low_krw": 451780853,
+            "market_low_krw": 454279064,
             "market_base_krw": 634163679,
             "market_high_krw": 846625936,
-            "gain_low_krw": -746219147,
+            "gain_low_krw": -743720936,
             "gain_base_krw": -563836321,
             "gain_high_krw": -351374064,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 209,
+            "trade_count": 211,
             "complex_count": 18,
             "comparables": [
               {
@@ -16790,24 +16948,24 @@
                 "trade_count": 1
               }
             ],
-            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 209건"
+            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 211건"
           },
           {
             "housing_type": "84E",
             "area_sqm": 84.9149,
             "sale_price_krw": 1180000000,
             "status": "estimated",
-            "market_low_krw": 451436886,
+            "market_low_krw": 453933194,
             "market_base_krw": 633680853,
             "market_high_krw": 845981349,
-            "gain_low_krw": -728563114,
+            "gain_low_krw": -726066806,
             "gain_base_krw": -546319147,
             "gain_high_krw": -334018651,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 209,
+            "trade_count": 211,
             "complex_count": 18,
             "comparables": [
               {
@@ -16866,7 +17024,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 209건"
+            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 211건"
           }
         ]
       },
@@ -17767,12 +17925,12 @@
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 40340011,
-        "estimated_low_krw": -4566879,
+        "estimated_low_krw": -2090452,
         "estimated_high_krw": 185661179,
         "market_estimated_krw": 606510011,
         "confidence": "high",
         "housing_type": "84A",
-        "basis": "고덕동 · 5년 이내 준신축 · 11개 단지 353건",
+        "basis": "고덕동 · 5년 이내 준신축 · 11개 단지 354건",
         "comparables": [
           {
             "name": "호반써밋고덕국제신도시에듀파크",
@@ -17801,11 +17959,11 @@
             "legal_dong": "고덕동",
             "build_year": 2021,
             "month": "2026-11",
-            "area_sqm": 84.9504,
-            "floor": 9,
-            "price_krw": 585000000,
-            "market_krw": 565615875.5465828,
-            "trade_count": 39
+            "area_sqm": 84.7996,
+            "floor": 12,
+            "price_krw": 575000000,
+            "market_krw": 570568729.0977788,
+            "trade_count": 40
           },
           {
             "name": "고덕국제신도시대광로제비앙THEART",
@@ -17836,17 +17994,17 @@
             "area_sqm": 84,
             "sale_price_krw": 566170000,
             "status": "estimated",
-            "market_low_krw": 561603121,
+            "market_low_krw": 564079548,
             "market_base_krw": 606510011,
             "market_high_krw": 751831179,
-            "gain_low_krw": -4566879,
+            "gain_low_krw": -2090452,
             "gain_base_krw": 40340011,
             "gain_high_krw": 185661179,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 5,
-            "trade_count": 353,
+            "trade_count": 354,
             "complex_count": 11,
             "comparables": [
               {
@@ -17876,11 +18034,11 @@
                 "legal_dong": "고덕동",
                 "build_year": 2021,
                 "month": "2026-11",
-                "area_sqm": 84.9504,
-                "floor": 9,
-                "price_krw": 585000000,
-                "market_krw": 565615875.5465828,
-                "trade_count": 39
+                "area_sqm": 84.7996,
+                "floor": 12,
+                "price_krw": 575000000,
+                "market_krw": 570568729.0977788,
+                "trade_count": 40
               },
               {
                 "name": "고덕국제신도시대광로제비앙THEART",
@@ -17905,24 +18063,24 @@
                 "trade_count": 28
               }
             ],
-            "basis": "고덕동 · 5년 이내 준신축 · 11개 단지 353건"
+            "basis": "고덕동 · 5년 이내 준신축 · 11개 단지 354건"
           },
           {
             "housing_type": "84B",
             "area_sqm": 84,
             "sale_price_krw": 559730000,
             "status": "estimated",
-            "market_low_krw": 561603121,
+            "market_low_krw": 564079548,
             "market_base_krw": 606510011,
             "market_high_krw": 751831179,
-            "gain_low_krw": 1873121,
+            "gain_low_krw": 4349548,
             "gain_base_krw": 46780011,
             "gain_high_krw": 192101179,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 5,
-            "trade_count": 353,
+            "trade_count": 354,
             "complex_count": 11,
             "comparables": [
               {
@@ -17952,11 +18110,11 @@
                 "legal_dong": "고덕동",
                 "build_year": 2021,
                 "month": "2026-11",
-                "area_sqm": 84.9504,
-                "floor": 9,
-                "price_krw": 585000000,
-                "market_krw": 565615875.5465828,
-                "trade_count": 39
+                "area_sqm": 84.7996,
+                "floor": 12,
+                "price_krw": 575000000,
+                "market_krw": 570568729.0977788,
+                "trade_count": 40
               },
               {
                 "name": "고덕국제신도시대광로제비앙THEART",
@@ -17981,7 +18139,7 @@
                 "trade_count": 28
               }
             ],
-            "basis": "고덕동 · 5년 이내 준신축 · 11개 단지 353건"
+            "basis": "고덕동 · 5년 이내 준신축 · 11개 단지 354건"
           }
         ]
       },
@@ -18096,12 +18254,12 @@
       "price_gain": {
         "status": "estimated",
         "estimated_krw": 22310011,
-        "estimated_low_krw": -22596879,
+        "estimated_low_krw": -20120452,
         "estimated_high_krw": 167631179,
         "market_estimated_krw": 606510011,
         "confidence": "high",
         "housing_type": "84A",
-        "basis": "고덕동 · 5년 이내 준신축 · 11개 단지 353건",
+        "basis": "고덕동 · 5년 이내 준신축 · 11개 단지 354건",
         "comparables": [
           {
             "name": "호반써밋고덕국제신도시에듀파크",
@@ -18130,11 +18288,11 @@
             "legal_dong": "고덕동",
             "build_year": 2021,
             "month": "2026-11",
-            "area_sqm": 84.9504,
-            "floor": 9,
-            "price_krw": 585000000,
-            "market_krw": 565615875.5465828,
-            "trade_count": 39
+            "area_sqm": 84.7996,
+            "floor": 12,
+            "price_krw": 575000000,
+            "market_krw": 570568729.0977788,
+            "trade_count": 40
           },
           {
             "name": "고덕국제신도시대광로제비앙THEART",
@@ -18165,17 +18323,17 @@
             "area_sqm": 84,
             "sale_price_krw": 584200000,
             "status": "estimated",
-            "market_low_krw": 561603121,
+            "market_low_krw": 564079548,
             "market_base_krw": 606510011,
             "market_high_krw": 751831179,
-            "gain_low_krw": -22596879,
+            "gain_low_krw": -20120452,
             "gain_base_krw": 22310011,
             "gain_high_krw": 167631179,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 5,
-            "trade_count": 353,
+            "trade_count": 354,
             "complex_count": 11,
             "comparables": [
               {
@@ -18205,11 +18363,11 @@
                 "legal_dong": "고덕동",
                 "build_year": 2021,
                 "month": "2026-11",
-                "area_sqm": 84.9504,
-                "floor": 9,
-                "price_krw": 585000000,
-                "market_krw": 565615875.5465828,
-                "trade_count": 39
+                "area_sqm": 84.7996,
+                "floor": 12,
+                "price_krw": 575000000,
+                "market_krw": 570568729.0977788,
+                "trade_count": 40
               },
               {
                 "name": "고덕국제신도시대광로제비앙THEART",
@@ -18234,24 +18392,24 @@
                 "trade_count": 28
               }
             ],
-            "basis": "고덕동 · 5년 이내 준신축 · 11개 단지 353건"
+            "basis": "고덕동 · 5년 이내 준신축 · 11개 단지 354건"
           },
           {
             "housing_type": "84B",
             "area_sqm": 84,
             "sale_price_krw": 577550000,
             "status": "estimated",
-            "market_low_krw": 561603121,
+            "market_low_krw": 564079548,
             "market_base_krw": 606510011,
             "market_high_krw": 751831179,
-            "gain_low_krw": -15946879,
+            "gain_low_krw": -13470452,
             "gain_base_krw": 28960011,
             "gain_high_krw": 174281179,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 5,
-            "trade_count": 353,
+            "trade_count": 354,
             "complex_count": 11,
             "comparables": [
               {
@@ -18281,11 +18439,11 @@
                 "legal_dong": "고덕동",
                 "build_year": 2021,
                 "month": "2026-11",
-                "area_sqm": 84.9504,
-                "floor": 9,
-                "price_krw": 585000000,
-                "market_krw": 565615875.5465828,
-                "trade_count": 39
+                "area_sqm": 84.7996,
+                "floor": 12,
+                "price_krw": 575000000,
+                "market_krw": 570568729.0977788,
+                "trade_count": 40
               },
               {
                 "name": "고덕국제신도시대광로제비앙THEART",
@@ -18310,24 +18468,24 @@
                 "trade_count": 28
               }
             ],
-            "basis": "고덕동 · 5년 이내 준신축 · 11개 단지 353건"
+            "basis": "고덕동 · 5년 이내 준신축 · 11개 단지 354건"
           },
           {
             "housing_type": "84C",
             "area_sqm": 84.95,
             "sale_price_krw": 574400000,
             "status": "estimated",
-            "market_low_krw": 567954585,
+            "market_low_krw": 570459019,
             "market_base_krw": 613369350,
             "market_high_krw": 760334032,
-            "gain_low_krw": -6445415,
+            "gain_low_krw": -3940981,
             "gain_base_krw": 38969350,
             "gain_high_krw": 185934032,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 5,
-            "trade_count": 353,
+            "trade_count": 354,
             "complex_count": 11,
             "comparables": [
               {
@@ -18357,11 +18515,11 @@
                 "legal_dong": "고덕동",
                 "build_year": 2021,
                 "month": "2026-11",
-                "area_sqm": 84.9504,
-                "floor": 9,
-                "price_krw": 585000000,
-                "market_krw": 572012721.7581215,
-                "trade_count": 39
+                "area_sqm": 84.7996,
+                "floor": 12,
+                "price_krw": 575000000,
+                "market_krw": 577021589.7244799,
+                "trade_count": 40
               },
               {
                 "name": "고덕국제신도시대광로제비앙THEART",
@@ -18386,7 +18544,7 @@
                 "trade_count": 28
               }
             ],
-            "basis": "고덕동 · 5년 이내 준신축 · 11개 단지 353건"
+            "basis": "고덕동 · 5년 이내 준신축 · 11개 단지 354건"
           }
         ]
       },
@@ -18561,11 +18719,11 @@
         "status": "estimated",
         "estimated_krw": -1166947982,
         "estimated_low_krw": -1245257882,
-        "estimated_high_krw": -1116421573,
+        "estimated_high_krw": -1102690008,
         "market_estimated_krw": 1814052018,
         "confidence": "low",
         "housing_type": "84A",
-        "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건",
+        "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건",
         "comparables": [
           {
             "name": "상록마을(보성)",
@@ -19011,15 +19169,15 @@
             "status": "estimated",
             "market_low_krw": 1735742118,
             "market_base_krw": 1814052018,
-            "market_high_krw": 1864578427,
+            "market_high_krw": 1878309992,
             "gain_low_krw": -1245257882,
             "gain_base_krw": -1166947982,
-            "gain_high_krw": -1116421573,
+            "gain_high_krw": -1102690008,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -19078,7 +19236,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           },
           {
             "housing_type": "84B",
@@ -19087,15 +19245,15 @@
             "status": "estimated",
             "market_low_krw": 1735742118,
             "market_base_krw": 1814052018,
-            "market_high_krw": 1864578427,
+            "market_high_krw": 1878309992,
             "gain_low_krw": -1222257882,
             "gain_base_krw": -1143947982,
-            "gain_high_krw": -1093421573,
+            "gain_high_krw": -1079690008,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -19154,7 +19312,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           },
           {
             "housing_type": "84C",
@@ -19163,15 +19321,15 @@
             "status": "estimated",
             "market_low_krw": 1735742118,
             "market_base_krw": 1814052018,
-            "market_high_krw": 1864578427,
+            "market_high_krw": 1878309992,
             "gain_low_krw": -1003257882,
             "gain_base_krw": -924947982,
-            "gain_high_krw": -874421573,
+            "gain_high_krw": -860690008,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -19230,7 +19388,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           },
           {
             "housing_type": "84D",
@@ -19239,15 +19397,15 @@
             "status": "estimated",
             "market_low_krw": 1737601842,
             "market_base_krw": 1815995646,
-            "market_high_krw": 1866576189,
+            "market_high_krw": 1880322467,
             "gain_low_krw": -1024398158,
             "gain_base_krw": -946004354,
-            "gain_high_krw": -895423811,
+            "gain_high_krw": -881677533,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -19306,7 +19464,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           },
           {
             "housing_type": "84E",
@@ -19315,15 +19473,15 @@
             "status": "estimated",
             "market_low_krw": 1735742118,
             "market_base_krw": 1814052018,
-            "market_high_krw": 1864578427,
+            "market_high_krw": 1878309992,
             "gain_low_krw": -1175257882,
             "gain_base_krw": -1096947982,
-            "gain_high_krw": -1046421573,
+            "gain_high_krw": -1032690008,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -19382,7 +19540,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           },
           {
             "housing_type": "84F",
@@ -19391,15 +19549,15 @@
             "status": "estimated",
             "market_low_krw": 1750619908,
             "market_base_krw": 1829601036,
-            "market_high_krw": 1880560528,
+            "market_high_krw": 1894409792,
             "gain_low_krw": -1150380092,
             "gain_base_krw": -1071398964,
-            "gain_high_krw": -1020439472,
+            "gain_high_krw": -1006590208,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -19458,7 +19616,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           },
           {
             "housing_type": "84G",
@@ -19467,15 +19625,15 @@
             "status": "estimated",
             "market_low_krw": 1748966820,
             "market_base_krw": 1827873367,
-            "market_high_krw": 1878784739,
+            "market_high_krw": 1892620925,
             "gain_low_krw": -1171033180,
             "gain_base_krw": -1092126633,
-            "gain_high_krw": -1041215261,
+            "gain_high_krw": -1027379075,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -19534,7 +19692,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           },
           {
             "housing_type": "84H",
@@ -19543,15 +19701,15 @@
             "status": "estimated",
             "market_low_krw": 1751859724,
             "market_base_krw": 1830896787,
-            "market_high_krw": 1881892369,
+            "market_high_krw": 1895751442,
             "gain_low_krw": -1154140276,
             "gain_base_krw": -1075103213,
-            "gain_high_krw": -1024107631,
+            "gain_high_krw": -1010248558,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -19610,7 +19768,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           }
         ]
       },
@@ -19739,7 +19897,7 @@
         "market_estimated_krw": 292884942,
         "confidence": "low",
         "housing_type": "54",
-        "basis": "송내동 · 유사면적 보완 추정 · 23개 단지 138건",
+        "basis": "송내동 · 유사면적 보완 추정 · 23개 단지 139건",
         "comparables": [
           {
             "name": "푸르미아",
@@ -19813,7 +19971,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 138,
+            "trade_count": 139,
             "complex_count": 23,
             "comparables": [
               {
@@ -19872,7 +20030,7 @@
                 "trade_count": 6
               }
             ],
-            "basis": "송내동 · 유사면적 보완 추정 · 23개 단지 138건"
+            "basis": "송내동 · 유사면적 보완 추정 · 23개 단지 139건"
           },
           {
             "housing_type": "59B",
@@ -21903,7 +22061,7 @@
         "market_estimated_krw": 233027523,
         "confidence": "low",
         "housing_type": "55O",
-        "basis": "공공주택지구 · 유사면적 보완 추정 · 167개 단지 2264건",
+        "basis": "공공주택지구 · 유사면적 보완 추정 · 167개 단지 2273건",
         "comparables": [
           {
             "name": "신명",
@@ -21928,6 +22086,17 @@
             "trade_count": 26
           },
           {
+            "name": "신성푸른솔",
+            "legal_dong": "금곡동",
+            "build_year": 1997,
+            "month": "2026-11",
+            "area_sqm": 59.964,
+            "floor": 4,
+            "price_krw": 250000000,
+            "market_krw": 235266159.6958175,
+            "trade_count": 45
+          },
+          {
             "name": "원일대궐터",
             "legal_dong": "진접읍 내각리",
             "build_year": 2004,
@@ -21948,17 +22117,6 @@
             "price_krw": 243000000,
             "market_krw": 237116410.9406271,
             "trade_count": 4
-          },
-          {
-            "name": "오남쌍용스윗닷홈지티(2단지)",
-            "legal_dong": "오남읍 양지리",
-            "build_year": 2005,
-            "month": "2026-10",
-            "area_sqm": 59.957,
-            "floor": 2,
-            "price_krw": 245000000,
-            "market_krw": 228872358.52360857,
-            "trade_count": 24
           }
         ],
         "by_type": [
@@ -21977,7 +22135,7 @@
             "method": "regional_relaxed",
             "scope": "sigungu",
             "age_limit_years": 30,
-            "trade_count": 2264,
+            "trade_count": 2273,
             "complex_count": 167,
             "comparables": [
               {
@@ -22003,6 +22161,17 @@
                 "trade_count": 26
               },
               {
+                "name": "신성푸른솔",
+                "legal_dong": "금곡동",
+                "build_year": 1997,
+                "month": "2026-11",
+                "area_sqm": 59.964,
+                "floor": 4,
+                "price_krw": 250000000,
+                "market_krw": 235266159.6958175,
+                "trade_count": 45
+              },
+              {
                 "name": "원일대궐터",
                 "legal_dong": "진접읍 내각리",
                 "build_year": 2004,
@@ -22023,20 +22192,9 @@
                 "price_krw": 243000000,
                 "market_krw": 237116410.9406271,
                 "trade_count": 4
-              },
-              {
-                "name": "오남쌍용스윗닷홈지티(2단지)",
-                "legal_dong": "오남읍 양지리",
-                "build_year": 2005,
-                "month": "2026-10",
-                "area_sqm": 59.957,
-                "floor": 2,
-                "price_krw": 245000000,
-                "market_krw": 228872358.52360857,
-                "trade_count": 24
               }
             ],
-            "basis": "공공주택지구 · 유사면적 보완 추정 · 167개 단지 2264건"
+            "basis": "공공주택지구 · 유사면적 보완 추정 · 167개 단지 2273건"
           }
         ]
       },
@@ -23958,7 +24116,7 @@
         "market_estimated_krw": 772116129,
         "confidence": "low",
         "housing_type": "84A",
-        "basis": "상동 · 유사면적 보완 추정 · 22개 단지 512건",
+        "basis": "상동 · 유사면적 보완 추정 · 22개 단지 514건",
         "comparables": [
           {
             "name": "상동스카이뷰자이",
@@ -24032,7 +24190,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 512,
+            "trade_count": 514,
             "complex_count": 22,
             "comparables": [
               {
@@ -24091,7 +24249,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 512건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 514건"
           },
           {
             "housing_type": "84B",
@@ -24108,7 +24266,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 512,
+            "trade_count": 514,
             "complex_count": 22,
             "comparables": [
               {
@@ -24167,7 +24325,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 512건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 514건"
           },
           {
             "housing_type": "84C",
@@ -24184,7 +24342,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 512,
+            "trade_count": 514,
             "complex_count": 22,
             "comparables": [
               {
@@ -24243,7 +24401,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 512건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 514건"
           },
           {
             "housing_type": "84D",
@@ -24260,7 +24418,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 512,
+            "trade_count": 514,
             "complex_count": 22,
             "comparables": [
               {
@@ -24319,7 +24477,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 512건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 514건"
           },
           {
             "housing_type": "84E",
@@ -24336,7 +24494,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 512,
+            "trade_count": 514,
             "complex_count": 22,
             "comparables": [
               {
@@ -24395,7 +24553,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 512건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 514건"
           },
           {
             "housing_type": "84F",
@@ -24412,7 +24570,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 512,
+            "trade_count": 514,
             "complex_count": 22,
             "comparables": [
               {
@@ -24471,7 +24629,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 512건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 514건"
           },
           {
             "housing_type": "113A",
@@ -25288,7 +25446,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 69,
+            "trade_count": 70,
             "complex_count": 7,
             "comparables": [
               {
@@ -25347,7 +25505,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "삼동 · 유사면적 보완 추정 · 7개 단지 69건"
+            "basis": "삼동 · 유사면적 보완 추정 · 7개 단지 70건"
           }
         ]
       },
@@ -25964,24 +26122,24 @@
       ],
       "price_gain": {
         "status": "estimated",
-        "estimated_krw": -547222297,
+        "estimated_krw": -532139791,
         "estimated_low_krw": -603961434,
         "estimated_high_krw": -440929929,
-        "market_estimated_krw": 507777703,
+        "market_estimated_krw": 522860209,
         "confidence": "high",
         "housing_type": "74A",
-        "basis": "소사본동 · 5년 이내 준신축 · 5개 단지 12건",
+        "basis": "소사본동 · 5년 이내 준신축 · 5개 단지 13건",
         "comparables": [
           {
             "name": "신일해피트리",
             "legal_dong": "소사본동",
             "build_year": 2021,
-            "month": "2025-12",
+            "month": "2026-11",
             "area_sqm": 74.54,
-            "floor": 3,
-            "price_krw": 505000000,
-            "market_krw": 507777703.246579,
-            "trade_count": 1
+            "floor": 5,
+            "price_krw": 535000000,
+            "market_krw": 522860209.28360605,
+            "trade_count": 2
           },
           {
             "name": "에스케이미래로",
@@ -26006,17 +26164,6 @@
             "trade_count": 4
           },
           {
-            "name": "베르우스",
-            "legal_dong": "소사본동",
-            "build_year": 2022,
-            "month": "2026-02",
-            "area_sqm": 73.13,
-            "floor": 4,
-            "price_krw": 375000000,
-            "market_krw": 384332695.20032823,
-            "trade_count": 1
-          },
-          {
             "name": "현대프라힐스소사역더프라임",
             "legal_dong": "소사본동",
             "build_year": 2024,
@@ -26026,6 +26173,17 @@
             "price_krw": 685000000,
             "market_krw": 635442563.0659379,
             "trade_count": 5
+          },
+          {
+            "name": "베르우스",
+            "legal_dong": "소사본동",
+            "build_year": 2022,
+            "month": "2026-02",
+            "area_sqm": 73.13,
+            "floor": 4,
+            "price_krw": 375000000,
+            "market_krw": 384332695.20032823,
+            "trade_count": 1
           }
         ],
         "by_type": [
@@ -26143,28 +26301,28 @@
             "sale_price_krw": 1055000000,
             "status": "estimated",
             "market_low_krw": 451038566,
-            "market_base_krw": 507777703,
+            "market_base_krw": 522860209,
             "market_high_krw": 614070071,
             "gain_low_krw": -603961434,
-            "gain_base_krw": -547222297,
+            "gain_base_krw": -532139791,
             "gain_high_krw": -440929929,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 5,
-            "trade_count": 12,
+            "trade_count": 13,
             "complex_count": 5,
             "comparables": [
               {
                 "name": "신일해피트리",
                 "legal_dong": "소사본동",
                 "build_year": 2021,
-                "month": "2025-12",
+                "month": "2026-11",
                 "area_sqm": 74.54,
-                "floor": 3,
-                "price_krw": 505000000,
-                "market_krw": 507777703.246579,
-                "trade_count": 1
+                "floor": 5,
+                "price_krw": 535000000,
+                "market_krw": 522860209.28360605,
+                "trade_count": 2
               },
               {
                 "name": "에스케이미래로",
@@ -26189,17 +26347,6 @@
                 "trade_count": 4
               },
               {
-                "name": "베르우스",
-                "legal_dong": "소사본동",
-                "build_year": 2022,
-                "month": "2026-02",
-                "area_sqm": 73.13,
-                "floor": 4,
-                "price_krw": 375000000,
-                "market_krw": 384332695.20032823,
-                "trade_count": 1
-              },
-              {
                 "name": "현대프라힐스소사역더프라임",
                 "legal_dong": "소사본동",
                 "build_year": 2024,
@@ -26209,9 +26356,20 @@
                 "price_krw": 685000000,
                 "market_krw": 635442563.0659379,
                 "trade_count": 5
+              },
+              {
+                "name": "베르우스",
+                "legal_dong": "소사본동",
+                "build_year": 2022,
+                "month": "2026-02",
+                "area_sqm": 73.13,
+                "floor": 4,
+                "price_krw": 375000000,
+                "market_krw": 384332695.20032823,
+                "trade_count": 1
               }
             ],
-            "basis": "소사본동 · 5년 이내 준신축 · 5개 단지 12건"
+            "basis": "소사본동 · 5년 이내 준신축 · 5개 단지 13건"
           },
           {
             "housing_type": "74B",
@@ -26219,28 +26377,28 @@
             "sale_price_krw": 1015000000,
             "status": "estimated",
             "market_low_krw": 451279280,
-            "market_base_krw": 508048699,
+            "market_base_krw": 523139254,
             "market_high_krw": 614397794,
             "gain_low_krw": -563720720,
-            "gain_base_krw": -506951301,
+            "gain_base_krw": -491860746,
             "gain_high_krw": -400602206,
             "confidence": "high",
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 5,
-            "trade_count": 12,
+            "trade_count": 13,
             "complex_count": 5,
             "comparables": [
               {
                 "name": "신일해피트리",
                 "legal_dong": "소사본동",
                 "build_year": 2021,
-                "month": "2025-12",
+                "month": "2026-11",
                 "area_sqm": 74.54,
-                "floor": 3,
-                "price_krw": 505000000,
-                "market_krw": 508048698.68526953,
-                "trade_count": 1
+                "floor": 5,
+                "price_krw": 535000000,
+                "market_krw": 523139254.09176266,
+                "trade_count": 2
               },
               {
                 "name": "에스케이미래로",
@@ -26265,17 +26423,6 @@
                 "trade_count": 4
               },
               {
-                "name": "베르우스",
-                "legal_dong": "소사본동",
-                "build_year": 2022,
-                "month": "2026-02",
-                "area_sqm": 73.13,
-                "floor": 4,
-                "price_krw": 375000000,
-                "market_krw": 384537809.38055515,
-                "trade_count": 1
-              },
-              {
                 "name": "현대프라힐스소사역더프라임",
                 "legal_dong": "소사본동",
                 "build_year": 2024,
@@ -26285,9 +26432,20 @@
                 "price_krw": 685000000,
                 "market_krw": 635781691.852097,
                 "trade_count": 5
+              },
+              {
+                "name": "베르우스",
+                "legal_dong": "소사본동",
+                "build_year": 2022,
+                "month": "2026-02",
+                "area_sqm": 73.13,
+                "floor": 4,
+                "price_krw": 375000000,
+                "market_krw": 384537809.38055515,
+                "trade_count": 1
               }
             ],
-            "basis": "소사본동 · 5년 이내 준신축 · 5개 단지 12건"
+            "basis": "소사본동 · 5년 이내 준신축 · 5개 단지 13건"
           },
           {
             "housing_type": "84A",
@@ -28169,7 +28327,7 @@
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 5,
-            "trade_count": 25,
+            "trade_count": 26,
             "complex_count": 3,
             "comparables": [
               {
@@ -28198,15 +28356,15 @@
                 "name": "더샵파크프레스티지",
                 "legal_dong": "신길동",
                 "build_year": 2022,
-                "month": "2026-09",
+                "month": "2026-11",
                 "area_sqm": 84.9626,
-                "floor": 6,
-                "price_krw": 1650000000,
+                "floor": 11,
+                "price_krw": 1690000000,
                 "market_krw": 1676949222.9138818,
-                "trade_count": 6
+                "trade_count": 7
               }
             ],
-            "basis": "신길동 · 5년 이내 준신축 · 3개 단지 25건"
+            "basis": "신길동 · 5년 이내 준신축 · 3개 단지 26건"
           }
         ]
       },
@@ -31000,6 +31158,298 @@
       }
     },
     {
+      "id": "2026930047",
+      "notice_number": "2026930047",
+      "name": "청량리 롯데캐슬 하이루체",
+      "is_sample": false,
+      "region": {
+        "sido": "서울특별시",
+        "sigungu": "동대문구",
+        "address": "서울특별시 동대문구 청량리동 199번지 일원"
+      },
+      "lawd_code": null,
+      "total_households": 1,
+      "housing_category": "remaining",
+      "announcement_date": "2026-11-26",
+      "application_start": "2026-12-02",
+      "application_end": "2026-12-02",
+      "winner_date": "2026-12-07",
+      "contract_start": "2026-12-10",
+      "contract_end": "2026-12-10",
+      "move_in_month": "202612",
+      "links": {
+        "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026930047&pblancNo=2026930047",
+        "homepage": "https://www.lottecastle.co.kr/APT/AT00395/main/index.do",
+        "homedubu": null
+      },
+      "policy": {
+        "regulated": null,
+        "price_cap": null,
+        "public_land": null,
+        "large_land": null
+      },
+      "housing_types": [
+        {
+          "name": "59B",
+          "area_sqm": 59.9314,
+          "households": 1,
+          "price_krw": 823830000
+        }
+      ],
+      "supply_options": [
+        {
+          "id": "remaining",
+          "label": "계약취소주택 재공급",
+          "kind": "remaining",
+          "min_age": 19,
+          "requires_homeless": true,
+          "requirements_complete": false,
+          "source_ref": "주택공급에 관한 규칙 및 원 공급유형 자격"
+        }
+      ],
+      "price_gain": {
+        "status": "estimated",
+        "estimated_krw": 490203080,
+        "estimated_low_krw": 124319731,
+        "estimated_high_krw": 713321902,
+        "market_estimated_krw": 1314033080,
+        "confidence": "medium",
+        "housing_type": "59B",
+        "basis": "동대문구 · 5년 이내 준신축 · 11개 단지 55건",
+        "comparables": [
+          {
+            "name": "청량리역해링턴플레이스",
+            "legal_dong": "용두동",
+            "build_year": 2023,
+            "month": "2026-09",
+            "area_sqm": 59.9755,
+            "floor": 11,
+            "price_krw": 1330000000,
+            "market_krw": 1314033080.1744046,
+            "trade_count": 4
+          },
+          {
+            "name": "e편한세상답십리아르테포레",
+            "legal_dong": "답십리동",
+            "build_year": 2025,
+            "month": "2026-08",
+            "area_sqm": 59.9533,
+            "floor": 16,
+            "price_krw": 1408000000,
+            "market_krw": 1283530974.9421632,
+            "trade_count": 2
+          },
+          {
+            "name": "이문아이파크자이",
+            "legal_dong": "이문동",
+            "build_year": 2025,
+            "month": "2026-08",
+            "area_sqm": 59.95,
+            "floor": 21,
+            "price_krw": 1470000000,
+            "market_krw": 1469543919.9332776,
+            "trade_count": 1
+          },
+          {
+            "name": "래미안엘리니티",
+            "legal_dong": "용두동",
+            "build_year": 2022,
+            "month": "2026-11",
+            "area_sqm": 59.96,
+            "floor": 10,
+            "price_krw": 1540000000,
+            "market_krw": 1534267828.5523682,
+            "trade_count": 13
+          },
+          {
+            "name": "휘경자이디센시아",
+            "legal_dong": "휘경동",
+            "build_year": 2025,
+            "month": "2026-07",
+            "area_sqm": 59.93,
+            "floor": 16,
+            "price_krw": 1580000000,
+            "market_krw": 1540035975.3045218,
+            "trade_count": 2
+          }
+        ],
+        "by_type": [
+          {
+            "housing_type": "59B",
+            "area_sqm": 59.9314,
+            "sale_price_krw": 823830000,
+            "status": "estimated",
+            "market_low_krw": 948149731,
+            "market_base_krw": 1314033080,
+            "market_high_krw": 1537151902,
+            "gain_low_krw": 124319731,
+            "gain_base_krw": 490203080,
+            "gain_high_krw": 713321902,
+            "confidence": "medium",
+            "method": "strict",
+            "scope": "sigungu",
+            "age_limit_years": 5,
+            "trade_count": 55,
+            "complex_count": 11,
+            "comparables": [
+              {
+                "name": "청량리역해링턴플레이스",
+                "legal_dong": "용두동",
+                "build_year": 2023,
+                "month": "2026-09",
+                "area_sqm": 59.9755,
+                "floor": 11,
+                "price_krw": 1330000000,
+                "market_krw": 1314033080.1744046,
+                "trade_count": 4
+              },
+              {
+                "name": "e편한세상답십리아르테포레",
+                "legal_dong": "답십리동",
+                "build_year": 2025,
+                "month": "2026-08",
+                "area_sqm": 59.9533,
+                "floor": 16,
+                "price_krw": 1408000000,
+                "market_krw": 1283530974.9421632,
+                "trade_count": 2
+              },
+              {
+                "name": "이문아이파크자이",
+                "legal_dong": "이문동",
+                "build_year": 2025,
+                "month": "2026-08",
+                "area_sqm": 59.95,
+                "floor": 21,
+                "price_krw": 1470000000,
+                "market_krw": 1469543919.9332776,
+                "trade_count": 1
+              },
+              {
+                "name": "래미안엘리니티",
+                "legal_dong": "용두동",
+                "build_year": 2022,
+                "month": "2026-11",
+                "area_sqm": 59.96,
+                "floor": 10,
+                "price_krw": 1540000000,
+                "market_krw": 1534267828.5523682,
+                "trade_count": 13
+              },
+              {
+                "name": "휘경자이디센시아",
+                "legal_dong": "휘경동",
+                "build_year": 2025,
+                "month": "2026-07",
+                "area_sqm": 59.93,
+                "floor": 16,
+                "price_krw": 1580000000,
+                "market_krw": 1540035975.3045218,
+                "trade_count": 2
+              }
+            ],
+            "basis": "동대문구 · 5년 이내 준신축 · 11개 단지 55건"
+          }
+        ]
+      },
+      "restrictions": {
+        "resale": "없음",
+        "residence": "3년"
+      },
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://static.applyhome.co.kr/ai/aia/getAtchmnfl.do?houseManageNo=2026930047&pblancNo=2026930047&atchmnflSeqNo=2027014&atchmnflSn=3",
+        "checked_at": "2026-11-27T03:56:07.138Z",
+        "parser_version": "notice-id-v4",
+        "verified_notice_number": "2026930047",
+        "facts": {
+          "resale": "없음",
+          "residence": "3년",
+          "rewinning": "10년",
+          "contract_deposit": "10%",
+          "balance_payment": "90%"
+        },
+        "eligibility": {}
+      }
+    },
+    {
+      "id": "2026910311",
+      "notice_number": "2026910311",
+      "name": "향남역 그로브 스위첸",
+      "is_sample": false,
+      "region": {
+        "sido": "경기도",
+        "sigungu": "화성특례시",
+        "address": "경기도 화성특례시 만세구 향남읍 하길리 404-2번지 일원"
+      },
+      "lawd_code": null,
+      "total_households": 2,
+      "housing_category": "remaining",
+      "announcement_date": "2026-11-26",
+      "application_start": "2026-12-01",
+      "application_end": "2026-12-01",
+      "winner_date": "2026-12-04",
+      "contract_start": "2026-12-11",
+      "contract_end": "2026-12-11",
+      "move_in_month": "202906",
+      "links": {
+        "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910311&pblancNo=2026910311",
+        "homepage": "https://향남역스위첸.com",
+        "homedubu": null
+      },
+      "policy": {
+        "regulated": null,
+        "price_cap": null,
+        "public_land": null,
+        "large_land": null
+      },
+      "housing_types": [
+        {
+          "name": "71",
+          "area_sqm": 71.8178,
+          "households": 2,
+          "price_krw": 449400000
+        }
+      ],
+      "supply_options": [
+        {
+          "id": "remaining",
+          "label": "무순위·잔여세대",
+          "kind": "remaining",
+          "min_age": 19,
+          "requires_homeless": true,
+          "requirements_complete": true,
+          "source_ref": "주택공급에 관한 규칙 제26조제5항"
+        }
+      ],
+      "price_gain": {
+        "status": "unavailable",
+        "estimated_krw": null,
+        "basis": "가격·면적 또는 거래 자료 미확보",
+        "comparables": [],
+        "by_type": []
+      },
+      "restrictions": {
+        "resale": "10년",
+        "residence": "없음"
+      },
+      "notice_analysis": {
+        "status": "parsed",
+        "source_url": "https://static.applyhome.co.kr/ai/aia/getAtchmnfl.do?houseManageNo=2026910311&pblancNo=2026910311&atchmnflSeqNo=2031992&atchmnflSn=6",
+        "checked_at": "2026-11-27T03:56:07.138Z",
+        "parser_version": "notice-id-v4",
+        "verified_notice_number": "2026910311",
+        "facts": {
+          "resale": "10년",
+          "residence": "없음",
+          "contract_deposit": "5%",
+          "interim_payment": "60%",
+          "balance_payment": "90%"
+        },
+        "eligibility": {}
+      }
+    },
+    {
       "id": "2026930048",
       "notice_number": "2026930048",
       "name": "동탄신도시 금강펜테리움 7차 센트럴파크 불법행위재공급",
@@ -31340,11 +31790,11 @@
         "status": "estimated",
         "estimated_krw": -1166947982,
         "estimated_low_krw": -1245257882,
-        "estimated_high_krw": -1116421573,
+        "estimated_high_krw": -1102690008,
         "market_estimated_krw": 1814052018,
         "confidence": "low",
         "housing_type": "84A",
-        "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건",
+        "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건",
         "comparables": [
           {
             "name": "상록마을(보성)",
@@ -31562,15 +32012,15 @@
             "status": "estimated",
             "market_low_krw": 1735742118,
             "market_base_krw": 1814052018,
-            "market_high_krw": 1864578427,
+            "market_high_krw": 1878309992,
             "gain_low_krw": -1245257882,
             "gain_base_krw": -1166947982,
-            "gain_high_krw": -1116421573,
+            "gain_high_krw": -1102690008,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -31629,7 +32079,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           },
           {
             "housing_type": "84C",
@@ -31638,15 +32088,15 @@
             "status": "estimated",
             "market_low_krw": 1735742118,
             "market_base_krw": 1814052018,
-            "market_high_krw": 1864578427,
+            "market_high_krw": 1878309992,
             "gain_low_krw": -1003257882,
             "gain_base_krw": -924947982,
-            "gain_high_krw": -874421573,
+            "gain_high_krw": -860690008,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -31705,7 +32155,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           },
           {
             "housing_type": "84G",
@@ -31714,15 +32164,15 @@
             "status": "estimated",
             "market_low_krw": 1748966820,
             "market_base_krw": 1827873367,
-            "market_high_krw": 1878784739,
+            "market_high_krw": 1892620925,
             "gain_low_krw": -1171033180,
             "gain_base_krw": -1092126633,
-            "gain_high_krw": -1041215261,
+            "gain_high_krw": -1027379075,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -31781,7 +32231,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           }
         ]
       },
@@ -34214,7 +34664,7 @@
         "market_estimated_krw": 292884942,
         "confidence": "low",
         "housing_type": "54",
-        "basis": "송내동 · 유사면적 보완 추정 · 23개 단지 138건",
+        "basis": "송내동 · 유사면적 보완 추정 · 23개 단지 139건",
         "comparables": [
           {
             "name": "푸르미아",
@@ -34288,7 +34738,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 138,
+            "trade_count": 139,
             "complex_count": 23,
             "comparables": [
               {
@@ -34347,7 +34797,7 @@
                 "trade_count": 6
               }
             ],
-            "basis": "송내동 · 유사면적 보완 추정 · 23개 단지 138건"
+            "basis": "송내동 · 유사면적 보완 추정 · 23개 단지 139건"
           },
           {
             "housing_type": "59B",
@@ -35156,12 +35606,12 @@
       "price_gain": {
         "status": "estimated",
         "estimated_krw": -563836321,
-        "estimated_low_krw": -746219147,
+        "estimated_low_krw": -743720936,
         "estimated_high_krw": -351374064,
         "market_estimated_krw": 634163679,
         "confidence": "low",
         "housing_type": "84D",
-        "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 209건",
+        "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 211건",
         "comparables": [
           {
             "name": "동양메이저1차",
@@ -35290,17 +35740,17 @@
             "area_sqm": 84.9796,
             "sale_price_krw": 1198000000,
             "status": "estimated",
-            "market_low_krw": 451780853,
+            "market_low_krw": 454279064,
             "market_base_krw": 634163679,
             "market_high_krw": 846625936,
-            "gain_low_krw": -746219147,
+            "gain_low_krw": -743720936,
             "gain_base_krw": -563836321,
             "gain_high_krw": -351374064,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 209,
+            "trade_count": 211,
             "complex_count": 18,
             "comparables": [
               {
@@ -35359,7 +35809,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 209건"
+            "basis": "소하동 · 유사면적 보완 추정 · 18개 단지 211건"
           }
         ]
       },
@@ -36104,11 +36554,11 @@
         "status": "estimated",
         "estimated_krw": -1166947982,
         "estimated_low_krw": -1245257882,
-        "estimated_high_krw": -1116421573,
+        "estimated_high_krw": -1102690008,
         "market_estimated_krw": 1814052018,
         "confidence": "low",
         "housing_type": "84A",
-        "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건",
+        "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건",
         "comparables": [
           {
             "name": "상록마을(보성)",
@@ -36402,15 +36852,15 @@
             "status": "estimated",
             "market_low_krw": 1735742118,
             "market_base_krw": 1814052018,
-            "market_high_krw": 1864578427,
+            "market_high_krw": 1878309992,
             "gain_low_krw": -1245257882,
             "gain_base_krw": -1166947982,
-            "gain_high_krw": -1116421573,
+            "gain_high_krw": -1102690008,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -36469,7 +36919,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           },
           {
             "housing_type": "84B",
@@ -36478,15 +36928,15 @@
             "status": "estimated",
             "market_low_krw": 1735742118,
             "market_base_krw": 1814052018,
-            "market_high_krw": 1864578427,
+            "market_high_krw": 1878309992,
             "gain_low_krw": -1003257882,
             "gain_base_krw": -924947982,
-            "gain_high_krw": -874421573,
+            "gain_high_krw": -860690008,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -36545,7 +36995,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           },
           {
             "housing_type": "84C",
@@ -36554,15 +37004,15 @@
             "status": "estimated",
             "market_low_krw": 1735742118,
             "market_base_krw": 1814052018,
-            "market_high_krw": 1864578427,
+            "market_high_krw": 1878309992,
             "gain_low_krw": -1003257882,
             "gain_base_krw": -924947982,
-            "gain_high_krw": -874421573,
+            "gain_high_krw": -860690008,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -36621,7 +37071,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           },
           {
             "housing_type": "84D",
@@ -36630,15 +37080,15 @@
             "status": "estimated",
             "market_low_krw": 1737601842,
             "market_base_krw": 1815995646,
-            "market_high_krw": 1866576189,
+            "market_high_krw": 1880322467,
             "gain_low_krw": -1024398158,
             "gain_base_krw": -946004354,
-            "gain_high_krw": -895423811,
+            "gain_high_krw": -881677533,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -36697,7 +37147,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           },
           {
             "housing_type": "84E",
@@ -36706,15 +37156,15 @@
             "status": "estimated",
             "market_low_krw": 1735742118,
             "market_base_krw": 1814052018,
-            "market_high_krw": 1864578427,
+            "market_high_krw": 1878309992,
             "gain_low_krw": -1175257882,
             "gain_base_krw": -1096947982,
-            "gain_high_krw": -1046421573,
+            "gain_high_krw": -1032690008,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -36773,7 +37223,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           },
           {
             "housing_type": "84F",
@@ -36782,15 +37232,15 @@
             "status": "estimated",
             "market_low_krw": 1750619908,
             "market_base_krw": 1829601036,
-            "market_high_krw": 1880560528,
+            "market_high_krw": 1894409792,
             "gain_low_krw": -1150380092,
             "gain_base_krw": -1071398964,
-            "gain_high_krw": -1020439472,
+            "gain_high_krw": -1006590208,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -36849,7 +37299,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           },
           {
             "housing_type": "84G",
@@ -36858,15 +37308,15 @@
             "status": "estimated",
             "market_low_krw": 1748966820,
             "market_base_krw": 1827873367,
-            "market_high_krw": 1878784739,
+            "market_high_krw": 1892620925,
             "gain_low_krw": -1171033180,
             "gain_base_krw": -1092126633,
-            "gain_high_krw": -1041215261,
+            "gain_high_krw": -1027379075,
             "confidence": "low",
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 72,
+            "trade_count": 73,
             "complex_count": 21,
             "comparables": [
               {
@@ -36925,7 +37375,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 72건"
+            "basis": "정자동 · 유사면적 보완 추정 · 21개 단지 73건"
           }
         ]
       },
@@ -38259,11 +38709,11 @@
         "status": "estimated",
         "estimated_krw": -161082025,
         "estimated_low_krw": -272950023,
-        "estimated_high_krw": 36389690,
+        "estimated_high_krw": 36143519,
         "market_estimated_krw": 510817975,
         "confidence": "medium",
         "housing_type": "84D",
-        "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 267건",
+        "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 268건",
         "comparables": [
           {
             "name": "시흥금강펜테리움오션베이",
@@ -38329,15 +38779,15 @@
             "status": "estimated",
             "market_low_krw": 402133543,
             "market_base_krw": 514894232,
-            "market_high_krw": 713941744,
+            "market_high_krw": 713693609,
             "gain_low_krw": -278466457,
             "gain_base_krw": -165705768,
-            "gain_high_krw": 33341744,
+            "gain_high_krw": 33093609,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 249,
+            "trade_count": 250,
             "complex_count": 12,
             "comparables": [
               {
@@ -38396,7 +38846,7 @@
                 "trade_count": 9
               }
             ],
-            "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 249건"
+            "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 250건"
           },
           {
             "housing_type": "84D",
@@ -38405,15 +38855,15 @@
             "status": "estimated",
             "market_low_krw": 398949977,
             "market_base_krw": 510817975,
-            "market_high_krw": 708289690,
+            "market_high_krw": 708043519,
             "gain_low_krw": -272950023,
             "gain_base_krw": -161082025,
-            "gain_high_krw": 36389690,
+            "gain_high_krw": 36143519,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 267,
+            "trade_count": 268,
             "complex_count": 12,
             "comparables": [
               {
@@ -38472,7 +38922,7 @@
                 "trade_count": 9
               }
             ],
-            "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 267건"
+            "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 268건"
           },
           {
             "housing_type": "84E",
@@ -38481,15 +38931,15 @@
             "status": "estimated",
             "market_low_krw": 401438265,
             "market_base_krw": 514003994,
-            "market_high_krw": 712707358,
+            "market_high_krw": 712459652,
             "gain_low_krw": -244861735,
             "gain_base_krw": -132296006,
-            "gain_high_krw": 66407358,
+            "gain_high_krw": 66159652,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 249,
+            "trade_count": 250,
             "complex_count": 12,
             "comparables": [
               {
@@ -38548,7 +38998,7 @@
                 "trade_count": 9
               }
             ],
-            "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 249건"
+            "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 250건"
           },
           {
             "housing_type": "111A",
@@ -39798,7 +40248,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 69,
+            "trade_count": 70,
             "complex_count": 7,
             "comparables": [
               {
@@ -39857,7 +40307,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "삼동 · 유사면적 보완 추정 · 7개 단지 69건"
+            "basis": "삼동 · 유사면적 보완 추정 · 7개 단지 70건"
           }
         ]
       },
@@ -39960,7 +40410,7 @@
         "market_estimated_krw": 772116129,
         "confidence": "low",
         "housing_type": "84A",
-        "basis": "상동 · 유사면적 보완 추정 · 22개 단지 512건",
+        "basis": "상동 · 유사면적 보완 추정 · 22개 단지 514건",
         "comparables": [
           {
             "name": "상동스카이뷰자이",
@@ -40034,7 +40484,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 512,
+            "trade_count": 514,
             "complex_count": 22,
             "comparables": [
               {
@@ -40093,7 +40543,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 512건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 514건"
           },
           {
             "housing_type": "84B",
@@ -40110,7 +40560,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 512,
+            "trade_count": 514,
             "complex_count": 22,
             "comparables": [
               {
@@ -40169,7 +40619,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 512건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 514건"
           },
           {
             "housing_type": "84C",
@@ -40186,7 +40636,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 512,
+            "trade_count": 514,
             "complex_count": 22,
             "comparables": [
               {
@@ -40245,7 +40695,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 512건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 514건"
           },
           {
             "housing_type": "84D",
@@ -40262,7 +40712,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 512,
+            "trade_count": 514,
             "complex_count": 22,
             "comparables": [
               {
@@ -40321,7 +40771,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 512건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 514건"
           },
           {
             "housing_type": "84E",
@@ -40338,7 +40788,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 512,
+            "trade_count": 514,
             "complex_count": 22,
             "comparables": [
               {
@@ -40397,7 +40847,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 512건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 514건"
           },
           {
             "housing_type": "84F",
@@ -40414,7 +40864,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 512,
+            "trade_count": 514,
             "complex_count": 22,
             "comparables": [
               {
@@ -40473,7 +40923,7 @@
                 "trade_count": 14
               }
             ],
-            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 512건"
+            "basis": "상동 · 유사면적 보완 추정 · 22개 단지 514건"
           },
           {
             "housing_type": "187P",
@@ -40600,7 +41050,7 @@
         "market_estimated_krw": 1261212369,
         "confidence": "high",
         "housing_type": "84A",
-        "basis": "장항동 · 10년 이내 준신축 · 4개 단지 101건",
+        "basis": "장항동 · 10년 이내 준신축 · 4개 단지 100건",
         "comparables": [
           {
             "name": "킨텍스원시티3블럭",
@@ -40622,7 +41072,7 @@
             "floor": 7,
             "price_krw": 1240000000,
             "market_krw": 1240008990.1765013,
-            "trade_count": 37
+            "trade_count": 36
           },
           {
             "name": "킨텍스원시티1블럭",
@@ -40663,7 +41113,7 @@
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 10,
-            "trade_count": 101,
+            "trade_count": 100,
             "complex_count": 4,
             "comparables": [
               {
@@ -40686,7 +41136,7 @@
                 "floor": 7,
                 "price_krw": 1240000000,
                 "market_krw": 1240008990.1765013,
-                "trade_count": 37
+                "trade_count": 36
               },
               {
                 "name": "킨텍스원시티1블럭",
@@ -40711,7 +41161,7 @@
                 "trade_count": 19
               }
             ],
-            "basis": "장항동 · 10년 이내 준신축 · 4개 단지 101건"
+            "basis": "장항동 · 10년 이내 준신축 · 4개 단지 100건"
           },
           {
             "housing_type": "84B",
@@ -40728,7 +41178,7 @@
             "method": "strict",
             "scope": "same_dong",
             "age_limit_years": 10,
-            "trade_count": 101,
+            "trade_count": 100,
             "complex_count": 4,
             "comparables": [
               {
@@ -40740,7 +41190,7 @@
                 "floor": 7,
                 "price_krw": 1240000000,
                 "market_krw": 1239308715.2037559,
-                "trade_count": 37
+                "trade_count": 36
               },
               {
                 "name": "킨텍스원시티3블럭",
@@ -40776,7 +41226,7 @@
                 "trade_count": 19
               }
             ],
-            "basis": "장항동 · 10년 이내 준신축 · 4개 단지 101건"
+            "basis": "장항동 · 10년 이내 준신축 · 4개 단지 100건"
           }
         ]
       },
@@ -41055,7 +41505,7 @@
         "market_estimated_krw": 631464620,
         "confidence": "low",
         "housing_type": "56",
-        "basis": "관악구 · 유사면적 보완 추정 · 77개 단지 744건",
+        "basis": "관악구 · 유사면적 보완 추정 · 77개 단지 745건",
         "comparables": [
           {
             "name": "일두(1021)",
@@ -41237,7 +41687,7 @@
             "method": "regional_relaxed",
             "scope": "sigungu",
             "age_limit_years": 30,
-            "trade_count": 744,
+            "trade_count": 745,
             "complex_count": 77,
             "comparables": [
               {
@@ -41296,7 +41746,7 @@
                 "trade_count": 3
               }
             ],
-            "basis": "관악구 · 유사면적 보완 추정 · 77개 단지 744건"
+            "basis": "관악구 · 유사면적 보완 추정 · 77개 단지 745건"
           }
         ]
       },
@@ -42113,11 +42563,11 @@
         "status": "estimated",
         "estimated_krw": -161082025,
         "estimated_low_krw": -272950023,
-        "estimated_high_krw": 36389690,
+        "estimated_high_krw": 36143519,
         "market_estimated_krw": 510817975,
         "confidence": "medium",
         "housing_type": "84D",
-        "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 267건",
+        "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 268건",
         "comparables": [
           {
             "name": "시흥금강펜테리움오션베이",
@@ -42183,15 +42633,15 @@
             "status": "estimated",
             "market_low_krw": 402003505,
             "market_base_krw": 514727730,
-            "market_high_krw": 713710876,
+            "market_high_krw": 713462821,
             "gain_low_krw": -262596495,
             "gain_base_krw": -149872270,
-            "gain_high_krw": 49110876,
+            "gain_high_krw": 48862821,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 249,
+            "trade_count": 250,
             "complex_count": 12,
             "comparables": [
               {
@@ -42250,7 +42700,7 @@
                 "trade_count": 9
               }
             ],
-            "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 249건"
+            "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 250건"
           },
           {
             "housing_type": "84C",
@@ -42259,15 +42709,15 @@
             "status": "estimated",
             "market_low_krw": 402133543,
             "market_base_krw": 514894232,
-            "market_high_krw": 713941744,
+            "market_high_krw": 713693609,
             "gain_low_krw": -278466457,
             "gain_base_krw": -165705768,
-            "gain_high_krw": 33341744,
+            "gain_high_krw": 33093609,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 249,
+            "trade_count": 250,
             "complex_count": 12,
             "comparables": [
               {
@@ -42326,7 +42776,7 @@
                 "trade_count": 9
               }
             ],
-            "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 249건"
+            "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 250건"
           },
           {
             "housing_type": "84D",
@@ -42335,15 +42785,15 @@
             "status": "estimated",
             "market_low_krw": 398949977,
             "market_base_krw": 510817975,
-            "market_high_krw": 708289690,
+            "market_high_krw": 708043519,
             "gain_low_krw": -272950023,
             "gain_base_krw": -161082025,
-            "gain_high_krw": 36389690,
+            "gain_high_krw": 36143519,
             "confidence": "medium",
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 267,
+            "trade_count": 268,
             "complex_count": 12,
             "comparables": [
               {
@@ -42402,7 +42852,7 @@
                 "trade_count": 9
               }
             ],
-            "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 267건"
+            "basis": "시흥시 · 5년 이내 준신축 · 12개 단지 268건"
           },
           {
             "housing_type": "111A",
@@ -42627,7 +43077,7 @@
         "market_estimated_krw": 862127062,
         "confidence": "low",
         "housing_type": "59A",
-        "basis": "철산동 · 유사면적 보완 추정 · 16개 단지 239건",
+        "basis": "철산동 · 유사면적 보완 추정 · 16개 단지 240건",
         "comparables": [
           {
             "name": "도덕파크타운1단지",
@@ -42701,7 +43151,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 239,
+            "trade_count": 240,
             "complex_count": 16,
             "comparables": [
               {
@@ -42760,7 +43210,7 @@
                 "trade_count": 8
               }
             ],
-            "basis": "철산동 · 유사면적 보완 추정 · 16개 단지 239건"
+            "basis": "철산동 · 유사면적 보완 추정 · 16개 단지 240건"
           },
           {
             "housing_type": "59B",
@@ -42777,7 +43227,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 239,
+            "trade_count": 240,
             "complex_count": 16,
             "comparables": [
               {
@@ -42836,7 +43286,7 @@
                 "trade_count": 8
               }
             ],
-            "basis": "철산동 · 유사면적 보완 추정 · 16개 단지 239건"
+            "basis": "철산동 · 유사면적 보완 추정 · 16개 단지 240건"
           }
         ]
       },
@@ -42909,7 +43359,7 @@
         "market_estimated_krw": 861619826,
         "confidence": "low",
         "housing_type": "59",
-        "basis": "철산동 · 유사면적 보완 추정 · 16개 단지 239건",
+        "basis": "철산동 · 유사면적 보완 추정 · 16개 단지 240건",
         "comparables": [
           {
             "name": "두산위브",
@@ -42983,7 +43433,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 239,
+            "trade_count": 240,
             "complex_count": 16,
             "comparables": [
               {
@@ -43042,7 +43492,7 @@
                 "trade_count": 8
               }
             ],
-            "basis": "철산동 · 유사면적 보완 추정 · 16개 단지 239건"
+            "basis": "철산동 · 유사면적 보완 추정 · 16개 단지 240건"
           },
           {
             "housing_type": "59",
@@ -43059,7 +43509,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 239,
+            "trade_count": 240,
             "complex_count": 16,
             "comparables": [
               {
@@ -43118,7 +43568,7 @@
                 "trade_count": 8
               }
             ],
-            "basis": "철산동 · 유사면적 보완 추정 · 16개 단지 239건"
+            "basis": "철산동 · 유사면적 보완 추정 · 16개 단지 240건"
           }
         ]
       },
@@ -46053,7 +46503,7 @@
             "method": "regional_relaxed",
             "scope": "same_dong",
             "age_limit_years": 30,
-            "trade_count": 69,
+            "trade_count": 70,
             "complex_count": 7,
             "comparables": [
               {
@@ -46112,7 +46562,7 @@
                 "trade_count": 1
               }
             ],
-            "basis": "삼동 · 유사면적 보완 추정 · 7개 단지 69건"
+            "basis": "삼동 · 유사면적 보완 추정 · 7개 단지 70건"
           }
         ]
       },
@@ -47268,7 +47718,7 @@
         "market_estimated_krw": 476568183,
         "confidence": "medium",
         "housing_type": "75",
-        "basis": "오산시 · 5년 이내 준신축 · 9개 단지 69건",
+        "basis": "오산시 · 5년 이내 준신축 · 9개 단지 70건",
         "comparables": [
           {
             "name": "중흥S-클래스에듀하이",
@@ -47342,7 +47792,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 69,
+            "trade_count": 70,
             "complex_count": 9,
             "comparables": [
               {
@@ -47401,7 +47851,7 @@
                 "trade_count": 11
               }
             ],
-            "basis": "오산시 · 5년 이내 준신축 · 9개 단지 69건"
+            "basis": "오산시 · 5년 이내 준신축 · 9개 단지 70건"
           },
           {
             "housing_type": "84A",
@@ -47916,7 +48366,7 @@
         "market_estimated_krw": 649136589,
         "confidence": "medium",
         "housing_type": "84A",
-        "basis": "광주시 · 5년 이내 준신축 · 13개 단지 225건",
+        "basis": "광주시 · 5년 이내 준신축 · 13개 단지 226건",
         "comparables": [
           {
             "name": "오포자이디오브(3단지)",
@@ -47990,7 +48440,7 @@
             "method": "strict",
             "scope": "sigungu",
             "age_limit_years": 5,
-            "trade_count": 225,
+            "trade_count": 226,
             "complex_count": 13,
             "comparables": [
               {
@@ -48049,7 +48499,7 @@
                 "trade_count": 24
               }
             ],
-            "basis": "광주시 · 5년 이내 준신축 · 13개 단지 225건"
+            "basis": "광주시 · 5년 이내 준신축 · 13개 단지 226건"
           }
         ]
       },
@@ -49806,68 +50256,6 @@
           "area_sqm": 115.957,
           "households": 3,
           "price_krw": 707070000
-        }
-      ],
-      "supply_options": [
-        {
-          "id": "remaining",
-          "label": "무순위·잔여세대",
-          "kind": "remaining",
-          "min_age": 19,
-          "requires_homeless": true,
-          "requirements_complete": true,
-          "source_ref": "주택공급에 관한 규칙 제26조제5항"
-        }
-      ],
-      "price_gain": {
-        "status": "unavailable",
-        "estimated_krw": null,
-        "basis": "가격·면적 또는 거래 자료 미확보",
-        "comparables": [],
-        "by_type": []
-      },
-      "restrictions": {
-        "resale": null,
-        "residence": null
-      }
-    },
-    {
-      "id": "2026910201",
-      "notice_number": "2026910201",
-      "name": "동탄신도시 금강펜테리움 6차 센트럴파크(A59BL) (3차)",
-      "is_sample": false,
-      "region": {
-        "sido": "경기도",
-        "sigungu": "화성시",
-        "address": "경기도 화성시 동탄구 동탄신리천로8길 46, 동탄신도시 금강펜테리움 6차 센트럴파크"
-      },
-      "lawd_code": null,
-      "total_households": 3,
-      "housing_category": "remaining",
-      "announcement_date": "2026-07-29",
-      "application_start": "2026-08-03",
-      "application_end": "2026-08-03",
-      "winner_date": "2026-08-06",
-      "contract_start": "2026-08-21",
-      "contract_end": "2026-08-21",
-      "move_in_month": "202609",
-      "links": {
-        "official": "https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do?houseManageNo=2026910201&pblancNo=2026910201",
-        "homepage": "https://blog.naver.com/kkvista",
-        "homedubu": null
-      },
-      "policy": {
-        "regulated": null,
-        "price_cap": null,
-        "public_land": null,
-        "large_land": null
-      },
-      "housing_types": [
-        {
-          "name": "100A",
-          "area_sqm": 100.8334,
-          "households": 3,
-          "price_krw": 559300000
         }
       ],
       "supply_options": [
